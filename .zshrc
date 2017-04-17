@@ -73,12 +73,12 @@ alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中�
 
 sudo-command-line() {
 [[ -z $BUFFER ]] && zle up-history
-[[ $BUFFER != sudo\ * ]] && BUFFER="sudo $BUFFER"
+[[ $BUFFER != sudo\ * ]] && BUFFER="sudo $BUFFER" || BUFFER="${BUFFER#*sudo\ }"
 zle end-of-line #光标移动到行末
 }
 zle -N sudo-command-line
 bindkey "\e\e" sudo-command-line
-#双击esc行首插入sudo，暂时还不行
+#双击esc行首插入sudo
 
 
 #------------------------------
@@ -86,13 +86,6 @@ bindkey "\e\e" sudo-command-line
 #------------------------------
 autoload colors
 colors
-
-#for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE; do
-#eval _$color='%{$terminfo[bold]$fg[${(L)color}]%}'
-#eval $color='%{$fg[${(L)color}]%}'
-#(( count = $count + 1 ))
-#done
-#FINISH="%{$terminfo[sgr0]%}"
 
 
 #------------------------------
@@ -176,7 +169,5 @@ setopt correctall
 #开启纠错功能
 #
 #
-bindkey -v
 #
-#PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%1~ %{$reset_color%}%#"
 PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%C $ "
