@@ -44,12 +44,9 @@ setopt PUSHD_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 #在命令前添加空格，不将此命令添加到记录文件中
 
-#autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
-#zle -N up-line-or-beginning-search
-#zle -N down-line-or-beginning-search
-#[[ -n "$key[Up]"   ]] && bindkey -- "$key[Up]"   up-line-or-beginning-search
-#[[ -n "$key[Down]" ]] && bindkey -- "$key[Down]" down-line-or-beginning-search
-#允许上下查找历史纪录,咋感觉没用呢
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+#显示匹配光标前的历史搜索
 
 
 #-----------------------------
@@ -61,8 +58,8 @@ alias ll='ls -l'
 alias la='ls -a'
 alias vi='vim'
 alias grep="grep --color=auto"
-alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
-#alias -s js=vi
+alias -s py=vi    # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+#alias -s js=vi    #暂时用不到
 #alias -s c=vi
 #alias -s java=vi
 #alias -s txt=vi
@@ -78,18 +75,24 @@ zle end-of-line #光标移动到行末
 }
 zle -N sudo-command-line
 bindkey "\e\e" sudo-command-line
-#双击esc行首插入sudo
+#双击esc行首插入/去掉sudo，oh-my-zsh中的一个有用功能
+#前提是不能有bindkey -v，否则在vim模式下按一下esc就变成normal模式了
+#不写bindkey，就是默认bindkey -e，即emacs模式，这时ctrl+a/e也就有效了
 
 
 #------------------------------
-# 4.颜色（dieter）
+# 4.颜色/主题（希望能达到dieter的效果）
 #------------------------------
 autoload colors
 colors
+#打开颜色显示
+
+PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%C $ "
+#自定义命令提示符
 
 
 #------------------------------
-# 5.自动补全
+# 5.自动补全与错误矫正相关
 #------------------------------
 zstyle ':completion:*' menu select
 #方向键控制选择
@@ -137,6 +140,9 @@ zstyle ':completion:*:match:*' original only
 zstyle ':completion:*:approximate:*' max-errors 1 numeric
 #错误校正
 
+setopt correctall
+#开启纠错功能
+
 compdef pkill=killall
 zstyle ':completion:*:*:kill:*' menu yes select
 zstyle ':completion:*:*:*:*:processes' force-list always
@@ -158,16 +164,7 @@ zstyle ':completion:*:-tilde-:*' group-order 'named-directories' 'path-directori
 
 
 #------------------------------
-# 
+# 6.
 #------------------------------
 
 #
-#
-#
-#
-setopt correctall
-#开启纠错功能
-#
-#
-#
-PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%C $ "
