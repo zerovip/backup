@@ -3,6 +3,7 @@ cp ~/.zshrc ~/backup/backup/
 cp ~/.vimrc ~/backup/backup/
 cp ~/notes ~/backup/backup/
 cp ~/backup/AutoBackup.sh ~/backup/backup/
+cp /etc/fstab ~/backup/backup
 cd ~/backup/backup
 git add .
 date=`date +%Y%m%d`
