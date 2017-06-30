@@ -209,7 +209,7 @@ set cursorline
 set hlsearch
 set number
 " 窗口大小
-set lines=41 columns=172
+"set lines=41 columns=172
 " 分割出来的窗口位于当前窗口下边/右边
 set splitbelow
 set splitright
