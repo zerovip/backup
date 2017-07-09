@@ -66,3 +66,8 @@
                     关于换了桌面，打开vim后再退出就有光标对不齐的问题，在.vimrc中把set lines以及set colu...去掉，
                     就可以实现直接适应屏幕的功能，以前没有想到过。。。
     2017.07.01    今天打开电脑，sdu有线连接就直接可以连接了。。。完全不知道发生了什么
+    2017.07.09    已经回家了。安装tex-live，并配置好vim，决定使用latex记笔记。
+                    sudo pacman -S texlive-most
+                    sudo pacman -S texlive-langchinese
+    2017.07.10    已安装wolfram mathematica，tex-live已经装好，vim-latex-live-preview安装完毕，运行良好
+                    暂时的问题是无法中文编译，明日解决

@@ -118,6 +118,7 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|pyc)$'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" latex自动补全等
 Bundle 'vim-latex/vim-latex'
 set shellslash
 set grepprg=grep\ -nH\ $*
@@ -125,6 +126,12 @@ filetype indent on
 let g:tex_flavor='latex'
 set iskeyword+=:
 autocmd BufEnter *.tex set sw=2
+
+" latex实时预览工具
+Bundle 'xuhdev/vim-latex-live-preview'
+let g:livepreview_previewer = 'okular'
+
+
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -185,6 +192,7 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 set clipboard+=unnamed
 " 设置 alt 键不映射到菜单栏
 set winaltkeys=no
+set updatetime=1000
 " }}}
 
 " Lang & Encoding {{{
