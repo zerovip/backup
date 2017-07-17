@@ -130,7 +130,7 @@ autocmd BufEnter *.tex set sw=2
 " latex实时预览工具
 Bundle 'xuhdev/vim-latex-live-preview'
 let g:livepreview_previewer = 'okular'
-
+let g:livepreview_engine = 'xelatex'
 
 
 " To ignore plugin indent changes, instead use:
@@ -192,7 +192,8 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 set clipboard+=unnamed
 " 设置 alt 键不映射到菜单栏
 set winaltkeys=no
-set updatetime=1000
+" set updatetime=1000
+autocmd Filetype tex setl updatetime=1
 " }}}
 
 " Lang & Encoding {{{

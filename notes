@@ -71,3 +71,6 @@
                     sudo pacman -S texlive-langchinese
     2017.07.10    已安装wolfram mathematica，tex-live已经装好，vim-latex-live-preview安装完毕，运行良好
                     暂时的问题是无法中文编译，明日解决
+    2017.07.11    在vim-latex-live-preview里面设置好引擎为xelatex就可以用中文了
+                    据说pdflatex也是可以的，但需要写明是UTF-8目前就是默认的宋体，因为自己作笔记的话不是很有所谓，
+                    以后需要别的字体了再遇到问题解决问题吧~
