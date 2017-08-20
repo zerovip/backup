@@ -1,0 +1,5 @@
+[Match]
+Name=enp0s20u2
+
+[Network]
+DHCP=ipv4
