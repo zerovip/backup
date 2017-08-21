@@ -61,3 +61,4 @@
     2017.08.21    然后网络，其实是手机通过usb共享网络的问题，在Android tethering词条下面
                     手机USB共享网络的原理是虚拟出来一个网卡，在ip link里面可以看到一个多出来的enp0s26u1u2之类的
                     然后用dhcpcd enp....就好了，用systemd-network可以让他自动连接，和udev又有点关系
+    2017.08.22    今天试着在linux上使用Shadowsocks，加密方法部分还略有问题，配置文件在/etc/shadowsocks/zero.json
