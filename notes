@@ -2,7 +2,6 @@
     5.AndriodStudio
     9.熟悉python的venv
     11.学习java
-    12.解决插耳机开机后耳机中没有声音的问题
     13.试着在两个系统中搞一下shadowsocks，洋葱，浏览器的代理与匿名等问题
 
 2.系统日志
@@ -64,3 +63,4 @@
                     然后用dhcpcd enp....就好了，用systemd-network可以让他自动连接，和udev又有点关系
     2017.08.22    今天试着在linux上使用Shadowsocks，加密方法部分还略有问题，配置文件在/etc/shadowsocks/zero.json
     2017.09.09    突然上不了网是因为端口的一些问题，是因为shadowsocks设置了端口
+    2017.09.30    耳机问题直接就好了，应该是BUG被修复了
