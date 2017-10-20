@@ -69,3 +69,17 @@
                     英伟达显卡升级提示会破坏依赖关系，是因为内核不再支持，降级后就好了
                     浙江大学的mirror出了问题，暂时换到清华大学上
     2017.10.14    因为把自己笔记本键盘背光拆坏了，于是送售后换了主板，开机引导和之前相比略有不同，调整时间等
+    2017.10.20    更新了WINDOWS10 1709秋季创意者更新，一般升级WINDOWS后LINUX引导就会有问题，总结经验如下：
+                    1.做LINUX安装盘进去重装Grub，做系统盘时在Rufus中选择DD模式，因为选ISO模式会出现filesystem error
+                    2.进入安装环境后要chroot进我自己的系统，可以手动，可以自动。自动要方便一些
+                    3.自动就是安装一个mhwd-chroot工具，提前Syu一下软件库，用 mhwd-chroot-shell 进去
+                    4.chroot进去后，手动 mount /dev/sda3 /var 挂载一下，那个工具不能自动读到另一个硬盘中的分区
+                    5.把/boot/efi挂载一下，mount /dev/sdb2 /boot/efi
+                    6.安装并更新Grub：
+                        grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=manjaro --recheck
+                        update-grub
+                    7.很有可能出现EFI variables are not supported on this system.的错误提示，这时
+                        7.1先在环境（chroot）里重新安装efibootmgr, dosfstools, grub再试一下安装并更新grub
+                        7.2如果不行，先退出环境，modprobe efivarfs一下
+                        7.3再进入环境，多挂载一个 mount -t efivarfs efivarfs /sys/firmware/efi/efivars，然后再试一下安装并更新Grub
+                    8.有问题参考manjaro-wiki：Restore The GRUB Bootloader
