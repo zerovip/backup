@@ -83,3 +83,4 @@
                         7.2如果不行，先退出环境，modprobe efivarfs一下
                         7.3再进入环境，多挂载一个 mount -t efivarfs efivarfs /sys/firmware/efi/efivars，然后再试一下安装并更新Grub
                     8.有问题参考manjaro-wiki：Restore The GRUB Bootloader
+    2017.10.29    更新了一次系统后plasma出现了很多不同：包括按WINDOWS键不出开始菜单，桌面出现home内容，设置的界面变了样子等
