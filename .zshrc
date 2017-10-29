@@ -12,6 +12,7 @@ echo -ne "Welcome, handsome! Today is "; date '+%Y-%m-%d, %A'
 echo -ne "Have a NICE day!"
 echo -ne "\n"
 
+
 #-----------------------------
 # 1.插件
 #-----------------------------
