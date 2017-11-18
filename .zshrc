@@ -75,6 +75,8 @@ alias -s py=vi    # 在命令行直接输入 python 文件，会用 vim 中打�
 #alias -s tgz='tar -xzvf'
 #alias -s zip='unzip'
 #alias -s bz2='tar -xjvf'
+alias cp='acp -g'
+alias mv='amv -g'    #提前安装advcp，用来显示移动和复制的进度条
 
 sudo-command-line() {
 [[ -z $BUFFER ]] && zle up-history
