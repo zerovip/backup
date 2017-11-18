@@ -87,6 +87,14 @@ bindkey "\e\e" sudo-command-line
 #前提是不能有bindkey -v，否则在vim模式下按一下esc就变成normal模式了
 #不写bindkey，就是默认bindkey -e，即emacs模式，这时ctrl+a/e也就有效了
 
+backward-kill-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-kill-word
+}
+zle -N backward-kill-dir
+bindkey '^[^?' backward-kill-dir
+#使得Ctrl+w删除当前所有，而Alt+Backspace删除一个词语
+#方便按Tab键备选太多时快速回退到上一个目录处
 
 #------------------------------
 # 4.颜色/主题（希望能达到dieter的效果）
