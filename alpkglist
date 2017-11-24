@@ -350,7 +350,9 @@ xf86-input-void
 xf86-video-intel
 xfsprogs
 xorg-server
+xorg-server-utils
 xorg-twm
+xorg-utils
 xorg-xinit
 yakuake
 yaourt
