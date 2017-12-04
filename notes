@@ -91,3 +91,4 @@
                     以及安装了advcp，可以实现复制移动的进度条
     2017.11.21    安装新的内核，以及firefox57试图通过加userChrome.css更改顶部Tab，暂时没有成功
     2017.12.04    firefox已成功，隐藏顶部tab并隐藏TreeStyleTab的标题，并做了hover，已备份
+                    开机的时候有的一些像是驱动的问题都没有了
