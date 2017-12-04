@@ -1,0 +1,34 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+:root {
+  --sidebar-normal-width: 180px;
+  --sidebar-hover-width: 400px;
+  --background-color: rgb(0,0,0);
+}
+
+#sidebar-box {
+  position: relative !important;
+  overflow-x: hidden !important;
+  min-width: var(--sidebar-normal-width) !important;
+  max-width: var(--sidebar-normal-width) !important;
+  opacity: 0.7 !important;
+  -moz-transition: all .2s ease-out .2s !important;
+}
+
+#sidebar-box:hover {
+  margin-right: calc((var(--sidebar-hover-width) - var(--sidebar-normal-width)) * -1) !important;
+  min-width: var(--sidebar-hover-width) !important;
+  opacity: 1 !important;
+}
+#sidebar-splitter {
+    display: none !important;
+}
+
+/* to hide the native tabs */
+#TabsToolbar {
+    visibility: collapse;
+}
+
+/* to hide the sidebar header */
+#sidebar-header {
+    visibility: collapse;
+}

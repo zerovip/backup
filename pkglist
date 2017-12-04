@@ -166,10 +166,6 @@ linux414
 linux414-bbswitch
 linux414-nvidia
 linux414-r8168
-linux49
-linux49-bbswitch
-linux49-nvidia
-linux49-r8168
 linux-firmware
 logrotate
 lsb-release
@@ -249,7 +245,6 @@ plasma-nm
 plasma-pa
 plasma-workspace
 plasma-workspace-wallpapers
-plymouth-theme-manjaro-elegant
 poppler-data
 powerdevil
 powertop
