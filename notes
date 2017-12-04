@@ -90,3 +90,4 @@
     2017.11.18    .zshrc又加了一个函数，帮助使用Alt+Backspace回退一个单词
                     以及安装了advcp，可以实现复制移动的进度条
     2017.11.21    安装新的内核，以及firefox57试图通过加userChrome.css更改顶部Tab，暂时没有成功
+    2017.12.04    firefox已成功，隐藏顶部tab并隐藏TreeStyleTab的标题，并做了hover，已备份
