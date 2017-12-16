@@ -4,6 +4,10 @@
     11.学习java
     13.试着在两个系统中搞一下shadowsocks，洋葱，浏览器的代理与匿名等问题
     14.zsh配置git目录下的部分
+    15.firefox关闭窗口的按钮调整到左边
+    16./var的空间清理一些
+    17.改一下vim的配色，尤其是字符串那里，diff的时候什么都看不清
+    18.可不可以删掉imagemagic6呢
 
 2.系统日志
     2017.01.18    挑选系统，选定ArchLinux
@@ -91,4 +95,34 @@
                     以及安装了advcp，可以实现复制移动的进度条
     2017.11.21    安装新的内核，以及firefox57试图通过加userChrome.css更改顶部Tab，暂时没有成功
     2017.12.04    firefox已成功，隐藏顶部tab并隐藏TreeStyleTab的标题，并做了hover，已备份
+                    如果能把关闭的按钮放到左边就更好了
                     开机的时候有的一些像是驱动的问题都没有了
+                    不过有一次关机出现了/var 未被卸载的问题
+    2017.12.15    关于关机/var未被卸载的问题，网上有帖子说是journald在往/var里记录日志，有两个解决方案：
+                    1.修改journald的配置，在/etc/systemd/journald.conf，将Storage=写成volatile即可，
+                        参看金步国翻译的中文手册，这样的话就把日志记录在/run里了，/run疑似内存（分区）；
+                        我不是很想这样做，因为日志就应该记录在var里
+                    2.在HOOK中添加shutdown，在mkinitcpio.conf，这样即便开始提示了出错，但最后还是会顺利执行卸载，不会有问题，
+                        不过这个是五年前的老帖子了，现在情况恐怕有变化，暂且没有做修改，而且恐怕现在就是如此
+                        而且修改后恐怕还要重新生成镜像 mkinitcpio -p linux 见mkinitcpio的Wiki
+                  不过这时发现了一些之前没太注意的问题，就是关于pacnew的问题，以后需要慢慢做一些调整
+                    像这次的mkinitcpio.conf中的向量都还是“”，而新的pacnew已经是()了，而且一些hook项目恐怕有变化
+                    列清单如下：（整理自/var/log/pacman.log）
+                        2017.05.01 /etc/bumblebee/bumblebee.conf(.pacnew)   覆盖
+                        2017.05.14 /etc/pacman-mirrors.conf(.pacnew)    覆盖
+                        2017.06.24 /etc/passwd(.pacnew)     删除
+                                    /etc/gshadow(.pacnew)   删除
+                                    /etc/group(.pacnew)     删除
+                                    /etc/shadow(.pacnew)    删除
+                        2017.00.00 /etc/pacman.conf(.pacnew)    覆盖
+                        2017.00.00 /etc/sddm.conf(.pacnew) 2017.10.29   覆盖
+                                    /etc/pam.d/sddm(.pacnew)    覆盖
+                        2017.09.18 /etc/locale.gen(.pacnew)     修改覆盖
+                        2017.09.18 /etc/drirc(.pacnew)      备份覆盖
+                        2017.10.29 /etc/mkinitcpio.conf(.pacnew)    备份覆盖
+                        2017.11.04 /etc/skel/.bashrc(.pacnew)   覆盖
+                        2017.12.04 /etc/plymouth/plymouthd.conf(.pacnew)    无此项
+                    不过应当率先处理关于pacsave的问题，像plymouth可能就直接删掉即可。处理结果直接加在上面即可
+                    另外一定需要注意的是各种提示Warning的地方，Error更必须注意了
+    2017.12.16    使用pacdiff工具进行了调整，结果见上，一会儿更新后重启看看有没有问题
+                    下次升级内核注意一下看看有没有问题

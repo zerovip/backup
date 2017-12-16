@@ -66,8 +66,8 @@ firefox-i18n-zh-cn
 flashplugin
 flex
 gawk
-gcc-libs-multilib
-gcc-multilib
+gcc
+gcc-libs
 gettext
 ghostscript
 git
