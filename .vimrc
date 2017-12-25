@@ -131,6 +131,7 @@ autocmd BufEnter *.tex set sw=2
 Bundle 'xuhdev/vim-latex-live-preview'
 let g:livepreview_previewer = 'okular'
 let g:livepreview_engine = 'xelatex'
+autocmd Filetype tex setl updatetime=30
 
 
 " To ignore plugin indent changes, instead use:
@@ -193,7 +194,6 @@ set clipboard+=unnamed
 " 设置 alt 键不映射到菜单栏
 set winaltkeys=no
 " set updatetime=1000
-autocmd Filetype tex setl updatetime=1
 " }}}
 
 " Lang & Encoding {{{
@@ -210,7 +210,7 @@ language messages zh_CN.utf-8
 
 " GUI {{{
 autocmd GUIEnter * simalt ~x
-syntax enable 
+syntax enable
 colorscheme desert
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
