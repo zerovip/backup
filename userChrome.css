@@ -5,6 +5,7 @@
   --background-color: rgb(0,0,0);
 }
 
+/*
 #sidebar-box {
   position: relative !important;
   overflow-x: hidden !important;
@@ -22,6 +23,8 @@
 #sidebar-splitter {
     display: none !important;
 }
+*/
+
 
 /* to hide the native tabs */
 #TabsToolbar {
