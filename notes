@@ -10,6 +10,18 @@
     18.可不可以删掉imagemagic6呢
     19.为root更改密码
     20.写一个收藏的手机app
+    21.
+    鲸鱼不是鱼
+    娃娃鱼不是鱼 是两栖动物
+    integral domian
+    直升飞机 不是 飞机
+    熊猫
+    22.坎巴拉太空计划试玩LINUX版，如果ok删掉WINDOWS版
+    23.fingding Paradise
+        双子
+        ohm
+        旁观者
+
 
 2.系统日志
     2017.01.18    挑选系统，选定ArchLinux
@@ -128,3 +140,32 @@
                     另外一定需要注意的是各种提示Warning的地方，Error更必须注意了
     2017.12.16    使用pacdiff工具进行了调整，结果见上，一会儿更新后重启看看有没有问题
                     下次升级内核注意一下看看有没有问题
+    2017.12.28    今天开始着手解决/学习关于网络的问题
+                    有线网与无线网或统一管理或分开管理，统一管理也是依赖与分开的那些包
+                    希望可以做到的就是开机后自动根据插入网线与否与环境中WiFi的名字自动进行连网与切换等，
+                        如果能做到插入网线后还能自动识别是否需要用户名密码就更好了
+                        手机USB共享网络也算进去更好
+                    分开管理
+                        有线网络：
+                            1.systemd-networkd
+                            2.dhcpcd
+                        无线网络：
+                            1.wpa supplicant（同时负责有线的802.1x）
+                            2.
+                    统一管理目前已知三套方案：
+                    1.使用netctl，说是在base组里装系统应该自带，但我的电脑确实不带，试了一下卸载了（暂不考虑）
+                     （有线的配置文件文档还要再看看，
+                        Security=wpa-config
+                        WPAConfigFile='/etc/wpa_supplicant............'
+                        或
+                        network={
+                                identity=""
+                                password=""
+                                }
+                        以上都是别人提的问题，不用当真
+                        ）
+                    2.使用NetworkManager，我的电脑自带这个，而且还有qt，估计是kde的设置那里（比较倾向）
+                     （论坛里一年前有人说这个方案有一个问题导致关机重启前不能正确卸载网卡以至于要等90秒）
+                    3.使用systemd-networkd，论坛里说这个加上wpa_cli(wpa_supplicant)就很完美了
+                     （见ArchWiki systemd-networkd中Wireless adapter部分）
+                     （然而这不是多合一方案，比如vpn可能还需要一个工具）
