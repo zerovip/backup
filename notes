@@ -167,3 +167,18 @@
                     3.使用systemd-networkd，论坛里说这个加上wpa_cli(wpa_supplicant)就很完美了
                      （见ArchWiki systemd-networkd中Wireless adapter部分）
                      （然而这不是多合一方案，比如vpn可能还需要一个工具）
+    2018.1.14    今天升级系统后qbittorrent打不开，报错为
+                    qbittorrent: error while loading shared libraries:
+                        libboost_system.so.1.65.1: cannot open shared object file: No such file or directory
+                    打开/lib/进去看了一眼，应该是升级这个文件，已经是libboost_system.so.1.66.0了
+                    把这个文件复制一份重命名为需要的65.1，又出现新错误：
+                    qbittorrent: symbol lookup error: qbittorrent: undefined symbol:
+                        ZN10libtorrent7session5startEiRKNS_13settings_packEPN5boost4asio10io_serviceE
+                    更新qbittorrent可以解决这个问题，但是新版本对纯ipv6似乎有bug
+                    有关解决方案与bug报告：
+                        https://github.com/qbittorrent/qBittorrent/issues/7983
+                        https://github.com/arvidn/libtorrent/issues/2689
+                        https://github.com/arvidn/libtorrent/pull/2692
+                        https://github.com/arvidn/libtorrent/pull/2692/commits/ad682397cb26ccb0e49dc6dde643257237fa441d
+                    似乎目前的选择是自己根据这个提交编译libtorrent或者等待更新，qbittorrent已更新至最新版，
+                        可以暂时用一个别的软件做种或者就直接不做种了，复习考试放假了
