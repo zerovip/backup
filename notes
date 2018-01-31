@@ -4,21 +4,10 @@
     11.学习java
     13.试着在两个系统中搞一下shadowsocks，洋葱，浏览器的代理与匿名等问题
     14.zsh配置git目录下的部分
-    16./var的空间清理一些
     17.改一下vim的配色，尤其是字符串那里，diff的时候什么都看不清
     18.可不可以删掉imagemagic6呢
-    19.为root更改密码
-    20.写一个收藏的手机app
-    21.
-    鲸鱼不是鱼
-    娃娃鱼不是鱼 是两栖动物
-    integral domian
-    直升飞机 不是 飞机
-    熊猫
-    22.坎巴拉太空计划试玩LINUX版，如果ok删掉WINDOWS版
-    23.fingding Paradise
-        ohm
     24.liberoffice中文乱码问题
+    25.rime明月拼音输入法的用户词库删除问题
 
 
 2.系统日志
@@ -182,3 +171,21 @@
                         https://github.com/arvidn/libtorrent/pull/2692/commits/ad682397cb26ccb0e49dc6dde643257237fa441d
                     似乎目前的选择是自己根据这个提交编译libtorrent或者等待更新，qbittorrent已更新至最新版，
                         可以暂时用一个别的软件做种或者就直接不做种了，复习考试放假了
+    2018.01.31    准备学习小鹤双拼，正好把rime这块的各种配置等整理一下，方便以后查阅
+                        1.安装ibus软件包, ibus-qt图形启动, ibus-rime输入法引擎
+                        2.初始安装：ibus-setup以及开机自动启动，忘记怎么做的了不过已经好了
+                        3.rime的配置文件在：~/.config/ibus/rime/default.custom.yaml
+                        4.法语、英语的输入可能在ibus的图形化里添加，包括切换也是在ibus里设置
+                        5.中文的输入方案，rime，是写在上面的配置文件里，用Ctrl+`来设置切换等
+                        6.输入法方案写到default.yaml里，再于xx.schema.yaml中声明它，
+                            再把码表放到xx.dict.yaml里就可以使用了
+                        7.修改配色等在weasel.custom.yaml里
+                        8.打特殊字符可以/然后xl或lm，是symbols.yaml在起作用
+                        9.教程可见：
+                            https://www.jianguoyun.com/p/DZISfzQQv_3jBRj4zgk
+                            http://tieba.baidu.com/p/4796473052
+                            https://www.jianshu.com/p/cffc0ea094a7
+                        10.目前看来我自己的配置有点乱，按照网上的搞法，有时间的话重新搞一下比较好
+                        11.小鹤的方案见GitHub的某个已经star了，放进来没毛病四字上屏
+                        12.目前正在用的就只有明月拼音方案和小鹤双拼方案，其他的哪些可以删除
+                            应该重新安装一次方便整理，不过现在看上去没有必要，看看用户词库怎么删除就行了
