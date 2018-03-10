@@ -8,6 +8,8 @@
     18.可不可以删掉imagemagic6呢
     24.liberoffice中文乱码问题
     25.rime明月拼音输入法的用户词库删除问题
+    26.rime 拼音
+    27.antconc 摩登家庭
 
 
 2.系统日志
@@ -189,3 +191,12 @@
                         11.小鹤的方案见GitHub的某个已经star了，放进来没毛病四字上屏
                         12.目前正在用的就只有明月拼音方案和小鹤双拼方案，其他的哪些可以删除
                             应该重新安装一次方便整理，不过现在看上去没有必要，看看用户词库怎么删除就行了
+    2018.03.10    重新安装了ibus-rime，首先sudo pacman -Rsn ibus-rime
+                        然后删除用户文件，rm -rf .config/ibus/rime
+                        重新安装，sudo pacman -S ibus-rime
+                        可以看到/usr/share/rime-data文件夹下自带了太多的输入方案，
+                            而.config/ibus/rime下只有两个文件两个文件夹，整洁多了
+                        新建default.custom.yaml，把所有输入方案写进去，需要的去掉注释
+                            参考了https://github.com/rime/home/wiki/UserGuide
+                                https://github.com/rime/home/wiki/RimeWithSchemata
+                        页面设置还没有做，以后有时间再说
