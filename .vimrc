@@ -29,10 +29,10 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " original repos on github<br>Bundle 'mattn/zencoding-vim'
-Bundle 'drmingdrmer/xptemplate'
+Plugin 'drmingdrmer/xptemplate'
 
 " 自动补全单引号，双引号等
-Bundle 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 
 " for python docstring ", 特别有用
 au FileType python let b:delimitMate_nesting_quotes = ['"']
@@ -40,7 +40,7 @@ au FileType python let b:delimitMate_nesting_quotes = ['"']
 "au FileType mail let b:delimitMate_autoclose = 0
 
 " vim-scripts repos
-Bundle 'kien/rainbow_parentheses.vim'
+Plugin 'kien/rainbow_parentheses.vim'
 let g:rbpt_colorpairs = [
     \ ['red',         'firebrick3'],
     \ ['brown',       'firebrick3'],
@@ -67,21 +67,21 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 " 注释的时候自动加个空格, 强迫症必配
 let g:NERDSpaceDelims=1
 
-Bundle 'bronson/vim-trailing-whitespace'
+Plugin 'bronson/vim-trailing-whitespace'
 map <leader><space> :FixWhitespace<cr>
 
-Bundle 'docunext/closetag.vim'
+Plugin 'docunext/closetag.vim'
 let g:closetag_html_style=1
 
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-Bundle 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 let g:multi_cursor_use_default_mapping=0
 " Default mapping
 let g:multi_cursor_next_key='<C-m>'
@@ -89,26 +89,26 @@ let g:multi_cursor_prev_key='<C-n>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
-Bundle 'rkulla/pydiction'
+Plugin 'rkulla/pydiction'
 let g:pydiction_menu_height = 20
 
-Bundle 'yssource/python.vim'
+Plugin 'yssource/python.vim'
 
-Bundle 'kevinw/pyflakes-vim'
+Plugin 'kevinw/pyflakes-vim'
 let g:pyflakes_use_quickfix = 0
 
-Bundle 'Lokaltog/vim-powerline'
+Plugin 'Lokaltog/vim-powerline'
 set laststatus=2
 
-"Bundle 'majutsushi/tagbar'
+"Plugin 'majutsushi/tagbar'
 "nmap <F8> :TagbarToggle<CR>
 
-Bundle 'rking/ag.vim'
+Plugin 'rking/ag.vim'
 let g:ag_working_path_mode="r"
 
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
 "设置过滤不进行查找的后缀名
@@ -119,7 +119,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " latex自动补全等
-Bundle 'vim-latex/vim-latex'
+Plugin 'vim-latex/vim-latex'
 set shellslash
 set grepprg=grep\ -nH\ $*
 filetype indent on
@@ -128,11 +128,10 @@ set iskeyword+=:
 autocmd BufEnter *.tex set sw=2
 
 " latex实时预览工具
-Bundle 'xuhdev/vim-latex-live-preview'
+Plugin 'xuhdev/vim-latex-live-preview'
 let g:livepreview_previewer = 'okular'
 let g:livepreview_engine = 'xelatex'
 autocmd Filetype tex setl updatetime=30
-
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
