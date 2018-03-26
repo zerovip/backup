@@ -130,7 +130,7 @@ autocmd BufEnter *.tex set sw=2
 " latex实时预览工具
 Plugin 'xuhdev/vim-latex-live-preview'
 let g:livepreview_previewer = 'okular'
-let g:livepreview_engine = 'xelatex'
+let g:livepreview_engine = 'pdflatex'
 autocmd Filetype tex setl updatetime=30
 
 " To ignore plugin indent changes, instead use:
