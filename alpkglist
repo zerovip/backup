@@ -29,6 +29,7 @@ cdrtools
 coreutils
 cpupower
 crda
+create_ap
 cronie
 cryptsetup
 cups
@@ -331,6 +332,7 @@ vcdimager
 vim
 vim-spell-en
 which
+wireshark-qt
 wpa_supplicant
 xdg-su
 xdg-user-dirs
