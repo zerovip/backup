@@ -9,6 +9,7 @@ android-udev
 ark
 aspell-en
 autoconf
+autojump
 automake
 avahi
 b43-fwcutter
@@ -75,7 +76,7 @@ ghostscript
 git
 glibc
 gnome-icon-theme
-gnome-themes-standard
+gnome-themes-extra
 grep
 grub
 gsfonts
@@ -161,7 +162,7 @@ libcanberra-gstreamer
 libcanberra-pulse
 libdvdcss
 libreoffice-still
-libreoffice-still-zh-CN
+libreoffice-still-zh-cn
 libtool
 licenses
 linux414

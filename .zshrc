@@ -19,7 +19,12 @@ echo -ne "\n"
 if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
   . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
-# 语法高亮插件，模仿fish
+#语法高亮插件，模仿fish
+
+if [[ -f /usr/share/autojump/autojump.zsh ]]; then
+  . /usr/share/autojump/autojump.zsh
+fi
+#autojump插件
 
 
 #------------------------------
