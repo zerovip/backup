@@ -78,8 +78,17 @@ Plugin 'docunext/closetag.vim'
 let g:closetag_html_style=1
 
 Plugin 'scrooloose/nerdtree'
-autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree | wincmd p
+" open a NERDTree automatically when vim starts up and move the cursor to the
+" file editing aera
+autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" open a NERDTree automatically when vim starts up if no files were specified
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" open NERDTree automatically when vim starts up on opening a directory
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" close vim if the only window left open is a NERDTree
+
 
 Plugin 'terryma/vim-multiple-cursors'
 let g:multi_cursor_use_default_mapping=0

@@ -5,6 +5,7 @@ cp ~/notes ~/backup/backup/
 cp ~/backup/AutoBackup.sh ~/backup/backup/
 cp /etc/fstab ~/backup/backup/
 cp ~/.config/ibus/rime/default.custom.yaml ~/backup/backup/
+cp -r /boot/grub/themes/allurez ~/backup/backup/
 ###  cp /etc/udev/rules.d/90-android-tethering.rules ~/backup/backup/
 ###  cp /etc/systemd/network/50-enp0s20u2.network ~/backup/backup/
 pacman -Qeq | sort > ~/backup/backup/alpkglist

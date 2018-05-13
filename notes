@@ -11,6 +11,7 @@
     28.vim进入后光标在右
     29.aboboo
     30.修改包nc
+    31.vimrc里各种插件重新梳理一遍
 
 
 2.系统日志
@@ -201,3 +202,14 @@
                             参考了https://github.com/rime/home/wiki/UserGuide
                                 https://github.com/rime/home/wiki/RimeWithSchemata
                         页面设置还没有做，以后有时间再说
+    2018.05.10    之前安装了windows 1803更新，就把grub的背景什么的统一改了
+                        详见：
+                        http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial
+                        https://www.gnu.org/software/grub/manual/grub/grub.html
+                        主要是两个文件：
+                        /etc/default/grub
+                        /boot/grub/theme/xxx/theme.txt
+                        这次做了自己的主题叫allurez，
+                        偶然发现改了theme.txt后不需要 sudo update-grub 就能生效
+                        另一个学习到的命令是：grub-mkfont，制作grub字体用的。
+    2018.05.13    把vimrc里面nerdtree光标问题弄好了
