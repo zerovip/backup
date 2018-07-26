@@ -1,5 +1,9 @@
 js
 lib32-libtxc_dxtn
+lib32-smpeg2
 libkcddb4
 libtxc_dxtn
 openslp
+pcmciautils
+smpeg2
+zd1211-firmware

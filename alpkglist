@@ -70,6 +70,7 @@ flashplugin
 flex
 gawk
 gcc
+gcc-fortran
 gcc-libs
 gettext
 ghostscript
@@ -240,7 +241,7 @@ perl-file-mimeinfo
 perl-uri
 phonon-qt4-gstreamer
 phonon-qt5-gstreamer
-pkg-config
+pkgconf
 plasma5-themes-breath
 plasma5-themes-maia
 plasma-desktop
@@ -263,7 +264,6 @@ python-pip
 python-pyqt5
 python-pysmbc
 python-reportlab
-qbittorrent
 qt5-imageformats
 qt5-translations
 qt5-virtualkeyboard
@@ -315,6 +315,7 @@ texlive-publishers
 texlive-science
 thunderbird-i18n-en-us
 thunderbird-i18n-zh-cn
+tk
 tlp
 transcode
 transmission-qt
