@@ -71,7 +71,7 @@ alias ll='ls -l'
 alias la='ls -a'
 alias vi='vim'
 alias grep="grep --color=auto"
-alias -s py=vi    # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+#alias -s py=vi    # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
 #alias -s js=vi    #暂时用不到
 #alias -s c=vi
 #alias -s java=vi

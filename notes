@@ -8,7 +8,6 @@
     18.可不可以删掉imagemagic6呢
     24.liberoffice中文乱码问题
     27.antconc 摩登家庭
-    28.vim进入后光标在右
     29.aboboo
     30.修改包nc
     31.vimrc里各种插件重新梳理一遍
@@ -17,6 +16,7 @@
 
 
 2.系统日志
+    一以贯之地坚持区分所有用户与个人用户，一切更改尽量在个人文件夹下进行！
     2017.01.18    挑选系统，选定ArchLinux
     2017.01.22    多次安装ArchLinux失败（/sbin/init does not exist.）
     2017.03.04    被人推荐，了解到Manjaro

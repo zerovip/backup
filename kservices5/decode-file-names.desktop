@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/allfiles;
+Actions=DecodeFileNames;
+Encoding=UTF-8
+
+[Desktop Action DecodeFileNames]
+Name=Decode File Names
+Name[zh_CN]=解决乱码文件名
+Exec=~/.bin/my_DeFName %f
