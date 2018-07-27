@@ -12,7 +12,6 @@
     30.修改包nc
     31.vimrc里各种插件重新梳理一遍
     32.sweave有点意思，R+latex
-    33.编写文件名乱码修改脚本
 
 
 2.系统日志
@@ -214,4 +213,8 @@
                         这次做了自己的主题叫allurez，
                         偶然发现改了theme.txt后不需要 sudo update-grub 就能生效
                         另一个学习到的命令是：grub-mkfont，制作grub字体用的。
-    2018.05.13    把vimrc里面nerdtree光标问题弄好了
+    2018.05.13    把vimrc里面nerdtree光标问题弄好了，打开vim直接进右侧
+    2018.07.28    文件名乱码问题搞定，在~/.bin/文件夹下写了python的脚本my_DeFName可直接
+                        my_DeFName file1 file2 ...解决
+                        同时在~/.local/share/kservices5/文件夹下写了decode-file-names.desktop
+                        使得可以在图形界面Dolphin 右键-动作-解决乱码文件名 搞定
