@@ -4,5 +4,5 @@ import os
 from urllib import parse
 for oldName in sys.argv:
     # 暂时仅支持url乱码，日后进一步扩充
-    newName=parse.unquote(oldName)
+    newName = parse.unquote(oldName)
     os.rename(oldName, newName)
