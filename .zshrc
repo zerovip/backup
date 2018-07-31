@@ -26,6 +26,12 @@ if [[ -f /usr/share/autojump/autojump.zsh ]]; then
 fi
 #autojump插件
 
+# if [[ -f /usr/share/zsh/plugins/incr/incr-0.2.zsh ]]; then
+#   . /usr/share/zsh/plugins/incr/incr-0.2.zsh
+# fi
+# 暂时先不用，有点过于酸爽了
+#incr插件，非使用pacman安装，于官网http://mimosa-pudica.net/zsh-incremental.html下载
+
 
 #------------------------------
 # 2.历史
