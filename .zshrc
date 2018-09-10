@@ -8,7 +8,7 @@
 #-----------------------------
 # 0.启动语
 #-----------------------------
-echo -ne "Welcome, handsome! Today is "; date '+%Y-%m-%d, %A'
+echo -ne "Hey, handsome! Today is "; date '+%Y-%m-%d, %A'
 echo -ne "Have a NICE day!"
 echo -ne "\n"
 

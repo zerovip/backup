@@ -27,6 +27,7 @@ bzip2
 cdparanoia
 cdrdao
 cdrtools
+ckan
 coreutils
 cpupower
 crda
@@ -98,7 +99,8 @@ gwenview
 gzip
 haveged
 htop
-hunspell-en
+hunspell-en_AU
+hunspell-en_CA
 hunspell-en_US
 hyphen-en
 ibus
@@ -200,6 +202,7 @@ mkinitcpio-openswap
 mlocate
 mobile-broadband-provider-info
 modemmanager
+mono
 movit
 mpd
 mtpfs
@@ -267,7 +270,6 @@ python-reportlab
 qt5-imageformats
 qt5-translations
 qt5-virtualkeyboard
-r
 recordmydesktop
 reiserfsprogs
 rsync
@@ -331,6 +333,7 @@ unzip
 usbutils
 user-manager
 util-linux
+v2ray
 vcdimager
 vim
 vim-spell-en

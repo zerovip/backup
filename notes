@@ -2,7 +2,6 @@
     5.AndriodStudio
     9.熟悉python的venv
     11.学习java
-    13.试着在两个系统中搞一下shadowsocks，洋葱，浏览器的代理与匿名等问题
     14.zsh配置git目录下的部分
     17.改一下vim的配色，尤其是字符串那里，diff的时候什么都看不清
     18.可不可以删掉imagemagic6呢
@@ -13,6 +12,13 @@
     31.vimrc里各种插件重新梳理一遍
     32.sweave有点意思，R+latex
     33.进一步支持除了url乱码以外的其他乱码
+    34.愿意的话可以安装tor等
+    35.mathematic的残留需要清理，
+        卸载是因为1.某次系统升级后mathematic依赖的一个东西升级了可能，所以就没法用了；
+                2.付费软件还是暂时先不用吧，此linux应拥抱开源，尽量安装库里有的和aur里有的。
+        目前只是按照http://support.wolfram.com/kb/12473的方法删除了几个文件夹，
+            包括但不限于zsh的语法高亮里、开始菜单的痕迹需要清除
+            以后如果不得不安装的话试试sagemath\mathletics等
 
 
 2.系统日志

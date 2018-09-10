@@ -20,7 +20,6 @@ bluedevil
 bluez-utils
 breeze
 breeze-gtk
-breeze-kde4
 btrfs-progs
 bumblebee
 bzip2
@@ -98,7 +97,8 @@ gwenview
 gzip
 haveged
 htop
-hunspell-en
+hunspell-en_AU
+hunspell-en_CA
 hunspell-en_US
 hyphen-en
 ibus
@@ -124,7 +124,6 @@ kcalc
 kdeconnect
 kdegraphics-thumbnailers
 kde-gtk-config
-kde-l10n-zh_cn
 kdenetwork-filesharing
 kdeplasma-addons
 kde-servicemenus-rootactions
@@ -200,6 +199,7 @@ mkinitcpio-openswap
 mlocate
 mobile-broadband-provider-info
 modemmanager
+mono
 movit
 mpd
 mtpfs
@@ -228,7 +228,6 @@ openssh
 os-prober
 oxygen
 oxygen-icons
-oxygen-kde4
 p7zip
 pacman
 partitionmanager
@@ -238,7 +237,6 @@ pciutils
 perl
 perl-file-mimeinfo
 perl-uri
-phonon-qt4-gstreamer
 phonon-qt5-gstreamer
 pkgconf
 plasma5-themes-breath
@@ -266,7 +264,6 @@ python-reportlab
 qt5-imageformats
 qt5-translations
 qt5-virtualkeyboard
-r
 recordmydesktop
 reiserfsprogs
 rsync
@@ -330,6 +327,7 @@ unzip
 usbutils
 user-manager
 util-linux
+v2ray
 vcdimager
 vim
 vim-spell-en
