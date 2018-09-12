@@ -225,3 +225,6 @@
                         my_DeFName file1 file2 ...解决
                         同时在~/.local/share/kservices5/文件夹下写了decode-file-names.desktop
                         使得可以在图形界面Dolphin 右键-动作-解决乱码文件名 搞定
+    2018.09.14    windows安装又卸载了texlive，感觉没卸载干净，只是用texmanager删了些包，
+                        然后把没办法的文件夹都直接手动删掉了
+                        linux上安装了texstudio，一切为了方便。
