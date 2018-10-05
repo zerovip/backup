@@ -261,6 +261,7 @@ python-pip
 python-pyqt5
 python-pysmbc
 python-reportlab
+qbittorrent
 qt5-imageformats
 qt5-translations
 qt5-virtualkeyboard
@@ -315,7 +316,6 @@ thunderbird-i18n-zh-cn
 tk
 tlp
 transcode
-transmission-qt
 ttf-bitstream-vera
 ttf-droid
 ttf-inconsolata
