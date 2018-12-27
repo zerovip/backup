@@ -165,10 +165,10 @@ libreoffice-still
 libreoffice-still-zh-cn
 libtool
 licenses
-linux414
-linux414-bbswitch
-linux414-nvidia
-linux414-r8168
+linux419
+linux419-bbswitch
+linux419-nvidia
+linux419-r8168
 linux-firmware
 logrotate
 lsb-release
@@ -277,7 +277,6 @@ sddm-kcm
 sddm-maia-theme
 sed
 shadow
-shadowsocks-libev
 skanlite
 smplayer
 s-nail

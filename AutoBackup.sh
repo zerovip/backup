@@ -20,3 +20,8 @@ git add .
 date=`date +%Y%m%d`
 git commit -m "Auto Backuping on "$date
 git push
+
+cd ~/math-works
+git add .
+git commit -m "Auto Backuping on "$date
+git push
