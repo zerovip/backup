@@ -70,6 +70,7 @@ firefox-i18n-en-us
 firefox-i18n-zh-cn
 flashplugin
 flex
+frei0r-plugins
 gawk
 gcc
 gcc-fortran
@@ -130,6 +131,7 @@ kdegraphics-thumbnailers
 kde-gtk-config
 kde-l10n-zh_cn
 kdenetwork-filesharing
+kdenlive
 kdeplasma-addons
 kde-servicemenus-rootactions
 keditbookmarks
