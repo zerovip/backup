@@ -117,6 +117,7 @@ autoload colors
 colors
 #打开颜色显示
 
+
 PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%C $ "
 #自定义命令提示符
 

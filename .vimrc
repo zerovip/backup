@@ -67,9 +67,9 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-Plugin 'scrooloose/nerdcommenter'
+"Plugin 'scrooloose/nerdcommenter'
 " 注释的时候自动加个空格, 强迫症必配
-let g:NERDSpaceDelims=1
+"let g:NERDSpaceDelims=1
 
 Plugin 'bronson/vim-trailing-whitespace'
 map <leader><space> :FixWhitespace<cr>
@@ -100,13 +100,13 @@ let g:multi_cursor_quit_key='<Esc>'
 
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'rkulla/pydiction'
-let g:pydiction_menu_height = 20
+"Plugin 'rkulla/pydiction'
+"let g:pydiction_menu_height = 20
 
-Plugin 'yssource/python.vim'
+"Plugin 'yssource/python.vim'
 
-Plugin 'kevinw/pyflakes-vim'
-let g:pyflakes_use_quickfix = 0
+"Plugin 'kevinw/pyflakes-vim'
+"let g:pyflakes_use_quickfix = 0
 
 Plugin 'Lokaltog/vim-powerline'
 set laststatus=2
@@ -180,12 +180,13 @@ runtime! archlinux.vim
 
 
 " Startup {{{
+set nofoldenable
 filetype indent plugin on
 " vim 文件折叠方式为 marker
-augroup ft_vim
-    au!
-    au FileType vim setlocal foldmethod=marker
-augroup END
+"augroup ft_vim
+""    au!
+""    au FileType vim setlocal foldmethod=marker
+"augroup END
 " }}}
 
 " General {{{
