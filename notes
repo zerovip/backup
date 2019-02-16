@@ -238,3 +238,40 @@
                         虚拟环境：新建：python3.7 -m venv the-name-of-venv
                                   激活：source the/path/of/venv/bin/activate
                                   反激活：deactivate
+    2019.02.16    词典mdd与mdx导出工作终于完成，pyglossary大法好
+                        1.一开始是在linux上进行的，但出现了模块错误，没法import gi，而且找不到某个
+                            3.7的模块no module named pyglossary.plugin_lib.py37，
+                            并出现提示语说在python3.5下可能可以
+                        2.转战windows，安装python3.5，因为自带Tkinter所以ui没问题，但读取mdx
+                            需要python-lzo，安装这个模块时遇到很多问题：
+                                2.1首先是please set LZO_DIR to where the lzo source lives，
+                                    通过直接下载python-lzo安装文件硬改LZO_DIR那一行（44行）解决
+                                2.2接下来是unable to find vcvarsall.bat，反复下载尝试再卸载再尝试安装微软的vs，
+                                    最后通过谷歌发现应该在安装Visual Studio community 2015时勾选安装
+                                    Common Tools for Visual C++ 2015
+                                2.3最后是（？？？待再尝试）问题，终于崩溃
+                        3.再转战回linux，毕竟linux用pip把python-lzo简简单单就安装好了
+                            3.1首先是python版本问题，通过AUR安装了python3.5，解决了一个问题
+                            3.2接着是新的venv，叫anki_env，在venv里安装了python-lzo，离顺利解决问题只
+                                剩下gi的问题
+                            3.3gi是一个严重的问题，python3.7里可以import gi，但3.5里不行，venv里更不行，
+                                3.3.1.网上一个说法是软链接，
+                                    ln -s /usr/lib/python3.7/site-packages/gi /usr/lib/python3.5/site-packages/
+                                    ln -s /usr/lib/python3.7/site-packages/gi ./anki_env/lib/python3.5/site-packages/
+                                    上述两行命令均不能使问题得到解决，报错为
+                                        Traceback (most recent call last):
+                                        File "<stdin>", line 1, in <module>
+                                        File "/usr/lib/python3.5/site-packages/gi/__init__.py", line 42, in <module>
+                                            from . import _gi
+                                        ImportError: cannot import name '_gi'
+                                3.3.2.网上另一说法是安装pygobject，尝试
+                                        python3.5 -m pip install pygobject
+                                    有报错：
+                                        Package 'gobject-introspection-1.0', required by 'virtual:world', not found
+                                    尝试安装所缺文件：
+                                        sudo pacman -S gobject-introspection
+                                    再给大权限安装pygobject
+                                        sudo python3.5 -m pip install pygobject
+                                    则无论python3.5还是venv里均可以import gi
+                        至此问题全部解决，顺利完成转换，结果上看没有比之前用的righthandabacus/mdict_reader效果更好，
+                        还是要进行正则表达式的处理工作。
