@@ -249,7 +249,8 @@
                                 2.2接下来是unable to find vcvarsall.bat，反复下载尝试再卸载再尝试安装微软的vs，
                                     最后通过谷歌发现应该在安装Visual Studio community 2015时勾选安装
                                     Common Tools for Visual C++ 2015
-                                2.3最后是（？？？待再尝试）问题，终于崩溃
+                                2.3最后是lzomodule.c(35):fatal error C1083: Cannot openinclude file:
+                                    'lzo/lzolx.h': No such a file or directory 问题，终于崩溃
                         3.再转战回linux，毕竟linux用pip把python-lzo简简单单就安装好了
                             3.1首先是python版本问题，通过AUR安装了python3.5，解决了一个问题
                             3.2接着是新的venv，叫anki_env，在venv里安装了python-lzo，离顺利解决问题只
