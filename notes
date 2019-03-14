@@ -22,6 +22,7 @@
     36.学习anki，英语把goldendict里的collins单词做一遍筛出7000来
         繁体字把一个网站爬一遍
         数学的东西慢慢自己手打就行
+    37.博客问题：初步决定，hugo+git pages+travis+pandoc+cupper
 
 
 2.系统日志
@@ -274,5 +275,6 @@
                                     再给大权限安装pygobject
                                         sudo python3.5 -m pip install pygobject
                                     则无论python3.5还是venv里均可以import gi
+                                    3月8日尝试后发现第二行的软链接还是有用的.
                         至此问题全部解决，顺利完成转换，结果上看没有比之前用的righthandabacus/mdict_reader效果更好，
                         还是要进行正则表达式的处理工作。
