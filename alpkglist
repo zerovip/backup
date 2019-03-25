@@ -22,6 +22,7 @@ bluez-utils
 breeze
 breeze-gtk
 breeze-kde4
+bspwm
 btrfs-progs
 bumblebee
 bzip2
@@ -299,6 +300,7 @@ steam-manjaro
 steam-native
 subversion
 sudo
+sxhkd
 sysfsutils
 system-config-printer
 systemd-kcm
@@ -362,6 +364,11 @@ xorg-twm
 xorg-xinit
 yakuake
 yaourt
+zathura
+zathura-cb
+zathura-djvu
+zathura-pdf-mupdf
+zathura-ps
 zd1211-firmware
 zip
 zsh

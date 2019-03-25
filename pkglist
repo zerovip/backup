@@ -21,6 +21,7 @@ bluedevil
 bluez-utils
 breeze
 breeze-gtk
+bspwm
 btrfs-progs
 bumblebee
 bzip2
@@ -293,6 +294,7 @@ steam-manjaro
 steam-native
 subversion
 sudo
+sxhkd
 sysfsutils
 system-config-printer
 systemd-kcm
@@ -356,6 +358,11 @@ xorg-twm
 xorg-xinit
 yakuake
 yaourt
+zathura
+zathura-cb
+zathura-djvu
+zathura-pdf-mupdf
+zathura-ps
 zip
 zsh
 zsh-syntax-highlighting
