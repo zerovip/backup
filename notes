@@ -1,6 +1,5 @@
 1.系统配置计划
     5.AndriodStudio
-    9.熟悉python的venv
     11.学习java
     14.zsh配置git目录下的部分
     17.改一下vim的配色，尤其是字符串那里，diff的时候什么都看不清
@@ -9,7 +8,6 @@
     27.antconc 摩登家庭
     29.aboboo
     30.修改包nc
-    31.vimrc里各种插件重新梳理一遍
     32.sweave有点意思，R+latex
     33.进一步支持除了url乱码以外的其他乱码
     34.愿意的话可以安装tor等
@@ -19,7 +17,7 @@
         目前只是按照http://support.wolfram.com/kb/12473的方法删除了几个文件夹，
             包括但不限于zsh的语法高亮
             以后如果不得不安装的话试试sagemath\mathletics等
-    36.学习anki，英语把goldendict里的collins单词做一遍筛出7000来
+    36.学习anki，
         繁体字把一个网站爬一遍
         数学的东西慢慢自己手打就行
     37.博客问题：初步决定，hugo+git pages+travis+pandoc+cupper
@@ -53,7 +51,7 @@
                     如果出现了依赖问题，很有可能是网不好，其中一个包（如community）没有确认更新
     2017.04.06    把manjaro换了源，速度终于快了，像smplayer也有了。香港中文大学的很强
     2017.04.14    为了做数学笔记，安装了vim-tex插件，还在学习过程中；学会以后卸载掉texstudio
-    2017.04.15    zsh的配合稍微好看一点了，同时完成了双击esc添加去除sudo的功能（去掉blink -v就行了）
+    2017.04.15    zsh的配得稍微好看一点了，同时完成了双击esc添加去除sudo的功能（去掉blink -v就行了）
                     这样做的同时，用ctrl-a，ctrl-e也能回到这一行的前后了，大概就是emacs的操作方式嘛
     2017.04.16    把重要的配置文件进行了github的备份，并写了一个脚本，并换成git协议进行push
     2017.04.23    正在考虑使用WINDOWS10创意者更新。选项：
@@ -289,3 +287,7 @@
                         TODO：边框问题能不能去掉以及能不能显示出来kde的bar
                             有一些功能键好像是和系统的冲突，好好调整一下
                             主要就是把bspwm和sxhkd两个配置文件好好写一写
+    2019.04.04    bspwm 配置基本搞清楚了，配置文件目前写得还可以
+                        特别注意：
+                            监视器I II III IV V VI 都是这台电脑的屏幕, VII VIII 是 HDMI 的输出屏幕, IX Ｘ 是一个叫 VISUAL 的输出屏幕
+                            配置见 ~/.config/bspwm/bspwmrc, 输出的监视器底部没有做缩进（为了pannel），需要有机会接上外接显示器测试一下
