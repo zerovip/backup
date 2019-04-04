@@ -28,17 +28,16 @@ Plugin 'VundleVim/Vundle.vim'
 "" different version somewhere else.
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
+" 自动补全后半个括号引号之类的
+Plugin 'jiangmiao/auto-pairs'
+
+
 " original repos on github<br>Bundle 'mattn/zencoding-vim'
 Plugin 'drmingdrmer/xptemplate'
 
-" 自动补全单引号，双引号等
-Plugin 'Raimondi/delimitMate'
 
-" for python docstring ", 特别有用
-au FileType python let b:delimitMate_nesting_quotes = ['"']
-" 关闭某些类型文件的自动补全
-"au FileType mail let b:delimitMate_autoclose = 0
 
+" 让括号有颜色的插件
 " vim-scripts repos
 Plugin 'kien/rainbow_parentheses.vim'
 let g:rbpt_colorpairs = [
@@ -67,29 +66,23 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-"Plugin 'scrooloose/nerdcommenter'
-" 注释的时候自动加个空格, 强迫症必配
-"let g:NERDSpaceDelims=1
 
-Plugin 'bronson/vim-trailing-whitespace'
-map <leader><space> :FixWhitespace<cr>
-
-Plugin 'docunext/closetag.vim'
-let g:closetag_html_style=1
-
-Plugin 'scrooloose/nerdtree'
-autocmd vimenter * NERDTree | wincmd p
-" open a NERDTree automatically when vim starts up and move the cursor to the
-" file editing aera
-autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" open a NERDTree automatically when vim starts up if no files were specified
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-" open NERDTree automatically when vim starts up on opening a directory
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" close vim if the only window left open is a NERDTree
+" 这里原本是左边nerdtree的插件，现在觉得没什么用.
+" 想恢复的话把顶头的注释去掉就行，空四个的注释是本来就有的注释.
+" Plugin 'scrooloose/nerdtree'
+" autocmd vimenter * NERDTree | wincmd p
+    " open a NERDTree automatically when vim starts up and move the cursor to the
+    " file editing aera
+" autocmd StdinReadPre * let s:std_in=1
+    " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    " open a NERDTree automatically when vim starts up if no files were specified
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+    " open NERDTree automatically when vim starts up on opening a directory
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+    " close vim if the only window left open is a NERDTree
 
 
+" 多光标操作插件
 Plugin 'terryma/vim-multiple-cursors'
 let g:multi_cursor_use_default_mapping=0
 " Default mapping
@@ -98,50 +91,26 @@ let g:multi_cursor_prev_key='<C-n>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
-Plugin 'tpope/vim-fugitive'
 
-"Plugin 'rkulla/pydiction'
-"let g:pydiction_menu_height = 20
+" 显示最下面状态信息的插件
+Plugin 'vim-airline/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
-"Plugin 'yssource/python.vim'
 
-"Plugin 'kevinw/pyflakes-vim'
-"let g:pyflakes_use_quickfix = 0
+" latex工具
+Plugin 'lervag/vimtex'
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
 
-Plugin 'Lokaltog/vim-powerline'
-set laststatus=2
-
-"Plugin 'majutsushi/tagbar'
-"nmap <F8> :TagbarToggle<CR>
-
-Plugin 'rking/ag.vim'
-let g:ag_working_path_mode="r"
-
-Plugin 'kien/ctrlp.vim'
-let g:ctrlp_map = '<C-p>'
-let g:ctrlp_cmd = 'CtrlP'
-"设置过滤不进行查找的后缀名
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|pyc)$'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" latex自动补全等
-Plugin 'vim-latex/vim-latex'
-set shellslash
-set grepprg=grep\ -nH\ $*
-filetype indent on
-let g:tex_flavor='latex'
-set iskeyword+=:
-autocmd BufEnter *.tex set sw=2
-
-" latex实时预览工具
-Plugin 'xuhdev/vim-latex-live-preview'
-let g:livepreview_previewer = 'okular'
-let g:livepreview_engine = 'pdflatex'
-autocmd Filetype tex setl updatetime=30
-
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "

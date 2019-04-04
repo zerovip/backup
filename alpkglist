@@ -211,6 +211,7 @@ modemmanager
 mono
 movit
 mpd
+mplayer
 mtpfs
 nano
 net-tools
@@ -351,6 +352,7 @@ wpa_supplicant
 xdg-su
 xdg-user-dirs
 xdg-utils
+xdotool
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-keyboard

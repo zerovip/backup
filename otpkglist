@@ -1,6 +1,7 @@
 attica-qt4
 breeze-kde4
 ckan
+gamin
 js
 kde-l10n-zh_cn
 kdelibs
@@ -17,4 +18,5 @@ phonon-qt4
 phonon-qt4-gstreamer
 polkit-qt4
 smpeg2
+yaourt
 zd1211-firmware
