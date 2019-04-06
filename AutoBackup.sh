@@ -31,10 +31,13 @@ cp -r ~/.bin ~/backup/backup/
 cp -r ~/.local/share/kservices5 ~/backup/backup/
 
 # bspwm 一个平铺窗口管理器的配置备份
-cp -r ~/.config/bspwm/bspwmrc ~/backup/backup/
+cp ~/.config/bspwm/bspwmrc ~/backup/backup/
 
 # bspwm 需要的监听键盘输入的 sxhkd 的配置备份
-cp -r ~/.config/sxhkd/sxhkdrc ~/backup/backup/
+cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
+
+# ctags 软件的额外配置文件（以便识别 latex 中的 \ref 和 \label）备份
+cp ~/.ctags ~/backup/backup/
 
 # 关于手机通过数据线共享无线网的配置备份
 ###  cp /etc/udev/rules.d/90-android-tethering.rules ~/backup/backup/

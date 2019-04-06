@@ -32,6 +32,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 
 
+" 代码补全，据说特别有用，还需要研究
 " original repos on github<br>Bundle 'mattn/zencoding-vim'
 Plugin 'drmingdrmer/xptemplate'
 
@@ -101,18 +102,51 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " latex工具
 Plugin 'lervag/vimtex'
+" 确保总能正确识别latex文件
 let g:tex_flavor='latex'
+" 确保有 clientsever 功能以便提供 feedback
+if empty(v:servername) && exists('*remote_startserver')
+    call remote_startserver('VIM')
+endif
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
 
 
+" 语法检查工具（可以动态显示）
+Plugin 'w0rp/ale'
+
+
+" 自动生成 tag 文件以便 ctrl + ］ / ctrl + O 可以迅速跳到比如 \label{a} \ref{a}
+Plugin 'ludovicchabant/vim-gutentags'
+" gutentags搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归 "
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
+
+" 所生成的数据文件的名称 "
+let g:gutentags_ctags_tagfile = '.tags'
+
+" 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录 "
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+" 检测 ~/.cache/tags 不存在就新建 "
+if !isdirectory(s:vim_tags)
+   silent! call mkdir(s:vim_tags, 'p')
+endif
+
+" 配置 ctags 的参数 " ctags 是系统软件，通过 pacman 安装的
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+
+
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+"filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -212,7 +246,9 @@ set nolist
 " set listchars=tab:▶\ ,eol:¬,trail:·,extends:>,precedes:<
 "set guifont=Inconsolata:h12:cANSI
 set guifont=Monaco:h13:cANSI:qDRAFT
-" }}}
+" 取消高亮一直生效（查找后）
+set nohlsearch
+"}}}
 
 " Format {{{
 set autoindent

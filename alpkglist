@@ -36,6 +36,7 @@ crda
 create_ap
 cronie
 cryptsetup
+ctags
 cups
 cups-pdf
 cups-pk-helper
@@ -99,6 +100,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
+gvim
 gwenview
 gzip
 haveged
@@ -198,6 +200,7 @@ manjaro-settings-manager-knotifier
 manjaro-system
 man-pages
 man-pages-zh_cn
+mathpix-snipping-tool
 mdadm
 memtest86+
 mesa-demos
@@ -343,7 +346,6 @@ user-manager
 util-linux
 v2ray
 vcdimager
-vim
 vim-spell-en
 which
 wine
@@ -364,7 +366,7 @@ xfsprogs
 xorg-server
 xorg-twm
 xorg-xinit
-yaourt
+yay
 zathura
 zathura-cb
 zathura-djvu

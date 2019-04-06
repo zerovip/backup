@@ -291,3 +291,12 @@
                         特别注意：
                             监视器I II III IV V VI 都是这台电脑的屏幕, VII VIII 是 HDMI 的输出屏幕, IX Ｘ 是一个叫 VISUAL 的输出屏幕
                             配置见 ~/.config/bspwm/bspwmrc, 输出的监视器底部没有做缩进（为了pannel），需要有机会接上外接显示器测试一下
+    2019.04.05    可恶的 yaourt , 换掉，现用 yay
+    2019.04.06    记录一些 vimtex 上的选择是有必要的：
+                        vim 换成 gvim 为了那个 clientserver
+                        后端编译：latexmk latexrun arara 还没有做选择
+                        拼写检查插件：ale
+                        snippets：neosnippet Ultisnip 还没做选择
+                        环境自适应：想用 vim-sandwich 还没试用
+                        自动加标签以便跳转 vim-gutentags
+

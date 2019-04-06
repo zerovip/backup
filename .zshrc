@@ -163,16 +163,16 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 #彩色补全菜单
 
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+unsetopt correct_all
+#关闭纠错功能，太愚蠢了
+
+# zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 #修正大小写
 
-zstyle ':completion:*' completer _complete _match _approximate
-zstyle ':completion:*:match:*' original only
-zstyle ':completion:*:approximate:*' max-errors 1 numeric
+# zstyle ':completion:*' completer _complete _match _approximate
+# zstyle ':completion:*:match:*' original only
+# zstyle ':completion:*:approximate:*' max-errors 1 numeric
 #错误校正
-
-setopt correctall
-#开启纠错功能
 
 compdef pkill=killall
 zstyle ':completion:*:*:kill:*' menu yes select

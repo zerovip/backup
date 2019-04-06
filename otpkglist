@@ -10,6 +10,7 @@ lib32-libtxc_dxtn
 lib32-smpeg2
 libkcddb4
 libtxc_dxtn
+mathpix-snipping-tool
 mhwd-nvidia-304xx
 openslp
 oxygen-kde4
@@ -18,5 +19,4 @@ phonon-qt4
 phonon-qt4-gstreamer
 polkit-qt4
 smpeg2
-yaourt
 zd1211-firmware

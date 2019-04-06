@@ -34,6 +34,7 @@ crda
 create_ap
 cronie
 cryptsetup
+ctags
 cups
 cups-pdf
 cups-pk-helper
@@ -97,6 +98,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
+gvim
 gwenview
 gzip
 haveged
@@ -337,7 +339,6 @@ user-manager
 util-linux
 v2ray
 vcdimager
-vim
 vim-spell-en
 which
 wine
@@ -358,6 +359,7 @@ xfsprogs
 xorg-server
 xorg-twm
 xorg-xinit
+yay
 zathura
 zathura-cb
 zathura-djvu
