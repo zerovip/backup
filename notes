@@ -298,5 +298,9 @@
                         拼写检查插件：ale
                         snippets：neosnippet Ultisnip 还没做选择
                         环境自适应：想用 vim-sandwich 还没试用
-                        自动加标签以便跳转 vim-gutentags
+                        安装 ctags ，以便生成标签，vim-gutentags 自动加标签插件
+                            ctags 的额外配置见 ~/.ctags，在 .tex 文件中使用时注意光标在 label 名称上才行
+                        vim-matchup 为了更好地匹配比如前后括号，if else begin end 等
+                        关于格式问题，貌似大多数数学家都是一个段落一行，自动折行
+                        关于 bib files，用到再说吧
 

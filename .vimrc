@@ -28,16 +28,17 @@ Plugin 'VundleVim/Vundle.vim'
 "" different version somewhere else.
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
+" 被动工具
 " 自动补全后半个括号引号之类的
 Plugin 'jiangmiao/auto-pairs'
 
 
 " 代码补全，据说特别有用，还需要研究
 " original repos on github<br>Bundle 'mattn/zencoding-vim'
-Plugin 'drmingdrmer/xptemplate'
+" Plugin 'drmingdrmer/xptemplate'
 
 
-
+" 被动工具
 " 让括号有颜色的插件
 " vim-scripts repos
 Plugin 'kien/rainbow_parentheses.vim'
@@ -83,6 +84,7 @@ au Syntax * RainbowParenthesesLoadBraces
     " close vim if the only window left open is a NERDTree
 
 
+" 还需要研究
 " 多光标操作插件
 Plugin 'terryma/vim-multiple-cursors'
 let g:multi_cursor_use_default_mapping=0
@@ -93,6 +95,7 @@ let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
 
+" 被动工具
 " 显示最下面状态信息的插件
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
@@ -114,10 +117,14 @@ set conceallevel=1
 let g:tex_conceal='abdmg'
 
 
+" 被动工具
 " 语法检查工具（可以动态显示）
 Plugin 'w0rp/ale'
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚡'
 
 
+" 半被动工具，需要提前 touch 一个 .project ，并需要保存生效
 " 自动生成 tag 文件以便 ctrl + ］ / ctrl + O 可以迅速跳到比如 \label{a} \ref{a}
 Plugin 'ludovicchabant/vim-gutentags'
 " gutentags搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归 "
@@ -140,6 +147,13 @@ let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
 
+" 还需要研究
+" 配对跳转前后文的，比如括号，if else，begin end 等
+Plugin 'andymass/vim-matchup'
+" 使用它而不是 vimtex 自带的 matchup
+let g:matchup_override_vimtex = 1
+" 如果复杂的 latex 文件 matchup 起来有点慢（光标有点走不动），可以要下面这一句
+" let g:matchup_matchparen_deferred = 1
 
 
 " All of your Plugins must be added before the following line
