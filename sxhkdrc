@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	konsole
+	xterm
 
 # program launcher
 # super + @space

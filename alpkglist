@@ -1,6 +1,9 @@
 acpi
 acpid
+adobe-source-han-sans-cn-fonts
+adobe-source-han-sans-tw-fonts
 adobe-source-han-serif-cn-fonts
+adobe-source-han-serif-tw-fonts
 advcp
 alsa-firmware
 alsa-utils
@@ -148,7 +151,6 @@ kio-extras
 kipi-plugins
 kleopatra
 kmenuedit
-konsole
 krita
 kscreen
 kscreenlocker
@@ -334,6 +336,7 @@ tlp
 transcode
 ttf-bitstream-vera
 ttf-droid
+ttf-fantasque-sans-mono
 ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
@@ -351,6 +354,7 @@ which
 wine
 wireshark-qt
 wpa_supplicant
+wqy-bitmapfont
 xdg-su
 xdg-user-dirs
 xdg-utils

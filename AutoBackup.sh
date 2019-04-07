@@ -39,6 +39,9 @@ cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
 # ctags 软件的额外配置文件（以便识别 latex 中的 \ref 和 \label）备份
 cp ~/.ctags ~/backup/backup/
 
+# Xsource 的配置文件，主要是对 Xterm 进行了配置
+cp ~/.Xresources ~/backup/backup
+
 # 关于手机通过数据线共享无线网的配置备份
 ###  cp /etc/udev/rules.d/90-android-tethering.rules ~/backup/backup/
 ###  cp /etc/systemd/network/50-enp0s20u2.network ~/backup/backup/
