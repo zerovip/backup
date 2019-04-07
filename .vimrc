@@ -234,10 +234,10 @@ language messages zh_CN.utf-8
 " GUI {{{
 autocmd GUIEnter * simalt ~x
 syntax enable
-colorscheme gruvbox
-"colorscheme desert
 set background=dark
 "colorscheme solarized
+"colorscheme desert
+colorscheme gruvbox
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 set cursorline
