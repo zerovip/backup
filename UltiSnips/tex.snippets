@@ -35,6 +35,7 @@ endglobal
 
 # 导言区
 snippet ima "数学文章-文档类声明 (initial math artical)" bA
+%! TEX program = XeLaTeX
 \documentclass[UTF8]{article}
 \usepackage{ctex}
 \usepackage{amsmath}
@@ -108,6 +109,10 @@ $2
 $0
 endsnippet
 
+snippet txt "数学环境中的文字环境 \text{}" A
+\text{$1}$0
+endsnippet
+
 snippet bgt "表格环境" bA
 \begin{table}[${1:htpb}]
 \centering
@@ -179,36 +184,40 @@ endsnippet
 
 
 # 数学括号
+priority 10
 context "math()"
-snippet \( "小括号" A
-\left( ${1:${VISUAL}} \right)$0
+snippet \( "小括号" iA
+\left( ${1:${VISUAL}}\right)$0
 endsnippet
 
+priority 10
 context "math()"
-snippet \[ "中括号" A
-\left[ ${1:${VISUAL}} \right]$0
+snippet \[ "中括号" iA
+\left[ ${1:${VISUAL}}\right]$0
 endsnippet
 
+priority 10
 context "math()"
-snippet \{ "大括号" A
-\left{ ${1:${VISUAL}} \right}$0
+snippet \{ "大括号" iA
+\left\{ ${1:${VISUAL}}\right\}$0
 endsnippet
 
+priority 10
 context "math()"
-snippet \< "尖括号" A
-\left\langle ${1:${VISUAL}} \right\rangle$0
+snippet \< "尖括号" iA
+\left\langle ${1:${VISUAL}}\right\rangle$0
 endsnippet
 
+priority 10
 context "math()"
-snippet \| "竖线括号" A
-\left| ${1:${VISUAL}} \right|$0
+snippet \| "竖线括号" iA
+\left| ${1:${VISUAL}}\right|$0
 endsnippet
-
 
 # 数学常用
 snippet mi "行内数学公式 (math inline)" wA
 $${1:${VISUAL}}$`!p
-if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ', ':']:
     snip.rv = ' '
 else:
     snip.rv = ''
@@ -264,37 +273,37 @@ endsnippet
 
 context "math()"
 snippet RR "实数" iA
-\mathbb{R} 
+\mathbb{R}
 endsnippet
 
 context "math()"
 snippet CC "复数" iA
-\mathbb{C} 
+\mathbb{C}
 endsnippet
 
 context "math()"
 snippet ZZ "整数" iA
-\mathbb{Z} 
+\mathbb{Z}
 endsnippet
 
 context "math()"
 snippet QQ "有理数" iA
-\mathbb{Q} 
+\mathbb{Q}
 endsnippet
 
 context "math()"
 snippet NN "自然数" iA
-\mathbb{N} 
+\mathbb{N}
 endsnippet
 
 context "math()"
 snippet mbb "空心字 \mathbb" iA
-\mathbb{${1:${VISUAL}}} $0
+\mathbb{${1:${VISUAL}}}$0
 endsnippet
 
 context "math()"
 snippet mcal "花体字 \mathbb" iA
-\mathcal{${1:${VISUAL}}} $0
+\mathcal{${1:${VISUAL}}}$0
 endsnippet
 
 context "math()"

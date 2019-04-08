@@ -110,6 +110,9 @@ if empty(v:servername) && exists('*remote_startserver')
 endif
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+" 指定编译器，不过这里 latexmk 也就是默认的
+let g:vimtex_compiler_method='latexmk'
+" 关于编译引擎，要写在文件里 %! TEX program = program
 
 
 " 被动工具，这东西是挺好，但我这个终端显示起来很难看
