@@ -110,15 +110,20 @@ if empty(v:servername) && exists('*remote_startserver')
 endif
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
-set conceallevel=1
-let g:tex_conceal='abdmg'
+
+
+" 被动工具，这东西是挺好，但我这个终端显示起来很难看
+" 用更漂亮的符号覆盖隐藏掉原始的 latex 代码
+"Plugin 'KeitaNakamura/tex-conceal.vim'
+"set conceallevel=2
+"let g:tex_conceal='abdgm'
 
 
 " 被动工具
 " 语法检查工具（可以动态显示）
 Plugin 'w0rp/ale'
-let g:ale_sign_error = '✗'
-let g:ale_sign_warning = '⚡'
+let g:ale_sign_error = '☓'
+let g:ale_sign_warning = 'ϟ'
 
 
 " 半被动工具，需要提前 touch 一个 .project ，并需要保存生效
@@ -167,7 +172,7 @@ set rtp+=~/codes
 " tab 键和另一个插件冲突。Trigger configuration. Do not use <tab> if
 " you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsListSnippets="<C-l>"
+let g:UltiSnipsListSnippets="<C-tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 " If you want :UltiSnipsEdit to split your window.
