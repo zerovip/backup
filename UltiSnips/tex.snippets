@@ -1,0 +1,55 @@
+# 本文件 ~/codes/UltiSnips/tex.snippets 
+# 应放置在这个固定位置，这是在 vimrc 中设置好了的
+# 前面有 "A" 表示自动展开
+# 前面有 "b" 表示只能在行首
+
+# TODO_LIST
+# 使用包自动写到导言区
+
+# 导言区
+snippet ima "bA 数学文章-文档类声明 (initial math artical)" bA
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+
+endsnippet
+
+snippet \use "bA 使用包 \usepackage{}" bA
+\usepackage{$1}
+$0
+endsnippet
+
+
+
+# 环境设置
+snippet bgd "bA 文档环境 (begin document)" bA
+\begin{document}
+$0
+
+\end{document}
+endsnippet
+
+snippet \beg "bA 其他环境 \begin{} \end{}" bA
+\begin{$1}
+$2
+\end{$1}
+$0
+endsnippet
+
+
+# 标题、章节等
+snippet \tit "bA 标题 \title" bA
+\title{$1}
+\author{$2}
+\date{$3}
+\maketitle
+
+$0
+endsnippet
+
+snippet sec "bA 一级章节" bA
+\section{$1}
+$0
+endsnippet

@@ -19,16 +19,16 @@ cp /etc/fstab ~/backup/backup/
 cp ~/.config/ibus/rime/default.custom.yaml ~/backup/backup/
 
 # 开机 GRUB 页面自己制作的主题备份
-cp -r /boot/grub/themes/allurez ~/backup/backup/
+cp -r /boot/grub/themes/allurez/ ~/backup/backup/
 
 # 确保 .bin（自己写的程序的地方） 自动加载到环境变量中
 cp ~/.zprofile ~/backup/backup/
 
 # 所有自己写的程序存放处
-cp -r ~/.bin ~/backup/backup/
+cp -r ~/.bin/ ~/backup/backup/
 
 # 应用在 plasma 的右击菜单中的自定义选项
-cp -r ~/.local/share/kservices5 ~/backup/backup/
+cp -r ~/.local/share/kservices5/ ~/backup/backup/
 
 # bspwm 一个平铺窗口管理器的配置备份
 cp ~/.config/bspwm/bspwmrc ~/backup/backup/
@@ -40,7 +40,10 @@ cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
 cp ~/.ctags ~/backup/backup/
 
 # Xsource 的配置文件，主要是对 Xterm 进行了配置
-cp ~/.Xresources ~/backup/backup
+cp ~/.Xresources ~/backup/backup/
+
+# vim 的 snippet 们
+cp -r ~/codes/UltiSnips/ ~/backup/backup/
 
 # 关于手机通过数据线共享无线网的配置备份
 ###  cp /etc/udev/rules.d/90-android-tethering.rules ~/backup/backup/

@@ -303,5 +303,5 @@
                         vim-matchup 为了更好地匹配比如前后括号，if else begin end 等
                         关于格式问题，貌似大多数数学家都是一个段落一行，自动折行
                         关于 bib files，用到再说吧
-    2019.04.07    换了 terminal ，现在是xterm
+    2019.04.07    换了 terminal ，现在是 xterm
 
