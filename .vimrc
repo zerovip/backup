@@ -117,9 +117,9 @@ let g:vimtex_compiler_method='latexmk'
 
 " 被动工具，这东西是挺好，但我这个终端显示起来很难看
 " 用更漂亮的符号覆盖隐藏掉原始的 latex 代码
-"Plugin 'KeitaNakamura/tex-conceal.vim'
-"set conceallevel=2
-"let g:tex_conceal='abdgm'
+    "Plugin 'KeitaNakamura/tex-conceal.vim'
+    "set conceallevel=2
+    "let g:tex_conceal='abdgm'
 
 
 " 被动工具
@@ -129,36 +129,36 @@ let g:ale_sign_error = '☓'
 let g:ale_sign_warning = 'ϟ'
 
 
-" 半被动工具，需要提前 touch 一个 .project ，并需要保存生效
+" 半被动工具，需要提前 touch 一个 .project，并需要保存生效，有点麻烦且不一定用得到
 " 自动生成 tag 文件以便 ctrl + ］ / ctrl + O 可以迅速跳到比如 \label{a} \ref{a}
-Plugin 'ludovicchabant/vim-gutentags'
+    "Plugin 'ludovicchabant/vim-gutentags'
 " gutentags搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归 "
-let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
+    "let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
 
 " 所生成的数据文件的名称 "
-let g:gutentags_ctags_tagfile = '.tags'
+    "let g:gutentags_ctags_tagfile = '.tags'
 
 " 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录 "
-let s:vim_tags = expand('~/.cache/tags')
-let g:gutentags_cache_dir = s:vim_tags
+    "let s:vim_tags = expand('~/.cache/tags')
+    "let g:gutentags_cache_dir = s:vim_tags
 " 检测 ~/.cache/tags 不存在就新建 "
-if !isdirectory(s:vim_tags)
-   silent! call mkdir(s:vim_tags, 'p')
-endif
+    "if !isdirectory(s:vim_tags)
+    "   silent! call mkdir(s:vim_tags, 'p')
+    "endif
 
 " 配置 ctags 的参数 " ctags 是系统软件，通过 pacman 安装的
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
-let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+    "let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+    "let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+    "let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
 
-" 还需要研究
+" 还需要研究，大概就是按 % 跳转。貌似并不会用得到
 " 配对跳转前后文的，比如括号，if else，begin end 等
-Plugin 'andymass/vim-matchup'
+    "Plugin 'andymass/vim-matchup'
 " 使用它而不是 vimtex 自带的 matchup
-let g:matchup_override_vimtex = 1
+    "let g:matchup_override_vimtex = 1
 " 如果复杂的 latex 文件 matchup 起来有点慢（光标有点走不动），可以要下面这一句
-" let g:matchup_matchparen_deferred = 1
+"let g:matchup_matchparen_deferred = 1
 
 
 " snips 工具
