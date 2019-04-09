@@ -24,6 +24,12 @@ cp -r /boot/grub/themes/allurez/ ~/backup/backup/
 # 确保 .bin（自己写的程序的地方） 自动加载到环境变量中
 cp ~/.zprofile ~/backup/backup/
 
+# .xprofile 这里是 ibus 输入法的一些自动启动项吧
+cp ~/.xprofile ~/backup/backup/
+
+# .xinitrc 应该没有做过任何改动，但以防万一还是备份一下
+cp ~/.xinitrc ~/backup/backup/
+
 # 所有自己写的程序存放处
 cp -r ~/.bin/ ~/backup/backup/
 
