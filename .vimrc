@@ -172,6 +172,7 @@ let g:UltiSnipsSnippetsDir = '~/codes/UltiSnips/'
 " let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 " 用的时候在每一个 rtp 下面找以 UltiSnipsSnippetDirectories 中元素命名的子文件夹下的模板片段文件，所以新建一个 rtp
 set rtp+=~/codes
+set rtp+=~/codes/current_course
 " tab 键和另一个插件冲突。Trigger configuration. Do not use <tab> if
 " you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
