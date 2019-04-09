@@ -304,7 +304,7 @@ set foldmethod=indent
 syntax on
 " }}}
 
-" Keymap {{{
+" Keymap {{{ 这个部分有时间好好学一下，能用好用的用上它，不好用的删掉
 let mapleader=","
 
 nmap <leader>s :source $VIM/_vimrc<cr>
@@ -375,6 +375,8 @@ nmap ,fp :let @*=substitute(expand("%:p"), "/", "\\", "g")<CR>
 nnoremap <C-left> :bn<CR>
 nnoremap <C-right> :bp<CR>
 
+" 插入模式下 F3 保存 
+inoremap <F3> <C-o>:w<CR>
 " }}}
 
 
