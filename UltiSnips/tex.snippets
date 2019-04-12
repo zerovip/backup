@@ -99,7 +99,6 @@ snippet bga "对齐环境 (begin aligned)" A
 \begin{aligned}
 $1
 \end{aligned}
-$0
 endsnippet
 
 snippet bgo "其他环境 \begin{} \end{}" A
@@ -133,6 +132,12 @@ ${2:\includegraphics[width=0.8\textwidth]{$3}}
 \end{figure}
 endsnippet
 
+snippet mnt "我的笔记环境" bA
+\begin{MyNotes}
+$1
+\end{MyNotes}
+$0
+endsnippet
 
 
 # 文章结构
@@ -222,7 +227,7 @@ endsnippet
 snippet dm "行间数学公式 (display math)" wA
 \[
 ${1:${VISUAL}}
-.\]
+\]
 $0
 endsnippet
 
