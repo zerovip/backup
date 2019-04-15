@@ -101,6 +101,13 @@ $1
 \end{aligned}
 endsnippet
 
+# 以后试着学习写一个nxm矩阵的（n、m是变量）
+# 非圆括号的以后也包括进来
+context "math()"
+snippet 22bgm "圆括号2x2矩阵" iA
+\begin{pmatrix} $1 & $2 \\\\ $3 & $4 \end{pmatrix}
+endsnippet
+
 snippet bgo "其他环境 \begin{} \end{}" A
 \begin{$1}
 $2
@@ -221,7 +228,7 @@ endsnippet
 # 数学常用
 snippet mi "行内数学公式 (math inline)" wA
 $${1:${VISUAL}}$`!p
-if t[2] and t[2][0] not in [',', '.', '?', '-', ' ', ':']:
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ', ':', ';']:
     snip.rv = ' '
 else:
     snip.rv = ''
