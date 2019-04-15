@@ -108,8 +108,12 @@ $2
 $0
 endsnippet
 
-snippet txt "数学环境中的文字环境 \text{}" A
+snippet txt "数学环境中的文字环境 \text{}" iA
 \text{$1}$0
+endsnippet
+
+snippet tcc "圈环境 \textcircled{}" iA
+\textcircled{$1}$0
 endsnippet
 
 snippet bgt "表格环境" bA
@@ -201,7 +205,7 @@ endsnippet
 
 context "math()"
 snippet \{ "大括号" iA
-\left\{ ${1:${VISUAL}}\right\}$0
+\left\\{ ${1:${VISUAL}}\right\\}$0
 endsnippet
 
 context "math()"
@@ -229,6 +233,10 @@ snippet dm "行间数学公式 (display math)" wA
 ${1:${VISUAL}}
 \]
 $0
+endsnippet
+
+snippet \\\ "反斜杠 \backslash" iA
+\backslash 
 endsnippet
 
 context "math()"
@@ -346,11 +354,12 @@ snippet // "分数" iA
 \frac{$1}{$2}$0
 endsnippet
 
+# 还需要学一下重新写
 # 自动分数在分子是数的时候很常用，比如分之1时输入 "1/" 就可以了
-context "math()"
-snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "数字分子自动分数" wrA
-\\frac{`!p snip.rv = match.group(1)`}{$1}$0
-endsnippet
+#context "math()"
+#snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "数字分子自动分数" wrA
+#\\frac{`!p snip.rv = match.group(1)`}{$1}$0
+#endsnippet
 
 # 根据选择输入分数
 context "math()"
