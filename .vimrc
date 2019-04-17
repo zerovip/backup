@@ -225,7 +225,7 @@ runtime! archlinux.vim
 
 " Startup {{{
 set nofoldenable
-filetype indent plugin on
+" filetype indent plugin on
 " vim 文件折叠方式为 marker
 "augroup ft_vim
 ""    au!
@@ -295,8 +295,8 @@ set nohlsearch
 "}}}
 
 " Format {{{
-set autoindent
-set smartindent
+" set autoindent
+" set smartindent
 set tabstop=4
 set expandtab
 set softtabstop=4
