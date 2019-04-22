@@ -95,6 +95,12 @@ $0
 \end{document}
 endsnippet
 
+snippet bgc "括号环境" iA
+\begin{cases}
+$1
+\end{cases}
+endsnippet
+
 snippet bga "对齐环境 (begin aligned)" A
 \begin{aligned}
 $1
@@ -354,6 +360,11 @@ endsnippet
 context "math()"
 snippet xb "下标 subscript (Xia Biao)" iA
 _{$1}$0
+endsnippet
+
+context "math()"
+snippet dh "下标中断行 (Duan Hang)" iA
+\substack{$1\\\\$2}
 endsnippet
 
 context "math()"

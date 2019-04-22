@@ -308,3 +308,6 @@
                         snippet 原则上不应该本末倒置，本来就不难输入的符号不应该再创建 snippet
                         况且 latex 里也有很多人会在导言区重新把很长的符号写成短的
     2019.04.09    关于 .Xresourse 开机不自动起作用的原因找到了！在 KDE 的图形设置界面，外观，色彩，将颜色应用到非 Qt 程序，关上即可
+    2019.04.20    更新之后再开机没法联网了，kde的设置中连接那里什么都没有了. 应该是NetworkManager的问题，重启即可，并让它可以自己启动
+                        sudo systemctl restart NetworkManager.service
+                        sudo systemctl enable NetworkManager.service
