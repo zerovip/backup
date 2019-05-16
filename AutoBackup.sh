@@ -84,4 +84,5 @@ git commit -m "Auto Backuping on "$date
 git push
 
 # 博客push
+cd ~/codes/blog
 ~/codes/deploy.sh "auto pushing..."
