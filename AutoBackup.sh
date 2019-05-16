@@ -51,6 +51,9 @@ cp ~/.Xresources ~/backup/backup/
 # vim 的 snippet 们
 cp -r ~/codes/UltiSnips/ ~/backup/backup/
 
+# 博客脚本备份
+cp ~/codes/deploy.sh ~/backup/backup/
+
 # 关于手机通过数据线共享无线网的配置备份
 ###  cp /etc/udev/rules.d/90-android-tethering.rules ~/backup/backup/
 ###  cp /etc/systemd/network/50-enp0s20u2.network ~/backup/backup/
@@ -79,3 +82,6 @@ cd ~/math-works
 git add .
 git commit -m "Auto Backuping on "$date
 git push
+
+# 博客push
+~/codes/deploy.sh "auto pushing..."
