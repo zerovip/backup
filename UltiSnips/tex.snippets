@@ -234,7 +234,7 @@ endsnippet
 # 数学常用
 snippet mi "行内数学公式 (math inline)" wA
 $${1:${VISUAL}}$`!p
-if t[2] and t[2][0] not in [',', '.', '?', '-', ' ', ':', ';']:
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ', ':', ';', '，']:
     snip.rv = ' '
 else:
     snip.rv = ''

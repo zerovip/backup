@@ -311,3 +311,7 @@
     2019.04.20    更新之后再开机没法联网了，kde的设置中连接那里什么都没有了. 应该是NetworkManager的问题，重启即可，并让它可以自己启动
                         sudo systemctl restart NetworkManager.service
                         sudo systemctl enable NetworkManager.service
+    2019.05.17    Github Pages 博客初见雏形，主要参考了 https://gohugo.io/hosting-and-deployment/hosting-on-github/
+                        并按照该文方法写了脚本
+                        当一切都正确而依然404时，进去push一下就好了
+                        后续：主题的更改，数学latex支持，持续施工

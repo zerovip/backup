@@ -1,6 +1,9 @@
 #!/bin/bash
 
+cd ~/codes/blog
+
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo -e "脚本开始启动啦！"
 
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`

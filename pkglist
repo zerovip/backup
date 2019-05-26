@@ -112,7 +112,6 @@ hunspell-en_CA
 hunspell-en_US
 hyphen-en
 ibus
-ibus-qt
 ibus-rime
 imagewriter
 inetutils
@@ -291,7 +290,6 @@ shadow
 skanlite
 smplayer
 s-nail
-sni-qt
 spectacle
 splix
 sshfs
