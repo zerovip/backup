@@ -315,3 +315,15 @@
                         并按照该文方法写了脚本
                         当一切都正确而依然404时，进去push一下就好了
                         后续：主题的更改，数学latex支持，持续施工
+    2019.06.09    继续施工博客中，太可怕了，又有了学生在线天天写代码的感觉，很不好，要尽快搞定才好
+                        参考了https://www.zeolearn.com/magazine/develop-a-theme-for-hugo进行主题制作
+                        目前已删除 blog 文件夹下 public 目录以方便调试，并删除自动脚本相关语句方便同步
+                            主题调试时使用 hugo server --watch --verbose 即可随时看到更改
+                            主题的更改主要是更改 themes/zero/layout themes/zero/static 等处，详见上述链接
+                        主题改好后可上传时：
+                            1. github上建立 zerovip.github.io 的库
+                            2. clone 到 blog 文件夹下成为 public 文件夹
+                                git clone git@github.com:zerovip/zerovip.github.io.git public
+                            3. 恢复自动脚本相关语句
+                                87-91行共5行语句
+                            4. 执行脚本即可
