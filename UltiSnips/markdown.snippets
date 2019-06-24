@@ -1,6 +1,7 @@
 snippet fm "markdown博客的导言区" iA
 ---
 title: $1
+# 一串数字即可
 url: $2
 # 可选 notes, stories, journal, travels, memos, 是为了显示文章时左侧位置还在
 section: $3
@@ -12,6 +13,10 @@ categories:
 - $9
 series: $10
 weight: $11
+# 可选 pandoc 以使用它来生成数学类文章
+markup: $12
+# 放到 static 文件夹下，渲染数学类文章的 pdf
+file_path: $13
 ---
 $0
 endsnippet
