@@ -88,4 +88,4 @@ cd ~/codes/blog
 git add .
 git commit -m "Auto pushing blog on "$date
 git push
-#~/codes/deploy.sh "auto pushing..."
+~/codes/deploy.sh "auto pushing..."
