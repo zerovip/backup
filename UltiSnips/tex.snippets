@@ -132,9 +132,9 @@ endsnippet
 snippet bgt "表格环境" bA
 \begin{table}[${1:htpb}]
 \centering
-\caption{${2:caption}}
+\caption{${2:caption}}%表名
 \label{tab:${3:label}}
-\begin{tabular}{${5:c}}
+\begin{tabular}{${5:c}} %有几个c表示有几列
 $0${5/((?<=.)c|l|r)|./(?1: & )/g}
 \end{tabular}
 \end{table}
