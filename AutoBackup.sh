@@ -74,6 +74,7 @@ cp ~/.mozilla/firefox/3cky76on.default/chrome/userChrome.css ~/backup/backup/
 cd ~/backup/backup
 echo ""
 echo ""
+echo "==================================="
 echo "下面是配置文件的备份"
 git add .
 date=`date +%Y%m%d`
@@ -84,6 +85,7 @@ git push
 cd ~/math-works
 echo ""
 echo ""
+echo "==================================="
 echo "下面是数学工作的备份(private)"
 git add .
 git commit -m "Auto Backuping on "$date
@@ -93,6 +95,7 @@ git push
 cd ~/codes/blog/themes/zero
 echo ""
 echo ""
+echo "==================================="
 echo "下面是博客主题的备份"
 git add .
 git commit -m "Auto pushing blog on "$date
@@ -101,11 +104,13 @@ git push
 # 博客push
 echo ""
 echo ""
+echo "==================================="
 echo "下面是博客的自动部署脚本"
 ~/codes/deploy.sh "auto pushing..."
 cd ~/codes/blog
 echo ""
 echo ""
+echo "==================================="
 echo "下面是博客原始文件夹的备份(private)"
 git add .
 git commit -m "Auto pushing blog on "$date
