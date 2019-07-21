@@ -38,8 +38,20 @@ snippet ima "数学文章-文档类声明 (initial math artical)" bA
 %! TEX program = XeLaTeX
 \documentclass[UTF8]{article}
 \usepackage{ctex}
+%\ctexset    %英语环境设置
+%{
+%contentsname={Contents},
+%figurename={Figure},
+%tablename={Table},
+%today={old},
+%}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+% nmer 数学环境（定义定理等）
+% pclj 超链接的包
+% evdm 代码环境
+% bgd 文档环境
+% \tit 标题
 
 endsnippet
 
@@ -68,17 +80,29 @@ snippet rim "行内数学大写 (renewcommand inline math)" bA
 endsnippet
 
 snippet nmer "常规数学环境 (new math enviriment regular)" bA
-\newtheorem{definition}{定义}[subsection]
+\usepackage{amsthm}
+\renewcommand*{\proofname}{\bfseries 证明}
+\usepackage{amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\theoremstyle{definition}
+\newtheorem{axiom}{公理}
+\newtheorem{definition}{定义}[section]
 \newtheorem{theorem}[definition]{定理}
-\newtheorem{proof}[definition]{证明}
 \newtheorem{example}[definition]{例}
 \newtheorem{remark}[definition]{评论}
 \newtheorem{notation}[definition]{注释}
+\newtheorem{lemma}[definition]{引理}
+\newtheorem{corollary}[definition]{推论}
+\newtheorem{proposition}[definition]{命题}
+\newtheorem{conjecture}[definition]{猜想}
+\newtheorem{claim}[definition]{断言}
+\newtheorem{paradox}[definition]{悖论}
 
 endsnippet
 
 snippet pclj "使用超链接 (package Chao Lian Jie)" bA
 \usepackage[colorlinks,linkcolor=blue]{hyperref}
+
 endsnippet
 
 snippet pac "使用包 \usepackage{}" bA
@@ -156,6 +180,26 @@ $1
 $0
 endsnippet
 
+snippet evdm "代码环境" bA
+\lstset    %代码区域设置
+{
+breaklines,
+extendedchars=false,
+language=C++,
+identifierstyle=,
+stringstyle=\ttfamily,
+showstringspaces=false,
+frame=shadowbox,
+captionpos=b,
+commentstyle=\color{red!50!green!50!blue!50},
+rulesepcolor=\color{red!20!green!20!blue!20},
+keywordstyle=\color{blue!90}\bfseries,
+numbers=left,
+numberstyle=\tiny,
+basicstyle=\footnotesize,
+}
+
+endsnippet
 
 # 文章结构
 snippet \tit "标题 \title" bA
@@ -163,6 +207,7 @@ snippet \tit "标题 \title" bA
 \author{${2:Zero}}
 \date{$3}
 \maketitle
+%\tableofcontents
 
 $0
 endsnippet
