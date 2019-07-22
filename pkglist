@@ -129,6 +129,7 @@ jre8-openjdk
 jre8-openjdk-headless
 kaccounts-providers
 kamera
+kate
 kcalc
 kdeconnect
 kdegraphics-thumbnailers
@@ -157,7 +158,6 @@ kwalletmanager
 kwallet-pam
 kwayland-integration
 kwin
-kwrite
 kwrited
 less
 lib32-flex
@@ -341,7 +341,6 @@ v2ray
 vcdimager
 vim-spell-en
 which
-wine
 wireshark-qt
 wpa_supplicant
 wqy-bitmapfont
