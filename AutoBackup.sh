@@ -87,8 +87,9 @@ echo ""
 echo ""
 echo "==================================="
 echo "下面是数学工作的备份(private)"
+read -p "数学工作区有哪些更改：" ma_mesg
 git add .
-git commit -m "Auto Backuping on "$date
+git commit -m $ma_mesg" Auto Backuping on "$date
 git push
 
 # 博客主题 push
@@ -97,8 +98,9 @@ echo ""
 echo ""
 echo "==================================="
 echo "下面是博客主题的备份"
+read -p "博客主题有哪些更改：" po_th_mesg
 git add .
-git commit -m "Auto pushing blog on "$date
+git commit -m $po_th_mesg" Auto pushing blog on "$date
 git push
 
 # 博客push
@@ -112,6 +114,7 @@ echo ""
 echo ""
 echo "==================================="
 echo "下面是博客原始文件夹的备份(private)"
+read -p "博客有哪些变化：" po_mesg
 git add .
-git commit -m "Auto pushing blog on "$date
+git commit -m $po_mesg" Auto pushing blog on "$date
 git push
