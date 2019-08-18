@@ -138,6 +138,17 @@ snippet 22bgm "圆括号2x2矩阵" iA
 \begin{pmatrix} $1 & $2 \\\\ $3 & $4 \end{pmatrix}
 endsnippet
 
+context "math()"
+snippet 31bgm "圆括号3x1矩阵" iA
+\begin{pmatrix} $1 \\\\ $2 \\\\ $3 \end{pmatrix}
+endsnippet
+
+context "math()"
+snippet 21bgm "圆括号2x1矩阵" iA
+\begin{pmatrix}{c} $1 \\\\ $2 \end{pmatrix}
+endsnippet
+
+
 snippet bgo "其他环境 \begin{} \end{}" A
 \begin{$1}
 $2
@@ -457,7 +468,7 @@ endsnippet
 priority 10
 context "math()"
 snippet "vec" "自动 vector" riA
-\vec{$1}$0
+\overrightarrow{$1}$0
 endsnippet
 
 priority 100
