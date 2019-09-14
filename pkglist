@@ -164,7 +164,7 @@ lib32-flex
 lib32-libcanberra
 lib32-libcanberra-pulse
 lib32-mesa-demos
-lib32-nvidia-utils
+lib32-nvidia-430xx-utils
 lib32-primus
 libcanberra
 libcanberra-gstreamer
@@ -176,7 +176,7 @@ libtool
 licenses
 linux419
 linux419-bbswitch
-linux419-nvidia
+linux419-nvidia-430xx
 linux419-r8168
 linux-firmware
 logrotate
@@ -227,7 +227,7 @@ noto-fonts-emoji
 nss-mdns
 ntfs-3g
 ntp
-nvidia-utils
+nvidia-430xx-utils
 octopi
 octopi-notifier-frameworks
 okular
