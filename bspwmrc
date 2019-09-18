@@ -19,7 +19,7 @@ bspc config normal_border_color \#FFFACD
 # 监视器底边缩进给 pannal
 bspc config -m eDP1 bottom_padding 54
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
