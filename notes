@@ -333,3 +333,21 @@
                         这样的话，想到明天终于可以把这非常难搞的东西搞定结束这痛苦的工作，学习数学就非常开心了.
     2019.06.25    没能忍住诱惑，发到了 GitHub Pages 上，静态文件下载还是一个小问题，已咨询 GitHub 官方. 明天真的要学习数学了.
     2019.07.04    问题基本解决，暂时可以功能不全地方便使用，也正在写很多文章.
+    2019.10.12    自从笔记本没有电池以来处处小心谨慎，昨晚还是被突然断电，断电前正在用 manjaro ，今天进 manjaro 打不开了，
+                    进 emergency mode，用系统盘进去 fsck 没有用，查到这篇文章：
+                    https://blog.csdn.net/weixin_33981932/article/details/85981127
+                    windows 法亲测有用，摘录如下：（原理待考察）
+                        ||  网上的解决方法有：
+                        ||      把win10快速启动关掉（我一直关着的，显然不是这个问题）
+                        ||      编辑fstab删掉NTFS分区（我没有写NTFS分区到fstab，依然不适用）
+                        ||      fdisk -l检查分区（检查了感觉没有用）
+                        ||      用live usb启动U盘进入，umount /dev/sdb7分区然后执行fdisk(依然没有用）
+                        ||      进windows，开cmd，执行shutdown /s /t 5 (亲测管用）
+                        ||  refs:
+                        ||      http://tieba.baidu.com/p/4974995484?red_tag=h0169855702
+                        ||      https://askubuntu.com/questions/646414/welcome-to-emergency-mode-think-it-is-a-fsck-problem/
+    2019.11.19    昨天又一次被断电，今天又遇到同样问题，但居然怎么谷歌搜索都没有搜索到之前的解决方法（忘记同步notes了）
+                    进 windows 通过历史命令执行了上述步骤，但没有用
+                    这次的方法是进入紧急模式后 journalctl -xb 看一下日志，找到 fsck fail （用 “/”），这次是 /dev/sda3
+                    然后 unmount /dev/sda3
+                         fsck -y /dev/sda3 然后无脑按 y 虽然中文字都变成了黑方块
