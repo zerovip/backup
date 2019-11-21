@@ -195,8 +195,19 @@ zstyle ':completion:*:-tilde-:*' group-order 'named-directories' 'path-directori
 
 
 #------------------------------
-# 6.
+# 6.小工具
 #------------------------------
+c() {
+    local IFS=' '
+    local calc="${*//p/+}"
+    calc="${calc//x/*}"
+    bc -l <<<"scale=10;$calc"
+}
+# c 开头的直接计算器
+
+
+backup (){~/backup/AutoBackup.sh}
+# 自动备份函数
 
 #
 #
