@@ -208,3 +208,13 @@ draft: $14
 ---
 $0
 endsnippet
+
+snippet jm "hugo-encrypt 加密环境" iA
+下面为加密内容：
+<!--more-->
+{{% hugo-encryptor "${1:PASSWORD}" %}}
+
+$0
+
+{{% /hugo-encryptor %}}
+endsnippet

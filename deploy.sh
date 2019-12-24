@@ -7,6 +7,10 @@ echo -e "脚本开始启动啦！"
 
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+# 进行加密
+source ~/codes/hugo_encryptor/hugo-encryptor/bin/activate
+python hugo-encryptor
+deactivate
 
 # Go To Public folder
 cd public
