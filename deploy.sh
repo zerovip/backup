@@ -2,15 +2,17 @@
 
 cd ~/codes/blog
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-echo -e "脚本开始启动啦！"
+echo -e "【 博客的部署脚本开始启动啦！ 】"
+echo -e "【 \033[0;32mDeploying updates to GitHub...\033[0m 】"
 
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 # 进行加密
+echo -e "【 下面是加密内容 】"
 source ~/codes/hugo_encryptor/hugo-encryptor/bin/activate
-python hugo-encryptor
+python hugo-encryptor.py
 deactivate
+echo -e "【 加密内容结束 】"
 
 # Go To Public folder
 cd public
