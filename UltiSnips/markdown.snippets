@@ -209,12 +209,14 @@ draft: $14
 $0
 endsnippet
 
-snippet jm "hugo-encrypt 加密环境" iA
-下面为加密内容：
+snippet jmt "hugo-encrypt 加密环境头" iA
+${1:这里是 summary 信息}
 <!--more-->
-{{% hugo-encryptor "${1:PASSWORD}" %}}
+{{% hugo-encryptor "${2:PASSWORD}" %}}
 
 $0
+endsnippet
 
+snippet jmw "hugo-encrypt 加密环境尾" iA
 {{% /hugo-encryptor %}}
 endsnippet
