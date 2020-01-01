@@ -263,7 +263,6 @@ psmisc
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
-pyqt5-common
 python-pillow
 python-pip
 python-pyqt5
@@ -349,9 +348,7 @@ xdg-utils
 xdotool
 xf86-input-elographics
 xf86-input-evdev
-xf86-input-keyboard
 xf86-input-libinput
-xf86-input-mouse
 xf86-input-void
 xf86-video-intel
 xfsprogs

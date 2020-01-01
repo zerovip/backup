@@ -271,7 +271,6 @@ psmisc
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
-pyqt5-common
 python-pillow
 python-pip
 python-pyqt5

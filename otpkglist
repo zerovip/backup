@@ -22,7 +22,10 @@ pcmciautils
 phonon-qt4
 phonon-qt4-gstreamer
 polkit-qt4
+python-sip-pyqt5
 qv2ray
 smpeg2
 sni-qt
+xf86-input-keyboard
+xf86-input-mouse
 zd1211-firmware
