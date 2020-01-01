@@ -351,3 +351,4 @@
                     这次的方法是进入紧急模式后 journalctl -xb 看一下日志，找到 fsck fail （用 “/”），这次是 /dev/sda3
                     然后 unmount /dev/sda3
                          fsck -y /dev/sda3 然后无脑按 y 虽然中文字都变成了黑方块
+    2020.01.01    新年快乐！内容为王，不要太注重形式. tags, categories, series 都直接勇敢地砍掉，不需要这个功能！
