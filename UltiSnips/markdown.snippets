@@ -192,19 +192,16 @@ url: $2
 section: $3
 date: 20$4-$5-$6
 summary: $7
-tags:
-- $8
-categories:
-- $9
-series: $10
-weight: $11
+weight: $8
 # 可选 pandoc 以使用它来生成数学类文章
-markup: $12
+markup: $9
+# 秘密文章不予显示写 true 即可
+hide: $10
 # 直接 文件夹/文件名 即可，如 notes/xxx.pdf
 # 放到 static 文件夹下，渲染数学类文章的 pdf
-file_path: $13
+file_path: $11
 # true / false
-draft: $14
+draft: $12
 ---
 $0
 endsnippet
