@@ -1,3 +1,43 @@
+snippet fm "markdown博客的导言区" iA
+---
+title: $1
+# 一串数字即可，如果以0开头就用双引号引起来
+url: $2
+# 可选 notes, stories, journal, literature, memos, 是为了显示文章时左侧位置还在
+section: $3
+date: 20$4-$5-$6
+summary: $7
+weight: $8
+# 可选 pandoc 以使用它来生成数学类文章
+markup: $9
+# 秘密文章不予显示写 true 即可
+# list_hide 是在列表中隐藏
+list_hide: true
+# rss_hide 是在 rss 中隐藏，有加密内容的博客必须有这个
+rss_hide: true
+# 直接 文件夹/文件名 即可，如 notes/xxx.pdf
+# 放到 static 文件夹下，渲染数学类文章的 pdf
+file_path: $11
+# true / false
+draft: $12
+# 黑块：<span class='black_block' onclick="ChangeClassBlackBlock(this)">text</span>
+# 背景色：<span style="background-color: yellow; color: black;">text</span>
+---
+$0
+endsnippet
+
+snippet jmt "hugo-encrypt 加密环境头" iA
+${1:这里是 summary 信息}
+<!--more-->
+{{% hugo-encryptor "${2:PASSWORD}" %}}
+
+$0
+endsnippet
+
+snippet jmw "hugo-encrypt 加密环境尾" iA
+{{% /hugo-encryptor %}}
+endsnippet
+
 # 数学常用
 snippet mi "行内数学公式 (math inline)" wA
 $${1:${VISUAL}}$`!p
@@ -181,39 +221,4 @@ priority 100
 
 snippet "([a-zA-Z])vec" "后缀自动 vec" riA
 \vec{`!p snip.rv=match.group(1)`}
-endsnippet
-
-snippet fm "markdown博客的导言区" iA
----
-title: $1
-# 一串数字即可，如果以0开头就用双引号引起来
-url: $2
-# 可选 notes, stories, journal, literature, memos, 是为了显示文章时左侧位置还在
-section: $3
-date: 20$4-$5-$6
-summary: $7
-weight: $8
-# 可选 pandoc 以使用它来生成数学类文章
-markup: $9
-# 秘密文章不予显示写 true 即可
-hide: $10
-# 直接 文件夹/文件名 即可，如 notes/xxx.pdf
-# 放到 static 文件夹下，渲染数学类文章的 pdf
-file_path: $11
-# true / false
-draft: $12
----
-$0
-endsnippet
-
-snippet jmt "hugo-encrypt 加密环境头" iA
-${1:这里是 summary 信息}
-<!--more-->
-{{% hugo-encryptor "${2:PASSWORD}" %}}
-
-$0
-endsnippet
-
-snippet jmw "hugo-encrypt 加密环境尾" iA
-{{% /hugo-encryptor %}}
 endsnippet
