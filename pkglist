@@ -30,6 +30,7 @@ bzip2
 cdparanoia
 cdrdao
 cdrtools
+chromium
 coreutils
 cpupower
 crda
@@ -176,6 +177,7 @@ linux419
 linux419-bbswitch
 linux419-nvidia-430xx
 linux419-r8168
+linux54
 linux-firmware
 logrotate
 lsb-release
