@@ -230,8 +230,8 @@ ntp
 nvidia-430xx-utils
 octopi
 octopi-notifier-frameworks
-okular
 openresolv
+openscad
 openssh
 os-prober
 oxygen
@@ -322,6 +322,7 @@ thunderbird-i18n-en-us
 thunderbird-i18n-zh-cn
 tk
 tlp
+tor
 transcode
 ttf-bitstream-vera
 ttf-droid
@@ -336,7 +337,6 @@ unzip
 usbutils
 user-manager
 util-linux
-v2ray
 vcdimager
 vim-spell-en
 which

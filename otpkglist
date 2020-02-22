@@ -2,6 +2,7 @@ attica-qt4
 autojump
 breeze-kde4
 gamin
+gstreamer0.10
 ibus-qt
 js
 kde-l10n-zh_cn
@@ -13,6 +14,7 @@ lib32-smpeg2
 libdbusmenu-qt4
 libkcddb4
 libtxc_dxtn
+linuxqq
 mathpix-snipping-tool
 mhwd-catalyst
 mhwd-nvidia-304xx
