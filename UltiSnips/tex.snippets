@@ -52,8 +52,8 @@ snippet ima "数学文章-文档类声明 (initial math artical)" bA
 % evdm 代码环境
 % hnuxb 行内上下标使用行间模式的准备
 % wdbjpp 我的笔记的准备
-% \tit 标题
 % bgd 文档环境
+% \tit 标题
 
 endsnippet
 
@@ -373,6 +373,11 @@ snippet != "不等号" iA
 endsnippet
 
 context "math()"
+snippet rm "数学正体" iA
+{\rm $1}
+endsnippet
+
+context "math()"
 snippet pp "偏导" iA
 \partial 
 endsnippet
@@ -423,8 +428,13 @@ snippet mbb "空心字 \mathbb" iA
 endsnippet
 
 context "math()"
-snippet mcal "花体字 \mathbb" iA
+snippet mcal "花体字 \mathcal" iA
 \mathcal{${1:${VISUAL}}}$0
+endsnippet
+
+context "math()"
+snippet mfrk "不知道是啥的字体 \mathfrak" iA
+\mathfrak{${1:${VISUAL}}}$0
 endsnippet
 
 context "math()"
@@ -460,6 +470,11 @@ endsnippet
 context "math()"
 snippet xb "下标 subscript (Xia Biao)" iA
 _{$1}$0
+endsnippet
+
+context "math()"
+snippet ux "上下" iA
+\stackrel{$1}{$2}
 endsnippet
 
 context "math()"
