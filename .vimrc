@@ -247,6 +247,8 @@ set clipboard+=unnamed
 " 设置 alt 键不映射到菜单栏
 set winaltkeys=no
 " set updatetime=1000
+" 设置每行最多 80 列的限制
+set colorcolumn=80
 " }}}
 
 " Lang & Encoding {{{
