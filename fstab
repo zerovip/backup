@@ -15,4 +15,4 @@ UUID=a6892102-7d0e-4f2b-bb24-ddcca9ba924b /                             ext4    
 UUID=18bd9d89-ada9-45f2-8bd8-b7df3a0fd619 /home                         ext4    defaults,noatime,discard        0       2
 tmpfs                                     /tmp                          tmpfs   defaults,noatime,mode=1777      0       0
 UUID=E4C2EDA6C2ED7D64                     /run/media/zero/zero	        ntfs	defaults,gid=zero,uid=zero	0	2
-UUID=541CD6DC1CD6B7E6                     /run/media/zero/zero\040plus	ntfs	defaults,gid=zero,uid=zero      0	2
+# UUID=541CD6DC1CD6B7E6                     /run/media/zero/zero\040plus	ntfs	defaults,gid=zero,uid=zero      0	0

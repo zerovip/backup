@@ -177,10 +177,6 @@ libreoffice-still
 libreoffice-still-zh-cn
 libtool
 licenses
-linux419
-linux419-bbswitch
-linux419-nvidia-430xx
-linux419-r8168
 linux54
 linux-firmware
 linuxqq
@@ -313,6 +309,7 @@ systemd-sysvcompat
 systemsettings
 tar
 terminus-font
+testdisk
 texinfo
 texlive-bibtexextra
 texlive-core
