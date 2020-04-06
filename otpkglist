@@ -23,6 +23,7 @@ oxygen-kde4
 pcmciautils
 phonon-qt4
 phonon-qt4-gstreamer
+picgo-appimage
 polkit-qt4
 python-sip-pyqt5
 qv2ray

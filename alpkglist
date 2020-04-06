@@ -251,6 +251,7 @@ perl-file-mimeinfo
 perl-uri
 phonon-qt4-gstreamer
 phonon-qt5-gstreamer
+picgo-appimage
 pkgconf
 plasma5-themes-breath
 plasma5-themes-maia
