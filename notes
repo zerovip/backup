@@ -429,7 +429,14 @@
                                 windows 下已经可以使用硬盘了；但 Linux 下还是不行，挂载不上，fstab 改回去就开不了机.
                         进 linux 再次对 sda 整块进行 testdisk. 加油
                             Read error at 72520/92/44 (lba=1165039639)
-
-
-
+    2020.04.14    如果购买新电脑，安装新系统的话，首先：硬盘应该不分区，或者 windows 一个区 linux 一个区，
+                        或者弄两块硬盘，一块给 windows，一块给 linux
+                  其次，应该装 manjaro architect 版本，比 kde 版本再简洁一点，还能负责驱动问题
+                        关于桌面管理器，其实可以尝试 dwm 一下，虽然它的配置文件需要编译.
+                        也可以广泛对比一下其他的桌面管理器，包括 awesome 之类的
+                        i3 还是算了吧. 目前正用的是 bspwm，可以简记为 “保守派” windows manager.
+                        一个对比网站：https://www.slant.co/versus/1289/6620/~dwm_vs_bspwm
+                        听说 awesome 是 dwm 的一个分支？！
+                        i3 当然也可以看看，了解一下，目前还是倾向于 bspwm ？以及，
+                            如果实时生效的配置文件不重要的话，也比较倾向于 dwm 啦！
 
