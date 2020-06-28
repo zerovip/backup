@@ -103,6 +103,11 @@ git commit -m "$ma_mesg"" Auto Backuping on "$date
 git push
 
 # 博客push
+# 在配置博客的时候要注意，要把 public 文件夹删掉
+#   然后从 zerovip.github.io 这个仓库克隆到 public
+#   然后把这个 public 里面的文件都删掉，再 deploy
+#   即，再生成，再上传，这样才能把 public 文件夹作为
+#   子模组，并且直接推到 GitHub Pages.
 echo ""
 echo ""
 echo "==================================="
