@@ -19,22 +19,26 @@ cp /etc/fstab ~/backup/backup/
 cp ~/.config/ibus/rime/default.custom.yaml ~/backup/backup/
 
 # 开机 GRUB 页面自己制作的主题备份
-cp -r /boot/grub/themes/allurez/ ~/backup/backup/
+cp -r /usr/share/grub/themes/allurez/ ~/backup/backup/
 
 # 确保 .bin（自己写的程序的地方） 自动加载到环境变量中
+# 暂时还没有任何自己的程序
 cp ~/.zprofile ~/backup/backup/
 
-# .xprofile 这里是 ibus 输入法的一些自动启动项吧
+# .xprofile 这里是本地中文化、桌面壁纸以及 ibus 输入法的一些自动启动项
 cp ~/.xprofile ~/backup/backup/
 
 # .xinitrc 应该没有做过任何改动，但以防万一还是备份一下
-cp ~/.xinitrc ~/backup/backup/
+# 不再需要了
+# cp ~/.xinitrc ~/backup/backup/
 
 # 所有自己写的程序存放处
-cp -r ~/.bin/ ~/backup/backup/
+# 暂时还没有，先不用备份
+# cp -r ~/.bin/ ~/backup/backup/
 
 # 应用在 plasma 的右击菜单中的自定义选项
-cp -r ~/.local/share/kservices5/ ~/backup/backup/
+# 暂时还没有，先不用备份
+# cp -r ~/.local/share/kservices5/ ~/backup/backup/
 
 # bspwm 一个平铺窗口管理器的配置备份
 cp ~/.config/bspwm/bspwmrc ~/backup/backup/
@@ -43,10 +47,15 @@ cp ~/.config/bspwm/bspwmrc ~/backup/backup/
 cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
 
 # ctags 软件的额外配置文件（以便识别 latex 中的 \ref 和 \label）备份
-cp ~/.ctags ~/backup/backup/
+# 暂时还没有，先不备份
+# cp ~/.ctags ~/backup/backup/
 
 # Xsource 的配置文件，主要是对 Xterm 进行了配置
+# 谁能想到，我现在不用 Xterm 了，改用 urxvt 了，但还是在这里设置
 cp ~/.Xresources ~/backup/backup/
+
+# 字体渲染的配置
+cp ~/.config/fontconfig/fonts.conf ~/backup/backup/
 
 # vim 的 snippet 们
 cp -r ~/codes/UltiSnips/ ~/backup/backup/
@@ -68,7 +77,8 @@ pacman -Qmq | sort > ~/backup/backup/otpkglist
 comm -23 ~/backup/backup/alpkglist ~/backup/backup/otpkglist > ~/backup/backup/pkglist
 
 # Firefox浏览器 “Tree Style Tab” 插件后顶栏重复显示的问题解决文件备份
-cp ~/.mozilla/firefox/3cky76on.default/chrome/userChrome.css ~/backup/backup/
+# 这次并没有成功解决这个问题，暂时也算了
+# cp ~/.mozilla/firefox/3cky76on.default/chrome/userChrome.css ~/backup/backup/
 
 # 配置文件同步到 GitHub
 cd ~/backup/backup

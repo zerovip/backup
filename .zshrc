@@ -19,12 +19,14 @@ echo -ne "\n"
 if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
   . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
-#语法高亮插件，模仿fish
+# 语法高亮插件，模仿fish
+# 直接 sudo pacman -S zsh-syntax-highlighting 安装就好
 
 if [[ -f /usr/share/autojump/autojump.zsh ]]; then
   . /usr/share/autojump/autojump.zsh
 fi
-#autojump插件
+# autojump插件
+# 这是在 AUR 的包里，clone 再 makepkg -sri 就好
 
 # if [[ -f /usr/share/zsh/plugins/incr/incr-0.2.zsh ]]; then
 #   . /usr/share/zsh/plugins/incr/incr-0.2.zsh
@@ -32,6 +34,9 @@ fi
 # 暂时先不用，有点过于酸爽了
 #incr插件，非使用pacman安装，于官网http://mimosa-pudica.net/zsh-incremental.html下载
 
+source /usr/share/doc/pkgfile/command-not-found.zsh
+# 提前安装 pkgfile，这是用来解决不知道某条命令在哪个包里的问题的
+# 还需要 sudo pkgfile -u 来更新 pkgfile 的数据库
 
 #------------------------------
 # 2.历史
@@ -71,7 +76,7 @@ bindkey "^[[B" history-beginning-search-forward
 #-----------------------------
 # 3.习惯
 #-----------------------------
-alias clc='clear'
+#alias clc='clear'
 alias ls='ls -F --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
@@ -86,8 +91,8 @@ alias grep="grep --color=auto"
 #alias -s tgz='tar -xzvf'
 #alias -s zip='unzip'
 #alias -s bz2='tar -xjvf'
-alias cp='acp -g'
-alias mv='amv -g'    #提前安装advcp，用来显示移动和复制的进度条
+#alias cp='acp -g'
+#alias mv='amv -g'    #提前安装advcp，用来显示移动和复制的进度条
 
 sudo-command-line() {
 [[ -z $BUFFER ]] && zle up-history

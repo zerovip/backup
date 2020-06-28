@@ -1,18 +1,10 @@
 # Static information about the filesystems.
 # See fstab(5) for details.
 
-# /etc/fstab: static file system information.
-#
-# Use 'blkid' to print the universally unique identifier for a device; this may
-# be used with UUID= as a more robust way to name devices that works even if
-# disks are added and removed. See fstab(5).
-#
-# <file system>                           <dir>                         <type>  <options>                       <dump>  <pass>
-# <file system>                           <mount point>                 <type>  <options>                       <dump>  <pass>
-UUID=21d25a02-8a40-426c-8983-f2b24f594665 /var                          ext4    defaults,noatime                0       2
-UUID=544E-1E8A                            /boot/efi                     vfat    defaults,noatime                0       2
-UUID=a6892102-7d0e-4f2b-bb24-ddcca9ba924b /                             ext4    defaults,noatime,discard        0       1
-UUID=18bd9d89-ada9-45f2-8bd8-b7df3a0fd619 /home                         ext4    defaults,noatime,discard        0       2
-tmpfs                                     /tmp                          tmpfs   defaults,noatime,mode=1777      0       0
-UUID=E4C2EDA6C2ED7D64                     /run/media/zero/zero	        ntfs	defaults,gid=zero,uid=zero	0	2
-# UUID=541CD6DC1CD6B7E6                     /run/media/zero/zero\040plus	ntfs	defaults,gid=zero,uid=zero      0	2
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda7
+UUID=b8a6f1c2-acaa-4c29-a518-3a68fe182ef3	/         	ext4      	rw,relatime	0 1
+
+# /dev/sda2
+UUID=544E-1E8A      	/efi      	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+

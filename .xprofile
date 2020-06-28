@@ -1,18 +1,11 @@
-#
-# ~/.xprofile
-#
-#
+# set Chinese language here, to avoid tty chaos if globally
+export LANG=zh_CN.UTF-8
+export LANGUAGE=zh_CN;en_US
 
-# if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
-#     eval "$(dbus-launch --sh-syntax --exit-with-session)"
-# fi
+# wallpaper
+nitrogen .wallpaper/Holden\ Crater.jpg --set-zoom-fill
 
-# Environment variables
-#
-
-[[ -f ~/.extend.xprofile ]] && . ~/.extend.xprofile
-
-
+# ibus
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus

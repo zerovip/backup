@@ -1,4 +1,10 @@
 # Built by Zero based on starfield
+# This file is placed in /usr/share/grub/themes/allurez
+#   according to Arch Wiki: GRUB/Tips and tricks
+# This file is used in /etc/default/grub
+#   GRUB_THEME line
+# Don't forget to regenerate it by
+#   grub-mkconfig -o /boot/grub/grub.cfg
 
 #general settings
 message-font: "DejaVu Sans Regular 12"

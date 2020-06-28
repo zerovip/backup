@@ -439,4 +439,12 @@
                         听说 awesome 是 dwm 的一个分支？！
                         i3 当然也可以看看，了解一下，目前还是倾向于 bspwm ？以及，
                             如果实时生效的配置文件不重要的话，也比较倾向于 dwm 啦！
-
+    2020.06.27    已经重装了 Arch Linux，具体的细节在那个本里记录着。
+                        着重说一下输入法的配置。linux 下的 rime 叫做中州韵，所以没法配置
+                        网上查到的那个 weasel.custom.yaml 那个东西是给 windows 用户用的
+                        而 linux 下就是没法配置，直接用 gtk3 的设置，ibus 里能稍稍配置一下下。
+                        参考：
+                            https://github.com/rime/ibus-rime/issues/67
+                            https://github.com/ibus/ibus/issues/1871
+                            https://www.cnblogs.com/lemos/p/7718513.html
+                            https://github.com/rime/home/wiki/CustomizationGuide#%E5%AE%9A%E8%A3%BD%E6%8C%87%E5%8D%97

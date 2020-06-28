@@ -182,6 +182,10 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" Theme gruvbox
+Plugin 'morhetz/gruvbox'
+autocmd vimenter * colorscheme gruvbox
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -269,7 +273,6 @@ syntax enable
 set background=dark
 "colorscheme solarized
 "colorscheme desert
-colorscheme gruvbox
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 set cursorline

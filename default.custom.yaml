@@ -1,40 +1,31 @@
-# default.custom.yaml
-# save it to:
-#   ~/.config/ibus/rime  (linux)
-#   ~/Library/Rime       (macos)
-#   %APPDATA%\Rime       (windows)
+# ~/.config/ibus/rime/default.custom.yaml
+# This is the custom config of ibus-rime
+# See Arch Wiki: Rime for more informations.
+# Edited by Zero on June 26, 2020.
 
 patch:
   schema_list:
+# The following are listed in /usr/share/rime-data.
+# They are all officially equipped with ibus-rime package except:
+#   I manually installed rime-double-pinyin and rime-emoji packages.
+# The uncomment lines can be chosen in ibus-rime with key
+#   <Ctrl> + <`> or use <F4>.
+#
 #   - schema: bopomofo             # 注音
 #   - schema: bopomofo_express     # 注音·快打模式
 #   - schema: bopomofo_tw          # 注音·臺灣正體
 #   - schema: cangjie5             # 倉頡五代
 #   - schema: cangjie5_express     # 倉頡五代·快打模式
-#   - schema: combo_pinyin         # 宮保拼音
 #   - schema: double_pinyin_abc    # 智能ABC雙拼
     - schema: double_pinyin_flypy  # 小鶴雙拼
 #   - schema: double_pinyin_mspy   # MSPY雙拼
 #   - schema: double_pinyin_pyjj   # 拼音加加雙拼
 #   - schema: double_pinyin        # 自然碼雙拼
-#   - schema: emoji                # Emoji
-#   - schema: ipa_xsampa           # X-SAMPA
-#   - schema: jyutping             # 粵拼
 #   - schema: luna_pinyin_fluency  # 朙月拼音·語句流
 #   - schema: luna_pinyin          # 朙月拼音
     - schema: luna_pinyin_simp     # 朙月拼音·简化字
 #   - schema: luna_pinyin_tw       # 朙月拼音·臺灣正體
 #   - schema: luna_quanpin         # 全拼
-#   - schema: pinyin_simp          # 袖珍简化字拼音
-#   - schema: quick5               # 速成
-#   - schema: sampheng             # 中古三拼
 #   - schema: stroke               # "五筆畫"
 #   - schema: terra_pinyin         # 地球拼音
-#   - schema: wubi86               # "五笔86"
-#   - schema: wubi_pinyin          # "五笔·拼音"
-#   - schema: wubi_trad            # 五筆·簡入繁出
-#   - schema: wugniu_lopha         # 上海吳語
-#   - schema: wugniu               # 上海新派
-#   - schema: yale                 # 耶魯粵語拼音
-#   - schema: zyenpheng            # 中古全拼
   menu/page_size: 7                #设置候选字数量，根据喜好调整
