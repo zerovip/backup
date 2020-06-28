@@ -102,17 +102,6 @@ git add .
 git commit -m "$ma_mesg"" Auto Backuping on "$date
 git push
 
-# 博客主题 push
-cd ~/codes/blog/themes/zero
-echo ""
-echo ""
-echo "==================================="
-echo "下面是博客主题的备份"
-read -p "博客主题有哪些更改：" po_th_mesg
-git add .
-git commit -m "$po_th_mesg"" Auto pushing blog on "$date
-git push
-
 # 博客push
 echo ""
 echo ""
@@ -128,3 +117,15 @@ read -p "博客有哪些变化：" po_mesg
 git add .
 git commit -m "$po_mesg"" Auto pushing blog on "$date
 git push
+
+# 博客主题 push
+cd ~/codes/blog/themes/zero
+echo ""
+echo ""
+echo "==================================="
+echo "下面是博客主题的备份"
+read -p "博客主题有哪些更改：" po_th_mesg
+git add .
+git commit -m "$po_th_mesg"" Auto pushing blog on "$date
+git push
+
