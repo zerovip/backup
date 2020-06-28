@@ -17,6 +17,7 @@ firefox-i18n-zh-cn
 flex
 gcc
 git
+goldendict
 grub
 gvim
 hugo
@@ -130,5 +131,6 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 zathura
+zathura-pdf-mupdf
 zsh
 zsh-syntax-highlighting
