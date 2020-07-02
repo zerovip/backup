@@ -77,6 +77,7 @@ bindkey "^[[B" history-beginning-search-forward
 # 3.习惯
 #-----------------------------
 #alias clc='clear'
+alias sudo='sudo '  #神奇的命令，使得 sudo 操作的命令也被展开
 alias ls='ls -F --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
@@ -93,6 +94,7 @@ alias grep="grep --color=auto"
 #alias -s bz2='tar -xjvf'
 #alias cp='acp -g'
 #alias mv='amv -g'    #提前安装advcp，用来显示移动和复制的进度条
+alias mount='mount -o gid=ehizil,fmask=113,dmask=002' # mount 后能以用户身份写入
 
 sudo-command-line() {
 [[ -z $BUFFER ]] && zle up-history
