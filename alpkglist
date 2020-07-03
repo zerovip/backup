@@ -65,6 +65,7 @@ texlive-fontsextra
 texlive-formatsextra
 texlive-games
 texlive-humanities
+texlive-langchinese
 texlive-latexextra
 texlive-music
 texlive-pictures
@@ -83,6 +84,7 @@ wqy-bitmapfont
 wqy-microhei
 wqy-microhei-lite
 wqy-zenhei
+xdotool
 xf86-video-intel
 xf86-video-vesa
 xorg-bdftopcf

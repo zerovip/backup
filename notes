@@ -448,3 +448,10 @@
                             https://github.com/ibus/ibus/issues/1871
                             https://www.cnblogs.com/lemos/p/7718513.html
                             https://github.com/rime/home/wiki/CustomizationGuide#%E5%AE%9A%E8%A3%BD%E6%8C%87%E5%8D%97
+    2020.07.04    解决了好多问题都没有记录.
+                        1.声卡的问题，就在家文件夹下建立 .asoundrc 就好了
+                        2.挂载 U 盘的问题，就不 mount 整个 /dev/sbd，而是 mount /dev/sdb1 就好了
+                        3.latex 编译失败的问题只是因为没有安装中文的包，没有 ctex 导致的，
+                            sudo pacman -S texlive-langchinese 就好了
+                            还有一些其他的语言包，都在 texlive-lang 这个组里，没有都装，用到再装即可
+                        4.latex 的数学不自动 snippet 是因为存放片段的目录名字打错了
