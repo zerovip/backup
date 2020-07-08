@@ -27,9 +27,7 @@ super + Escape
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# close and kill
-# Haven't figure out the 'shift' makes what different
-# Don't understand the grammar, either.
+# (checked) close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
 
@@ -59,8 +57,7 @@ super + g
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-# set the node flags
-# need to learn
+# (checked) set the node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
@@ -71,6 +68,10 @@ super + ctrl + {m,x,y,z}
 # (checked) focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
+
+# 竖直与平行
+super + v
+    bspc node @/ -R 90
 
 # (checked) focus the node for the given path jump
 super + {p,b,comma,period}
@@ -97,10 +98,6 @@ super + {o,i}
 # (checked) focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
-
-# 竖直与平行
-super + v
-    bspc node @/ -R 90
 
 #
 # preselect
