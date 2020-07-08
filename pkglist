@@ -33,6 +33,7 @@ make
 man-db
 man-pages
 nitrogen
+nnn
 noto-fonts-cjk
 noto-fonts-emoji
 numlockx
@@ -43,16 +44,18 @@ otf-fantasque-sans-mono
 pacman-contrib
 pandoc
 patch
-pcmanfm
 picocom
 pkgconf
 pkgfile
 python
+qiv
 rime-double-pinyin
 rime-emoji
+rsync
 rxvt-unicode
 sagemath
 sagemath-doc
+scrot
 smplayer
 sudo
 sxhkd

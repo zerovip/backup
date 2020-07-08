@@ -43,31 +43,22 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 #------------------------------
 HISTFILE=~/.histfile
 #历史记录文件
-
 HISTSIZE=1000
 #历史记录条目数量
-
 SAVEHIST=1000
 #注销后保存的历史记录条目数量
-
 setopt INC_APPEND_HISTORY
 #以附加的方式写入历史记录
-
 setopt HIST_IGNORE_DUPS
 #重复的不计入历史
-
 setopt EXTENDED_HISTORY
 #为历史记录中的命令添加时间戳
-
 setopt AUTO_PUSHD
 #启用 cd 命令的历史纪录，cd -[TAB]进入历史路径
-
 setopt PUSHD_IGNORE_DUPS
 #相同的历史路径只保留一个
-
 setopt HIST_IGNORE_SPACE
 #在命令前添加空格，不将此命令添加到记录文件中
-
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 #显示匹配光标前的历史搜索
@@ -94,9 +85,25 @@ alias grep="grep --color=auto"
 #alias -s bz2='tar -xjvf'
 #alias cp='acp -g'
 #alias mv='amv -g'    #提前安装advcp，用来显示移动和复制的进度条
-alias mount='mount -o gid=ehizil,fmask=113,dmask=002' # mount 后能以用户身份写入
+alias mount='mount -o gid=ehizil,uid=ehizil,fmask=113,dmask=002' # mount 后能以用户身份写入
+# 下面 8 行是为了使用 rsync 来使得复制的时候有进度条，
+#   参考自：https://wiki.archlinux.org/index.php/Rsync#As_cp/mv_alternative
+function cpr() {
+  rsync --archive -hh --partial --info=stats1 --info=progress2 --modify-window=1 "$@"
+} 
+function mvr() {
+  rsync --archive -hh --partial --info=stats1 --info=progress2 --modify-window=1 --remove-source-files "$@"
+}
+# alias cp='cpr'
+# alias mv='mvr'
+# move 好像会导致在同一个文件夹下重命名成为复制？不应该啊
+# 于是干脆连复制的命令也不更改了，使用 cpr 作为带 bar 的复制好了
+# alias foxit='/home/ehizil/opt/foxitsoftware/foxitreader/FoxitReader.sh &'
+# 福昕阅读器
+alias n='nnn -e' # 命令行式的文件管理器，-e 使得直接打开文件
 
-sudo-command-line() {
+
+function sudo-command-line() {
 [[ -z $BUFFER ]] && zle up-history
 [[ $BUFFER != sudo\ * ]] && BUFFER="sudo $BUFFER" || BUFFER="${BUFFER#*sudo\ }"
 zle end-of-line #光标移动到行末
@@ -107,7 +114,7 @@ bindkey "\e\e" sudo-command-line
 #前提是不能有bindkey -v，否则在vim模式下按一下esc就变成normal模式了
 #不写bindkey，就是默认bindkey -e，即emacs模式，这时ctrl+a/e也就有效了
 
-backward-kill-dir () {
+function backward-kill-dir () {
     local WORDCHARS=${WORDCHARS/\/}
     zle backward-kill-word
 }
@@ -204,14 +211,14 @@ zstyle ':completion:*:-tilde-:*' group-order 'named-directories' 'path-directori
 #------------------------------
 # 6.小工具
 #------------------------------
-c() {
-    local IFS=' '
-    local calc="${*//p/+}"
-    calc="${calc//x/*}"
-    bc -l <<<"scale=10;$calc"
-}
+# c() {
+#     local IFS=' '
+#     local calc="${*//p/+}"
+#     calc="${calc//x/*}"
+#     bc -l <<<"scale=10;$calc"
+# }
 # c 开头的直接计算器
-
+# 因为没有安装 bc，觉得平时使用也不多，就不用了.
 
 backup (){~/backup/AutoBackup.sh}
 # 自动备份函数

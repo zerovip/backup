@@ -15,7 +15,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # (checked) quit Xorg
-# (checked) cannot work any more, because use lightDM
+# (checked) cannot work any more, because of using lightDM
 # super + alt + Escape
 # 	pkill -15 Xorg
 
@@ -23,23 +23,30 @@ super + Escape
 # bspwm hotkeys
 #
 
-# quit/restart bspwm
+# (checked) quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
+# Haven't figure out the 'shift' makes what different
+# Don't understand the grammar, either.
 super + {_,shift + }w
 	bspc node -{c,k}
 
-# alternate between the tiled and monocle layout
+# (checked) alternate between the tiled and monocle layout
+# monocle: 单片眼镜
+# It is pretty like the full screen but don't cover the bar
 super + m
 	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
+# Seems... cannot work???
+# super + y
+# 	bspc node newest.marked.local -n newest.!automatic.local
 
 # (checked) swap the current node and the biggest node
+# But seems not the biggest in the current desktop, but the
+#   biggest in all desktops. This should be imporoved.
 super + g
 	bspc node -s biggest
 
@@ -48,10 +55,12 @@ super + g
 #
 
 # (checked) set the window state
+# somewhat cannot understand the point of pseudo_tilted 伪平铺 module
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
+# need to learn
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
@@ -59,53 +68,57 @@ super + ctrl + {m,x,y,z}
 # focus/swap
 #
 
-# focus the node in the given direction
+# (checked) focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-# focus the node for the given path jump
+# (checked) focus the node for the given path jump
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
-# focus the next/previous node in the current desktop
+# (checked) focus the next/previous node in the current desktop
 super + {_,shift + }c
 	bspc node -f {next,prev}.local
 
-# focus the next/previous desktop in the current monitor
+# (checked) focus the next/previous desktop in the current monitor
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
-# focus the last node/desktop
+# (checked) focus the last node/desktop
 super + {grave,Tab}
 	bspc {node,desktop} -f last
 
-# focus the older or newer node in the focus history
+# (checked) focus the older or newer node in the focus history
 super + {o,i}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
 
-# focus or send to the given desktop
+# (checked) focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# 竖直与平行
+super + v
+    bspc node @/ -R 90
 
 #
 # preselect
 #
 
-# preselect the direction
+# (checked) preselect the direction
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
-# preselect the ratio
+# (checked) preselect the ratio
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
-# cancel the preselection for the focused node
+# (checked) cancel the preselection for the focused node
 super + ctrl + space
 	bspc node -p cancel
 
-# cancel the preselection for the focused desktop
+# (checked) cancel the preselection for the focused desktop
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
@@ -113,18 +126,23 @@ super + ctrl + shift + space
 # move/resize
 #
 
-# expand a window by moving one of its side outward
+# (checked) expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-# contract a window by moving one of its side inward
+# (checked) contract a window by moving one of its side inward
 super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
-# move a floating window
+# (checked) move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # my own applications
-ctrl + alt + f
-    pcmanfm
+# ctrl + alt + f
+#     pcmanfm
+# 改用 nnn 了，命令行的文件管理器
+
+# 福昕阅读器
+ctrl + alt + r
+    . /home/ehizil/AURpkgs/otherPKGs/foxitsoftware/foxitreader/FoxitReader.sh
