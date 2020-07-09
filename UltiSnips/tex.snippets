@@ -38,6 +38,7 @@ snippet ima "数学文章-文档类声明 (initial math artical)" bA
 %! TEX program = XeLaTeX
 \documentclass[UTF8]{article}
 \usepackage{ctex}
+
 %\ctexset    %英语环境设置
 %{
 %contentsname={Contents},
@@ -45,6 +46,28 @@ snippet ima "数学文章-文档类声明 (initial math artical)" bA
 %tablename={Table},
 %today={old},
 %}
+
+% 设置页边距
+\usepackage{geometry}
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2cm, bottom=2cm}
+
+% 设置标题样式
+\usepackage{titlesec}
+\titleformat{\section}[frame]{\normalfont\large\bfseries}{\fbox{\thesection}}{0.05em}{\quad}
+% 格式：\titleformat{<command>}[<shape>]
+%                   {<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+% 其中：<command>:  \section, \subsection, \subsubsection, \part, \chapter,
+%                   \paragraph, \subparagraph
+%       <shape>:    block, hang, display, runin, leftmargin, rightmargin, drop,
+%                   wrap, frame
+%       <label>:    \normalfont\Large\bfseries,
+%                   \normalfont\large\bfseries,
+%                   \normalfont\normalsize\bfseries
+\titlespacing{\section}{-4em}{1em}{0.5em}[-4em]
+\titlespacing{\subsection}{-3em}{0.5em}{0.5em}
+% 格式：\titlespacing{<command>}{<left-sep>}{<before-sep>}
+%                                           {<after-sep>}{<right-sep>}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
