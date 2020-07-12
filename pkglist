@@ -52,7 +52,6 @@ qiv
 rime-double-pinyin
 rime-emoji
 rsync
-rxvt-unicode
 sagemath-doc
 scrot
 smplayer
@@ -114,6 +113,7 @@ xorg-xcursorgen
 xorg-xdpyinfo
 xorg-xdriinfo
 xorg-xev
+xorg-xfontsel
 xorg-xgamma
 xorg-xhost
 xorg-xinput
@@ -135,6 +135,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xterm
 zathura
 zathura-pdf-mupdf
 zsh
