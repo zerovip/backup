@@ -67,7 +67,7 @@ XTerm.vt100.scrollbar.width: 8
 ! font family and font size
 XTerm.vt100.faceName: Fantasque Sans Mono:style=Regular
 XTerm.vt100.faceNameDoublesize: Source Han Sans CN:style=Regular
-XTerm.vt100.faceSize: 16
+XTerm.vt100.faceSize: 17
 
 ! Adjust line spacing
 XTerm*scaleHeight: 1.15

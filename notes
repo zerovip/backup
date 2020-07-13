@@ -458,3 +458,5 @@
     2020.07.12    查询字体可以用：gtk2fontsel, 或 xorg-xfontsel
                         urxvt 的中文字体看着难受，换成 xterm 了
                         而且换成 xterm 以后一些 emoji 也显示出来了，urxvt 真的是垃圾，xterm 是真的好
+    2020.07.13    安装了录屏软件 simplescreenrecoder，以及屏幕显示键盘的 screenkey
+                        screenkey 的打开与关闭方式就是同时按两个 ctrl，不错
