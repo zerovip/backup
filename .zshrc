@@ -19,8 +19,16 @@ echo -ne "\n"
 if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
   . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
-# 语法高亮插件，模仿fish
+# 语法高亮插件，模仿 fish
 # 直接 sudo pacman -S zsh-syntax-highlighting 安装就好
+
+# if [[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+#   .  /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# fi
+# autosuggestion 插件，模仿 fish
+# 直接 sudo pacman -S zsh-autosuggestions 安装就好
+# 已卸载，就是显示一个灰色的历史记录之类的，没什么用，干扰视线
+#   它显然过于不智能了，已经安装过的软件怎么可能安装第二次，已经卸载的软件怎么可能再卸载
 
 if [[ -f /usr/share/autojump/autojump.zsh ]]; then
   . /usr/share/autojump/autojump.zsh
@@ -123,6 +131,20 @@ bindkey '^[^?' backward-kill-dir
 #使得Ctrl+w删除当前所有，而Alt+Backspace删除一个词语
 #方便按Tab键备选太多时快速回退到上一个目录处
 
+export EDITOR="/usr/bin/vim"
+export PAGER="/usr/bin/most -s"
+# alias less=$PAGER
+# alias zless=$PAGER
+# 使用 most 作为 pager
+# 系统里有两种东西，editor 和 pager，这应该理解成是两个进程类型
+#   在使用 less 时 pager 会默认查找 $PAGER 的值，（没有就自己上）
+#   在 less 中使用 edit 命令时则会由 editor 接管，查找 $EDITTOR 和 $VISUAL 的值
+#       edit 命令就是 less / more 的页面里按 v 键
+# 提前安装 most: sudo pacman -S most，因为 vim 只能做 editor 不能做 pager
+# 然后用 most 来接管 pager，这样比如在使用 man 的时候，就会调用 most
+# 我觉得这是比修改 $MANPAGER 更好、更全面的办法
+# See, htttps://superuser.com/q/575808
+#   and, https://www.2daygeek.com/get-display-view-colored-colorized-man-pages-linux
 
 #------------------------------
 # 4.颜色/主题（希望能达到dieter的效果）

@@ -53,7 +53,6 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "     ==> Install part
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
@@ -98,22 +97,28 @@ Plug 'lervag/vimtex'
 " See, https://github.com/SirVer/ultisnips
 Plug 'SirVer/ultisnips'
 
+" 8. vim-commentary
+" simple tool to comment one line
+" See, https://github.com/tpope/vim-commentary
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins
 "     ==> Configure part
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 1. lightline
 " 被动工具
 " 让 lightline 显示出来
 set laststatus=2
-" 重写 filename 部分，把路径也显示出来
+" 重写 filename 部分，把路径显示出来
 let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'cwd', 'filename', 'modified' ] ]
+      \             [ 'readonly', 'cwd', 'modified' ] ]
       \ },
       \ 'component': {
-      \   'cwd': 'CWD: %r%{getcwd()}%h '
+      \   'cwd': ' %r%{getcwd()}%h/%f '
       \ },
       \ }
 
@@ -176,14 +181,8 @@ let g:vimtex_compiler_method='latexmk'
 " 主动工具
 " 该程序需要 vim 对 python 的支持，可2可3，一般不写，这里写出来明确用3
 let g:UltiSnipsUsePythonVersion = 3
-" 模板片段【放置处】，edit 时先找这里，再找【搜寻处】，都没有在这里建，默认 $HOME/UltiSnips/ （第一个 rtp）
-" 按理说下面这行注释掉就行了，因为下面加了 rtp后【搜寻处】就应该能找到，不应该在默认处再建新的了，但实际上不行所以写明
-let g:UltiSnipsSnippetsDir = '~/codes/UltiSnips/'
-" 模板片段【搜寻处】，默认就是下面这只有一个元素的列表，用的时候是在这里找，完整路径为 rtp + 【搜寻处】
-" let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-" 用的时候在每一个 rtp 下面找以 UltiSnipsSnippetDirectories 中元素命名的子文件夹下的模板片段文件，所以新建一个 rtp
-set rtp+=~/codes
-set rtp+=~/codes/current_course
+" 模板片段【搜寻处】，默认就是下面这只有一个元素的列表，用的时候是在这里找
+let g:UltiSnipsSnippetDirectories=[$HOME.'/codes/UltiSnips', $HOME.'/codes/current_course']
 " tab 键和另一个插件冲突。Trigger configuration. Do not use <tab> if
 " you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -192,6 +191,9 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" 8. vim-commentary
+" 主动工具
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -237,8 +239,8 @@ set noshowmode
 " 设置行号
 set number
 
-" Set the maximal lines waring
-set colorcolumn=72
+" Set the maximal lines warning
+set colorcolumn=80
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 " 提前翻页，保持总能在屏幕中看到光标上下 7 行的内容
