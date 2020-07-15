@@ -1,9 +1,19 @@
 #----------------------------------------#
 # File:     .zshrc   ZSH resource file   #
-# Version:  1.0                          #
+# Version:  2.0                          #
 # Author:   Zero                         #
 #----------------------------------------#
-
+#
+# 目录：
+#   0. 启动语
+#   1. 插件
+#   2. 历史
+#   3. 习惯
+#   4. 颜色/主题
+#   5. 自动补全与错误矫正相关
+#   6. 小工具
+#
+#----------------------------------------
 
 #-----------------------------
 # 0.启动语
@@ -131,21 +141,6 @@ bindkey '^[^?' backward-kill-dir
 #使得Ctrl+w删除当前所有，而Alt+Backspace删除一个词语
 #方便按Tab键备选太多时快速回退到上一个目录处
 
-export EDITOR="/usr/bin/vim"
-export PAGER="/usr/bin/most -s"
-# alias less=$PAGER
-# alias zless=$PAGER
-# 使用 most 作为 pager
-# 系统里有两种东西，editor 和 pager，这应该理解成是两个进程类型
-#   在使用 less 时 pager 会默认查找 $PAGER 的值，（没有就自己上）
-#   在 less 中使用 edit 命令时则会由 editor 接管，查找 $EDITTOR 和 $VISUAL 的值
-#       edit 命令就是 less / more 的页面里按 v 键
-# 提前安装 most: sudo pacman -S most，因为 vim 只能做 editor 不能做 pager
-# 然后用 most 来接管 pager，这样比如在使用 man 的时候，就会调用 most
-# 我觉得这是比修改 $MANPAGER 更好、更全面的办法
-# See, htttps://superuser.com/q/575808
-#   and, https://www.2daygeek.com/get-display-view-colored-colorized-man-pages-linux
-
 #------------------------------
 # 4.颜色/主题（希望能达到dieter的效果）
 #------------------------------
@@ -153,10 +148,21 @@ autoload colors
 colors
 #打开颜色显示
 
-
 PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%C $ "
 #自定义命令提示符
 
+man() {
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    command man "$@"
+}
+# man page 的颜色
+# See, https://www.2daygeek.com/get-display-view-colored-colorized-man-pages-linux/
+# 以及 notes 中对这件事的详细记录
 
 #------------------------------
 # 5.自动补全与错误矫正相关
