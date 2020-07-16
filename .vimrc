@@ -102,6 +102,17 @@ Plug 'SirVer/ultisnips'
 " See, https://github.com/tpope/vim-commentary
 Plug 'tpope/vim-commentary'
 
+" 9. indentLine
+" for displaying thin vertical lines at each indentation level
+"   for code indented with spaces.
+" See, https://github.com/wsdjeg/indentLine
+Plug 'wsdjeg/indentLine'
+
+" 10. bufferline
+" Super simple vim plugin to show the list of buffers in the command bar.
+" See, https://github.com/bling/vim-bufferline
+Plug 'bling/vim-bufferline'
+
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
@@ -111,16 +122,62 @@ call plug#end()
 " 被动工具
 " 让 lightline 显示出来
 set laststatus=2
-" 重写 filename 部分，把路径显示出来
+" 重写 filename 部分，改为 cwd，把路径显示出来
+" 加入 bufferline 部分，在 statusline 中显示 buffer 信息
+"   参考：https://github.com/itchyny/lightline.vim/issues/36
+" 写自己的 vimscript，条件语句比较见：
+"   https://www.w3cschool.cn/vim/sdiuyozt.html
 let g:lightline = {
+      \ 'colorscheme': 'wombat',
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'cwd', 'modified' ] ]
+      \   'left': [ [ 'bufferline' ],
+      \             [ 'readonly', 'cwd', 'modified' ] ],
+	  \   'right': [ [ 'paste', 'mode' ],
+	  \            [ 'percent', 'lineinfo' ],
+      \            [ 'fileformat', 'fileencoding', 'filetype' ] ]
       \ },
       \ 'component': {
-      \   'cwd': ' %r%{getcwd()}%h/%f '
+      \   'cwd': ' %F ',
+      \   'bufferline': '%{bufferline#refresh_status()}'.
+      \                 '%{MyBufferline()[0]}'.
+      \                 '%{MyBufferline()[1]}'.
+      \                 '%9*%{g:bufferline_status_info.current}'.
+      \                 '%{MyBufferline()[2]}'
       \ },
+        \ 'component_function': {
+        \   'fileformat': 'LightlineFileformat',
+        \   'filetype': 'LightlineFiletype',
+        \ },
       \ }
+" colorscheme 能写 gruvbox 是建立在安装了 gruvbox 插件的基础上的，
+"   而 gruvbox 兼容了 lightline
+function! MyBufferline()
+  call bufferline#refresh_status()
+  let b = g:bufferline_status_info.before
+  let c = g:bufferline_status_info.current
+  let a = g:bufferline_status_info.after
+  let alen = strlen(a)
+  let blen = strlen(b)
+  let clen = strlen(c)
+  let w = winwidth(0) * 4 / 9
+  if w < alen+blen+clen+8
+    let aa = a ==# "" ? a : '...'
+    let bb = b ==# "" ? b : '...'
+    let bf = aa ==# "" && bb ==# "" ?  "Buffer:  " : "Buffers: "
+    return [bf, bb, aa]
+  else
+    let bf = a ==# "" && b ==# "" ? "Buffer:  " : "Buffers: "
+    return [bf, b, a]
+  endif
+endfunction
+
+function! LightlineFileformat()
+  return winwidth(0) > 70 ? &fileformat : ''
+endfunction
+
+function! LightlineFiletype()
+  return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
+endfunction
 
 " 2. Rainbow Parentheses
 " 被动工具
@@ -154,6 +211,10 @@ au Syntax * RainbowParenthesesLoadBraces
 " See, https://github.com/morhetz/gruvbox/wiki/Configuration
 " and, https://github.com/morhetz/gruvbox/wiki/Usage
 colorscheme gruvbox
+" 使用下面的一行，等其他所有插件都加载完了再加载这个 gruvbox，
+"   会引起报错，因为在上面 lightline 里面指定了 gruvbox 主题，
+"   只能用上面的一条，直接指定主题. 关于 autocmd 还需要学习
+"autocmd vimenter * colorscheme gruvbox
 set background=dark
 
 " 4. pear-tree
@@ -194,6 +255,25 @@ let g:UltiSnipsEditSplit="vertical"
 
 " 8. vim-commentary
 " 主动工具
+
+" 9. indentLine
+" 被动工具
+
+" 10. bufferline
+" 被动工具
+" 不在命令行窗口显示，而是在 lightline 里调用
+let g:bufferline_echo=0
+" 更改左右标识
+let g:bufferline_active_buffer_left=' ►'
+let g:bufferline_active_buffer_right='◄ '
+"   保证总字符数一样多，都是 2 个，和下面的 separator 一样多
+"   特殊符号列表见：http://www.weisuyun.com/BQ/BQ.html
+" 非选中项的左右两端填充的字符，
+"   这是在文档中找不到的参数，是我看源码看到的，
+"   见：https://github.com/bling/vim-bufferline/blob/master/plugin/bufferline.vim#L14
+let g:bufferline_separator='  '
+"   separator 和上面的 buffer_left/right 字符数一样多，
+"   这样在切换 buffer 时就不会左右乱跑
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -477,7 +557,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
-" Use airline plugin instead, 
+" Use lightline plugin instead, 
 "   see the Plugin section at the begining of this file.
 
 " Always show the status line
