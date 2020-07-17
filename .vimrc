@@ -19,19 +19,17 @@
 "
 "                                               Zero
 "                                            2020.07.10
+"
+"       I learned about the vim 8.0 build-in package managementing way,
+"   it is cool, but seems not convenient as vim-plug. So, I will for now
+"   adhere to vim-plug.
+"                                            2020.07.18
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Original_author: 
 "       Amir Salihefendic — @amix3k
 "
-" Awesome_version:
-"       Get this config, nice color schemes and lots of plugins!
-"
-"       Install the awesome version from:
-"
-"           https://github.com/amix/vimrc
-"
 " Edit:
-"       Zero
+"       by Zero
 "
 " Sections:
 "    -> Plugins
@@ -52,7 +50,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins
+" => Plugins (Using vim-plug to manage.)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
 Plug 'morhetz/gruvbox'
@@ -67,14 +65,14 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
 
 call plug#end()
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 0. gruvbox
 " a theme
 " See, https://github.com/morhetz/gruvbox/wiki/Installation
 " 被动工具
 " See, https://github.com/morhetz/gruvbox/wiki/Configuration
 " and, https://github.com/morhetz/gruvbox/wiki/Usage
-"------------------------------------------------------------------------------
+"----------------------------------------------------------
 colorscheme gruvbox
 " 使用下面的一行，等其他所有插件都加载完了再加载这个 gruvbox，
 "   会引起报错，因为在上面 lightline 里面指定了 gruvbox 主题，
@@ -83,36 +81,50 @@ colorscheme gruvbox
 
 set background=dark
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 1. lightline
 " for the bottom status line
 " Similar tools:
 "   airline, see, https://github.com/vim-airline/vim-airline
 " See, https://github.com/itchyny/lightline.vim
 " 被动工具
-"------------------------------------------------------------------------------
+"----------------------------------------------------------
 " 让 lightline 显示出来
 set laststatus=2
 
-" 重写 filename 部分，改为 cwd，把路径显示出来
+" 重写 filename 部分，改为 full_path，把路径显示出来
 " 加入 bufferline 部分，在 statusline 中显示 buffer 信息
 "   参考：https://github.com/itchyny/lightline.vim/issues/36
 " 写自己的 vimscript，条件语句比较见：
 "   https://www.w3cschool.cn/vim/sdiuyozt.html
 " syntax enable
-highlight User1 ctermfg=252 ctermbg=240
-highlight User2 cterm=bold ctermfg=236 ctermbg=184
-" 写两个自己的颜色，User1 用在未选中的 buffer，User2 用在选中的 buffer
-"   syntax enable 应该在定义自己的颜色之前声明，否则会无效
+"   syntax enable 应该在定义自己的颜色之前声明，
+"       否则自己定义的颜色会被这条语句清除——（没有查，是我实验出来的结果）
 "   当然这里不写也没问题，因为 vim-plug 自动帮我们写好了
-"   见：https://github.com/junegunn/vim-plug/issues/379
+"       见：https://github.com/junegunn/vim-plug/issues/379
+highlight User1 ctermfg=252 ctermbg=240
+highlight User2 cterm=bold ctermfg=236 ctermbg=228
+" 写两个自己的颜色，User1 用在未选中的 buffer，User2 用在选中的 buffer
+"   使用 User1 的方式是 %1*，使用 User2 的方式是 %2*，有名字的颜色组的使用
+"       方式是 %#color-Group-Name#，具体有那些颜色直接用 :hi 就能看到
+"   hi 是 highlight 的简写，h 是 help 的简写，用哪个都可以
+"   见 vim 的帮助文档，:h statusline，:h highlight
+" 这里可以用的变量有：  guifg: gui 模式下的前景，可以用十六进制颜色码
+"                       guibg：gui 模式下的背景，ditto
+"                       ctermfg / ctermbg：彩色终端下的，可以用 256 颜色码
+"                       term：黑白终端下的，可以用，bold，underline，standout之类的
+"   其中，十六进制颜色码就是 #rrggbb 颜色，每两位用一个十六进制数表示
+"       256 颜色码见，https://github.com/guns/xterm-color-table.vim
+"           或，http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
+"   我这里是 xterm 终端模拟器，最多 256 个颜色，所以写 cterm 项就好
+
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'bufferline' ],
       \             [ 'readonly', 'full_path', 'modified' ] ],
-	  \   'right': [ [ 'percent', 'lineinfo' ],
+      \   'right': [ [ 'percent', 'lineinfo' ],
       \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
       \ },
       \ 'component': {
@@ -130,6 +142,8 @@ let g:lightline = {
       \ }
 " colorscheme 能写 gruvbox 是建立在安装了 gruvbox 插件的基础上的，
 "   而 gruvbox 兼容了 lightline
+" 最后没有选择 gruvbox，而是用了 wombat，这是因为这个主题的左边二级颜色不变，
+"   方便我写自己的 buffer 部分
 
 function! MyBufferline()
   call bufferline#refresh_status()
@@ -150,16 +164,16 @@ function! MyBufferline()
     return [bf, b, a]
   endif
 endfunction
-" statusline 还是花费了我大量心血的，这里面需要注意的点有：
+" statusline 中的这个 bufferline 还是花费了我大量心血的，这里面需要注意的点有：
 "   1. wombat 是一个合适的主题，它合适就合适在左边的第二级不会随着模式的改变
 "       发生颜色的变化，于是 Buffer 的背景色直接用这个颜色就好，如果不一样的话，
-"       字符串 “buffer” 的左边有一个第二级颜色的小小的空格
+"       字符串 “Buffer” 的左边有一个第二级颜色的小小的空格
 "   2. 注意折断逻辑：当窗口越来越小时，折断的顺序是：
 "       a. current_path，这是通过 vim script 中的“<”符号进行的，很智能，
-"           后面如果其他东西少了它还会补充回来
-"       b. 字符串 “buffer”，一旦折断就不会再显示了
-"       c. 下面两个函数定义的两个 format 消失
-"       d. 前后的未选中的 buffer
+"           后面如果其他东西折断掉了有了空余位置，它还会补充回来
+"       b. 字符串 “Buffer” 消失，这是上面的函数做了判断的
+"       c. 下面两个函数定义的两个 fileformat 和 filetype 消失
+"       d. 前后的未选中的 buffer 变为省略号，这是上面函数做判断的结果
 "   3. 注意那些简写的判断语句，语法是：
 "       let x = 判断语句 ? 判断成功的赋值 : 判断失败的赋值
 "           其中判断失败处可以再写一个这样的判断语句
@@ -173,14 +187,14 @@ function! LightlineFiletype()
   return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
 endfunction
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 2. Rainbow Parentheses
 " For colorful brackets
 " Similar tool:
 "   rainbow, see, https://github.com/luochen1990/rainbow
 " See, https://github.com/kien/rainbow_parentheses.vim
 " 被动工具
-"------------------------------------------------------------------------------
+"----------------------------------------------------------
 " 括号颜色列表
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
@@ -208,25 +222,25 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 3. pear-tree
 " auto close quotes, HTML tags, brackets, and so on
 " See, https://github.com/tmsvg/pear-tree
 " To replace auto-pair, https://github.com/jiangmiao/auto-pairs
 " 基本是被动工具，但也可以自己加一些或删一些配对
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 4. multiple-cursors
 " multiple cursors operating tool
 " See, https://github.com/terryma/vim-multiple-cursors
 " 主动工具，需要学习一下，gvim 可能会遇到一个问题
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 5. vimtex
 " for LaTeX helper
 " See, https://github.com/lervag/vimtex
 " 基本是被动工具
-"------------------------------------------------------------------------------
+"----------------------------------------------------------
 " 确保总能正确识别latex文件
 let g:tex_flavor='latex'
 
@@ -244,12 +258,12 @@ let g:vimtex_quickfix_mode=0
 let g:vimtex_compiler_method='latexmk'
 " 关于编译引擎，要写在文件里 %! TEX program = program
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 6. UltiSnips
 " basicly for LaTeX file and MarkDown blog file
 " See, https://github.com/SirVer/ultisnips
 " 主动工具
-"------------------------------------------------------------------------------
+"----------------------------------------------------------
 " 该程序需要 vim 对 python 的支持，可2可3，一般不写，这里写出来明确用3
 let g:UltiSnipsUsePythonVersion = 3
 
@@ -266,28 +280,29 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 7. vim-commentary
 " simple tool to comment one line
 " See, https://github.com/tpope/vim-commentary
 " 主动工具
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 8. Indent Guides
 " for visually displaying indent levels in Vim.
 " See, https://github.com/nathanaelkane/vim-indent-guides
 "   替代 indentLine 插件，indentLine 不知道有什么毛病，
 "   那些成对的符号都消失了
 " 被动工具
-"------------------------------------------------------------------------------
+"----------------------------------------------------------
+" 自动启动
 let g:indent_guides_enable_on_vim_startup=1
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 9. bufferline
 " Super simple vim plugin to show the list of buffers in the command bar.
 " See, https://github.com/bling/vim-bufferline
 " 被动工具
-"------------------------------------------------------------------------------
+"----------------------------------------------------------
 " 不在命令行窗口显示，而是在 lightline 里调用
 let g:bufferline_echo=0
 
@@ -303,7 +318,7 @@ let g:bufferline_echo=0
 " 见， https://github.com/bling/vim-bufferline/blob/master/plugin/bufferline.vim#L14
 let g:bufferline_separator='|'
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -716,5 +731,4 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
-
 

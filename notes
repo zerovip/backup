@@ -487,8 +487,12 @@
                                 See, htttps://superuser.com/q/575808
                                  and, https://github.com/rkitover/vimpager
                                 缺点：打开的时候会报错说找不到主题，看样子是 vim-plug 都没有加载好
-                                    查了一下有一些 report，但按理说都修过了啊，可是为啥还不行呢？
+                                    查了一下有一些 bug 的 report，但按理说都修过了啊，可是为啥还不行呢？
                                     只能卸掉了
                     思路二：还是使用 less，但稍微改一下 less 的颜色，直接在 .zshrc 里写几行代码，见
                                 https://www.2daygeek.com/get-display-view-colored-colorized-man-pages-linux
                                 暂时先这样，预感括号的彩色问题还是不行，也许还是要想办法用上 vimpager
+    2020.07.17    今天搞了一天的 statusline，用的是 lightline. lightline 果然够轻量，而且可定制性非常高
+                    好好研究了一下 vimscript，别的不敢说，起码 statusline 的部分基本算是半个专家了
+                    尤其是 highlight 的部分，本来觉得超级难，学会了之后也就那样
+                    但还是预感到过些日子就忘记了，也许明天后天就不记得了，所以尽量多地写了一些注释，希望未来如果有需要还能迅速上手
