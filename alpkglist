@@ -11,6 +11,7 @@ bspwm
 dhcpcd
 dmenu
 efibootmgr
+evince
 fakeroot
 firefox
 firefox-i18n-zh-cn
@@ -19,6 +20,7 @@ gcc
 git
 goldendict
 grub
+gsfonts
 gvim
 hugo
 ibus
