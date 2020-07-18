@@ -34,6 +34,8 @@ m4
 make
 man-db
 man-pages
+mlocate
+nerd-fonts-fantasque-sans-mono
 nitrogen
 nnn
 noto-fonts-cjk
@@ -51,6 +53,7 @@ picocom
 pkgconf
 pkgfile
 polybar
+proxychains-ng
 python
 qiv
 rime-double-pinyin
@@ -80,6 +83,7 @@ texlive-science
 tmux
 unrar
 unzip
+v2ray
 vi
 which
 wpa_supplicant

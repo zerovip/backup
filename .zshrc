@@ -70,14 +70,14 @@ fi
 #------------------------------
 HISTFILE=~/.histfile
 #历史记录文件
-HISTSIZE=1000
+HISTSIZE=3000
 #历史记录条目数量
-SAVEHIST=1000
+SAVEHIST=3000
 #注销后保存的历史记录条目数量
 setopt INC_APPEND_HISTORY
 #以附加的方式写入历史记录
-setopt HIST_IGNORE_DUPS
-#重复的不计入历史
+setopt HIST_FIND_NO_DUPS
+#重复的不进行查找
 setopt EXTENDED_HISTORY
 #为历史记录中的命令添加时间戳
 setopt AUTO_PUSHD
@@ -94,6 +94,7 @@ bindkey "^[[B" history-beginning-search-forward
 #-----------------------------
 # 3.习惯
 #-----------------------------
+# alias curl='curl --socks5 127.0.0.1:1080'
 #alias clc='clear'
 alias sudo='sudo '  #神奇的命令，使得 sudo 操作的命令也被展开
 alias ls='ls -F --color=auto'

@@ -65,9 +65,10 @@ XTerm.vt100.scrollBar: true
 XTerm.vt100.scrollbar.width: 8
 
 ! font family and font size
-XTerm.vt100.faceName: Fantasque Sans Mono:style=Regular
-XTerm.vt100.faceNameDoublesize: Noto Sans Mono CJK SC:style=Regular
+!XTerm.vt100.faceName: Fantasque Sans Mono:style=Regular
+XTerm.vt100.faceName: FantasqueSansMono Nerd Font Mono:style=Regular
 !XTerm.vt100.faceNameDoublesize: Noto Sans CJK SC:style=Regular
+XTerm.vt100.faceNameDoublesize: Noto Sans Mono CJK SC:style=Regular
 XTerm.vt100.faceSize: 17
 
 ! Adjust line spacing

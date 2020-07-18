@@ -33,6 +33,7 @@ m4
 make
 man-db
 man-pages
+mlocate
 nitrogen
 nnn
 noto-fonts-cjk
@@ -49,6 +50,7 @@ patch
 picocom
 pkgconf
 pkgfile
+proxychains-ng
 python
 qiv
 rime-double-pinyin
@@ -78,6 +80,7 @@ texlive-science
 tmux
 unrar
 unzip
+v2ray
 vi
 which
 wpa_supplicant
