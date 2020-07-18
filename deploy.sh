@@ -16,18 +16,23 @@ echo -e "【 加密内容结束 】"
 
 # Go To Public folder
 cd public
-# Add changes to git.
-git add .
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+    # Add changes to git.
+    git add .
 
-# Commit changes.
-msg="rebuilding site `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
+    # Commit changes.
+    msg="rebuilding site `date`"
+    if [ $# -eq 1 ]
+        then msg="$1"
+    fi
+    git commit -m "$msg"
+
+    # Push source and build repos.
+    git push origin master
+
+    # Come Back up to the Project Root
+    cd ..
+else
+    echo "没有变化，无需部署！"
+    cd ..
 fi
-git commit -m "$msg"
-
-# Push source and build repos.
-git push origin master
-
-# Come Back up to the Project Root
-cd ..
