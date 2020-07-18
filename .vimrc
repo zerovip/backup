@@ -102,7 +102,7 @@ set laststatus=2
 "       否则自己定义的颜色会被这条语句清除——（没有查，是我实验出来的结果）
 "   当然这里不写也没问题，因为 vim-plug 自动帮我们写好了
 "       见：https://github.com/junegunn/vim-plug/issues/379
-highlight User1 ctermfg=252 ctermbg=240
+highlight User1 ctermfg=255 ctermbg=240
 highlight User2 cterm=bold ctermfg=236 ctermbg=228
 " 写两个自己的颜色，User1 用在未选中的 buffer，User2 用在选中的 buffer
 "   使用 User1 的方式是 %1*，使用 User2 的方式是 %2*，有名字的颜色组的使用

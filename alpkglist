@@ -1,5 +1,3 @@
-adobe-source-han-sans-cn-fonts
-adobe-source-han-serif-cn-fonts
 alsa-utils
 autoconf
 autojump
@@ -21,6 +19,7 @@ git
 goldendict
 grub
 gsfonts
+gtk2fontsel
 gvim
 hugo
 ibus
@@ -79,17 +78,11 @@ texlive-pstricks
 texlive-publishers
 texlive-science
 tmux
-ttf-arphic-ukai
-ttf-arphic-uming
 unrar
 unzip
 vi
 which
 wpa_supplicant
-wqy-bitmapfont
-wqy-microhei
-wqy-microhei-lite
-wqy-zenhei
 xdotool
 xf86-video-intel
 xf86-video-vesa

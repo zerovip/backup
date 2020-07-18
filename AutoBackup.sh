@@ -52,6 +52,7 @@ cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
 
 # Xsource 的配置文件，主要是对 Xterm 进行了配置
 # 谁能想到，我现在不用 Xterm 了，改用 urxvt 了，但还是在这里设置
+# 谁能想到，因为中文字体间距的问题，我又用回 Xterm 了.
 cp ~/.Xresources ~/backup/backup/
 
 # 字体渲染的配置
@@ -86,10 +87,16 @@ echo ""
 echo ""
 echo "==================================="
 echo "下面是配置文件的备份"
-git add .
-date=`date +%Y%m%d`
-git commit -m "Auto Backuping on "$date
-git push
+# 这条判断语句参考自：https://stackoverflow.com/a/25149786/9783145
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+    git add .
+    date=`date +%Y%m%d`
+    git commit -m "Auto Backuping on "$date
+    git push
+    echo "配置文件有一些变化，已经备份成功！"
+else
+    echo "配置文件没有变化，无需备份！"
+fi
 
 # 数学区文件同步到 GitHub
 cd ~/math-works
@@ -97,10 +104,15 @@ echo ""
 echo ""
 echo "==================================="
 echo "下面是数学工作的备份(private)"
-read -p "数学工作区有哪些更改：" ma_mesg
-git add .
-git commit -m "$ma_mesg"" Auto Backuping on "$date
-git push
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+    read -p "数学工作区有哪些更改：" ma_mesg
+    git add .
+    git commit -m "$ma_mesg"" Auto Backuping on "$date
+    git push
+    echo "数学工作有一些变化，已经备份成功"
+else
+    echo "数学工作没有变化，无需备份！"
+fi
 
 # 博客push
 # 在配置博客的时候要注意，要把 public 文件夹删掉
@@ -118,10 +130,15 @@ echo ""
 echo ""
 echo "==================================="
 echo "下面是博客原始文件夹的备份(private)"
-read -p "博客有哪些变化：" po_mesg
-git add .
-git commit -m "$po_mesg"" Auto pushing blog on "$date
-git push
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+    read -p "博客有哪些变化：" po_mesg
+    git add .
+    git commit -m "$po_mesg"" Auto pushing blog on "$date
+    git push
+    echo "博客原始文件有些变化，已经备份成功！"
+else
+    echo "博客原始文件没有变化，无需备份！"
+fi
 
 # 博客主题 push
 cd ~/codes/blog/themes/zero
@@ -129,8 +146,13 @@ echo ""
 echo ""
 echo "==================================="
 echo "下面是博客主题的备份"
-read -p "博客主题有哪些更改：" po_th_mesg
-git add .
-git commit -m "$po_th_mesg"" Auto pushing blog on "$date
-git push
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+    read -p "博客主题有哪些更改：" po_th_mesg
+    git add .
+    git commit -m "$po_th_mesg"" Auto pushing blog on "$date
+    git push
+    echo "博客主题有些变化，已经备份成功！"
+else
+    echo "博客主题没有变化，无需备份！"
+fi
 

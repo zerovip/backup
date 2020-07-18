@@ -52,9 +52,18 @@ fi
 # 暂时先不用，有点过于酸爽了
 #incr插件，非使用pacman安装，于官网http://mimosa-pudica.net/zsh-incremental.html下载
 
-source /usr/share/doc/pkgfile/command-not-found.zsh
+if [[ -f /usr/share/doc/pkgfile/command-not-found.zsh ]]; then
+    . /usr/share/doc/pkgfile/command-not-found.zsh
+fi
 # 提前安装 pkgfile，这是用来解决不知道某条命令在哪个包里的问题的
 # 还需要 sudo pkgfile -u 来更新 pkgfile 的数据库
+
+# if [[ -f /usr/share/zsh/scripts/git-prompt.zsh ]]; then
+#     . /usr/share/zsh/scripts/git-prompt.zsh
+# fi
+# 不用了，不是很有必要
+# git-prompt.zsh 插件，在 AUR 的包里，先 clone 再 makepkg -sri 就好，
+#   然后修改下面的命令提示符
 
 #------------------------------
 # 2.历史
@@ -148,8 +157,16 @@ autoload colors
 colors
 #打开颜色显示
 
-PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%C $ "
 #自定义命令提示符
+
+# 下条为显示整个目录层次，家目录显示为“~”，即 %~
+PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%~ $ "
+
+# 下条为只显示当前目录，即 %C
+# PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%C $ "
+
+# 下条为使用插件 git-prompt.zsh 的提示符，插件已弃置不用
+# PROMPT='[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$reset_color%}$(gitprompt)%{$fg[cyan]%}%~ $ '
 
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
