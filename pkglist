@@ -1,3 +1,4 @@
+acpid
 alsa-utils
 autoconf
 automake
@@ -8,7 +9,6 @@ bspwm
 dhcpcd
 dmenu
 efibootmgr
-evince
 fakeroot
 firefox
 firefox-i18n-zh-cn
@@ -17,7 +17,6 @@ gcc
 git
 goldendict
 grub
-gsfonts
 gtk2fontsel
 gvim
 hugo
@@ -40,7 +39,6 @@ noto-fonts-cjk
 noto-fonts-emoji
 numlockx
 nvidia
-okular
 openssh
 os-prober
 otf-fantasque-sans-mono
@@ -92,6 +90,7 @@ xorg-docs
 xorg-fonts-100dpi
 xorg-fonts-75dpi
 xorg-fonts-encodings
+xorg-fonts-misc
 xorg-font-util
 xorg-iceauth
 xorg-luit

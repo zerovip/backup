@@ -94,7 +94,6 @@ bindkey "^[[B" history-beginning-search-forward
 #-----------------------------
 # 3.习惯
 #-----------------------------
-# alias curl='curl --socks5 127.0.0.1:1080'
 #alias clc='clear'
 alias sudo='sudo '  #神奇的命令，使得 sudo 操作的命令也被展开
 alias ls='ls -F --color=auto'

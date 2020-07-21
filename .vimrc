@@ -104,7 +104,9 @@ set laststatus=2
 "       见：https://github.com/junegunn/vim-plug/issues/379
 highlight User1 ctermfg=255 ctermbg=240
 highlight User2 cterm=bold ctermfg=236 ctermbg=228
-" 写两个自己的颜色，User1 用在未选中的 buffer，User2 用在选中的 buffer
+highlight User3 ctermfg=248 ctermbg=240
+" 写三个自己的颜色，
+"   User1 用在 Buffer 字符串，User2 用在选中的 buffer，User3 用在未选中的 buffer
 "   使用 User1 的方式是 %1*，使用 User2 的方式是 %2*，有名字的颜色组的使用
 "       方式是 %#color-Group-Name#，具体有那些颜色直接用 :hi 就能看到
 "   hi 是 highlight 的简写，h 是 help 的简写，用哪个都可以
@@ -122,18 +124,18 @@ let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'bufferline' ],
-      \             [ 'readonly', 'full_path', 'modified' ] ],
+      \             [ 'bufferline' ] ],
       \   'right': [ [ 'percent', 'lineinfo' ],
-      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \              [ 'fileformat', 'fileencoding', 'filetype' ],
+      \              [ 'modified', 'full_path', 'readonly' ] ]
       \ },
       \ 'component': {
       \   'full_path': ' %<%F ',
       \   'bufferline': '%1*%{bufferline#refresh_status()}'.
       \                 '%{MyBufferline()[0]}'.
-      \                 '%{MyBufferline()[1]}'.
+      \                 '%3*%{MyBufferline()[1]}'.
       \                 '%2*%{g:bufferline_status_info.current}'.
-      \                 '%1*%{MyBufferline()[2]}'
+      \                 '%3*%{MyBufferline()[2]}'
       \ },
         \ 'component_function': {
         \   'fileformat': 'LightlineFileformat',
@@ -548,9 +550,9 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
+" Map <Space> to / (search) and Shift-<Space> to ? (backwards search)
 map <space> /
-map <C-space> ?
+map <S-space> ?
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
@@ -564,6 +566,7 @@ map <C-l> <C-W>l
 " Close the current buffer
 " 还需要好好学习一下 buffer
 map <leader>bd :Bclose<cr>:tabclose<cr>gT
+map <leader>x :bd<cr>
 
 " Close all the buffers
 " 还需要好好学习一下 buffer
@@ -571,6 +574,8 @@ map <leader>ba :bufdo bd<cr>
 
 map <leader>l :bnext<cr>
 map <leader>h :bprevious<cr>
+inoremap <F12> <C-o>:bnext<CR>
+inoremap <F2> <C-o>:bprevious<CR>
 
 " Useful mappings for managing tabs
 " 还需要好好学习一下 tab
@@ -673,7 +678,7 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 map <leader>q :e ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
-map <leader>x :e ~/buffer.md<cr>
+" map <leader>x :e ~/buffer.md<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
