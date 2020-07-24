@@ -24,6 +24,7 @@ hugo
 ibus
 ibus-rime
 intel-ucode
+kdenlive
 libtool
 lightdm
 lightdm-gtk-greeter
@@ -39,6 +40,7 @@ nitrogen
 nnn
 noto-fonts-cjk
 noto-fonts-emoji
+ntfs-3g
 numlockx
 nvidia
 openssh
@@ -50,6 +52,7 @@ patch
 picocom
 pkgconf
 pkgfile
+pkgstats
 polybar
 proxychains-ng
 python
@@ -57,13 +60,13 @@ qiv
 rime-double-pinyin
 rime-emoji
 rsync
-rxvt-unicode
 sagemath-doc
 screenkey
 scrot
 siji-git
 simplescreenrecorder
 smplayer
+soundkonverter
 stellarium
 sudo
 sxhkd
