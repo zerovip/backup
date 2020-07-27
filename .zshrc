@@ -160,7 +160,7 @@ colors
 #自定义命令提示符
 
 # 下条为显示整个目录层次，家目录显示为“~”，即 %~
-PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%~ $ "
+PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n%{$fg[yellow]%}@%m%{$fg[cyan]%}:%~ $ "
 
 # 下条为只显示当前目录，即 %C
 # PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[white]%}(%*)%{$fg[magenta]%}%n@%{$fg[yellow]%}%m:%{$fg[cyan]%}%C $ "

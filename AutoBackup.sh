@@ -46,6 +46,9 @@ cp ~/.config/bspwm/bspwmrc ~/backup/backup/
 # bspwm 需要的监听键盘输入的 sxhkd 的配置备份
 cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
 
+# alacritty 一个新终端模拟器的配置文件，替代 xterm
+cp ~/.config/alacritty/alacritty.yml ~/backup/backup/
+
 # ctags 软件的额外配置文件（以便识别 latex 中的 \ref 和 \label）备份
 # 暂时还没有，先不备份
 # cp ~/.ctags ~/backup/backup/
@@ -53,6 +56,7 @@ cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
 # Xsource 的配置文件，主要是对 Xterm 进行了配置
 # 谁能想到，我现在不用 Xterm 了，改用 urxvt 了，但还是在这里设置
 # 谁能想到，因为中文字体间距的问题，我又用回 Xterm 了.
+# 谁能想到，因为 Unicode 符号的一些问题，我又转移阵营到 alacritty 了.
 cp ~/.Xresources ~/backup/backup/
 
 # 字体渲染的配置

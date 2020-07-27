@@ -235,7 +235,11 @@ au Syntax * RainbowParenthesesLoadBraces
 " 4. multiple-cursors
 " multiple cursors operating tool
 " See, https://github.com/terryma/vim-multiple-cursors
-" 主动工具，需要学习一下，gvim 可能会遇到一个问题
+" 主动工具
+" 使用  <Ctrl> + <n> 查找下一个
+"       <Ctrl> + <x> 忽略这一个
+"       <Ctrl> + <p> 查找上一个
+"       A, I 等进行编辑
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 5. vimtex
@@ -326,7 +330,9 @@ let g:bufferline_separator='|'
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use mouse in xterm
-set mouse=a
+" set mouse=a
+" Not use xterm any more
+" now use alacritty
 
 " Sets how many lines of history VIM has to remember
 set history=2000
@@ -485,6 +491,15 @@ endif
 " endtry
 
 " set background=dark
+
+" set to let diff mode more clearly to compare
+" See, https://vi.stackexchange.com/a/5689
+" Edit by Zero.
+" hi DiffText   cterm=none ctermfg=Black ctermbg=Red gui=none guifg=Black guibg=Red
+" hi DiffChange cterm=none ctermfg=Black ctermbg=LightMagenta gui=none guifg=Black guibg=LightMagenta
+" Well, actually vimdiff works fine without this setting,
+"   not necessary to use anymore. The problem was recalled by myself suddenly
+"   so I checked for solutions immediatly without have tried first...
 
 " Set extra options when running in GUI mode
 if has("gui_running")

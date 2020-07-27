@@ -1,4 +1,4 @@
-acpid
+alacritty
 alsa-utils
 autoconf
 automake
@@ -6,6 +6,7 @@ base
 binutils
 bison
 bspwm
+calibre
 dhcpcd
 dmenu
 efibootmgr
@@ -139,7 +140,6 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xterm
 zathura
 zathura-pdf-mupdf
 zsh

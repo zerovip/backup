@@ -4,7 +4,7 @@
 
 # (checked) terminal emulator
 super + Return
-	xterm
+	alacritty
 
 # (checked) program launcher
 super + space
@@ -140,5 +140,5 @@ super + {Left,Down,Up,Right}
 # 改用 nnn 了，命令行的文件管理器
 
 # 福昕阅读器
-ctrl + alt + r
-    . /home/ehizil/AURpkgs/otherPKGs/foxitsoftware/foxitreader/FoxitReader.sh
+# ctrl + alt + r
+#     . /home/ehizil/AURpkgs/otherPKGs/foxitsoftware/foxitreader/FoxitReader.sh
