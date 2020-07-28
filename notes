@@ -618,3 +618,7 @@
                         Unicode 字符百科这个网站挺不错：https://unicode-table.com/cn/
                   这个 alacritty 最恐怖的地方在于它不需要关上重新打开配置文件，配置文件改完了它自己就生效了
                         这也太牛逼了吧
+    2020.07.28    把 grub 默认记住上一次选择也弄好了，详见自动备份脚本里的注释
+                  把图形界面的网络连接也搞好了，安装 NetworkManager 并设置自动启动，
+                        安装 nm-connection-editor 以及 network-manager-applet 然后设置一下就好了
+

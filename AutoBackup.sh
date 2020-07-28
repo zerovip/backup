@@ -18,6 +18,10 @@ cp /etc/fstab ~/backup/backup/
 # 输入法 ibus + rime 配置备份
 cp ~/.config/ibus/rime/default.custom.yaml ~/backup/backup/
 
+# GRUB 配置，主要就是两个配置，一个是主题，一个是默认记住上一次选择
+# 记住上一次选择，见，https://askubuntu.com/a/149572
+cp /etc/default/grub ~/backup/backup/
+
 # 开机 GRUB 页面自己制作的主题备份
 cp -r /usr/share/grub/themes/allurez/ ~/backup/backup/
 

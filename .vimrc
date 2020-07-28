@@ -644,6 +644,10 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 map 0 ^
 
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
+execute "set <M-j>=\ej"
+execute "set <M-k>=\ek"
+" See, https://vi.stackexchange.com/a/2363
+
 nmap <M-j> mz:m+<cr>`z
 nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
