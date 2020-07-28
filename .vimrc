@@ -330,9 +330,10 @@ let g:bufferline_separator='|'
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use mouse in xterm
-" set mouse=a
 " Not use xterm any more
 " now use alacritty
+set ttymouse=sgr
+set mouse=a
 
 " Sets how many lines of history VIM has to remember
 set history=2000

@@ -5,21 +5,23 @@ title: $1
 url: $2
 # 可选 notes, stories, journal, literature, memos, 是为了显示文章时左侧位置还在
 section: $3
-date: 20$4-$5-$6
-summary: $7
-weight: $8
+# 栏目名称，目前可选：21cen, buy, language，注意：秘密文章不要写这一项
+column: $4
+date: 20$5-$6-$7
+summary: $8
+weight: $9
 # 可选 pandoc 以使用它来生成数学类文章
-markup: $9
+markup: $10
 # 秘密文章不予显示写 true 即可
 # list_hide 是在列表中隐藏
-list_hide: ${10:false}
+list_hide: ${11:false}
 # rss_hide 是在 rss 中隐藏，有加密内容的博客必须有这个
-rss_hide: ${11:false}
+rss_hide: ${12:false}
 # 直接 文件夹/文件名 即可，如 notes/xxx.pdf
 # 放到 static 文件夹下，渲染数学类文章的 pdf
-file_path: $12
+file_path: $13
 # true / false
-draft: ${13:true}
+draft: ${14:true}
 # 黑块bbk：<span class='black_block' onclick="ChangeClassBlackBlock(this)">text</span>
 # 背景色bjs：<span style="background-color: #F2F5A9; color: black;">text</span>
 # 图片img：![示例图片](/images/example.jpeg)

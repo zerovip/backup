@@ -309,6 +309,7 @@
                         参考了https://www.zeolearn.com/magazine/develop-a-theme-for-hugo进行主题制作
                         目前已删除 blog 文件夹下 public 目录以方便调试，并删除自动脚本相关语句方便同步
                             主题调试时使用 hugo server --watch --verbose 即可随时看到更改
+                                一般情况下使用 hugo server -wDF
                             主题的更改主要是更改 themes/zero/layout themes/zero/static 等处，详见上述链接
                         主题改好后可上传时：
                             1. github上建立 zerovip.github.io 的库

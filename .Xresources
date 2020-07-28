@@ -29,7 +29,7 @@ Xft.lcdfilter: lcddefault
 
 ! -----------------------------------------------------------------------------
 ! Xterm is not used any more. Switch to alacritty because some Unicode symbols
-!   only show lef half while alacritty can show overlapping. It is better.
+!   only show left half while alacritty can show overlapping. It is better.
 !
 ! This problem may be a well known problem and nobody wants to solve it, see
 !   my notes for more details. The main ref is
