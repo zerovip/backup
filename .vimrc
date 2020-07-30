@@ -230,6 +230,14 @@ au Syntax * RainbowParenthesesLoadBraces
 " See, https://github.com/tmsvg/pear-tree
 " To replace auto-pair, https://github.com/jiangmiao/auto-pairs
 " 基本是被动工具，但也可以自己加一些或删一些配对
+"----------------------------------------------------------
+" 不要自动隐藏闭合符号，宁愿不要 . 命令重复的特性
+let g:pear_tree_repeatable_expand=0
+
+" 智能括号模式要手动打开
+let g:pear_tree_smart_openers=1
+let g:pear_tree_smart_closers=1
+let g:pear_tree_smart_backspace=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 4. multiple-cursors
