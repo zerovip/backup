@@ -69,6 +69,9 @@ cp ~/.config/fontconfig/fonts.conf ~/backup/backup/
 # vim 的 snippet 们
 cp -r ~/codes/UltiSnips/ ~/backup/backup/
 
+# 更改 Hugo 中 front-matter 部分的高亮按照 markdown 进行而非 yaml 进行的问题
+cp ~/.vim/after/syntax/markdown.vim ~/backup/backup/
+
 # 博客脚本备份
 cp ~/codes/deploy.sh ~/backup/backup/
 
