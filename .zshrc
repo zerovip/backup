@@ -1,31 +1,32 @@
-#----------------------------------------#
-# File:     .zshrc   ZSH resource file   #
-# Version:  2.0                          #
-# Author:   Zero                         #
-#----------------------------------------#
-#
-# 目录：
-#   0. 启动语
-#   1. 插件
-#   2. 历史
-#   3. 习惯
-#   4. 颜色/主题
-#   5. 自动补全与错误矫正相关
-#   6. 小工具
-#
-#----------------------------------------
+#---------------------------------------#
+# File:     .zshrc   ZSH resource file  #
+# Version:  2.1                         #
+# Author:   Zero                        #
+# Date:     2020-08-03                  #
+#---------------------------------------#
+#                                       #
+# 目录：                                #
+#   0. 启动语                           #
+#   1. 插件                             #
+#   2. 历史                             #
+#   3. 习惯                             #
+#   4. 颜色/主题                        #
+#   5. 自动补全与错误矫正相关           #
+#   6. 小工具                           #
+#                                       #
+#---------------------------------------#
 
-#-----------------------------
-# 0.启动语
-#-----------------------------
+#---------------------------------------#
+# 0.启动语                              #
+#---------------------------------------#
 echo -ne "Hey, handsome! Today is "; date '+%Y-%m-%d, %A'
 echo -ne "Have a NICE day!"
 echo -ne "\n"
 
 
-#-----------------------------
-# 1.插件
-#-----------------------------
+#---------------------------------------#
+# 1.插件                                #
+#---------------------------------------#
 if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
   . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
@@ -65,9 +66,9 @@ fi
 # git-prompt.zsh 插件，在 AUR 的包里，先 clone 再 makepkg -sri 就好，
 #   然后修改下面的命令提示符
 
-#------------------------------
-# 2.历史
-#------------------------------
+#---------------------------------------#
+# 2.历史                                #
+#---------------------------------------#
 HISTFILE=~/.histfile
 #历史记录文件
 HISTSIZE=3000
@@ -91,9 +92,9 @@ bindkey "^[[B" history-beginning-search-forward
 #显示匹配光标前的历史搜索
 
 
-#-----------------------------
-# 3.习惯
-#-----------------------------
+#---------------------------------------#
+# 3.习惯                                #
+#---------------------------------------#
 #alias clc='clear'
 alias sudo='sudo '  #神奇的命令，使得 sudo 操作的命令也被展开
 alias ls='ls -F --color=auto'
@@ -110,9 +111,12 @@ alias grep="grep --color=auto"
 #alias -s tgz='tar -xzvf'
 #alias -s zip='unzip'
 #alias -s bz2='tar -xjvf'
+
+alias mount='mount -o gid=ehizil,uid=ehizil,fmask=113,dmask=002' # mount 后能以用户身份写入
+
 #alias cp='acp -g'
 #alias mv='amv -g'    #提前安装advcp，用来显示移动和复制的进度条
-alias mount='mount -o gid=ehizil,uid=ehizil,fmask=113,dmask=002' # mount 后能以用户身份写入
+
 # 下面 8 行是为了使用 rsync 来使得复制的时候有进度条，
 #   参考自：https://wiki.archlinux.org/index.php/Rsync#As_cp/mv_alternative
 function cpr() {
@@ -125,10 +129,12 @@ function mvr() {
 # alias mv='mvr'
 # move 好像会导致在同一个文件夹下重命名成为复制？不应该啊
 # 于是干脆连复制的命令也不更改了，使用 cpr 作为带 bar 的复制好了
+
 # alias foxit='/home/ehizil/opt/foxitsoftware/foxitreader/FoxitReader.sh &'
 # 福昕阅读器
-alias n='nnn -e' # 命令行式的文件管理器，-e 使得直接打开文件
 
+# alias n='nnn -e' # 命令行式的文件管理器，-e 使得直接打开文件
+# nnn 文件浏览器，类似的还有 vifm，但我好像用不到，就 cd 和 ls 足够用了
 
 function sudo-command-line() {
 [[ -z $BUFFER ]] && zle up-history
@@ -150,9 +156,9 @@ bindkey '^[^?' backward-kill-dir
 #使得Ctrl+w删除当前所有，而Alt+Backspace删除一个词语
 #方便按Tab键备选太多时快速回退到上一个目录处
 
-#------------------------------
-# 4.颜色/主题（希望能达到dieter的效果）
-#------------------------------
+#---------------------------------------#
+# 4.颜色/主题                           #
+#---------------------------------------#
 autoload colors
 colors
 #打开颜色显示
@@ -181,12 +187,9 @@ man() {
 # See, https://www.2daygeek.com/get-display-view-colored-colorized-man-pages-linux/
 # 以及 notes 中对这件事的详细记录
 
-#------------------------------
-# 5.自动补全与错误矫正相关
-#------------------------------
-zstyle ':completion:*' menu select
-#方向键控制选择
-
+#---------------------------------------#
+# 5.自动补全与错误矫正相关              #
+#---------------------------------------#
 autoload -Uz compinit
 compinit
 #开启自动补全
@@ -200,8 +203,8 @@ setopt MENU_COMPLETE
 
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' verbose yes
-zstyle ':completion:*' menu select
-zstyle ':completion:*:*:default' force-list always
+zstyle ':completion:*' menu select  #方向键控制选择
+zstyle ':completion:*:*:default' force-list always  #把候选项列在下面
 zstyle ':completion:*' select-prompt '%SSelect: lines: %L matches: %M [%p]'
 zstyle ':completion:*:match:*' original only
 zstyle ':completion::prefix-1:*' completer _complete
@@ -253,9 +256,9 @@ zstyle ':completion:*:-tilde-:*' group-order 'named-directories' 'path-directori
 # cd ~ 补全顺序
 
 
-#------------------------------
-# 6.小工具
-#------------------------------
+#---------------------------------------#
+# 6.小工具                              #
+#---------------------------------------#
 # c() {
 #     local IFS=' '
 #     local calc="${*//p/+}"
