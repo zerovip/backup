@@ -170,3 +170,9 @@ else
     echo "博客主题没有变化，无需备份！"
 fi
 
+echo "====================================="
+echo "可以使用 sudo pacman -Qdt 来查找孤包."
+echo "可以使用 paccache -ruk0 来清除未安装的包缓存"
+echo "可以使用 paccache -r 来清除三个版本之前的包缓存"
+echo ""
+echo ""
