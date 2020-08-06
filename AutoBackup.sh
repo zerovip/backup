@@ -97,8 +97,6 @@ comm -23 ~/backup/backup/alpkglist ~/backup/backup/otpkglist > ~/backup/backup/p
 
 # 配置文件同步到 GitHub
 cd ~/backup/backup
-echo ""
-echo ""
 echo "==================================="
 echo "下面是配置文件的备份"
 # 这条判断语句参考自：https://stackoverflow.com/a/25149786/9783145
@@ -114,8 +112,6 @@ fi
 
 # 数学区文件同步到 GitHub
 cd ~/math-works
-echo ""
-echo ""
 echo "==================================="
 echo "下面是数学工作的备份(private)"
 if [[ `git status --porcelain --untracked-files=no` ]]; then
@@ -134,14 +130,10 @@ fi
 #   然后把这个 public 里面的文件都删掉，再 deploy
 #   即，再生成，再上传，这样才能把 public 文件夹作为
 #   子模组，并且直接推到 GitHub Pages.
-echo ""
-echo ""
 echo "==================================="
 echo "下面是博客的自动部署脚本"
 ~/codes/deploy.sh "auto pushing..."
 cd ~/codes/blog
-echo ""
-echo ""
 echo "==================================="
 echo "下面是博客原始文件夹的备份(private)"
 if [[ `git status --porcelain --untracked-files=no` ]]; then
@@ -156,8 +148,6 @@ fi
 
 # 博客主题 push
 cd ~/codes/blog/themes/zero
-echo ""
-echo ""
 echo "==================================="
 echo "下面是博客主题的备份"
 if [[ `git status --porcelain --untracked-files=no` ]]; then
@@ -174,5 +164,3 @@ echo "====================================="
 echo "可以使用 sudo pacman -Qdt 来查找孤包."
 echo "可以使用 paccache -ruk0 来清除未安装的包缓存"
 echo "可以使用 paccache -r 来清除三个版本之前的包缓存"
-echo ""
-echo ""
