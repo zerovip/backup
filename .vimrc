@@ -57,7 +57,7 @@ Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'tmsvg/pear-tree'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'SirVer/ultisnips', {'for': ['tex', 'markdown']}
 Plug 'tpope/vim-commentary'
@@ -240,14 +240,13 @@ let g:pear_tree_smart_closers=1
 let g:pear_tree_smart_backspace=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 4. multiple-cursors
+" 4. vim-visual-multi
 " multiple cursors operating tool
-" See, https://github.com/terryma/vim-multiple-cursors
-" 主动工具
-" 使用  <Ctrl> + <n> 查找下一个
-"       <Ctrl> + <x> 忽略这一个
-"       <Ctrl> + <p> 查找上一个
-"       A, I 等进行编辑
+" See, https://github.com/mg979/vim-visual-multi,
+"   To replace multiple-cursors
+" 主动工具，还需要学习
+"   学习方法也简单，它自带了教程
+"   执行 vim -Nu ~/.vim/plugged/vim-visual-multi/tutorialrc 即可
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 5. vimtex
@@ -343,6 +342,10 @@ let g:bufferline_separator='|'
 set ttymouse=sgr
 set mouse=a
 
+" to solve a known issue of vim
+" See, https://github.com/mg979/vim-visual-multi/issues/120
+set term=xterm-256color
+
 " Sets how many lines of history VIM has to remember
 set history=2000
 
@@ -368,6 +371,8 @@ inoremap <F3> <C-o>:w<CR>
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
+" 进行文件路径的自动弹出
+" inoremap / /<C-x><C-f>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
