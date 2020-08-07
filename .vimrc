@@ -364,8 +364,9 @@ au FocusGained,BufEnter * checktime
 
 " Fast saving in normal mode
 nmap <leader>w :w!<cr>
+nnoremap <F2> :w!<cr>
 " Fast saving in insert mode
-inoremap <F3> <C-o>:w<CR>
+inoremap <F2> <C-o>:w<CR>
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
@@ -603,9 +604,12 @@ map <leader>x :bd<cr>
 map <leader>ba :bufdo bd<cr>
 
 map <leader>l :bnext<cr>
+nnoremap <F3> :bnext<cr>
+inoremap <F3> <C-o>:bnext<cr>
+
 map <leader>h :bprevious<cr>
-inoremap <F12> <C-o>:bnext<CR>
-inoremap <F2> <C-o>:bprevious<CR>
+nnoremap <F1> :bprevious<cr>
+inoremap <F1> <C-o>:bprevious<cr>
 
 " Useful mappings for managing tabs
 " 还需要好好学习一下 tab
