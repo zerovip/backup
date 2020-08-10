@@ -12,6 +12,7 @@ dhcpcd
 dmenu
 efibootmgr
 fakeroot
+feh
 firefox
 firefox-i18n-zh-cn
 flex
@@ -39,6 +40,7 @@ mlocate
 networkmanager
 network-manager-applet
 nitrogen
+nnn
 noto-fonts-cjk
 noto-fonts-emoji
 ntfs-3g

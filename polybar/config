@@ -319,7 +319,10 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/alsa]
 type = internal/alsa
 
-master-soundcard = hw:1
+; master-soundcard = hw:1
+; 这里可以自选默认声卡
+; 不过我已经通过环境变量 ALSA_CARD 设置好了，这里就不需要了
+; 见 .xprofile
 
 format-volume = <label-volume> <bar-volume>
 label-volume = VOL

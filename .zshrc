@@ -133,8 +133,8 @@ function mvr() {
 # alias foxit='/home/ehizil/opt/foxitsoftware/foxitreader/FoxitReader.sh &'
 # 福昕阅读器
 
-# alias n='nnn -e' # 命令行式的文件管理器，-e 使得直接打开文件
-# nnn 文件浏览器，类似的还有 vifm，但我好像用不到，就 cd 和 ls 足够用了
+alias n='nnn -e' # 命令行式的文件管理器，-e 使得直接打开文件
+# nnn 文件浏览器，类似的还有 vifm
 
 function sudo-command-line() {
 [[ -z $BUFFER ]] && zle up-history

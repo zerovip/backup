@@ -13,13 +13,18 @@ dhcpcd
 dmenu
 efibootmgr
 fakeroot
+feh
 firefox
 firefox-i18n-zh-cn
 flex
+foxitreader
 gcc
 git
 goldendict
 grub
+gstreamer0.10
+gstreamer0.10-base
+gstreamer0.10-base-plugins
 gtk2fontsel
 gvim
 hugo
@@ -41,6 +46,7 @@ nerd-fonts-fantasque-sans-mono
 networkmanager
 network-manager-applet
 nitrogen
+nnn
 noto-fonts-cjk
 noto-fonts-emoji
 ntfs-3g

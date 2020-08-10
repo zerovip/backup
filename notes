@@ -13,8 +13,8 @@
         那为什么不买一个安卓平板呢？或者类似树莓派一样的东西
         termux确实没我想象中好，再考虑吧
     39.PDF 阅读器跳转缩放问题
-    40.Xterm 里符号只显示一半，比如✔这个符号
-    41.键盘音量加减、亮度调整
+    42.触摸板问题
+    43.
 
 
 2.系统日志
@@ -622,4 +622,9 @@
     2020.07.28    把 grub 默认记住上一次选择也弄好了，详见自动备份脚本里的注释
                   把图形界面的网络连接也搞好了，安装 NetworkManager 并设置自动启动，
                         安装 nm-connection-editor 以及 network-manager-applet 然后设置一下就好了
+    2020.08.11    通过 sxhkd 把键盘控制音量和亮度搞定了
+                    需要注意的地方是关于音量、声卡的问题，网上谷歌查到的办法（改 /etc/asound.conf 和 .asoundrc）
+                        都不是最好的办法在 ArchWiki 里写着，
+                        见：https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Select_the_default_PCM_via_environment_variable
+                    sxhkd 的键名通过 xev -event keyboard 获得
 
