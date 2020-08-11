@@ -154,6 +154,6 @@ super + Print
     scrot
 
 # 打开应用程序
-ctrl + alt + {r,f,p}
-    {foxitreader,firefox,photoflare}
-# 福昕阅读器、火狐浏览器、图片编辑器
+ctrl + alt + {r,f,p,s}
+    {foxitreader,firefox,photoflare,smplayer}
+# 福昕阅读器、火狐浏览器、图片编辑器、视频播放器
