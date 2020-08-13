@@ -55,7 +55,7 @@
 call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'luochen1990/rainbow'
 Plug 'tmsvg/pear-tree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'lervag/vimtex', {'for': 'tex'}
@@ -190,39 +190,15 @@ function! LightlineFiletype()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 2. Rainbow Parentheses
+" 2. Rainbow
 " For colorful brackets
-" Similar tool:
-"   rainbow, see, https://github.com/luochen1990/rainbow
-" See, https://github.com/kien/rainbow_parentheses.vim
+" See, https://github.com/luochen1990/rainbow
+"   Similar tool:
+" Rainbow Parenthesessee, https://github.com/kien/rainbow_parentheses.vim
 " 被动工具
 "----------------------------------------------------------
-" 括号颜色列表
-let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['brown',       'firebrick3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
-    \ ]
-
-let g:rbpt_max = 16
-let g:rbpt_loadcmd_toggle = 0
-
 " 自动开启
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+let g:rainbow_active=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 3. pear-tree
@@ -235,9 +211,16 @@ au Syntax * RainbowParenthesesLoadBraces
 let g:pear_tree_repeatable_expand=0
 
 " 智能括号模式要手动打开
-let g:pear_tree_smart_openers=1
+" let g:pear_tree_smart_openers=1
+" 这个智能开始符号不开启，不然有时会和后面的匹配导致同一行的都匹配不上
 let g:pear_tree_smart_closers=1
 let g:pear_tree_smart_backspace=1
+
+" 在非引号的成对符号内部使用空格时自动添加空格
+imap <space> <Plug>(PearTreeSpace)
+
+" 使用 tab 键跳出成对括号
+imap <S-tab> <Plug>(PearTreeJump)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 4. vim-visual-multi
@@ -265,11 +248,15 @@ endif
 " 指定预览使用 zathura
 let g:vimtex_view_method='zathura'
 
+" quickfix 就是报错信息
 let g:vimtex_quickfix_mode=0
 
 " 指定编译器，不过这里 latexmk 也就是默认的
 let g:vimtex_compiler_method='latexmk'
 " 关于编译引擎，要写在文件里 %! TEX program = program
+
+" 不要自动缩进
+let g:vimtex_indent_enabled=0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 6. UltiSnips
@@ -552,7 +539,7 @@ set noswapfile
 " Use spaces instead of tabs
 set expandtab
 
-" Be smart when using tabs ;)
+" Be smart when using tabs
 set smarttab
 
 " 1 tab == 4 spaces
