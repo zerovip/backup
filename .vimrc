@@ -290,8 +290,7 @@ let g:UltiSnipsEditSplit="vertical"
 " 8. Indent Guides
 " for visually displaying indent levels in Vim.
 " See, https://github.com/nathanaelkane/vim-indent-guides
-"   替代 indentLine 插件，indentLine 不知道有什么毛病，
-"   那些成对的符号都消失了
+" Similar tool: indentLine
 " 被动工具
 "----------------------------------------------------------
 " 自动启动
