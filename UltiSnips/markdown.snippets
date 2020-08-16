@@ -37,15 +37,20 @@ file_path: $13
 # true / false
 draft: ${14:true}
 #------------------------------------------------------------------------------
-# 黑块bbk：<span class='black_block' onclick="ChangeClassBlackBlock(this)">text</span>
-# 背景色bjs：<span class='notation_color'>text</span>
-# 图片img：![示例图片](/images/example.jpeg)
+# 一些有用的 snippets：
+#   黑块bbk：<span class='black_block' onclick="ChangeClassBlackBlock(this)">text</span>
+#   背景色bjs：<span class='notation_color'>text</span>
+#   图片img：![示例图片](/images/example.jpeg)
+#   加密头jmt
+#   加密尾jmw
+#------------------------------------------------------------------------------
 ---
 $0
 endsnippet
 
 snippet bjs "背景色" iA
 <span class='notation_color'>$0</span>
+echo "可以使用 paccache -r 来清除三个版本之前的包缓存"
 endsnippet
 
 snippet bbk "black_block 防剧透黑块" iA

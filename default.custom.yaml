@@ -11,11 +11,11 @@ patch:
 # The uncomment lines can be chosen in ibus-rime with key
 #   <Ctrl> + <`> or use <F4>.
 #
-#   - schema: bopomofo             # 注音
 #   - schema: bopomofo_express     # 注音·快打模式
+#   - schema: bopomofo             # 注音
 #   - schema: bopomofo_tw          # 注音·臺灣正體
-#   - schema: cangjie5             # 倉頡五代
 #   - schema: cangjie5_express     # 倉頡五代·快打模式
+#   - schema: cangjie5             # 倉頡五代
 #   - schema: double_pinyin_abc    # 智能ABC雙拼
     - schema: double_pinyin_flypy  # 小鶴雙拼
 #   - schema: double_pinyin_mspy   # MSPY雙拼

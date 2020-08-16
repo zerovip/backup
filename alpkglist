@@ -55,6 +55,7 @@ nvidia
 openssh
 os-prober
 otf-fantasque-sans-mono
+p7zip
 pacman-contrib
 pandoc
 patch
@@ -96,7 +97,6 @@ texlive-publishers
 texlive-science
 tmux
 unrar
-unzip
 v2ray
 vi
 which
