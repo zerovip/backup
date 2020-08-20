@@ -1,0 +1,54 @@
+# zero.dict.yaml
+# 这是我的个人词典设置
+#
+# 输入法安装以后，需要用 pacman 从官方源安装双拼与 emoji 支持
+# 即，安装 rime-double-pin 和 rime-emoji 两个包
+# 然后是词典的设置：
+#   （一）是下载 Rime 扩展包
+#     见 https://github.com/rime-aca/dictionaries（已 fork）
+#       其中 luna_pinyin.dict 目录下有六个文件
+#         1.double_pinyin.custom.yaml
+#         2.luna_pinyin.custom.yaml
+#         3.luna_pinyin.cn_en.dict.yaml
+#         4.luna_pinyin.hanyu.dict.yaml
+#         5.luna_pinyin.extended.dict.yaml
+#         6.luna_pinyin.poetry.dict.yaml
+#       第 1 个文件改名为 double_pinyin_flypy.custom.yaml，复制到 .config/ibus/rime/ 里，因为我用的是：小鹤双拼
+#       第 2 个文件不用管，因为我不用明月拼音
+#       第 3 个文件不用管，因为双拼没法用这种中英混杂的词典，不然按有些声母时所有选项会消失
+#       第 4 到第 6 个文件名字不变，复制到 .config/ibus/rime/ 里，这些就是自定义的词典
+#   （二）是下载肥猫的 wiki 百万词典，感觉有了这个之后，我的输入法就比我懂得多了.
+#     见 https://github.com/felixonmars/fcitx5-pinyin-zhwiki（已 fork），release 版本见
+#      https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases
+#       将 zhwiki-20xxxxxx.dict.yaml 复制到 .config/ibus/rime/ 里
+#   （三）如果有其他词典也这样复制到 .config/ibus/rime/ 里
+#   （四）将本文件复制到 .config/ibus/rime/ 里，对下面的词典进行添加或修改
+#   （五）去 double_pinyin_flypy.custom.yaml 就是在第一步新复制过来的那个第 1 个文件里，把本文件的文件名 zero 改写进去：
+#         patch:
+#           # 載入自定义词库
+#           "translator/dictionary": zero
+#   （六）去 luna_pinyin.extended.dict.yaml 也是第一步复制过来的文件里，
+#         把 import_tables 那些都注释掉就好了
+#   （七）重新部署一下
+#
+---
+name: zero
+version: "2020.08.20"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - luna_pinyin
+  - luna_pinyin.extended
+  - luna_pinyin.hanyu
+  - luna_pinyin.poetry
+  - zhwiki-20200801
+# - 其他词典的文件名，除去“.dict.yaml”后缀
+#
+#
+# 这个文件的下面也可以添加自造词语
+# 注意一定要用制表符 tab，不要在这里直接按 tab
+# 因为我的 vim 配置文件在这里设置了自动把制表符转换为四个空格
+...
+
+ᴅᴀʟᴀᴏ	da lao
+

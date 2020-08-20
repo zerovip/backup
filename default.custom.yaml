@@ -2,7 +2,7 @@
 # This is the custom config of ibus-rime
 # See Arch Wiki: Rime for more informations.
 # Edited by Zero on June 26, 2020.
-
+#
 patch:
   schema_list:
 # The following are listed in /usr/share/rime-data.
@@ -23,9 +23,17 @@ patch:
 #   - schema: double_pinyin        # 自然碼雙拼
 #   - schema: luna_pinyin_fluency  # 朙月拼音·語句流
 #   - schema: luna_pinyin          # 朙月拼音
-    - schema: luna_pinyin_simp     # 朙月拼音·简化字
+#   - schema: luna_pinyin_simp     # 朙月拼音·简化字
 #   - schema: luna_pinyin_tw       # 朙月拼音·臺灣正體
 #   - schema: luna_quanpin         # 全拼
 #   - schema: stroke               # "五筆畫"
 #   - schema: terra_pinyin         # 地球拼音
-  menu/page_size: 7                #设置候选字数量，根据喜好调整
+  menu/page_size: 6                # 设置候选字数量，根据喜好调整
+  punctuator:
+    full_shape:
+      __include: punctuation:/full_shape
+      "." : "。"
+    half_shape:
+      __include: punctuation:/half_shape
+      "." : ". "
+      
