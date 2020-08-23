@@ -5,6 +5,7 @@ cp ~/.zshrc ~/backup/backup/
 
 # vim 配置备份
 cp ~/.vimrc ~/backup/backup/
+cp ~/.vim/after/syntax/markdown.vim ~/backup/backup/
 
 # 笔记备份
 cp ~/notes ~/backup/backup/
@@ -154,6 +155,7 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
 else
     echo "博客原始文件没有变化，无需备份！"
 fi
+rm -rf ~/codes/blog/public/*
 
 # 博客主题 push
 cd ~/codes/blog/themes/zero
