@@ -5,6 +5,7 @@ cp ~/.zshrc ~/backup/backup/
 
 # vim 配置备份
 cp ~/.vimrc ~/backup/backup/
+# 更改 Hugo 中 front-matter 部分的高亮按照 markdown 进行而非 yaml 进行的问题
 cp ~/.vim/after/syntax/markdown.vim ~/backup/backup/
 
 # 笔记备份
@@ -73,9 +74,6 @@ cp -r ~/codes/UltiSnips/ ~/backup/backup/
 
 # polybar 配置备份
 cp -r ~/.config/polybar/ ~/backup/backup/
-
-# 更改 Hugo 中 front-matter 部分的高亮按照 markdown 进行而非 yaml 进行的问题
-cp ~/.vim/after/syntax/markdown.vim ~/backup/backup/
 
 # 博客脚本备份
 cp ~/codes/deploy.sh ~/backup/backup/
