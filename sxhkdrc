@@ -135,6 +135,14 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# 帮一个 b 站用户写的代码片段，解决他想浮动、平铺切换的问题
+# super + a
+#     if [ "$(bspc query -N -n focused.floating)" ]; then \
+#         bspc node -f last.tiled.local; \
+#     else \
+#         bspc node -f last.floating.local; \
+#     fi
+
 #
 # my own settings
 #
