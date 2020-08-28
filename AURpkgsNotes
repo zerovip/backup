@@ -1,0 +1,26 @@
+这个文件记录所有从非官方源中安装的软件，方便以后重装电脑时快速上手.
+不包括软件内部的插件，像 vim 插件、python 库即便在官方源或 AUR 里有，
+    也使用内部的方式安装，如 vim-plug、pip 等，但 pip 本身的更新要通过官方源.
+
+1. autojump:
+    zsh 下自动跳转
+2. foxitreader:
+    福昕阅读器
+3. gstreamer0.10:
+    gstreamer0.10-base 的依赖
+4. gstreamer0.10-base:
+    foxitreader 的依赖
+5. nerd-fonts-fantasque-sans-mono
+    nerd-font 带很多符号的字体补丁
+6. polybar
+    顶上的 bar
+7. siji-git
+    polybar 需要的一个字体
+
+otherPKGs（文件夹）:
+    这个文件夹下是从官网下载的软件，不是从 AUR 上下载的.
+    这里的软件都争取安装到这里，且仅作为 ehizil 用户使用.
+
+1. downloadhelper
+    是 firefox 插件的合作应用
+    对应的文件夹是解压目录，也是安装目录，不能删

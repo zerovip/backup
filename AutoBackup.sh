@@ -91,6 +91,9 @@ pacman -Qmq | sort > ~/backup/backup/otpkglist
 # 所有官方库中安装的软件
 comm -23 ~/backup/backup/alpkglist ~/backup/backup/otpkglist > ~/backup/backup/pkglist
 
+# AUR 包的记录
+cp ~/AURpkgs/AURpkgsNotes ~/backup/backup/
+
 # Firefox浏览器 “Tree Style Tab” 插件后顶栏重复显示的问题解决文件备份
 # 这次并没有成功解决这个问题，暂时也算了
 # cp ~/.mozilla/firefox/3cky76on.default/chrome/userChrome.css ~/backup/backup/

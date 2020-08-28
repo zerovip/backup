@@ -36,11 +36,11 @@ super + m
 super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
-# swap the current node and the biggest node
+# swap the current node and the biggest window
 # But seems not the biggest in the current desktop, but the
 #   biggest in all desktops. This should be imporoved.
 super + g
-	bspc node -s biggest
+	bspc node -s biggest.window
 
 #
 # state/flags
@@ -55,6 +55,16 @@ super + {t,shift + t,s,f}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
+# copied from https://wiki.gentoo.org/wiki/Bspwm
+# hide window
+super + v
+    bspc node -g hidden
+
+# copied from https://wiki.gentoo.org/wiki/Bspwm
+# unhide window
+super + shift + v
+    bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+
 #
 # focus/swap
 #
@@ -65,21 +75,21 @@ super + {_,shift + }{h,j,k,l}
 
 # 竖直与平行（只在 parent 中调换）
 # 抄自：https://github.com/66RING/.config/blob/master/sxhkd/sxhkdrc#L38
-super + v
+super + r
     bspc node @focused:parent/ -R 90
 
 # 竖直与平行
 # 不记得从哪里找到的代码了
-super + shift + v
+super + shift + r
     bspc node @/ -R 90
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
-# focus the next/previous node in the current desktop
+# focus the next/previous window in the current desktop
 super + {_,shift + }c
-	bspc node -f {next,prev}.local
+	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
@@ -106,6 +116,11 @@ super + {_,shift + }{1-9,0}
 #     else \
 #         bspc node -f last.floating.local; \
 #     fi
+
+# Rotate tree
+# https://my-take-on.tech/2020/07/03/some-tricks-for-sxhkd-and-bspwm/#rotating-windows-tree
+super + shift + {d,a}
+    bspc node @/ -C {forward,backward}
 
 #
 # preselect
@@ -162,6 +177,6 @@ super + Print
     scrot
 
 # 打开应用程序
-ctrl + alt + {r,f,p,s}
-    {foxitreader,firefox,photoflare,smplayer}
+ctrl + alt + {r,f,p,s,g}
+    {foxitreader,firefox,photoflare,smplayer,goldendict}
 # 福昕阅读器、火狐浏览器、图片编辑器、视频播放器
