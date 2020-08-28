@@ -12,7 +12,6 @@ dhcpcd
 dmenu
 efibootmgr
 fakeroot
-feh
 firefox
 firefox-i18n-zh-cn
 flex
@@ -40,7 +39,6 @@ mlocate
 networkmanager
 network-manager-applet
 nitrogen
-nnn
 noto-fonts-cjk
 noto-fonts-emoji
 ntfs-3g
@@ -55,17 +53,14 @@ pacman-contrib
 pandoc
 patch
 photoflare
-picocom
 pkgconf
 pkgfile
 pkgstats
 proxychains-ng
 python
-qiv
 rime-double-pinyin
 rime-emoji
 rsync
-sagemath-doc
 screenkey
 scrot
 simplescreenrecorder
@@ -74,7 +69,7 @@ soundkonverter
 stellarium
 sudo
 sxhkd
-telegram-desktop
+sxiv
 texinfo
 texlive-bibtexextra
 texlive-core
@@ -89,14 +84,11 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
-tmux
 unrar
 v2ray
 vi
 which
 wpa_supplicant
-xdialog
-xdo
 xdotool
 xf86-video-intel
 xf86-video-vesa

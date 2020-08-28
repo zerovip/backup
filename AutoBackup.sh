@@ -28,11 +28,8 @@ cp /etc/default/grub ~/backup/backup/
 # 开机 GRUB 页面自己制作的主题备份
 cp -r /usr/share/grub/themes/allurez/ ~/backup/backup/
 
-# 确保 .bin（自己写的程序的地方） 自动加载到环境变量中
-# 暂时还没有任何自己的程序
-cp ~/.zprofile ~/backup/backup/
-
 # .xprofile 这里是本地中文化、桌面壁纸以及 ibus 输入法的一些自动启动项
+# 把之前 .zprofile 里的东西写到这里来了，包括自己的 bin 文件夹，浏览器环境变量
 cp ~/.xprofile ~/backup/backup/
 
 # .xinitrc 应该没有做过任何改动，但以防万一还是备份一下
@@ -40,8 +37,7 @@ cp ~/.xprofile ~/backup/backup/
 # cp ~/.xinitrc ~/backup/backup/
 
 # 所有自己写的程序存放处
-# 暂时还没有，先不用备份
-# cp -r ~/.bin/ ~/backup/backup/
+cp -r ~/.bin/ ~/backup/backup/
 
 # 应用在 plasma 的右击菜单中的自定义选项
 # 暂时还没有，先不用备份

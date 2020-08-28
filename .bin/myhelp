@@ -1,0 +1,37 @@
+#!/usr/bin/env python
+
+help_list = '''
+===============================================================
+帮助：
+    打开图片：sxiv image_name
+    解压 zip：7z x xxx.zip
+    解压 rar：unrar ?
+    编辑位图：photoflare
+    声音格式转换：soundkonverter
+    选择字体：gtk2fontsel
+    调整音量：alsamixer
+    3D 建模：openscad
+    pacman 安装日志：vim /var/log/pacman.log
+    打开 v2ray：systemctl start v2ray.service
+    翻墙：proxychains software_name
+    录屏：simplescreenrecorder
+    电子书：calibre
+    字幕打轴：aegisub
+    天文博物馆：stellarium
+    查词典：goldendict
+    屏幕键盘：screenkey
+    剪辑：kdenlive
+    播放器：smplayer
+    阅读 pdf：zathura
+    阅读 pdf：foxitreader
+    浏览器：firefox
+
+    可以使用 sudo pacman -Qdt 来查找孤包.
+    可以使用 paccache -ruk0 来清除未安装的包缓存
+    可以使用 paccache -r 来清除三个版本之前的包缓存
+    可以使用 sudo pkgfile -u 来更新 pkgfile 的数据
+    可以使用 sudo updatedb 来更新 locate 使用的索引数据
+===============================================================
+'''
+
+print(help_list)

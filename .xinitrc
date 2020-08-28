@@ -3,6 +3,7 @@
 # ~/.xinitrc
 #
 # Executed by startx (run your window manager from here)
+# 这不是我写的，可能是 manjaro 写的吧
 
 if [[ -f ~/.extend.xinitrc ]];then
 	. ~/.extend.xinitrc

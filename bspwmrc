@@ -23,9 +23,10 @@ bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a firefox desktop='^2' follow=on
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
+bspc rule -a GoldenDict desktop='^10' follow=on
+# bspc rule -a smplayer state=floating center=on
+# bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Zathura state=tiled split_ratio=0.6
