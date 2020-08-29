@@ -1,0 +1,8 @@
+# .zshrc
+
+autoload -Uz compinit
+compinit
+# 确保开启了自动补全，即有上面这两行
+
+zstyle ':completion:*:*:default' force-list always
+# 这应该就是你要的，把待补全内容在下面列出来

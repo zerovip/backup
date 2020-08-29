@@ -99,7 +99,8 @@ bindkey "^[[B" history-beginning-search-forward
 alias sudo='sudo '  #神奇的命令，使得 sudo 操作的命令也被展开
 alias ls='ls -F --color=auto'
 alias ll='ls -l'
-alias la='ls -a'
+alias la='ll -a'
+alias lh='ll -h'
 alias vi='vim'
 alias grep="grep --color=auto"
 #alias -s py=vi    # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
