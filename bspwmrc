@@ -6,7 +6,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 nm-applet &
 
 # polybar 的启动
-$HOME/.config/polybar/launch.sh
+${HOME}/.config/polybar/launch.sh
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -30,3 +30,7 @@ bspc rule -a GoldenDict desktop='^10' follow=on
 # bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Zathura state=tiled split_ratio=0.6
+
+# 尝试一下 external_rules
+# bspc config external_rules_command "${HOME}/.config/bspwm/try_e_r"
+
