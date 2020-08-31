@@ -1,6 +1,27 @@
-#
-# wm independent hotkeys
-#
+###########################################
+##                                       ##
+## File:     sxhkdrc                     ##
+## Version:  2.0                         ##
+## Author:   Zero                        ##
+## Date:     2020-08-31                  ##
+##                                       ##
+###########################################
+##                                       ##
+## TOC：                                 ##
+##   1. wm independent hotkeys           ##
+##   2. bspwm hotkeys                    ##
+##   3. state/flags                      ##
+##   4. focus/swap                       ##
+##   5. preselect                        ##
+##   6. move/resize                      ##
+##   7. custom functions                 ##
+##   8. my own settings out of bspwm     ##
+##                                       ##
+###########################################
+
+##=============================================================================
+## 1. wm independent hotkeys
+##=============================================================================
 
 # terminal emulator
 super + Return
@@ -14,9 +35,9 @@ super + space
 super + Escape
 	pkill -USR1 -x sxhkd
 
-#
-# bspwm hotkeys
-#
+##=============================================================================
+## 2. bspwm hotkeys
+##=============================================================================
 
 # quit/restart bspwm
 super + alt + {q,r}
@@ -27,8 +48,6 @@ super + {_,shift + }w
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
-# monocle: 单片眼镜，单窗口
-# It is pretty like the full screen but don't cover the bar
 super + m
 	bspc desktop -l next
 
@@ -37,17 +56,14 @@ super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window
-# But seems not the biggest in the current desktop, but the
-#   biggest in all desktops. This should be imporoved.
 super + g
 	bspc node -s biggest.window
 
-#
-# state/flags
-#
+##=============================================================================
+## 3. state/flags
+##=============================================================================
 
 # set the window state
-# somewhat cannot understand the point of pseudo_tilted 伪平铺 module
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
@@ -55,38 +71,13 @@ super + {t,shift + t,s,f}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
-# copied from https://wiki.gentoo.org/wiki/Bspwm
-# hide window
-super + v
-    bspc node -g hidden
-
-# copied from https://wiki.gentoo.org/wiki/Bspwm
-# unhide window
-super + shift + v
-    bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
-
-#
-# focus/swap
-#
+##=============================================================================
+## 4. focus/swap
+##=============================================================================
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
-
-# 旋转（只在 parent 中调换）
-# 抄自：https://github.com/66RING/.config/blob/master/sxhkd/sxhkdrc#L38
-super + r
-    bspc node @parent -R 90
-
-# 旋转的另一种演示
-# super + r
-#     bspc node -f @parent; \
-#     bspc node -R 90; \
-#     bspc node -f @second
-
-# 旋转（整张桌面里）
-super + shift + r
-    bspc node @/ -R 90
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -114,24 +105,9 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-# 帮一个 b 站用户写的代码片段，解决他想浮动、平铺切换的问题
-# super + a
-#     if [ "$(bspc query -N -n focused.floating)" ]; then \
-#         bspc node -f last.tiled.local; \
-#     else \
-#         bspc node -f last.floating.local; \
-#     fi
-
-# Rotate tree
-# https://my-take-on.tech/2020/07/03/some-tricks-for-sxhkd-and-bspwm/#rotating-windows-tree
-# super + shift + {d,a}
-#     bspc node @/ -C {forward,backward}
-
-
-
-#
-# preselect
-#
+##=============================================================================
+## 5. preselect
+##=============================================================================
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
@@ -149,9 +125,9 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#
-# move/resize
-#
+##=============================================================================
+## 6. move/resize
+##=============================================================================
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -165,17 +141,60 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-#
-# my own settings
-#
-# 阅读 man sxhkd
-# 键名通过 xev -event keyboard 获得
+##=============================================================================
+## 7. custom functions
+##=============================================================================
 
-# 音量加减
+# rotate (only in the parent of the focused)
+super + r
+    bspc node @parent -R 90
+
+# another rotate
+# super + r
+#     bspc node -f @parent; \
+#     bspc node -R 90; \
+#     bspc node -f @second
+
+# rotate the whole desktop
+super + shift + r
+    bspc node @/ -R 90
+
+# hide window
+#   copied from https://wiki.gentoo.org/wiki/Bspwm
+super + v
+    bspc node -g hidden
+
+# unhide window
+#   copied from https://wiki.gentoo.org/wiki/Bspwm
+super + shift + v
+    bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+
+# switch between tiled and floating window (a help to a bilibili audience)
+# super + a
+#     if [ "$(bspc query -N -n focused.floating)" ]; then \
+#         bspc node -f last.tiled.local; \
+#     else \
+#         bspc node -f last.floating.local; \
+#     fi
+
+# Rotate tree
+#   copied from 
+#   https://my-take-on.tech/2020/07/03/some-tricks-for-sxhkd-and-bspwm/#rotating-windows-tree
+# super + shift + {d,a}
+#     bspc node @/ -C {forward,backward}
+
+##=============================================================================
+## 8. my own settings out of bspwm
+##   Hint：
+##       Read `man sxhkd`;
+##       Use `xev -event keyboard` to get the name of a key.
+##=============================================================================
+
+# volume
 XF86Audio{Mute,LowerVolume,RaiseVolume}
     amixer set Master {toggle,10-,10+}
 
-# 屏幕光线强弱
+# backlight
 XF86MonBrightness{Down,Up}
     xbacklight -{dec,inc} 10
 
@@ -183,8 +202,7 @@ XF86MonBrightness{Down,Up}
 super + Print
     scrot
 
-# 打开应用程序
+# launch applications
 ctrl + alt + {r,f,p,s,g,z}
     {foxitreader,firefox,photoflare,smplayer,goldendict,zathura}
-# 福昕阅读器、火狐浏览器、图片编辑器、视频播放器、词典、PDF 阅读器
 
