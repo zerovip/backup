@@ -1,5 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Notes:
+"
 "       Everything changes fast. Two years ago, I spent lots of time
 "   configuring my .vimrc file, hoping it can last forever and I will
 "   never need to worry about it. Well, two years passed, Bundle is
@@ -23,10 +24,15 @@
 "       I learned about the vim 8.0 build-in package managementing way,
 "   it is cool, but seems not convenient as vim-plug. So, I will for now
 "   adhere to vim-plug.
+"
 "                                            2020.07.18
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Original_author: 
 "       Amir Salihefendic — @amix3k
+"       https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
+"
+" Last_commit:
+"       2019-11-30
 "
 " Edit:
 "       by Zero
@@ -63,6 +69,7 @@ Plug 'SirVer/ultisnips', {'for': ['tex', 'markdown']}
 Plug 'tpope/vim-commentary'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
+Plug 'ajh17/VimCompletesMe'
 
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -217,10 +224,10 @@ let g:pear_tree_smart_closers=1
 let g:pear_tree_smart_backspace=1
 
 " 在非引号的成对符号内部使用空格时自动添加空格
-imap <space> <Plug>(PearTreeSpace)
+imap <Space> <Plug>(PearTreeSpace)
 
-" 使用 tab 键跳出成对括号
-imap <S-tab> <Plug>(PearTreeJump)
+" 使用 shift + tab 键跳出括号环境
+imap <C-j> <Plug>(PearTreeJump)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 4. vim-visual-multi
@@ -258,6 +265,10 @@ let g:vimtex_compiler_method='latexmk'
 " 不要自动缩进
 let g:vimtex_indent_enabled=0
 
+" 自动补全相关：
+"   自动补全引用. 只要已经编译过了，\ref{<C-x><C-o>} 即可唤出
+"   其他的环境之类的，基本上都是 <C-x><C-o> 可唤出
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 6. UltiSnips
 " basicly for LaTeX file and MarkDown blog file
@@ -265,17 +276,16 @@ let g:vimtex_indent_enabled=0
 " 主动工具
 "----------------------------------------------------------
 " 该程序需要 vim 对 python 的支持，可2可3，一般不写，这里写出来明确用3
-let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsUsePythonVersion=3
 
 " 模板片段【搜寻处】，默认就是下面这只有一个元素的列表，用的时候是在这里找
 let g:UltiSnipsSnippetDirectories=[$HOME.'/codes/UltiSnips', $HOME.'/codes/current_course']
 
-" tab 键和另一个插件冲突。Trigger configuration. Do not use <tab> if
-" you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsListSnippets="<C-tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<C-l>"
+let g:UltiSnipsListSnippets="<C-h>"
+let g:UltiSnipsJumpForwardTrigger="<C-j>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -318,6 +328,31 @@ let g:bufferline_echo=0
 let g:bufferline_separator='|'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 10. Vim Complete Me
+" for autocompletion.
+" See, https://github.com/ajh17/VimCompletesMe
+" 基本上是一个被动工具
+"----------------------------------------------------------
+" 与 vimtex 配合，见 :help vimtex-complete-vcm
+augroup VimCompletesMeTex
+    autocmd!
+    autocmd FileType tex
+        \ let b:vcm_omni_pattern = g:vimtex#re#neocomplete
+augroup END
+
+" 下面的两个设置是 vim 的内置设置，不是这个插件的专有
+"   但为了放便就写到这里了
+"   参考：https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+"
+" 默认不选中第一个，并匹配最长的
+set completeopt=longest,menuone
+"
+" 使用回车键可以选中，ctrl + j / k 上下选择
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -349,8 +384,8 @@ au FocusGained,BufEnter * checktime
 " I prefer using the default \ key
 
 " Fast saving in normal mode
-nmap <leader>w :w!<cr>
-nnoremap <F2> :w!<cr>
+nmap <leader>w :w!<CR>
+nnoremap <F2> :w!<CR>
 " Fast saving in insert mode
 inoremap <F2> <C-o>:w<CR>
 
@@ -569,10 +604,10 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map <Space> to / (search) and Shift-<Space> to ? (backwards search)
 map <space> /
-map <S-space> ?
+map <S-Space> ?
 
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+" Disable highlight when <leader><CR> is pressed
+map <silent> <leader><CR> :noh<CR>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -582,26 +617,26 @@ map <C-l> <C-W>l
 
 " Close the current buffer
 " 还需要好好学习一下 buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
-map <leader>x :bd<cr>
+map <leader>bd :Bclose<CR>:tabclose<CR>gT
+map <leader>x :bd<CR>
 
 " Close all the buffers
 " 还需要好好学习一下 buffer
-map <leader>ba :bufdo bd<cr>
+map <leader>ba :bufdo bd<CR>
 
-map <leader>l :bnext<cr>
-nnoremap <F3> :bnext<cr>
-inoremap <F3> <C-o>:bnext<cr>
+map <leader>l :bnext<CR>
+nnoremap <F3> :bnext<CR>
+inoremap <F3> <C-o>:bnext<CR>
 
-map <leader>h :bprevious<cr>
-nnoremap <F1> :bprevious<cr>
-inoremap <F1> <C-o>:bprevious<cr>
+map <leader>h :bprevious<CR>
+nnoremap <F1> :bprevious<CR>
+inoremap <F1> <C-o>:bprevious<CR>
 
 " Useful mappings for managing tabs
 " 还需要好好学习一下 tab
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
+map <leader>tn :tabnew<CR>
+map <leader>to :tabonly<CR>
+map <leader>tc :tabclose<CR>
 map <leader>tm :tabmove 
 map <leader>t<leader> :tabnext 
 
@@ -613,10 +648,10 @@ au TabLeave * let g:lasttab = tabpagenr()
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
-map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
+map <leader>te :tabedit <C-r>=expand("%:p:h")<CR>/
 
 " Switch CWD to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>:pwd<cr>
+map <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " Specify the behavior when switching between buffers 
 try
@@ -653,10 +688,10 @@ execute "set <M-j>=\ej"
 execute "set <M-k>=\ek"
 " See, https://vi.stackexchange.com/a/2363
 
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+nmap <M-j> mz:m+<CR>`z
+nmap <M-k> mz:m-2<CR>`z
+vmap <M-j> :m'>+<CR>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<CR>`>my`<mzgv`yo`z
 
 if has("mac") || has("macunix")
   nmap <D-j> <M-j>
@@ -683,7 +718,7 @@ endif
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
+map <leader>ss :setlocal spell!<CR>
 
 " Shortcuts using <leader>
 map <leader>sn ]s
@@ -696,16 +731,16 @@ map <leader>s? z=
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <Leader>m mmHmt:%s/<C-V><CR>//ge<CR>'tzt'm
 
 " Quickly open a buffer for scribble
-map <leader>q :e ~/buffer<cr>
+map <leader>q :e ~/buffer<CR>
 
 " Quickly open a markdown buffer for scribble
-" map <leader>x :e ~/buffer.md<cr>
+" map <leader>x :e ~/buffer.md<CR>
 
 " Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
+map <leader>pp :setlocal paste!<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
