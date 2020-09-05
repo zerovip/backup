@@ -4,7 +4,8 @@ help_list = '''
 ===============================================================
 帮助：
     打开图片：sxiv image_name
-    解压 zip：7z x xxx.zip
+    压缩 zip：zip -r -FS ../xxx.zip *
+    解压 zip：7z x xxx.zip / unzip xxx.zip
     解压 rar：unrar ?
     编辑位图：photoflare
     声音格式转换：soundkonverter
