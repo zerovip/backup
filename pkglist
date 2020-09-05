@@ -85,6 +85,7 @@ texlive-pstricks
 texlive-publishers
 texlive-science
 unrar
+unzip
 v2ray
 vi
 which
@@ -143,5 +144,6 @@ xorg-xwininfo
 xorg-xwud
 zathura
 zathura-pdf-mupdf
+zip
 zsh
 zsh-syntax-highlighting
