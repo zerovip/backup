@@ -41,7 +41,7 @@ import_tables:
   - luna_pinyin.extended
   - luna_pinyin.hanyu
   - luna_pinyin.poetry
-  - zhwiki-20200801
+  # - zhwiki-20200801
 # - 其他词典的文件名，除去“.dict.yaml”后缀
 #
 #
