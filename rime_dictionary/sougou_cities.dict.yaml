@@ -1,0 +1,979 @@
+---
+name: sougou_cities
+version: "2020.09.07"
+sort: by_weight
+use_preset_vocabulary: true
+...
+阿巴	a ba
+阿巴奥科罗	a ba ao ke luo
+阿巴丹	a ba dan
+阿巴嘎旗	a ba ga qi
+阿巴卡利基	a ba ka li ji
+阿巴坎市	a ba kan shi
+阿巴拉契亚山	a ba la qi ya shan
+阿巴斯港	a ba si gang
+阿巴尧省	a ba yao sheng
+阿坝县	a ba xian
+阿拜昂	a bai ang
+阿班凯	a ban kai
+阿贝马马	a bei ma ma
+阿本古鲁	a ben gu lu
+阿比让	a bi rang
+阿伯丁郡	a bo ding jun
+阿布贾	a bu jia
+阿布扎比	a bu zha bi za
+阿德莱德	a de lai de
+阿德雷德港	a de lei de gang
+阿尔巴尼亚	a er ba ni ya
+阿尔卑斯山	a er bei si shan
+阿尔汉格尔斯克	a er han ge er si ke
+阿尔赫西拉斯	a er he xi la si
+阿尔及尔	a er ji er
+阿尔及利亚	a er ji li ya
+阿芬默斯	a fen mo si
+阿富汗	a fu han
+阿根廷	a gen ting
+阿河	a he
+阿加迪尔	a jia di er
+阿加尼亚	a jia ni ya
+阿卡胡特拉	a ka hu te la
+阿卡普尔科	a ka pu er ke
+阿克拉	a ke la
+阿肯色河	a ken se he
+阿肯色州	a ken se zhou
+阿空加瓜山廷	a kong jia gua shan ting
+阿拉伯联合酋长国	a la bo lian he qiu zhang guo
+阿拉斯加州	a la si jia zhou
+阿里河镇	a li he zhen
+阿里卡	a li ka
+阿联酋	a lian qiu
+阿曼	a man
+阿姆河	a mu he
+阿姆斯特丹	a mu si te dan
+阿帕帕	a pa pa
+阿皮亚	a pi ya
+阿萨布	a sa bu
+阿塞拜疆	a sai bai jiang
+阿什杜德	a shen du de
+阿什哈巴德	a shi ha ba de
+阿斯马拉	a si ma la
+阿塔卡马沙漠利	a ta ka ma sha mo li
+埃及	ai ji
+埃塞俄比亚	ai sai e bi ya
+艾奥瓦州	ai ao wa zhou
+爱达荷州	ai da he zhou
+爱尔兰	ai er lan
+爱沙尼亚	ai sha ni ya
+安道尔	an dao er
+安道尔城	an dao er cheng
+安的列斯	an de lie si
+安的列斯荷属	an de lie si he shu
+安第斯山	an di si shan
+安哥拉	an ge la
+安科纳	an ke na
+安曼	an man
+安纳巴	an na ba
+安纳布尔纳峰	an na bu er na feng
+安特卫普	an te wei pu
+安提瓜和巴布达	an ti gua he ba bu da
+安托法加斯塔	an tuo fa jia si ta
+敖德萨	ao de sa
+奥得河	ao de he
+奥地利	ao di li
+奥尔堡	ao er bao
+奥尔胡斯	ao er hu si
+奥克兰	ao ke lan
+奥腊涅斯塔德	ao la nie si ta de
+奥兰	ao lan
+奥勒松	ao le song
+奥卢	ao lu
+奥斯陆	ao si lu
+奥文多	ao wen duo
+澳大利亚	ao da li ya
+澳尔塔	ao er ta
+澳门	ao men
+澳新	ao xin
+澳新线	ao xin xian
+巴巴多斯	ba ba duo si
+巴布亚新几内亚	ba bu ya xin ji nei ya
+巴东	ba dong
+巴尔	ba er
+巴尔博亚	ba er bo ya
+巴尔的摩	ba er de mo
+巴哈马	ba ha ma
+巴哈马联邦	ba ha ma lian bang
+巴基斯坦	ba ji si tan
+巴库	ba ku
+巴拉圭	ba la gui
+巴拉那瓜	ba la na gua
+巴兰基利亚	ba lan ji li ya
+巴勒斯坦	ba le si tan
+巴黎	ba li
+巴林	ba lin
+巴拿马	ba na ma
+巴拿马城	ba na ma cheng
+巴拿马运河	ba na ma yun he
+巴纳纳	ba na na
+巴塞罗那	ba sai luo na
+巴生港	ba sheng gang
+巴士拉	ba shi la
+巴塔	ba ta
+巴特沃斯	ba te wo si
+巴西	ba xi
+巴西利亚	ba xi li ya
+白俄罗斯	bai e luo si
+百慕大群岛	bai mu da qun dao
+柏林	bo lin
+班加西	ban jia xi
+班珠尔	ban zhu er
+磅逊	bang xun
+保加利亚	bao jia li ya
+卑尔根	bei er gen
+北达科他州	bei da ke ta zhou
+北京	bei jing
+北卡罗来州	bei ka luo lai zhou
+北美	bei mei
+北欧	bei ou
+北欧线	bei ou xian
+贝尔法斯特	bei er fa si te
+贝尔莫潘	bei er mo pan
+贝拉	bei la
+贝鲁特	bei lu te
+贝伦	bei lun
+贝宁	bei ning
+本地治里	ben di zhi li
+比雷艾夫斯	bi lei ai fu si
+比利时	bi li shi
+比塞大	bi sai da
+比绍	bi shao
+毕尔巴鄂	bi er ba e
+宾夕法尼亚州	bin xi fa ni ya zhou
+槟城	bin cheng
+冰岛	bing dao
+波多黎各	bo duo li ge
+波多诺伏	bo duo nuo fu
+波尔多	bo er duo
+波哥大	bo ge da
+波兰	bo lan
+波士顿	bo shi dun
+波斯尼亚和黑塞哥维那	bo si ni ya he hei sai ge wei na
+波斯湾	bo si wan
+波特兰	bo te lan
+玻利维亚	bo li wei ya
+伯贝拉	bo bei la
+伯尔尼	bo er ni
+伯方	bo fang
+伯肯黑德	bo ken hei de
+伯利兹	bo li zi
+伯尼	bo ni
+勃生	bo sheng
+博茨瓦纳	bo ci wa na
+博马	bo ma
+不丹	bu dan
+不来梅哈芬	bu lai mei ha fen
+不莱梅	bu lai mei
+布埃纳文图拉	bu ai na wen tu la
+布尔加斯	bu er jia si
+布基纳法索	bu ji na fa suo
+布拉柴维尔	bu la chai wei er
+布兰卡港	bu lan ka gang
+布雷斯特	bu lei si te
+布里奇城	bu li qi cheng
+布里奇顿	bu li qi dun
+布里斯班	bu li si ban
+布里斯托尔	bu li si tuo er
+布林迪西	bu lin di xi
+布隆迪	bu long di
+布鲁塞尔	bu lu sai er
+布琼布拉	bu qiong bu la
+布什尔	bu shi er
+布宜诺斯艾利斯	bu yi nuo si ai li si
+查尔斯顿	cha er si dun
+查墨斯港	cha mo si gang
+朝鲜	chao xian
+彻奇尔	che qi er
+赤道几内亚	chi dao ji nei ya
+川崎	chuan qi
+达尔贝达	da er bei da
+达尔文	da er wen
+达喀尔	da ka er
+达卡	da ka
+达拉斯	da la si
+达累斯萨拉姆	da lei si sa la mu
+达曼	da man
+达米埃塔	da mi ai ta
+达尼丁	da ni ding
+大阪	da ban
+大连	da lian
+丹吉尔	dan ji er
+丹麦	dan mai
+丹绒不碌	dan rong bu lu
+得克萨斯州	de ke sa si zhou
+德班	de ban
+德国	de guo
+德里亚斯特	de li ya si te
+德山	de shan
+的黎波里	de li bo li
+迪拜	di bai
+底特律	di te lv
+地拉那	di la na
+地中海	di zhong hai
+帝力	di li
+第比利斯	di bi li si
+蒂华纳	di hua na
+蒂马鲁	di ma lu
+东帝汶	dong di wen
+东非	dong fei
+东京	dong jing
+东伦敦	dong lun dun
+东南亚	dong nan ya
+东亚	dong ya
+都柏林	du bo lin
+都拉斯	du la si
+斗湖	dou hu
+杜阿拉	du a la
+杜蒂戈林	du di ge lin
+杜尔伯特蒙古族自治县	du er bo te meng gu zu zi zhi xian
+杜赛尔多夫	du sai er duo fu
+敦贺	dun he
+敦刻尔克	dun ke er ke
+多佛尔	duo fo er
+多哥	duo ge
+多哈	duo ha
+多伦多	duo lun duo
+多米尼加共和国	duo mi ni jia gong he guo
+多米尼加联邦	duo mi ni jia lian bang
+多米尼克	duo mi ni ke
+多明及加共和国	duo ming ji jia gong he guo
+俄亥俄州	e hai e zhou
+俄克拉何马州	e ke la he ma zhou
+俄勒冈州	e le gang zhou
+俄罗斯	e luo si
+厄瓜多尔	e gua duo er
+厄立特里亚	e li te li ya
+恩塞纳达	en sai na da
+法国	fa guo
+法兰克福	fa lan ke fu
+法兰西堡	fa lan xi bao
+法罗拉	fa luo la
+梵蒂冈	fan di gang
+梵蒂冈城	fan di gang cheng
+梵蒂冈教廷	fan di gang jiao ting
+非洲	fei zhou
+菲律宾	fei lv bin
+腓特烈斯塔	fei te lie si ta
+腓特烈西亚	fei te lie xi ya
+斐济	fei ji
+斐济群岛	fei ji qun dao
+费城	fei cheng
+费力克斯托	fei li ke si tuo
+费尼克斯	fei ni ke si
+芬兰	fen lan
+丰沙尔	feng sha er
+佛得角	fo de jiao
+佛里曼特尔	fo li man te er
+佛罗里达州	fo luo li da zhou
+佛蒙特州	fo meng te zhou
+弗吉尼亚州	fu ji ni ya zhou
+弗里波特	fu li bo te
+弗里敦	fu li dun
+符拉迪沃斯托克	fu la di wo si tuo ke
+福冈	fu gang
+福克兰群岛	fu ke lan qun dao
+福山	fu shan
+福斯	fu si
+福州	fu zhou
+釜山	fu shan
+富纳富提	fu na fu ti
+富山	fu shan
+盖姆利克	gai mu li ke
+冈比亚	gang bi ya
+刚果	gang guo
+刚果布	gang guo bu
+刚果共和国	gang guo gong he guo
+刚果金	gang guo jin
+刚果民主共和国	gang guo min zhu gong he guo
+高雄	gao xiong
+戈特霍布	ge te huo bu
+哥本哈根	ge ben ha gen
+哥德堡	ge de bao
+哥伦比亚	ge lun bi ya
+哥伦布	ge lun bu
+哥斯达黎加	ge si da li jia
+格但斯克	ge dan si ke
+格丁尼亚	ge ding ni ya
+格拉斯哥	ge la si ge
+格兰杰默斯	ge lan jie mo si
+格林纳达	ge lin na da
+格陵兰	ge ling lan
+格鲁吉亚	ge lu ji ya
+根尼西	gen ni xi
+根特	gen te
+古巴	gu ba
+古晋	gu jin
+瓜达尔	gua da er
+瓜达拉哈拉	gua da la ha la
+瓜德罗普岛	gua de luo pu dao
+瓜亚基尔	gua ya ji er
+瓜伊马斯	gua yi ma si
+关丹	guan dan
+关岛	guan dao
+光阳	guang yang
+广岛	guang dao
+广州	guang zhou
+圭亚那	gui ya na
+哈博罗内	ha bo luo nei
+哈尔姆斯塔德	ha er mu si ta de
+哈科特港	ha ke te gang
+哈立法克斯	ha li fa ke si
+哈密尔顿	ha mi er dun
+哈萨克斯坦	ha sa ke si tan
+哈瓦那	ha wa na
+海底	hai di
+海地	hai di
+海法	hai fa
+海防	hai fang
+海口	hai kou
+涵馆	han guan
+韩国	han guo
+汉堡	han bao
+豪尔费坎	hao er fei kan
+豪格松	hao ge song
+河内	he nei
+荷兰	he lan
+荷兰港	he lan gang
+荷台达	he tai da
+赫尔	he er
+赫尔辛堡	he er xin bao
+赫尔辛格	he er xin ge
+赫尔辛基	he er xin ji
+黑角	hei jiao
+黑山	hei shan
+黑山共和国	hei shan gong he guo
+横滨	heng bin
+红海	hong hai
+洪都拉斯	hong du la si
+鸿基	hong ji
+胡志明市	hu zhi ming shi
+华沙	hua sha
+华盛顿州	hua sheng dun zhou
+黄埔	huang pu
+惠灵顿	hui ling dun
+霍巴特	huo ba te
+霍尔姆斯克	huo er mu si ke
+霍拉姆沙赫尔	huo la mu sha he er
+霍梅尼港	huo mei ni gang
+霍尼亚拉	huo ni ya la
+基多	ji duo
+基尔	ji er
+基辅	ji fu
+基里巴斯	ji li ba si
+基隆	ji long
+基斯马尤	ji si ma you
+及内比亚绍	ji nei bi ya shao
+吉布提	ji bu ti
+吉达	ji da
+吉大港	ji da gang
+吉尔吉斯斯坦	ji er ji si si tan
+吉朗	ji lang
+吉隆坡	ji long po
+几内亚	ji nei ya
+几内亚比绍	ji nei ya bi shao
+加的夫	jia de fu
+加的斯	jia de si
+加尔各答	jia er ge da
+加拉加斯	jia la jia si
+加莱角	jia lai jiao
+加里宁格勒	jia li ning ge le
+加利福尼亚州	jia li fu ni ya zhou
+加拿大	jia na da
+加那利群岛	jia na li qun dao
+加纳	jia na
+加纳利群岛	jia na li qun dao
+加蓬	jia peng
+柬埔寨	jian pu zhai
+焦亚陶罗	jiao ya tao luo
+杰贝阿里	jie bei a li
+杰拉	jie la
+捷克	jie ke
+捷克逊维尔	jie ke xun wei er
+金边	jin bian
+金沙萨	jin sha sa
+金斯顿	jin si dun
+金泽	jin ze
+津巴布韦	jin ba bu wei
+锦普	jin pu
+井里文	jing li wen
+井里汶	jing li wen
+境港	jing gang
+酒田	jiu tian
+巨港	ju gang
+喀布尔	ka bu er
+喀麦隆	ka mai long
+卡贝略港	ka bei lue gang
+卡宾达	ka bin da
+卡尔德拉港	ka er de la gang
+卡基纳达	ka ji na da
+卡拉奇	ka la qi
+卡利亚里	ka li ya li
+卡萨布兰卡	ka sa bu lan ka
+卡斯特里港	ka si te li gang
+卡塔尔	ka ta er
+卡塔赫纳	ka ta he na
+卡维恩	ka wei en
+卡亚俄	ka ya e
+卡宴	ka yan
+开罗	kai luo
+开普顿	kai pu dun
+堪培拉	kan pei la
+堪萨斯城	kan sa si cheng
+堪萨斯州	kan sa si zhou
+坎布里奇	kan bu li qi
+坎德拉	kan de la
+康涅狄格州	kang nie di ge zhou
+康斯坦察	kang si tan cha
+科克	ke ke
+科林托	ke lin tuo
+科隆	ke long
+科伦坡	ke lun po
+科罗拉多州	ke luo la duo zhou
+科摩罗	ke mo luo
+科纳克里	ke na ke li
+科佩尔	ke pei er
+科钦	ke qin
+科特迪瓦	ke te di wa
+科特卡	ke te ka
+科托努	ke tuo nu
+科威特	ke wei te
+克赖斯特彻奇	ke lai si te che qi
+克里斯琴斯特德	ke li si qin si te de
+克里斯托巴尔	ke li si tuo ba er
+克利夫兰	ke li fu lan
+克鲁斯格兰德	ke lu si ge lan de
+克罗地亚	ke luo di ya
+克努托内	ke nu tuo nei
+肯布兰	ken bu lan
+肯尼亚	ken ni ya
+库达特	ku da te
+库马纳	ku ma na
+夸察夸尔科斯	kua cha kua er ke si
+魁北克	kui bei ke
+坤甸	kun dian
+拉巴斯	la ba si
+拉巴特	la ba te
+拉布安纳闽	la bu an na min
+拉佛纳	la fo na
+拉各斯	la ge si
+拉瓜伊拉	la gua yi la
+拉科鲁尼亚	la ke lu ni ya
+拉罗歇尔	la luo xie er
+拉普拉塔	la pu la ta
+拉萨罗卡德纳斯	la sa luo ka de na si
+拉斯帕尔马斯	la si pa er ma si
+拉斯佩齐亚	la si pei qi ya
+拉塔基亚	la ta ji ya
+拉脱维亚	la tuo wei ya
+拉希德港	la xi de gang
+腊包尔港	la bao er gang
+来航	lai hang
+莱城	lai cheng
+莱索托	lai suo tuo
+兰凯斯特	lan kai si te
+朗塞斯顿	lang sai si dun
+劳托卡	lao tuo ka
+老挝	lao wo
+勒哈弗尔	le ha fu er
+雷克雅未克	lei ke ya wei ke
+雷鸟尼翁	lei niao ni weng
+累西腓	lei xi fei
+黎巴嫩	li ba nen
+里奥格兰德	li ao ge lan de
+里加	li jia
+里斯本	li si ben
+里耶卡	li ye ka
+里约热内卢	li yue re nei lu
+立陶宛	li tao wan
+利比里亚	li bi li ya
+利比亚	li bi ya
+利伯维尔	li bo wei er
+利马	li ma
+利马索尔	li ma suo er
+利蒙	li meng
+利蒙港	li meng gang
+利特尔顿	li te er dun
+利物浦	li wu pu
+连云港	lian yun gang
+列支敦士登	lie zhi dun shi deng
+林查班	lin cha ban
+林迪	lin di
+留尼汪岛	liu ni wang dao
+卢贝克	lu bei ke
+卢森堡	lu sen bao
+卢旺达	lu wang da
+鹿儿岛	lu er dao
+鹿特丹	lu te dan
+路易港	lu yi gang
+路易斯安那州	lu yi si an na zhou
+伦敦	lun dun
+伦敦德里	lun dun de li
+罗安达	luo an da
+罗得岛	luo de dao
+罗马尼亚	luo ma ni ya
+罗斯托克	luo si tuo ke
+罗索	luo suo
+洛伦索马贵斯马普托	luo lun suo ma gui si ma pu tuo
+洛美	luo mei
+洛杉矶	luo shan ji
+麻省	ma sheng
+马辰	ma chen
+马达加斯加	ma da jia si jia
+马丹	ma dan
+马但萨斯	ma dan sa si
+马德拉群岛	ma de la qun dao
+马德拉斯	ma de la si
+马德里	ma de li
+马德普拉塔	ma de pu la ta
+马尔代夫	ma er dai fu
+马尔默	ma er mo
+马耳他	ma er ta
+马拉博	ma la bo
+马拉加	ma la jia
+马拉开波	ma la kai bo
+马拉维	ma la wei
+马来西亚	ma lai xi ya
+马累	ma lei
+马里	ma li
+马里兰州	ma li lan zhou
+马利亚纳群岛	ma li ya na qun dao
+马林迪	ma lin di
+马六甲	ma liu jia
+马瑙斯	ma nao si
+马尼拉	ma ni la
+马普托	ma pu tuo
+马其顿	ma qi dun
+马任加	ma ren jia
+马萨特兰	ma sa te lan
+马萨瓦	ma sa wa
+马塞诸塞州	ma sai zhu sai zhou
+马赛	ma sai
+马绍尔群岛	ma shao er qun dao
+马绍尔群岛共和国	ma shao er qun dao gong he guo
+马斯喀特	ma si ka te
+马塔迪	ma ta di
+马提尼克岛	ma ti ni ke dao
+马希	ma xi
+迈阿密	mai a mi
+麦纳麦	mai na mai
+曼彻斯特	man che si te
+曼谷	man gu
+曼萨尼约	man sa ni yue
+曼萨尼约角	man sa ni yue jiao
+曼塔	man ta
+毛淡棉	mao dan mian
+毛里求斯	mao li qiu si
+毛里求斯岛	mao li qiu si dao
+毛里塔尼亚	mao li ta ni ya
+毛利塔尼亚	mao li ta ni ya
+梅尔辛	mei er xin
+美东	mei dong
+美姑	mei gu
+美国	mei guo
+美利坚合众国	mei li jian he zhong guo
+门司	men si
+蒙巴萨	meng ba sa
+蒙大拿州	meng da na zhou
+蒙得维的亚	meng de wei di ya
+蒙古	meng gu
+蒙罗维尔	meng luo wei er
+蒙特雷	meng te lei
+蒙特利尔	meng te li er
+蒙特塞拉特岛	meng te sai la te dao
+孟菲斯	meng fei si
+孟加拉	meng jia la
+孟加拉国	meng jia la guo
+孟加拉湾	meng jia la wan
+孟买	meng mai
+米德尔斯伯勒	mi de er si bo le
+米德兰	mi de lan
+米尔福德港	mi er fu de gang
+米里	mi li
+米纳卡布斯	mi na ka bu si
+秘鲁	bi lu
+密克罗尼西亚联邦	mi ke luo ni xi ya lian bang
+密苏里州	mi su li zhou
+密西西比州	mi xi xi bi zhou
+密歇根州	mi xie gen zhou
+密执安州	mi zhi an zhou
+缅甸	mian dian
+缅因州	mian yin zhou
+名古屋	ming gu wu
+明德卢	ming de lu
+明尼苏达州	ming ni su da zhou
+明斯克	ming si ke
+摩尔多瓦	mo er duo wa
+摩尔曼斯克	mo er man si ke
+摩加迪沙	mo jia di sha
+摩洛哥	mo luo ge
+摩纳哥	mo na ge
+莫比尔	mo bi er
+莫尔斯比港	mo er si bi gang
+莫尔兹比港	mo er zi bi gang
+莫桑比克	mo sang bi ke
+莫斯科	mo si ke
+墨尔本	mo er ben
+墨西哥	mo xi ge
+墨西哥城	mo xi ge cheng
+墨西拿	mo xi na
+木察木杜	mu cha mu du
+木卡拉	mu ka la
+木浦	mu pu
+穆哈	mu ha
+穆卡拉	mu ka la
+穆斯塔加奈	mu si ta jia nai
+拿骚	na sao
+那坝	na ba
+那不勒斯	na bu le si
+纳霍德卡	na huo de ka
+纳米比亚	na mi bi ya
+南安普敦	nan an pu dun
+南澳洲	nan ao zhou
+南达科他州	nan da ke ta zhou
+南非	nan fei
+南韩	nan han
+南京	nan jing
+南卡罗来州	nan ka luo lai zhou
+南美	nan mei
+南浦	nan pu
+南圣胡安	nan sheng hu an
+南圣克鲁斯	nan sheng ke lu si
+南斯拉夫	nan si la fu
+南特	nan te
+南通	nan tong
+瑙鲁	nao lu
+内尔逊	nei er xun
+内华达州	nei hua da zhou
+内皮尔	nei pi er
+尼泊尔	ni bo er
+尼加拉瓜	ni jia la gua
+尼科西亚	ni ke xi ya
+尼日尔	ni ri er
+尼日利亚	ni ri li ya
+宁波	ning bo
+纽波特	niu bo te
+纽黑文	niu hei wen
+纽卡斯尔	niu ka si er
+纽瓦克	niu wa ke
+纽约	niu yue
+纽约州	niu yue zhou
+努库阿洛法	nu ku a luo fa
+努美阿	nu mei a
+努瓦克肖特	nu wa ke xiao te
+挪威	nuo wei
+诺福克	nuo fu ke
+诺劳	nuo lao
+诺沃西比尔斯克新西伯利亚	nuo wo xi bi er si ke xin xi bo li ya
+欧洲	ou zhou
+欧洲联盟	ou zhou lian meng
+帕果帕果	pa guo pa guo
+帕拉马里博	pa la ma li bo
+帕劳	pa lao
+帕皮提	pa pi ti
+派塔	pai ta
+攀牙湾	pan ya wan
+彭塔阿雷纳斯	peng ta a lei na si
+彭塔雷纳斯	peng ta lei na si
+蓬塞	peng sai
+皮特尔角	pi te er jiao
+辟利洛	pi li luo
+平昌	ping chang
+平壤	ping rang
+珀斯	po si
+葡萄牙	pu tao ya
+朴次茅斯	pu ci mao si
+普吉岛	pu ji dao
+普拉亚	pu la ya
+普列茅斯	pu lie mao si
+普洛切	pu luo qie
+千叶	qian ye
+乔治敦	qiao zhi dun
+钦博特	qin bo te
+青岛	qing dao
+清律	qing lv
+清水	qing shui
+热那亚	re na ya
+仁川	ren chuan
+日本	ri ben
+日惹	ri re
+柔佛巴鲁	rou fo ba lu
+瑞典	rui dian
+瑞士	rui shi
+萨尔瓦多	sa er wa duo
+萨凡纳	sa fan na
+萨摩亚	sa mo ya
+萨磨亚群岛	sa mo ya qun dao
+萨瓦	sa wa
+萨沃纳	sa wo na
+塞德港	sai de gang
+塞尔维亚	sai er wei ya
+塞拉莱	sai la lai
+塞拉利昂	sai la li ang
+塞内加尔	sai nei jia er
+塞浦路斯	sai pu lu si
+塞萨洛尼基	sai sa luo ni ji
+塞舌尔	sai she er
+塞舌尔加拿大	sai she er jia na da
+三宝垄	san bao long
+三城	san cheng
+三藩市	san fan shi
+桑德威奇	sang de wei qi
+桑给巴尔	sang ji ba er
+桑托斯	sang tuo si
+沙璜	sha huang
+沙迦	sha jia
+沙特阿拉伯	sha te a la bo
+厦门	xia men
+山打根	shan da gen
+上海	shang hai
+蛇口	she kou
+什切青	shi qie qing
+神户	shen hu
+圣安东尼奥	sheng an dong ni ao
+圣彼得堡	sheng bi de bao
+圣但尼	sheng dan ni
+圣地亚哥	sheng di ya ge
+圣迭戈	sheng die ge
+圣多美	sheng duo mei
+圣多美和普林西比	sheng duo mei he pu lin xi bi
+圣多明戈	sheng duo ming ge
+圣多明各	sheng duo ming ge
+圣费尔南多	sheng fei er nan duo
+圣何塞	sheng he sai
+圣胡安	sheng hu an
+圣胡赛	sheng hu sai
+圣基茨和尼维斯	sheng ji ci he ni wei si
+圣克鲁斯	sheng ke lu si
+圣劳伦斯	sheng lao lun si
+圣卢西亚	sheng lu xi ya
+圣路易斯	sheng lu yi si
+圣洛伦索	sheng luo lun suo
+圣马力诺	sheng ma li nuo
+圣马利诺	sheng ma li nuo
+圣乔治	sheng qiao zhi
+圣吐	sheng tu
+圣托马斯	sheng tuo ma si
+圣文森特和格林纳丁斯	sheng wen sen te he ge lin na ding si
+圣约翰	sheng yue han
+圣约翰斯	sheng yue han si
+诗巫	shi wu
+水东	shui dong
+斯德哥尔摩	si de ge er mo
+斯克基达	si ke ji da
+斯里巴加湾市	si li ba jia wan shi
+斯里兰卡	si li lan ka
+斯洛伐克	si luo fa ke
+斯洛文尼亚	si luo wen ni ya
+斯普利特	si pu li te
+斯塔万格	si ta wan ge
+斯坦利港	si tan li gang
+斯旺西	si wang xi
+斯威士兰	si wei shi lan
+泗水	si shui
+宋卡	song ka
+苏丹	su dan
+苏丹港	su dan gang
+苏尔	su er
+苏里南	su li nan
+苏瓦	su wa
+苏伊士	su yi shi
+苏伊士港	su yi shi gang
+所罗门群岛	suo luo men qun dao
+所属地区	suo shu di qu
+所属国家	suo shu guo jia
+索非亚	suo fei ya
+索菲亚	suo fei ya
+索马里	suo ma li
+塔巴科	ta ba ke
+塔尔图斯	ta er tu si
+塔吉克斯坦	ta ji ke si tan
+塔科马	ta ke ma
+塔拉瓦	ta la wa
+塔兰托	ta lan tuo
+塔利拉迪	ta li la di
+塔林	ta lin
+塔马塔夫	ta ma ta fu
+塔那那利佛	ta na na li fo
+塔什干	ta shi gan
+塔希提岛	ta xi ti dao
+台北	tai bei
+台湾	tai wan
+台中	tai zhong
+太子港	tai zi gang
+泰国	tai guo
+泰晤士港	tai wu shi gang
+檀香山	tan xiang shan
+坦加	tan jia
+坦帕	tan pa
+坦皮科	tan pi ke
+坦桑尼亚	tan sang ni ya
+汤加	tang jia
+陶朗阿	tao lang a
+特拉布宗	te la bu zong
+特拉华州	te la hua zhou
+特拉维夫	te la wei fu
+特立尼达和多巴哥	te li ni da he duo ba ge
+特鲁希略	te lu xi lue
+特马	te ma
+天津	tian jin
+田纳西州	tian na xi zhou
+廷布	ting bu
+亭可马里	ting ke ma li
+突尼斯	tu ni si
+图阿以西纳	tu a yi xi na
+图尔库	tu er ku
+图莱亚尔	tu lai ya er
+图马科	tu ma ke
+图瓦卢	tu wa lu
+土耳其	tu er qi
+土库曼斯坦	tu ku man si tan
+土伦	tu lun
+瓦尔纳	wa er na
+瓦尔帕莱索	wa er pa lai suo
+瓦加杜古	wa jia du gu
+瓦莱塔	wa lai ta
+瓦伦西亚	wa lun xi ya
+瓦努阿图	wa nu a tu
+瓦萨	wa sa
+瓦沙	wa sha
+万鸦老	wan ya lao
+望加锡	wang jia xi
+危地马拉	wei di ma la
+威廉斯塔德	wei lian si ta de
+威尼斯	wei ni si
+威斯康星州	wei si kang xing zhou
+威瓦克	wei wa ke
+韦腊克鲁斯	wei la ke lu si
+维多利亚	wei duo li ya
+维多利亚港	wei duo li ya gang
+维尔京群岛	wei er jing qun dao
+维尔京群岛美属	wei er jing qun dao mei shu
+维拉港	wei la gang
+维斯比	wei si bi
+维斯马	wei si ma
+维也纳	wei ye na
+委内瑞拉	wei nei rui la
+蔚山	wei shan
+温哥华	wen ge hua
+温州	wen zhou
+文莱	wen lai
+沃尔维斯湾	wo er wei si wan
+乌干达	wu gan da
+乌克兰	wu ke lan
+乌拉圭	wu la gui
+乌拉湾	wu la wan
+乌姆赛义德	wu mu sai yi de
+乌斯怀亚	wu si huai ya
+乌兹别克斯坦	wu zi bie ke si tan
+吴港	wu gang
+西澳洲	xi ao zhou
+西班牙	xi ban ya
+西班牙港	xi ban ya gang
+西北欧	xi bei ou
+西恩付戈斯	xi en fu ge si
+西非	xi fei
+西弗吉尼亚州	xi fu ji ni ya zhou
+西哈努克城	xi ha nu ke cheng
+西撒哈拉	xi sa ha la
+西萨磨亚群岛	xi sa mo ya qun dao
+西太平洋	xi tai ping yang
+西雅图	xi ya tu
+西亚	xi ya
+希洪	xi hong
+希腊	xi la
+悉尼	xi ni
+夏洛特	xia luo te
+夏洛特阿马利亚	xia luo te a ma li ya
+夏威夷	xia wei yi
+暹罗湾	xian luo wan
+岘港	xian gang
+香港	xiang gang
+小仓	xiao cang
+小樽	xiao zun
+新阿姆斯特丹	xin a mu si te dan
+新奥尔良	xin ao er liang
+新罕布什尔州	xin han bu shi er zhou
+新鸿	xin hong
+新加坡	xin jia po
+新喀里多尼亚	xin ka li duo ni ya
+新墨西哥州	xin mo xi ge zhou
+新普利默斯	xin pu li mo si
+新西兰	xin xi lan
+新泻	xin xie
+新泽西州	xin ze xi zhou
+兴南	xing nan
+匈牙利	xiong ya li
+休斯敦	xiu si dun
+宿务	su wu
+叙利亚	xu li ya
+牙买加	ya mai jia
+雅典	ya dian
+雅尔塔	ya er ta
+雅加达	ya jia da
+亚庇哥打基	ya bi ge da ji
+亚的斯亚贝巴	ya di si ya bei ba
+亚丁	ya ding
+亚喀巴	ya ka ba
+亚拉巴马州	ya la ba ma zhou
+亚历山大	ya li shan da
+亚利桑那州	ya li sang na zhou
+亚美尼亚	ya mei ni ya
+亚松森	ya song sen
+亚速尔群岛葡属	ya su er qun dao pu shu
+亚特兰大	ya te lan da
+亚洲	ya zhou
+烟台	yan tai
+仰光	yang guang
+耶路撒冷	ye lu sa leng
+也门	ye men
+伊基克	yi ji ke
+伊拉克	yi la ke
+伊朗	yi lang
+伊丽莎白港	yi li sha bai gang
+伊利诺伊州	yi li nuo yi zhou
+伊洛	yi luo
+伊明赫姆船坞	yi ming he mu chuan wu
+伊斯肯德伦	yi si ken de lun
+伊斯兰堡	yi si lan bao
+伊斯坦布尔	yi si tan bu er
+伊兹密尔	yi zi mi er
+衣阿华州	yi a hua zhou
+以色列	yi se lie
+意大利	yi da li
+印第安纳州	yin di an na zhou
+印度	yin du
+印度次大陆	yin du ci da lu
+印度尼西亚	yin du ni xi ya
+印尼	yin ni
+英国	ying guo
+犹他州	you ta zhou
+元山	yuan shan
+约旦	yue dan
+约翰内斯堡	yue han nei si bao
+越南	yue nan
+赞比亚	zan bi ya
+扎伊尔	zha yi er
+乍得	zha de
+占小牧	zhan xiao mu
+湛江	zhan jiang
+长崎	chang qi
+长滩	chang tan
+芝加哥	zhi jia ge
+直布罗陀	zhi bu luo tuo
+直江津	zhi jiang jin
+智利	zhi li
+中东	zhong dong
+中非	zhong fei
+中国	zhong guo
+中美	zhong mei
+中南美	zhong nan mei
+珠海	zhu hai
+佐治亚州	zuo zhi ya zhou

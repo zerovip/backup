@@ -33,7 +33,7 @@
 #
 ---
 name: zero
-version: "2020.08.20"
+version: "2020.09.08"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
@@ -42,8 +42,28 @@ import_tables:
   - luna_pinyin.hanyu
   - luna_pinyin.poetry
   # - zhwiki-20200801
-# - 其他词典的文件名，除去“.dict.yaml”后缀
-#
+  # - sougou_animals
+  # - sougou_astronomy
+  # - sougou_basketball
+  - sougou_beijing_language
+  - sougou_cars
+  - sougou_cities
+  # - sougou_computer
+  - sougou_cuisine
+  - sougou_festivals
+  - sougou_flowers
+  - sougou_foods
+  - sougou_football
+  - sougou_harry_potter
+  - sougou_math
+  - sougou_phones
+  # - sougou_physics
+  # - sougou_plants
+  - sougou_singers
+  - sougou_superstars
+  - sougou_tourism
+# - 其他词典的名字，是写在文件里的 name 处的，
+#   不过一般情况下都是文件名除去“.dict.yaml”后缀
 #
 # 这个文件的下面也可以添加自造词语
 # 注意一定要用制表符 tab，不要在这里直接按 tab

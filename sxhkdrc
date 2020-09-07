@@ -202,6 +202,11 @@ XF86MonBrightness{Down,Up}
 super + Print
     scrot
 
+# scratchpad
+# See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
+super + u
+    scratchpad.sh dropdown
+
 # launch applications
 ctrl + alt + {r,f,p,s,g,z}
     {foxitreader,firefox,photoflare,smplayer,goldendict,zathura}

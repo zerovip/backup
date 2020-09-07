@@ -34,3 +34,8 @@ bspc rule -a Zathura state=tiled split_ratio=0.6
 # 尝试一下 external_rules
 # bspc config external_rules_command "${HOME}/.config/bspwm/try_e_r"
 
+# scratchpad
+# See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
+#   例子中最后的 -e "zsh -i" 有问题，不带引号就行
+bspc rule -a dropdown sticky=on state=floating hidden=on
+alacritty --class Alacritty,dropdown -e zsh -i &

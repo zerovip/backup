@@ -1,0 +1,50 @@
+---
+name: sougou_festivals
+version: "2020.09.07"
+sort: by_weight
+use_preset_vocabulary: true
+...
+白露	bai lu
+重阳节	chong yang jie
+处暑	chu shu
+除夕	chu xi
+春分	chun fen
+春节	chun jie
+大寒	da han
+大暑	da shu
+大雪	da xue
+地藏节	di zang jie
+冬至	dong zhi
+翻经节	fan jing jie
+姑姑节	gu gu jie
+谷雨	gu yu
+鬼节	gui jie
+寒露	han lu
+寒食节	han shi jie
+火把节	huo ba jie
+祭祖节	ji zu jie
+惊蛰	jing zhe
+阔时节	kuo shi jie
+腊八节	la ba jie
+立春	li chun
+立冬	li dong
+立秋	li qiu
+立夏	li xia
+龙抬头	long tai tou
+芒种	mang zhong
+孟兰盆节	meng lan pen jie
+七夕	qi xi
+清明	qing ming
+清明节	qing ming jie
+秋分	qiu fen
+霜降	shuang jiang
+夏至	xia zhi
+小寒	xiao han
+小满	xiao man
+小年	xiao nian
+小暑	xiao shu
+小雪	xiao xue
+雨水	yu shui
+元宵节	yuan xiao jie
+中秋节	zhong qiu jie
+中元节	zhong yuan jie

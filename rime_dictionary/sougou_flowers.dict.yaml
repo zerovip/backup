@@ -1,0 +1,209 @@
+---
+name: sougou_flowers
+version: "2020.09.07"
+sort: by_weight
+use_preset_vocabulary: true
+...
+爱丽丝	ai li si
+白百合	bai bai he
+白丁香	bai ding xiang
+百合	bai he
+败酱	bai jiang
+白兰花	bai lan hua
+白玫瑰	bai mei gui
+白美女樱	bai mei nv ying
+百日草	bai ri cao
+白桑	bai sang
+白玉兰	bai yu lan
+报岁兰	bao sui lan
+薄荷	bo he
+彩色海芋	cai se hai yu
+草莓花	cao mei hua
+长春花	chang chun hua
+长春菊	chang chun ju
+菖蒲花	chang pu hua
+雏菊	chu ju
+春番红花	chun fan hong hua
+春兰	chun lan
+慈菇花	ci gu hua
+刺槐	ci huai
+翠菊	cui ju
+大丽花	da li hua
+大岩桐	da yan tong
+淡红美女樱	dan hong mei nv ying
+灯笼花	deng long hua
+吊兰	diao lan
+吊钟花	diao zhong hua
+丁香花	ding xiang hua
+豆寇花	dou kou hua
+杜鹃	du juan
+番红花	fan hong hua
+飞燕草	fei yan cao
+非洲莲香	fei zhou lian xiang
+凤梨	feng li
+风铃草	feng ling cao
+凤仙花	feng xian hua
+风信子	feng xin zi
+扶郎花	fu lang hua
+福禄考	fu lu kao
+芙蓉花	fu rong hua
+扶桑	fu sang
+福寿花	fu shou hua
+附子花	fu zi hua
+瓜叶菊	gua ye ju
+广玉兰	guang yu lan
+桂花	gui hua
+桂枝	gui zhi
+海洋薰衣草	hai yang xun yi cao
+海芋	hai yu
+含笑花	han xiao hua
+含羞草	han xiu cao
+荷花	he hua
+合欢	he huan
+荷兰芹	he lan qin
+鹤望兰	he wang lan
+黑桑	hei sang
+红玫瑰	hong mei gui
+红棉花	hong mian hua
+红山茶	hong shan cha
+红郁金香	hong yu jin xiang
+红掌	hong zhang
+蝴蝶花	hu die hua
+蝴蝶兰	hu die lan
+胡枝子	hu zhi zi
+花簪	hua zan
+黄百合	huang bai he
+黄玫瑰	huang mei gui
+黄水仙	huang shui xian
+黄郁金香	huang yu jin xiang
+茴香	hui xiang
+火百合	huo bai he
+火鹤花	huo he hua
+火绒草花语	huo rong cao hua yu
+姬百合	ji bai he
+鸡冠花	ji guan hua
+夹竹桃	jia zhu tao
+剑兰	jian lan
+剪秋萝	jian qiu luo
+桔梗	jie geng
+金边瑞香	jin bian rui xiang
+锦带花	jin dai hua
+金雀花	jin que hua
+金鱼花	jin yu hua
+金盏菊	jin zhan ju
+金钟	jin zhong
+荆树	jing shu
+君子兰	jun zi lan
+康乃馨	kang nai xin
+款冬	kuan dong
+葵百合	kui bai he
+腊梅	la mei
+兰花	lan hua
+梨花海棠	li hua hai tang
+连翘	lian qiao
+令箭	ling jian
+凌霄花	ling xiao hua
+六月雪	liu yue xue
+龙船花	long chuan hua
+马蹄莲	ma ti lian
+满天星	man tian xing
+芒草	mang cao
+玫瑰	mei gui
+梅花	mei hua
+美人蕉	mei ren jiao
+迷迭香	mi die xiang
+米兰	mi lan
+免牙红	mian ya hong
+免子花	mian zi hua
+茉莉	mo li
+木笔	mu bi
+牡丹	mu dan
+木芙蓉	mu fu rong
+木兰花	mu lan hua
+木棉	mu mian
+木樨草	mu xi cao
+苜蓿	mu xu
+柠檬草	ning meng cao
+欧亚花楸	ou ya hua qiu
+婆婆纳	po po na
+蒲包花	pu bao hua
+蒲公英	pu gong ying
+七度灶	qi du zao
+牵牛花	qian niu hua
+千日草	qian ri cao
+千日红建兰	qian ri hong jian lan
+千日莲	qian ri lian
+蔷薇	qiang wei
+琼花	qiong hua
+忍冬	ren dong
+入腊红	ru la hong
+三角梅	san jiao mei
+三轮草	san lun cao
+三色堇	san se jin
+山茶花	shan cha hua
+山楂	shan zha
+芍药花	shao yao hua
+深山酢浆	shen shan zuo jiang
+圣诞红	sheng dan hong
+蓍草	shi cao
+石斛兰	shi hu lan
+石莲花	shi lian hua
+石榴	shi liu
+石楠花	shi nan hua
+石蒜	shi suan
+石竹	shi zhu
+睡莲	shui lian
+水仙	shui xian
+四叶苜蓿	si ye mu xu
+松树	song shu
+酸模	suan mo
+太阳菊	tai yang ju
+昙花	tan hua
+桃花	tao hua
+天堂鸟	tian tang niao
+跳舞兰	tiao wu lan
+万年青	wan nian qing
+万寿菊	wan shou ju
+晚香玉	wan xiang yu
+文竹	wen zhu
+毋忘我	wu wang wo
+夏雪草	xia xue cao
+仙客来	xian ke lai
+香堇	xiang jin
+向日葵	xiang ri kui
+香水百合	xiang shui bai he
+香豌豆夏兰	xiang wan dou xia lan
+小苍兰	xiao cang lan
+小草兰	xiao cao lan
+星辰花	xing chen hua
+萱草	xuan cao
+悬铃木	xuan ling mu
+薰衣草	xun yi cao
+野蔷薇	ye qiang wei
+一串红	yi chuan hong
+一品红	yi pin hong
+银芽柳	yin ya liu
+樱草花	ying cao hua
+迎春	ying chun
+迎春花	ying chun hua
+樱花	ying hua
+罂麦	ying mai
+罂粟花	ying su hua
+油菜花	you cai hua
+羽扁豆	yu bian dou
+郁金香	yu jin xiang
+玉兰	yu lan
+虞美人	yu mei ren
+鸢尾	yuan wei
+月桂树环	yue gui shu huan
+月桂枝	yue gui zhi
+月季	yue ji
+月见草	yue jian cao
+珍珠花	zhen zhu hua
+栀子花	zhi zi hua
+紫丁香	zi ding xiang
+紫荆	zi jing
+紫罗兰	zi luo lan
+紫藤	zi teng
+紫薇	zi wei
+酢浆草	zuo jiang cao

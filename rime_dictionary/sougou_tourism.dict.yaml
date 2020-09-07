@@ -1,0 +1,2908 @@
+---
+name: sougou_tourism
+version: "2020.09.07"
+sort: by_weight
+use_preset_vocabulary: true
+...
+阿杜勒萨马德建筑	a du le sa ma de jian zhu
+阿尔山温泉	a er shan wen quan
+阿尔泰山	a er tai shan
+阿克苏姆石碑	a ke su mu shi bei
+阿姆斯特丹博物馆广场	a mu si te dan bo wu guan guang chang
+阿什哈达摩崖	a shi ha da mo ya
+阿斯哈图石林	a si ha tu shi lin
+阿斯米尔花市	a si mi er hua shi
+阿斯塔纳古墓群	a si ta na gu mu qun
+阿斯塔那哈拉	a si ta na ha la
+阿育王塔	a yu wang ta
+艾丁湖	ai ding hu
+埃菲尔铁塔	ai fei er tie ta
+叆河尖古城址	ai he jian gu cheng zhi
+瑷珲城	ai hui cheng
+艾提尕尔清真寺	ai ti ga er qing zhen si
+爱心大世界	ai xin da shi jie
+安大略艺廊	an da lue yi lang
+安固石亭	an gu shi ting
+安国药王庙	an guo yao wang miao
+安济桥	an ji qiao
+安澜桥	an lan qiao
+安平桥	an ping qiao
+安溪瓷窑址	an xi ci yao zhi
+安溪文庙	an xi wen miao
+安远庙	an yuan miao
+澳大利亚博物馆	ao da li ya bo wu guan
+澳大利亚国家海事博物馆	ao da li ya guo jia hai shi bo wu guan
+敖东城	ao dong cheng
+傲徕峰	ao lai feng
+澳门博物馆	ao men bo wu guan
+澳门文化中心	ao men wen hua zhong xin
+奥依塔克森林公园	ao yi ta ke sen lin gong yuan
+鳌园	ao yuan
+八大关	ba da guan
+八达岭	ba da ling
+八达岭长城	ba da ling chang cheng
+八达楼子	ba da lou zi
+八卦城	ba gua cheng
+八廓街	ba kuo jie
+八棱观塔	ba leng guan ta
+八里城	ba li cheng
+巴厘岛	ba li dao
+八里沟	ba li gou
+巴黎圣母院	ba li sheng mu yuan
+八路军总司令部旧址	ba lu jun zong si ling bu jiu zhi
+八女投江纪念地	ba nv tou jiang ji nian di
+巴特西发电站	ba te xi fa dian zhan
+霸王朝山城	ba wang chao shan cheng
+霸王岭	ba wang ling
+八王寺	ba wang si
+巴音布鲁克	ba yin bu lu ke
+白板笔东洋	bai ban bi dong yang
+白板磁粒	bai ban ci li
+白堤	bai di
+白帝城	bai di cheng
+白鸽巢公园	bai ge chao gong yuan
+白公馆	bai gong guan
+白公泉	bai gong quan
+白哈巴	bai ha ba
+白哈巴哨所	bai ha ba shao suo
+白虎泉	bai hu quan
+白花泉	bai hua quan
+百花山	bai hua shan
+百灵庙	bai ling miao
+白龙泉	bai long quan
+白龙寺	bai long si
+白鹿洞	bai lu dong
+白鹭天堂	bai lu tian tang
+白鹿岩	bai lu yan
+白马公司	bai ma gong si
+白马寺	bai ma si
+白马崖	bai ma ya
+百脉泉	bai mai quan
+白茫雪山	bai mang xue shan
+白娘子	bai niang zi
+白求恩手术室旧址	bai qiu en shou shu shi jiu zhi
+白泉	bai quan
+百泉	bai quan
+白沙壁画	bai sha bi hua
+白沙井	bai sha jing
+白石泉	bai shi quan
+白石头景区	bai shi tou jing qu
+白水河	bai shui he
+白水涧鹳山	bai shui jian guan shan
+白塔	bai ta
+白塔寺	bai ta si
+白塔峪塔	bai ta yu ta
+白胎寺	bai tai si
+白头山天池	bai tou shan tian chi
+白洋淀	bai yang dian
+白杨沟	bai yang gou
+百源川池	bai yuan chuan chi
+白云洞	bai yun dong
+白云古洞	bai yun gu dong
+白云景区	bai yun jing qu
+白云山	bai yun shan
+白云寺	bai yun si
+白云源	bai yun yuan
+柏孜克里克千佛洞	bai zi ke li ke qian fo dong
+班公湖	ban gong hu
+半山	ban shan
+半天云岭	ban tian yun ling
+棒棰岛	bang chui dao
+宝岛美景	bao dao mei jing
+宝顶山	bao ding shan
+报恩寺	bao en si
+包公祠	bao gong ci
+报关物品	bao guan wu pin
+保国寺	bao guo si
+报国寺	bao guo si
+包兰铁路	bao lan tie lu
+宝莲寺	bao lian si
+宝宁寺	bao ning si
+抱朴道院	bao pu dao yuan
+宝泉	bao quan
+宝石流霞	bao shi liu xia
+宝石山	bao shi shan
+宝塔山	bao ta shan
+宝堂寺	bao tang si
+宝通寺	bao tong si
+趵突泉	bao tu quan
+保卫和平石牌坊	bao wei he ping shi pai fang
+宝珠洞	bao zhu dong
+北禅寺	bei chan si
+北大湖	bei da hu
+北大岭	bei da ling
+北戴河	bei dai he
+北帝庙	bei di miao
+北高峰	bei gao feng
+北固山	bei gu shan
+北海公园	bei hai gong yuan
+北吉样寺	bei ji yang si
+北京大学红楼	bei jing da xue hong lou
+北京地下铁道	bei jing di xia tie dao
+北京动物园	bei jing dong wu yuan
+北京海洋馆	bei jing hai yang guan
+碑林	bei lin
+北陵公园	bei ling gong yuan
+北山	bei shan
+北山街历史文化街区	bei shan jie li shi wen hua jie qu
+北漱玉泉	bei shu yu quan
+北庭都护府	bei ting du hu fu
+北温泉风景区	bei wen quan feng jing qu
+北武当山	bei wu dang shan
+北响堂寺石窟	bei xiang tang si shi ku
+北岳庙	bei yue miao
+北镇庙	bei zhen miao
+北煮糠泉	bei zhu kang quan
+贝子庙	bei zi miao
+本兰围场	ben lan wei chang
+本溪水洞	ben xi shui dong
+本子黑皮本	ben zi hei pi ben
+本子皮本	ben zi pi ben
+本子软皮本	ben zi ruan pi ben
+本子硬壳本	ben zi ying qiao ben
+必背瑶寨	bi bei yao zhai
+碧落碑	bi luo bei
+比萨斜塔	bi sa xie ta
+碧山寺	bi shan si
+避暑泉	bi shu quan
+避暑山庄	bi shu shan zhuang
+碧塔海	bi ta hai
+笔筒源兴	bi tong yuan xing
+碧霞祠	bi xia ci
+碧霄岩	bi xiao yan
+碧云洞	bi yun dong
+边靖楼	bian jing lou
+扁鹊庙	bian que miao
+滨海风光	bin hai feng guang
+滨海公园	bin hai gong yuan
+宾夕法尼亚州费城	bin xi fa ni ya zhou fei cheng
+冰冰泉	bing bing quan
+冰灯游园会	bing deng you yuan hui
+兵沟旅游区	bing gou lv you qu
+槟榔园	bing lang yuan
+炳灵寺石窟	bing ling si shi ku
+冰雪大世界	bing xue da shi jie
+博鳌	bo ao
+博鳌东方文化苑	bo ao dong fang wen hua yuan
+博鳌亚洲论坛成立会址	bo ao ya zhou lun tan cheng li hui zhi
+博鳌亚洲论坛永久会址	bo ao ya zhou lun tan yong jiu hui zhi
+博鳌镇	bo ao zhen
+博格达山	bo ge da shan
+渤海风情园	bo hai feng qing yuan
+博湖金沙滩	bo hu jin sha tan
+柏林寺塔	bo lin si ta
+浡泥国王墓	bo ni guo wang mu
+僰人悬棺	bo ren xuan guan
+博斯腾湖	bo si teng hu
+博雅鲜花店	bo ya xian hua dian
+泊镇清真寺	bo zhen qing zhen si
+布草房楼层	bu cao fang lou ceng
+布达拉宫	bu da la gong
+布尔很哈达岩画	bu er hen ha da yan hua
+布雷顿角岛	bu lei dun jiao dao
+簿仁寺	bu ren si
+擦鞋垫	ca xie dian
+蔡氏古民居	cai shi gu min ju
+蔡资深民居	cai zi shen min ju
+参团	can tuan
+藏龙百瀑	cang long bai pu
+藏山	cang shan
+苍岩山	cang yan shan
+草庵	cao an
+草庵摩尼教寺	cao an mo ni jiao si
+曹顶墓	cao ding mu
+草泉	cao quan
+曾水源墓	ceng shui yuan mu
+察布查尔县	cha bu cha er xian
+岔道城	cha dao cheng
+茶卡盐湖	cha ka yan hu
+柴达木盆地	chai da mu pen di
+长安寺	chang an si
+长白山瀑布	chang bai shan pu bu
+长白山温泉	chang bai shan wen quan
+长白山自然保护区	chang bai shan zi ran bao hu qu
+长城一八达龄	chang cheng yi ba da ling
+长川一号墓	chang chuan yi hao mu
+长春电影城	chang chun dian ying cheng
+长春风景	chang chun feng jing
+长春观	chang chun guan
+长岛自然保护区	chang dao zi ran bao hu qu
+长江三峡风景名胜区	chang jiang san xia feng jing ming sheng qu
+长江源	chang jiang yuan
+常平关帝庙	chang ping guan di miao
+长桥	chang qiao
+长桥公园	chang qiao gong yuan
+长辛店二七革命遗址	chang xin dian er qi ge ming yi zhi
+巢湖	chao hu
+超山	chao shan
+超山风景区	chao shan feng jing qu
+朝宗桥	chao zong qiao
+车关金沙滩	che guan jin sha tan
+车泉	che quan
+陈化成纪念馆	chen hua cheng ji nian guan
+陈夔龙墓	chen kui long mu
+陈云故居	chen yun gu ju
+成都动物园	cheng du dong wu yuan
+成都人民公园	cheng du ren min gong yuan
+成都世界乐园	cheng du shi jie le yuan
+成都市植物园	cheng du shi zhi wu yuan
+承恩寺	cheng en si
+承光殿	cheng guang dian
+城隍庙	cheng huang miao
+城隍山	cheng huang shan
+成吉思汗陵	cheng ji si han ling
+成控	cheng kong
+澄庐	cheng lu
+澄迈县县委招待所	cheng mai xian xian wei zhao dai suo
+城墙磖子山城遗址	cheng qiang la zi shan cheng yi zhi
+承天寺	cheng tian si
+城子后山城遗址	cheng zi hou shan cheng yi zhi
+城子山山城	cheng zi shan shan cheng
+城子山山城遗址	cheng zi shan shan cheng yi zhi
+赤嵌楼	chi qian lou
+池神庙	chi shen miao
+崇妃园寝	chong fei yuan qin
+崇福寺	chong fu si
+崇陵	chong ling
+崇明寺	chong ming si
+崇宁殿	chong ning dian
+重庆磁器口古镇	chong qing ci qi kou gu zhen
+重庆动物园	chong qing dong wu yuan
+重庆金源方特科幻公园	chong qing jin yuan fang te ke huan gong yuan
+重庆龙水湖	chong qing long shui hu
+重庆南山植物园	chong qing nan shan zhi wu yuan
+重庆南温泉公园	chong qing nan wen quan gong yuan
+崇庆寺	chong qing si
+重庆统景风景区	chong qing tong jing feng jing qu
+重庆兴澳海底世界	chong qing xing ao hai di shi jie
+重庆野生动物世界	chong qing ye sheng dong wu shi jie
+崇圣饲	chong sheng si
+崇寿寺	chong shou si
+崇寿寺塔	chong shou si ta
+崇武古城	chong wu gu cheng
+崇兴寺双塔	chong xing si shuang ta
+重阳殿	chong yang dian
+崇州九龙沟风景名胜区	chong zhou jiu long gou feng jing ming sheng qu
+楚布寺	chu bu si
+出港	chu gang
+除好柏	chu hao bai
+濋泉	chu quan
+储秀官	chu xiu guan
+出租车乘车点	chu zu che cheng che dian
+圌山塔	chuan shan ta
+穿岩十九峰	chuan yan shi jiu feng
+锤峰落照	chui feng luo zhao
+淳安千峡谷	chun an qian xia gu
+春秋楼	chun qiu lou
+春润庐	chun run lu
+纯阳殿	chun yang dian
+纯阳宫	chun yang gong
+慈悲庵	ci bei an
+赐恩岩	ci en yan
+赐儿山云帛寺	ci er shan yun bo si
+茨坪庐山	ci ping lu shan
+慈清寺	ci qing si
+慈寿寺塔	ci shou si ta
+慈寿塔	ci shou ta
+慈相寺	ci xiang si
+慈样观	ci yang guan
+慈云阁	ci yun ge
+磁灶古窑址	ci zao gu yao zhi
+从化温泉	cong hua wen quan
+崔府君庙	cui fu jun miao
+翠屏湖	cui ping hu
+翠岩禅寺	cui yan chan si
+大安寺	da an si
+大报恩寺碑	da bao en si bei
+大堡礁	da bao jiao
+大葆台西汉墓	da bao tai xi han mu
+大悲禅院	da bei chan yuan
+大悲阁	da bei ge
+大笔架山	da bi jia shan
+大城子塔	da cheng zi ta
+大慈恩寺	da ci en si
+大慈阁	da ci ge
+大慈寺	da ci si
+大慈岩	da ci yan
+大滴水泉	da di shui quan
+大地湾遗址	da di wan yi zhi
+大东海	da dong hai
+大风歌碑	da feng ge bei
+大佛寺	da fo si
+大高玄殿	da gao xuan dian
+大沽口炮台	da gu kou pao tai
+大孤山风景名胜区	da gu shan feng jing ming sheng qu
+大观圣作之碑	da guan sheng zuo zhi bei
+大观园	da guan yuan
+大虹桥	da hong qiao
+大金得胜陀颂碑	da jin de sheng tuo song bei
+大九湖	da jiu hu
+大浪湾	da lang wan
+达里诺尔湖	da li nuo er hu
+大连自然博物馆	da lian zi ran bo wu guan
+大流滩	da liu tan
+大梅沙海滨公园	da mei sha hai bin gong yuan
+大明湖	da ming hu
+大明山	da ming shan
+大明寺	da ming si
+大明塔	da ming ta
+大鹏所城	da peng suo cheng
+大青沟	da qing gou
+大清谷	da qing gu
+大清洁记录	da qing jie ji lu
+大三巴牌坊	da san ba pai fang
+大田坡鹿保护区	da tian po lu bao hu qu
+大相国寺	da xiang guo si
+大小洞天	da xiao dong tian
+大雄宝殿	da xiong bao dian
+大研古城	da yan gu cheng
+大岩山景区	da yan shan jing qu
+大岩头生态农庄	da yan tou sheng tai nong zhuang
+大窑村石器制造场	da yao cun shi qi zhi zao chang
+大英博物馆	da ying bo wu guan
+大禹渡	da yu du
+大屿山	da yu shan
+大运河	da yun he
+大云院	da yun yuan
+大昭寺	da zhao si
+大政殿	da zheng dian
+大钟奇	da zhong qi
+大众桥	da zhong qiao
+大钟亭	da zhong ting
+大洲岛	da zhou dao
+大足石刻	da zu shi ke
+岱道庵	dai dao an
+岱顶	dai ding
+岱庙	dai miao
+岱仙瀑布	dai xian pu bu
+岱仙山	dai xian shan
+戴云山	dai yun shan
+岱宗坊	dai zong fang
+澹泊敬诚殿	dan bo jing cheng dian
+单飞单卧	dan fei dan wo
+单卧	dan wo
+丹霞山	dan xia shan
+当达斯街	dang da si jie
+当道泉	dang dao quan
+稻城	dao cheng
+道路修复	dao lu xiu fu
+道士泉	dao shi quan
+倒淌河	dao tang he
+德夯	de hang
+德和园	de he yuan
+德化陶瓷博物馆	de hua tao ci bo wu guan
+德胜门箭楼	de sheng men jian lou
+德天瀑布	de tian pu bu
+登机口	deng ji kou
+登机牌	deng ji pai
+邓廷桢墓	deng ting zhen mu
+邓演达墓	deng yan da mu
+登州泉	deng zhou quan
+地保城	di bao cheng
+地接	di jie
+迪坎儿村	di kan er cun
+地陪	di pei
+滴水洞	di shui dong
+滴水潭	di shui tan
+帝王树	di wang shu
+地下富殿	di xia fu dian
+地下熔岩洞	di xia rong yan dong
+地下森林	di xia sen lin
+电池南孚	dian chi nan fu
+点春堂	dian chun tang
+钓浜索道站	diao bang suo dao zhan
+吊罗山	diao luo shan
+吊水楼瀑布	diao shui lou pu bu
+吊水岩	diao shui yan
+丁村民居	ding cun min ju
+丁村遗址	ding cun yi zhi
+定东陵	ding dong ling
+订房间	ding fang jian
+定光佛舍利塔	ding guang fo she li ta
+定海神针	ding hai shen zhen
+丁氏祠堂	ding shi ci tang
+顶天三石	ding tian san shi
+订座情况	ding zuo qing kuang
+东巴黎渔家乐	dong ba li yu jia le
+东北虎林园	dong bei hu lin yuan
+东北烈士纪念馆	dong bei lie shi ji nian guan
+董存瑞烈士陵园	dong cun rui lie shi ling yuan
+东大殿	dong da dian
+东堤	dong di
+东方绿舟	dong fang lv zhou
+东方明珠	dong fang ming zhu
+东方明珠广播电视塔	dong fang ming zhu guang bo dian shi ta
+东方文化园	dong fang wen hua yuan
+东峰耸翠	dong feng song cui
+董府	dong fu
+东高泉	dong gao quan
+洞沟第十二号墓	dong gou di shi er hao mu
+洞沟古墓群	dong gou gu mu qun
+东关桥	dong guan qiao
+东关清真大寺	dong guan qing zhen da si
+东湖	dong hu
+东湖公园	dong hu gong yuan
+东江纵队北撤纪念亭	dong jiang zong dui bei che ji nian ting
+东江纵队司令部旧址	dong jiang zong dui si ling bu jiu zhi
+东郊椰林	dong jiao ye lin
+东京陵	dong jing ling
+东联峰山	dong lian feng shan
+东林书院旧址	dong lin shu yuan jiu zhi
+东陵公园	dong ling gong yuan
+东麻湾	dong ma wan
+东蜜脂泉	dong mi zhi quan
+东明山森林公园	dong ming shan sen lin gong yuan
+东南域角角楼	dong nan yu jiao jiao lou
+东平国家森林公园	dong ping guo jia sen lin gong yuan
+东坡书院	dong po shu yuan
+东浦农业观光园	dong pu nong ye guan guang yuan
+东沙群岛	dong sha qun dao
+东山别墅	dong shan bie shu
+东山岛	dong shan dao
+东山岭	dong shan ling
+董氏砖雕墓	dong shi zhuan diao mu
+东田窑址	dong tian yao zhi
+东西塔	dong xi ta
+洞下海滨浴场	dong xia hai bin yu chang
+东寨港	dong zhai gang
+东寨港红树林	dong zhai gang hong shu lin
+侗寨鼓楼	dong zhai gu lou
+陡波塘瀑布	dou bo tang pu bu
+窦大夫祠	dou dai fu ci
+斗母宫	dou mu gong
+斗母泉	dou mu quan
+都城隍庙大殿	du cheng huang miao da dian
+杜甫草堂	du fu cao tang
+独孤泉	du gu quan
+渡江胜利纪念碑	du jiang sheng li ji nian bei
+都江堰	du jiang yan
+杜康泉	du kang quan
+独乐寺	du le si
+杜林桥	du lin qiao
+独树成林	du shu cheng lin
+缎华泉	duan hua quan
+断桥残雪	duan qiao can xue
+对语石	dui yu shi
+堆云洞	dui yun dong
+多宝琉璃塔	duo bao liu li ta
+多福寺	duo fu si
+多伦多城市雕塑	duo lun duo cheng shi diao su
+多伦多电视塔	duo lun duo dian shi ta
+多尼岛	duo ni dao
+厄瓜多尔	e gua duo er
+鹅岭公园	e ling gong yuan
+鹅銮鼻	e luan bi
+俄贤岭	e xian ling
+洱海	er hai
+二郎山	er lang shan
+二龙河	er long he
+儿童公园	er tong gong yuan
+二王庙	er wang miao
+二仙宫	er xian gong
+二仙观	er xian guan
+发电厂博物馆	fa dian chang bo wu guan
+法海	fa hai
+法华塔	fa hua ta
+法净寺	fa jing si
+法轮寺	fa lun si
+法门寺	fa men si
+法石真武	fa shi zhen wu
+法王庙	fa wang miao
+法喜寺	fa xi si
+法兴寺	fa xing si
+法云寺	fa yun si
+梵净山	fan jing shan
+范明墓	fan ming mu
+范增墓	fan zeng mu
+泛舟禅师塔	fan zhou chan shi ta
+芳草园	fang cao yuan
+防洪纪念塔	fang hong ji nian ta
+方尖石塔	fang jian shi ta
+方山	fang shan
+方山长屿硐天	fang shan chang yu dong tian
+放生池	fang sheng chi
+放生桥	fang sheng qiao
+方塔	fang ta
+方岩书院	fang yan shu yuan
+飞虹塔	fei hong ta
+飞来峰	fei lai feng
+飞龙白塔	fei long bai ta
+非吸烟席	fei xi yan xi
+飞云楼	fei yun lou
+芬迪国家公园	fen di guo jia gong yuan
+分界洲岛	fen jie zhou dao
+风车村桑斯安斯	feng che cun sang si an si
+风车山庄	feng che shan zhuang
+封冻碑	feng dong bei
+丰都鬼城	feng du gui cheng
+丰都鬼城名山风景区	feng du gui cheng ming shan feng jing qu
+奉国寺	feng guo si
+风荷御酒坊	feng he yu jiu fang
+凤凰墩	feng huang dun
+凤凰歌剧院	feng huang ge ju yuan
+凤凰山	feng huang shan
+凤凰山高句丽山城	feng huang shan gao gou li shan cheng
+丰林保护区	feng lin bao hu qu
+凤山门	feng shan men
+凤山寺	feng shan si
+奉圣寺	feng sheng si
+封氏墓群	feng shi mu qun
+枫叶晚安卡	feng ye wan an ka
+佛官寺释迦塔	fo guan si shi jia ta
+佛罗伦萨大教堂	fo luo lun sa da jiao tang
+佛罗伦萨学院美术馆	fo luo lun sa xue yuan mei shu guan
+富春江小三峡	fu chun jiang xiao san xia
+富春桃源	fu chun tao yuan
+复活岛	fu huo dao
+弗拉里教堂	fu la li jiao tang
+伏龙观	fu long guan
+富美宫	fu mei gong
+芙蓉洞	fu rong dong
+芙蓉泉	fu rong quan
+芙蓉镇	fu rong zhen
+福胜寺	fu sheng si
+孚王府	fu wang fu
+府文庙	fu wen miao
+伏羲庙	fu xi miao
+浮戏山雪花洞	fu xi shan xue hua dong
+抚仙湖鱼当家	fu xian hu yu dang jia
+富阳鹳山	fu yang guan shan
+福缘寺	fu yuan si
+覆舟山	fu zhou shan
+凫庄	fu zhuang
+夫子庙	fu zi miao
+夫子庙秦淮风光带	fu zi miao qin huai feng guang dai
+嘎仙洞	ga xian dong
+盖斯墓	gai si mu
+甘露泉	gan lu quan
+甘露寺	gan lu si
+甘露寺铁塔	gan lu si tie ta
+甘熙故居	gan xi gu ju
+高昌古城	gao chang gu cheng
+高昌驴的	gao chang lv de
+高尔山山城	gao er shan shan cheng
+高芬轩	gao fen xuan
+高蠡暴动烈士纪念塔	gao li bao dong lie shi ji nian ta
+高丽城山城遗址	gao li cheng shan cheng yi zhi
+高梁桥	gao liang qiao
+高山岭	gao shan ling
+高台民居	gao tai min ju
+格尔木	ge er mu
+格根塔拉草原	ge gen ta la cao yuan
+歌乐山	ge le shan
+歌乐山烈士陵园	ge le shan lie shi ling yuan
+格林威治国家海事博物馆	ge lin wei zhi guo jia hai shi bo wu guan
+格林威治皇家天文台	ge lin wei zhi huang jia tian wen tai
+格姆拉斯丹旧城区	ge mu la si dan jiu cheng qu
+哥特兰岛	ge te lan dao
+葛贤墓	ge xian mu
+阁院禅林寺	ge yuan chan lin si
+葛洲坝	ge zhou ba
+艮山门	gen shan men
+功臣塔	gong chen ta
+贡多拉	gong duo la
+贡嘎山	gong ga shan
+巩华城	gong hua cheng
+共青森林公园	gong qing sen lin gong yuan
+龚滩	gong tan
+龚隹育墓	gong zhui yu mu
+狗耳泉	gou er quan
+沟沟崖	gou gou ya
+购票处	gou piao chu
+购物团	gou wu tuan
+古北口长城	gu bei kou chang cheng
+古长城说碑	gu chang cheng shuo bei
+顾处士祠	gu chu shi ci
+古船陈列馆	gu chuan chen lie guan
+古德寺	gu de si
+古佛舍利塔	gu fo she li ta
+古佛堂	gu fo tang
+古格王朝	gu ge wang chao
+故宫	gu gong
+古后上祠	gu hou shang ci
+鼓浪屿	gu lang yu
+古莲花池	gu lian hua chi
+谷林堂	gu lin tang
+鼓楼	gu lou
+古木兰院石塔	gu mu lan yuan shi ta
+姑婆山	gu po shan
+古琴台	gu qin tai
+古青莲寺	gu qing lian si
+姑嫂塔	gu sao ta
+孤山	gu shan
+古文化街	gu wen hua jie
+古温泉	gu wen quan
+固原秦长城	gu yuan qin chang cheng
+孤云草舍	gu yun cao she
+挂甲山石刻	gua jia shan shi ke
+挂月峰	gua yue feng
+怪坡	guai po
+怪坡风景区	guai po feng jing qu
+怪石峪	guai shi yu
+关帝庙	guan di miao
+官方填写	guan fang tian xie
+观耕台	guan geng tai
+关沟七十二景	guan gou qi shi er jing
+官家池	guan jia chi
+观澜亭	guan lan ting
+观莲所	guan lian suo
+关林	guan lin
+官马溶洞	guan ma rong dong
+关马山城	guan ma shan cheng
+关山地质公园	guan shan di zhi gong yuan
+关山牧场	guan shan mu chang
+冠山寺	guan shan si
+观水法	guan shui fa
+官塘温泉度假区	guan tang wen quan du jia qu
+关天培墓	guan tian pei mu
+观夕硐	guan xi dong
+观音山	guan yin shan
+观音岩	guan yin yan
+观音寨	guan yin zhai
+观鱼亭区间车	guan yu ting qu jian che
+广东会馆	guang dong hui guan
+广福禅寺	guang fu chan si
+广告制作申请单	guang gao zhi zuo shen qing dan
+光化寺	guang hua si
+广惠寺华塔	guang hui si hua ta
+广济寺	guang ji si
+广开上王碑	guang kai shang wang bei
+桄榔庵	guang lang an
+广仁寺	guang ren si
+广仁王庙	guang ren wang miao
+广胜上寺	guang sheng shang si
+广胜寺	guang sheng si
+广胜下寺	guang sheng xia si
+广武城	guang wu cheng
+光孝寺	guang xiao si
+广州白云山风景区	guang zhou bai yun shan feng jing qu
+广州宝墨园	guang zhou bao mo yuan
+广州陈家祠	guang zhou chen jia ci
+广州从化温泉风景区	guang zhou cong hua wen quan feng jing qu
+广州东方乐园	guang zhou dong fang le yuan
+广州动物园	guang zhou dong wu yuan
+广州广东省博物馆	guang zhou guang dong sheng bo wu guan
+广州光孝寺	guang zhou guang xiao si
+广州国民党一大旧址	guang zhou guo min dang yi da jiu zhi
+广州海洋馆	guang zhou hai yang guan
+广州洪秀全故居纪念馆	guang zhou hong xiu quan gu ju ji nian guan
+广州华林寺	guang zhou hua lin si
+广州华南植物园	guang zhou hua nan zhi wu yuan
+广州怀圣寺	guang zhou huai sheng si
+广州黄花岗七十二烈士陵园	guang zhou huang hua gang qi shi er lie shi ling yuan
+广州黄埔军校旧址	guang zhou huang pu jun xiao jiu zhi
+广州兰圃	guang zhou lan pu
+广州流花湖公园	guang zhou liu hua hu gong yuan
+广州六榕寺	guang zhou liu rong si
+广州流溪河国家森林公园	guang zhou liu xi he guo jia sen lin gong yuan
+广州起义烈士陵园	guang zhou qi yi lie shi ling yuan
+广州世界大观	guang zhou shi jie da guan
+广州天河公园	guang zhou tian he gong yuan
+广州文化公园	guang zhou wen hua gong yuan
+广州越秀山	guang zhou yue xiu shan
+广州中信广场	guang zhou zhong xin guang chang
+广宗寺	guang zong si
+桂花岛	gui hua dao
+桂林山水	gui lin shan shui
+龟山	gui shan
+龟山电视塔	gui shan dian shi ta
+龟山汉墓	gui shan han mu
+归元寺	gui yuan si
+贵重物品寄存单	gui zhong wu pin ji cun dan
+滚钟口	gun zhong kou
+国父纪念馆	guo fu ji nian guan
+国家大剧院	guo jia da ju yuan
+国立巴吉洛美术馆	guo li ba ji luo mei shu guan
+郭沫若故居	guo mo ruo gu ju
+郭庄	guo zhuang
+果子沟	guo zi gou
+哈巴湖	ha ba hu
+哈巴雪山	ha ba xue shan
+哈尔滨冰球馆	ha er bin bing qiu guan
+哈尔滨慈云寺	ha er bin ci yun si
+哈尔滨动物园	ha er bin dong wu yuan
+哈尔滨儿童乐园	ha er bin er tong le yuan
+哈尔滨森林植物园	ha er bin sen lin zhi wu yuan
+哈尔滨市文庙	ha er bin shi wen miao
+哈尔滨游乐园	ha er bin you le yuan
+哈尔滨月亮湾滑雪场	ha er bin yue liang wan hua xue chang
+哈利法克斯城堡	ha li fa ke si cheng bao
+哈密回王陵	ha mi hui wang ling
+哈萨克家访	ha sa ke jia fang
+海宝塔	hai bao ta
+海宝塔寺	hai bao ta si
+海甸岛	hai dian dao
+海峰晨曦	hai feng chen xi
+海会寺	hai hui si
+海交馆	hai jiao guan
+海军上海博览馆	hai jun shang hai bo lan guan
+海口人民公园	hai kou ren min gong yuan
+海螺沟	hai luo gou
+海南热带野生动植物园	hai nan re dai ye sheng dong zhi wu yuan
+海宁潮	hai ning chao
+海瑞墓	hai rui mu
+海上田园	hai shang tian yuan
+海蚀洞	hai shi dong
+海棠湾	hai tang wan
+海外交通史博物馆	hai wai jiao tong shi bo wu guan
+海王九岛	hai wang jiu dao
+海鲜池	hai xian chi
+海心山	hai xin shan
+海洋公园	hai yang gong yuan
+海子山	hai zi shan
+汉城温泉娱乐中心	han cheng wen quan yu le zhong xin
+寒坑龙潭	han keng long tan
+旱牢	han lao
+寒绿轩	han lv xuan
+含鄱口	han po kou
+寒山寺	han shan si
+汗腾格里寺	han teng ge li si
+航空保险	hang kong bao xian
+航空公司汽车服务处	hang kong gong si qi che fu wu chu
+航运收据	hang yun shou ju
+杭州碑林	hang zhou bei lin
+杭州动物园	hang zhou dong wu yuan
+杭州花圃	hang zhou hua pu
+杭州乐园	hang zhou le yuan
+杭州历史博物馆	hang zhou li shi bo wu guan
+杭州旅游	hang zhou lv you
+杭州青山湖	hang zhou qing shan hu
+杭州生态园	hang zhou sheng tai yuan
+杭州双溪漂流旅游景区	hang zhou shuang xi piao liu lv you jing qu
+杭州丝绸特色街	hang zhou si chou te se jie
+杭州野生动物园	hang zhou ye sheng dong wu yuan
+杭州之江度假村	hang zhou zhi jiang du jia cun
+豪华团	hao hua tuan
+好莱坞永生公墓	hao lai wu yong sheng gong mu
+濠濮间	hao pu jian
+好太王碑	hao tai wang bei
+河坊街	he fang jie
+荷花轩酒吧	he hua xuan jiu ba
+荷花轩咨客台	he hua xuan zi ke tai
+荷花苑	he hua yuan
+合欢山	he huan shan
+贺兰山岩画	he lan shan yan hua
+阖闾城	he lv cheng
+阖闾墓	he lv mu
+禾木	he mu
+河姆渡	he mu du
+河姆渡遗址	he mu du yi zhi
+和平森林公园	he ping sen lin gong yuan
+河套平原	he tao ping yuan
+核桃王	he tao wang
+和田文物馆	he tian wen wu guan
+赫图阿拉城	he tu a la cheng
+赫图阿拉老城	he tu a la lao cheng
+黑虎泉	hei hu quan
+黑里河	hei li he
+黑龙洞	hei long dong
+黑龙江城	hei long jiang cheng
+黑龙江省博物馆	hei long jiang sheng bo wu guan
+黑龙泉	hei long quan
+黑龙潭	hei long tan
+黑沙湾	hei sha wan
+衡山	heng shan
+横塘驿亭	heng tang yi ting
+洪春桥	hong chun qiao
+洪范池	hong fan chi
+红枫湖	hong feng hu
+宏佛塔	hong fo ta
+洪福寺	hong fu si
+宏觉寺塔	hong jue si ta
+红坎瀑布	hong kan pu bu
+红龙池	hong long chi
+红门	hong men
+红桥区烈士陵园	hong qiao qu lie shi ling yuan
+红色娘子军纪念园	hong se niang zi jun ji nian yuan
+红山	hong shan
+红山森林动物园	hong shan sen lin dong wu yuan
+洪山源泉	hong shan yuan quan
+红塔大道	hong ta da dao
+弘一法师墓塔	hong yi fa shi mu ta
+候潮门	hou chao men
+猴岛	hou dao
+侯马晋国遗址	hou ma jin guo yi zhi
+猴石山遗址	hou shi shan yi zhi
+后石坞	hou shi wu
+后土庙	hou tu miao
+后召庙辽石窟寺	hou zhao miao liao shi ku si
+湖北省博物馆	hu bei sheng bo wu guan
+湖滨公园	hu bin gong yuan
+湖滨绿廊	hu bin lv lang
+胡伯特长廊	hu bo te chang lang
+蝴蝶谷	hu die gu
+蝴蝶泉	hu die quan
+壶口瀑布	hu kou pu bu
+胡里山炮台	hu li shan pao tai
+呼伦贝尔草原	hu lun bei er cao yuan
+呼论湖	hu lun hu
+湖畔居	hu pan ju
+虎跑梦泉	hu pao meng quan
+琥珀山庄	hu po shan zhuang
+胡庆余堂	hu qing yu tang
+胡庆余堂博物馆	hu qing yu tang bo wu guan
+虎丘	hu qiu
+虎丘摩崖题刻	hu qiu mo ya ti ke
+虎丘塔	hu qiu ta
+虎泉	hu quan
+扈泉	hu quan
+壶山水神堂	hu shan shui shen tang
+虎神枪记碑	hu shen qiang ji bei
+虎滩乐园	hu tan le yuan
+胡桃泉	hu tao quan
+虎跳峡	hu tiao xia
+虎头关帝庙	hu tou guan di miao
+狐突庙	hu tu miao
+湖心亭	hu xin ting
+胡杨林公园	hu yang lin gong yuan
+虎屿岩	hu yu yan
+护珠塔	hu zhu ta
+华北军区烈士陵园	hua bei jun qu lie shi ling yuan
+华东五市	hua dong wu shi
+画舫斋	hua fang zhai
+花港观鱼	hua gang guan yu
+花港新姿	hua gang xin zi
+花家山庄	hua jia shan zhuang
+华克山庄	hua ke shan zhuang
+华伦墓	hua lun mu
+花圃	hua pu
+花桥慈济宫	hua qiao ci ji gong
+华清池	hua qing chi
+花泉	hua quan
+华泉	hua quan
+滑铁卢	hua tie lu
+华夏珍奇艺术城	hua xia zhen qi yi shu cheng
+华严寺壁藏	hua yan si bi cang
+华严寺壁画	hua yan si bi hua
+华严寺薄伽教藏殿	hua yan si bo jia jiao cang dian
+华严寺大雄宝殿	hua yan si da xiong bao dian
+华严寺辽塑	hua yan si liao su
+华严寺塑像	hua yan si su xiang
+华严塔	hua yan ta
+花源	hua yuan
+花之圣母大教堂	hua zhi sheng mu da jiao tang
+淮海战役烈士纪念塔	huai hai zhan yi lie shi ji nian ta
+怀远楼	huai yuan lou
+环壁桥	huan bi qiao
+环城公园	huan cheng gong yuan
+欢乐谷	huan le gu
+黄宾虹旧居	huang bin hong jiu ju
+黄春发	huang chun fa
+黄大仙庙	huang da xian miao
+黄道婆墓	huang dao po mu
+皇帝洞	huang di dong
+黄帝故里	huang di gu li
+皇甫寺塔	huang fu si ta
+黄公望森林公	huang gong wang sen lin gong
+黄公望森林公园	huang gong wang sen lin gong yuan
+黄果树景区	huang guo shu jing qu
+黄果树瀑布	huang guo shu pu bu
+黄河大禹渡	huang he da yu du
+黄鹤楼	huang he lou
+黄河小浪底风景区	huang he xiao lang di feng jing qu
+黄河源	huang he yuan
+皇华泉	huang hua quan
+皇家安大略博物馆	huang jia an da lue bo wu guan
+黄金海岸	huang jin hai an
+黄龙	huang long
+黄龙洞	huang long dong
+黄龙吐翠	huang long tu cui
+黄篾楼	huang mie lou
+黄桥决战革命旧址	huang qiao jue zhan ge ming jiu zhi
+黄沙古渡	huang sha gu du
+黄山	huang shan
+皇史宬	huang shi cheng
+黄石国家公园	huang shi guo jia gong yuan
+黄狮寨	huang shi zhai
+黄丝桥古城	huang si qiao gu cheng
+黄崖洞	huang ya dong
+灰池泉	hui chi quan
+辉发古城	hui fa gu cheng
+荟福寺	hui fu si
+回回堂	hui hui tang
+惠济寺	hui ji si
+回龙	hui long
+汇龙潭	hui long tan
+回銮寺	hui luan si
+回马泉	hui ma quan
+灰泉	hui quan
+辉山风景区	hui shan feng jing qu
+惠山泉	hui shan quan
+惠山唐宋经幢	hui shan tang song jing chuang
+灰湾泉	hui wan quan
+汇溪大厦	hui xi da sha
+浑河乐园	hun he le yuan
+混沙泉	hun sha quan
+货币兑换处	huo bi dui huan chu
+霍尔果斯	huo er guo si
+霍尔果斯国门	huo er guo si guo men
+霍亨索伦城堡	huo heng suo lun cheng bao
+霍泉	huo quan
+火山口公园	huo shan kou gong yuan
+火焰山	huo yan shan
+霍元甲故居	huo yuan jia gu ju
+霍州鼓楼	huo zhou gu lou
+霍州署	huo zhou shu
+基督教泉南堂	ji du jiao quan nan tang
+吉尔果山天池	ji er guo shan tian chi
+鸡公山	ji gong shan
+济公山	ji gong shan
+吉鸿昌烈士故居	ji hong chang lie shi gu ju
+吉军工艺玻璃	ji jun gong yi bo li
+极乐寺	ji le si
+吉林北山公园	ji lin bei shan gong yuan
+吉林文庙	ji lin wen miao
+吉林毓文中学	ji lin yu wen zhong xue
+吉隆坡	ji long po
+鸡笼山	ji long shan
+蓟门烟树碑	ji men yan shu bei
+鸡鸣寺	ji ming si
+吉木乃口岸	ji mu nai kou an
+机票确认	ji piao que ren
+霁清轩	ji qing xuan
+寄宿公寓	ji su gong yu
+稷王庙	ji wang miao
+缉熙楼	ji xi lou
+蓟县八仙桌子	ji xian ba xian zhuo zi
+蓟县白塔	ji xian bai ta
+蓟县独乐寺	ji xian du le si
+寄啸山庄	ji xiao shan zhuang
+稷益庙	ji yi miao
+稷益庙壁画	ji yi miao bi hua
+吉猗园	ji yi yuan
+机座号	ji zuo hao
+驾导	jia dao
+嘉定孔庙	jia ding kong miao
+嘉福寺塔	jia fu si ta
+加拉帕戈斯群岛	jia la pa ge si qun dao
+嘉乐殿	jia le dian
+甲渠侯官遗址	jia qu hou guan yi zhi
+假日海滩	jia ri hai tan
+袈裟泉	jia sha quan
+嘉峪关	jia yu guan
+嘉峪关关城	jia yu guan guan cheng
+加州巴莎堤娜	jia zhou ba sha di na
+尖峰岭热带原始森林	jian feng ling re dai yuan shi sen lin
+鉴泉	jian quan
+尖沙咀	jian sha zui
+见心斋	jian xin zhai
+剑岩	jian yan
+鉴真纪念堂	jian zhen ji nian tang
+箭竹林	jian zhu lin
+江津四面山	jiang jin si mian shan
+蒋经国故居	jiang jing guo gu ju
+将军山旅游名胜区	jiang jun shan lv you ming sheng qu
+将军崖岩画	jiang jun ya yan hua
+江郎山	jiang lang shan
+绛守居园池	jiang shou ju yuan chi
+浆水泉	jiang shui quan
+绛州大堂	jiang zhou da tang
+绛州三楼	jiang zhou san lou
+胶棒得克	jiao bang de ke
+角抵墓	jiao di mu
+交河古城	jiao he gu cheng
+交河故城	jiao he gu cheng
+角山	jiao shan
+焦山	jiao shan
+焦山碑刻	jiao shan bei ke
+焦山抗英炮台遗址	jiao shan kang ying pao tai yi zhi
+教师团	jiao shi tuan
+焦庄户地道战遗址	jiao zhuang hu di dao zhan yi zhi
+碣石观海	jie shi guan hai
+碣石山	jie shi shan
+戒台古松	jie tai gu song
+杰特大喷泉	jie te da pen quan
+借支备用	jie zhi bei yong
+解州关帝庙	jie zhou guan di miao
+金鳌山	jin ao shan
+金鞭溪	jin bian xi
+金鳖玉蝀桥	jin bie yu dong qiao
+晋祠	jin ci
+晋祠之铭并序碑	jin ci zhi ming bing xu bei
+金代石幢	jin dai shi zhuang
+金灯寺	jin deng si
+金灯寺石窟	jin deng si shi ku
+金洞寺	jin dong si
+金佛山	jin fo shan
+金刚座舍利宝塔	jin gang zuo she li bao ta
+金虎泉	jin hu quan
+晋冀鲁豫烈士陵园	jin ji lu yu lie shi ling yuan
+金莲映日	jin lian ying ri
+金茂大厦	jin mao da sha
+金门民俗文化村	jin men min su wen hua cun
+锦母角	jin mu jiao
+金牛出水	jin niu chu shui
+金牛岭公园	jin niu ling gong yuan
+金人台	jin ren tai
+金沙港	jin sha gang
+金沙江	jin sha jiang
+金沙泉	jin sha quan
+金沙湾海滩	jin sha wan hai tan
+金山长城	jin shan chang cheng
+津市市委接待处	jin shi shi wei jie dai chu
+金石滩	jin shi tan
+进士题名碑	jin shi ti ming bei
+晋水源流	jin shui yuan liu
+晋绥解放区烈士陵园	jin sui jie fang qu lie shi ling yuan
+金太祖阿骨打御陵址	jin tai zu a gu da yu ling zhi
+金土城遗址	jin tu cheng yi zhi
+金线泉	jin xian quan
+锦绣风水洞	jin xiu feng shui dong
+近园	jin yuan
+金源乳峰太虚洞	jin yuan ru feng tai xu dong
+缙云山	jin yun shan
+缙云山风景名胜区	jin yun shan feng jing ming sheng qu
+金字塔	jin zi ta
+静安寺	jing an si
+靖边营遗址	jing bian ying yi zhi
+镜泊湖	jing bo hu
+净慈寺	jing ci si
+景德桥	jing de qiao
+京都第一瀑	jing du di yi pu
+净峰寺	jing feng si
+景福阁	jing fu ge
+井冈山	jing gang shan
+京杭大运河	jing hang da yun he
+京华园	jing hua yuan
+净明泉	jing ming quan
+静明园	jing ming yuan
+径山	jing shan
+景山公园	jing shan gong yuan
+径山寺	jing shan si
+景山五亭	jing shan wu ting
+净寺	jing si
+景泰陵	jing tai ling
+静心斋	jing xin zhai
+景行桥	jing xing qiao
+靖宇陵园	jing yu ling yuan
+静园	jing yuan
+靖远寺	jing yuan si
+净月潭	jing yue tan
+景州塔	jing zhou ta
+九峰山风景名胜区	jiu feng shan feng jing ming sheng qu
+九华山	jiu hua shan
+九里云松	jiu li yun song
+九连城	jiu lian cheng
+九龙城寨公园	jiu long cheng zhai gong yuan
+九龙洞风景区	jiu long dong feng jing qu
+九龙沟	jiu long gou
+九龙泉	jiu long quan
+九泷十八滩	jiu long shi ba tan
+九龙游乐园	jiu long you le yuan
+九女泉	jiu nv quan
+九咆界风景区	jiu pao jie feng jing qu
+九曲十八弯	jiu qu shi ba wan
+九曲溪	jiu qu xi
+酒泉	jiu quan
+九日山	jiu ri shan
+九山顶自然风景区	jiu shan ding zi ran feng jing qu
+九畹溪	jiu wan xi
+九溪十八涧	jiu xi shi ba jian
+九溪烟树	jiu xi yan shu
+九仙山	jiu xian shan
+九一八事变陈列馆	jiu yi ba shi bian chen lie guan
+九寨沟	jiu zhai gou
+居庸关云台	ju yong guan yun tai
+橘子洲	ju zi zhou
+卷阿胜境	juan a sheng jing
+觉山寺	jue shan si
+觉生寺	jue sheng si
+觉悟社旧址	jue wu she jiu zhi
+郡王府	jun wang fu
+浚源桥	jun yuan qiao
+君子长生馆	jun zi chang sheng guan
+卡博特之路	ka bo te zhi lu
+卡拉库勒湖	ka la ku le hu
+卡拉库里湖	ka la ku li hu
+卡拉麦里有蹄类	ka la mai li you ti lei
+卡玛多塔林曲贡遗址	ka ma duo ta lin qu gong yi zhi
+喀那斯	ka na si
+喀纳斯	ka na si
+喀那斯篝火晚会	ka na si gou huo wan hui
+喀那斯漂流	ka na si piao liu
+喀纳斯区间车	ka na si qu jian che
+喀那斯游船	ka na si you chuan
+卡若遗址	ka ruo yi zhi
+卡萨罗玛豪华家族古堡	ka sa luo ma hao hua jia zu gu bao
+喀什	ka shi
+喀什噶尔民俗馆	ka shi ga er min su guan
+开封铁塔	kai feng tie ta
+开化寺连理塔	kai hua si lian li ta
+开拓者村庄	kai tuo zhe cun zhuang
+开元寺	kai yuan si
+开元寺塔	kai yuan si ta
+开元寺无梁殿	kai yuan si wu liang dian
+开元寺钟楼及塔	kai yuan si zhong lou ji ta
+坎儿井	kan er jing
+抗美援朝烈士陵园	kang mei yuan chao lie shi ling yuan
+康尼岛	kang ni dao
+康提	kang ti
+康西草原	kang xi cao yuan
+考艾岛	kao ai dao
+考勤卡张包	kao qin ka zhang bao
+科巴卡巴纳海滩	ke ba ka ba na hai tan
+科尔马	ke er ma
+匼河遗址	ke he yi zhi
+科罗拉多大峡谷	ke luo la duo da xia gu
+科山公园	ke shan gong yuan
+克孜尔石窟	ke zi er shi ku
+孔府	kong fu
+孔林	kong lin
+孔庙	kong miao
+孔雀湖	kong que hu
+孔雀园	kong que yuan
+崆峒山	kong tong shan
+孔望山汉代摩崖造像	kong wang shan han dai mo ya zao xiang
+库波佩迪	ku bo pei di
+库车博物馆	ku che bo wu guan
+库车大寺	ku che da si
+苦苣泉	ku ju quan
+库木塔格沙漠	ku mu ta ge sha mo
+库木塔格沙漠公园	ku mu ta ge sha mo gong yuan
+况公祠	kuang gong ci
+昆都仑召	kun du lun zhao
+坤柔圣母庙	kun rou sheng mu miao
+昆士兰黄金海岸	kun shi lan huang jin hai an
+拉法山国家公园	la fa shan guo jia gong yuan
+喇嘛教三世佛造像	la ma jiao san shi fo zao xiang
+拉普乔克故城	la pu qiao ke gu cheng
+剌身档	la shen dang
+拉市海	la shi hai
+澜沧江	lan cang jiang
+兰陵王碑	lan ling wang bei
+兰亭碎亭	lan ting sui ting
+郎木寺	lang mu si
+狼山风景区	lang shan feng jing qu
+浪石金滩	lang shi jin tan
+琅琊山	lang ya shan
+狼牙山烈士增	lang ya shan lie shi zeng
+阆苑石海	lang yuan shi hai
+老顶山森林公园	lao ding shan sen lin gong yuan
+老碓溪	lao dui xi
+老虎石	lao hu shi
+老金线泉	lao jin xian quan
+老君岩	lao jun yan
+老龙潭	lao long tan
+老龙头景区	lao long tou jing qu
+崂山风景名胜区	lao shan feng jing ming sheng qu
+老五农庄	lao wu nong zhuang
+老西开教堂	lao xi kai jiao tang
+乐山大佛	le shan da fo
+乐寿堂	le shou tang
+雷锋陵园	lei feng ling yuan
+雷峰塔	lei feng ta
+雷峰夕照	lei feng xi zhao
+冷泉	leng quan
+楞严寺	leng yan si
+栗波	li bo
+李成梁石坊	li cheng liang shi fang
+李大钊故居	li da zhao gu ju
+李大钊烈士陵园	li da zhao lie shi ling yuan
+历代帝王庙	li dai di wang miao
+李光地故居	li guang di gu ju
+漓江	li jiang
+利玛窦墓	li ma dou mu
+黎母山	li mu shan
+醴泉	li quan
+骊山	li shan
+澧水石桥碑	li shui shi qiao bei
+李塔	li ta
+李文忠墓	li wen zhong mu
+里亚托尔桥	li ya tuo er qiao
+里亚托桥	li ya tuo qiao
+礼仪费	li yi fei
+蠡园	li yuan
+李兆麟将军墓	li zhao lin jiang jun mu
+荔枝公园	li zhi gong yuan
+李贽故居	li zhi gu ju
+李卓吾墓	li zhuo wu mu
+莲花峰石刻	lian hua feng shi ke
+莲花山	lian hua shan
+莲花石公园	lian hua shi gong yuan
+濂泉	lian quan
+联通长沙分公司	lian tong chang sha fen gong si
+莲溪庙	lian xi miao
+莲溪寺	lian xi si
+莲性寺白塔	lian xing si bai ta
+连州地下河	lian zhou di xia he
+凉殿峡	liang dian xia
+梁红玉祠	liang hong yu ci
+良乡多室佛塔	liang xiang duo shi fo ta
+良渚文化遗址	liang zhu wen hua yi zhi
+良渚文物博物馆	liang zhu wen wu bo wu guan
+辽宁广播电视塔	liao ning guang bo dian shi ta
+辽宁省博物馆	liao ning sheng bo wu guan
+辽庆陵	liao qing ling
+辽庆州城遗址	liao qing zhou cheng yi zhi
+辽上京城遗址	liao shang jing cheng yi zhi
+辽沈战役纪念馆	liao shen zhan yi ji nian guan
+辽沈战役烈士纪念塔	liao shen zhan yi lie shi ji nian ta
+辽太祖陵	liao tai zu ling
+辽阳壁画墓群	liao yang bi hua mu qun
+辽中京城遗址	liao zhong jing cheng yi zhi
+廖仲恺何香凝墓	liao zhong kai he xiang ning mu
+辽祖州城遗址	liao zu zhou cheng yi zhi
+临安八百里养生园	lin an ba bai li yang sheng yuan
+临安石长城	lin an shi chang cheng
+林东塔	lin dong ta
+林风眠旧居	lin feng mian jiu ju
+临高角	lin gao jiao
+林汲泉	lin ji quan
+临济寺澄灵塔	lin ji si cheng ling ta
+林家花园	lin jia hua yuan
+林泉寺	lin quan si
+临漪亭	lin yi ting
+林则徐纪念馆	lin ze xu ji nian guan
+灵峰	ling feng
+灵峰探梅	ling feng tan mei
+灵谷寺	ling gu si
+灵谷塔	ling gu ta
+灵空山	ling kong shan
+陵口	ling kou
+玲珑山	ling long shan
+灵栖洞天	ling qi dong tian
+灵山大佛	ling shan da fo
+灵山幻境	ling shan huan jing
+灵山圣墓	ling shan sheng mu
+灵武长流水	ling wu chang liu shui
+灵武恐龙博物馆	ling wu kong long bo wu guan
+灵霄硐	ling xiao dong
+凌霄阁	ling xiao ge
+零星设计	ling xing she ji
+零星食品	ling xing shi pin
+灵崖寺	ling ya si
+灵隐飞来峰	ling yin fei lai feng
+灵隐景区	ling yin jing qu
+灵隐寺	ling yin si
+灵应宫	ling ying gong
+灵应寺	ling ying si
+灵源寺	ling yuan si
+灵悦寺	ling yue si
+六部桥	liu bu qiao
+六顶山渤海墓群	liu ding shan bo hai mu qun
+六和塔	liu he ta
+刘胡兰纪念馆	liu hu lan ji nian guan
+流花湖公园	liu hua hu gong yuan
+流金桥	liu jin qiao
+六郎碑	liu lang bei
+柳浪闻莺	liu lang wen ying
+琉璃河商周遗址	liu li he shang zhou yi zhi
+六盘山国家森林公园	liu pan shan guo jia sen lin gong yuan
+柳泉	liu quan
+六胜塔	liu sheng ta
+刘氏泉	liu shi quan
+刘氏庄园博物馆	liu shi zhuang yuan bo wu guan
+流水坑渔家乐	liu shui keng yu jia le
+柳溪江	liu xi jiang
+柳溪江漂流	liu xi jiang piao liu
+柳絮泉	liu xu quan
+留馀草堂	liu yu cao tang
+留余山居	liu yu shan ju
+留园	liu yuan
+刘庄	liu zhuang
+龙帛寺	long bo si
+龙藏寺碑	long cang si bei
+隆昌寺无梁殿	long chang si wu liang dian
+龙城广场	long cheng guang chang
+龙池国家森林公园	long chi guo jia sen lin gong yuan
+龙洞石刻	long dong shi ke
+龙宫风景区	long gong feng jing qu
+龙泓涧景区	long hong jian jing qu
+龙虎殿	long hu dian
+龙虎石刻	long hu shi ke
+龙华烈士陵园	long hua lie shi ling yuan
+龙华塔	long hua ta
+龙脊梯田	long ji ti tian
+龙井路	long jing lu
+龙井问茶	long jing wen cha
+龙居泉	long ju quan
+龙门古镇	long men gu zhen
+龙门泉	long men quan
+龙门石窟	long men shi ku
+龙门寺	long men si
+龙庆峡	long qing xia
+龙泉	long quan
+龙泉湖	long quan hu
+龙泉山	long quan shan
+龙泉山风景区	long quan shan feng jing qu
+龙泉寺	long quan si
+龙泉寺戚继光诗碑	long quan si qi ji guang shi bei
+龙泉寺石狮	long quan si shi shi
+龙沙公园	long sha gong yuan
+龙山寺	long shan si
+龙塔	long ta
+龙潭碧月	long tan bi yue
+龙潭浮翠	long tan fu cui
+龙潭瀑布	long tan pu bu
+龙潭山高句丽山城	long tan shan gao gou li shan cheng
+龙潭山公园	long tan shan gong yuan
+龙塘山	long tang shan
+龙王山	long wang shan
+龙王堂	long wang tang
+龙祥观	long xiang guan
+隆兴寺	long xing si
+龙游石窟	long you shi ku
+龙子祠泉	long zi ci quan
+隆宗门	long zong men
+楼外楼	lou wai lou
+鲁班洞	lu ban dong
+鸬鹚潭	lu ci tan
+卢沟桥	lu gou qiao
+泸沽湖	lu gu hu
+鲁化寺	lu hua si
+鹿回头	lu hui tou
+鹿回头山顶公园	lu hui tou shan ding gong yuan
+鲁克沁小镇	lu ke qin xiao zhen
+鹿跑泉	lu pao quan
+卢浦大桥	lu pu da qiao
+鹿泉	lu quan
+炉泉	lu quan
+卢瓦尔河香波城堡	lu wa er he xiang bo cheng bao
+潞王陵	lu wang ling
+陆秀夫祠	lu xiu fu ci
+鲁迅故居	lu xun gu ju
+鲁迅墓	lu xun mu
+卢涯瀑布	lu ya pu bu
+路易斯湖	lu yi si hu
+沦泊屿	lun bo yu
+伦敦大本钟	lun dun da ben zhong
+沦州铁狮子	lun zhou tie shi zi
+落笔洞	luo bi dong
+罗布泊	luo bu po
+罗布人村寨	luo bu ren cun zhai
+罗姑泉	luo gu quan
+罗汉山	luo han shan
+罗汉寺	luo han si
+罗汉院遗址	luo han yuan yi zhi
+罗睺寺	luo hou si
+珞珈山	luo jia shan
+罗马地下陵墓	luo ma di xia ling mu
+罗聘故居	luo pin gu ju
+落水村	luo shui cun
+洛阳桥	luo yang qiao
+旅顺博物馆	lv shun bo wu guan
+旅行经停地点	lv xing jing ting di dian
+吕祖堂	lv zu tang
+马尔代夫	ma er dai fu
+马尔维纳斯群岛	ma er wei na si qun dao
+麻姑仙境	ma gu xian jing
+马里多贡墓群	ma li duo gong mu qun
+马六甲海峡	ma liu jia hai xia
+玛瑙泉	ma nao quan
+玛瑙寺	ma nao si
+马跑泉	ma pao quan
+麻披泉	ma pi quan
+马桥古文化遗址	ma qiao gu wen hua yi zhi
+马王堆	ma wang dui
+马岩洞	ma yan dong
+妈祖阁	ma zu ge
+麦积山石窟	mai ji shan shi ku
+满城汉墓	man cheng han mu
+满井泉	man jing quan
+满陇桂雨	man long gui yu
+满洲省委旧址	man zhou sheng wei jiu zhi
+莽吉塔站故城	mang ji ta zhan gu cheng
+茅村汉画像石墓	mao cun han hua xiang shi mu
+毛公山	mao gong shan
+茅家埠	mao jia bu
+毛家埠	mao jia bu
+牦牛坪	mao niu ping
+毛彭水尖山国家森林公园	mao peng shui jian shan guo jia sen lin gong yuan
+茅山	mao shan
+泖塔	mao ta
+毛伊岛	mao yi dao
+毛泽东故居	mao ze dong gu ju
+毛主席纪念堂	mao zhu xi ji nian tang
+美发美容	mei fa mei rong
+梅峰揽胜	mei feng lan sheng
+梅关古驿道	mei guan gu yi dao
+玫瑰圣母堂	mei gui sheng mu tang
+梅花碑	mei hua bei
+梅花瓶	mei hua ping
+梅花泉	mei hua quan
+梅花山	mei hua shan
+梅家坞	mei jia wu
+美榔双塔	mei lang shuang ta
+梅里雪山	mei li xue shan
+美丽之冠	mei li zhi guan
+美泉宫	mei quan gong
+梅坞茶景	mei wu cha jing
+梅园新村	mei yuan xin cun
+梅园新村纪念馆	mei yuan xin cun ji nian guan
+孟达天池	meng da tian chi
+猛洞河	meng dong he
+蒙古文天文图石刻	meng gu wen tian wen tu shi ke
+梦幻乐园	meng huan le yuan
+猕猴洞	mi hou dong
+米开朗基罗广场	mi kai lang ji luo guang chang
+秘密寺	mi mi si
+蜜山	mi shan
+弥陀殿	mi tuo dian
+弥陀岩	mi tuo yan
+米亚罗	mi ya luo
+米元章墓	mi yuan zhang mu
+免税店	mian shui dian
+妙应寺白塔	miao ying si bai ta
+民族风情园	min zu feng qing yuan
+明城墙	ming cheng qiang
+明代监狱	ming dai jian yu
+明故宫遗址	ming gu gong yi zhi
+明惠大师石塔	ming hui da shi shi ta
+名人纪念馆	ming ren ji nian guan
+明水泉	ming shui quan
+明孝陵	ming xiao ling
+明永冰川	ming yong bing chuan
+明征君碑	ming zheng jun bei
+明祖陵	ming zu ling
+莫高窟	mo gao ku
+魔鬼城	mo gui cheng
+漠河	mo he
+摩诃庵	mo he an
+莫雷阿岛	mo lei a dao
+茉莉轩	mo li xuan
+摩尼殿	mo ni dian
+摩尼石刻	mo ni shi ke
+墨泉	mo quan
+磨山风景区	mo shan feng jing qu
+墨水湖	mo shui hu
+摩松楼	mo song lou
+墨脱	mo tuo
+墨西哥帕卡尔坟墓	mo xi ge pa ka er fen mu
+牟尼沟	mou ni gou
+木格错	mu ge cuo
+穆桂英点将台	mu gui ying dian jiang tai
+木兰湖	mu lan hu
+木兰记碑	mu lan ji bei
+木兰天池风景区	mu lan tian chi feng jing qu
+木兰湾	mu lan wan
+木兰围场	mu lan wei chang
+慕陵	mu ling
+慕士塔格峰	mu shi ta ge feng
+慕田峪长城	mu tian yu chang cheng
+纳家户清真寺	na jia hu qing zhen si
+那拉提草原	na la ti cao yuan
+那拉提篝火晚会	na la ti gou huo wan hui
+纳灵洞	na ling dong
+纳木错	na mu cuo
+纳帕海	na pa hai
+乃古石林	nai gu shi lin
+奈曼王府	nai man wang fu
+南安寺塔	nan an si ta
+南澳岛	nan ao dao
+南澳海滨渡假村	nan ao hai bin du jia cun
+南朝萧绩墓石刻	nan chao xiao ji mu shi ke
+南甘露泉	nan gan lu quan
+南湖岛	nan hu dao
+南华寺	nan hua si
+南吉祥寺	nan ji xiang si
+南京博物院	nan jing bo wu yuan
+南京长江大桥	nan jing chang jiang da qiao
+南京大屠杀纪念馆	nan jing da tu sha ji nian guan
+南京方山定林寺	nan jing fang shan ding lin si
+南京江心洲镇	nan jing jiang xin zhou zhen
+南京情侣园	nan jing qing lv yuan
+南京雨花台烈士陵园	nan jing yu hua tai lie shi ling yuan
+南京阅江楼	nan jing yue jiang lou
+南美岭	nan mei ling
+南屏晚钟	nan ping wan zhong
+南叵罗泉	nan po luo quan
+南浦大桥	nan pu da qiao
+南普陀寺	nan pu tuo si
+南沙群岛	nan sha qun dao
+南山	nan shan
+南山公园	nan shan gong yuan
+南山海上观音	nan shan hai shang guan yin
+南山路	nan shan lu
+南山牧场	nan shan mu chang
+南山骑马	nan shan qi ma
+南山寺	nan shan si
+南山望雪	nan shan wang xue
+南山文化旅游区	nan shan wen hua lv you qu
+南少林	nan shao lin
+南宋八卦田	nan song ba gua tian
+南宋官窑博物馆	nan song guan yao bo wu guan
+南嵩岩	nan song yan
+南唐两陵	nan tang liang ling
+南天门	nan tian men
+南天寺	nan tian si
+南田温泉	nan tian wen quan
+南通博物苑	nan tong bo wu yuan
+南湾猴岛	nan wan hou dao
+南翔寺经幢	nan xiang si jing chuang
+南翔寺砖塔	nan xiang si zhuan ta
+南响堂寺石窟	nan xiang tang si shi ku
+南丫岛	nan ya dao
+南阳公主祠	nan yang gong zhu ci
+南珍珠泉	nan zhen zhu quan
+南煮糠泉	nan zhu kang quan
+内边长城敌台	nei bian chang cheng di tai
+尼亚加拉瀑布	ni ya jia la pu bu
+尼雅遗址	ni ya yi zhi
+泥淤泉	ni yu quan
+鸟巢	niao chao
+鸟岛	niao dao
+聂耳公园	nie er gong yuan
+聂耳文化广场	nie er wen hua guang chang
+宁古塔城遗址	ning gu ta cheng yi zhi
+宁武夫	ning wu fu
+宁夏博物馆	ning xia bo wu guan
+宁夏平原	ning xia ping yuan
+宁远卫城	ning yuan wei cheng
+牛街礼拜寺	niu jie li bai si
+牛街清真寺	niu jie qing zhen si
+牛姆林	niu mu lin
+牛首山破金故垒	niu shou shan po jin gu lei
+牛王庙戏台	niu wang miao xi tai
+农安辽塔	nong an liao ta
+怒江	nu jiang
+诺敏风城	nuo min feng cheng
+欧布拉	ou bu la
+欧阳修祠	ou yang xiu ci
+耦园	ou yuan
+盘谷寺	pan gu si
+盘山	pan shan
+盘山烈士陵园	pan shan lie shi ling yuan
+庞泉沟风景区	pang quan gou feng jing qu
+跑马岭休闲生态园	pao ma ling xiu xian sheng tai yuan
+裴祠石刻	pei ci shi ke
+佩雷拉雪兹神父公墓	pei lei la xue zi shen fu gong mu
+佩纳城堡	pei na cheng bao
+盆景池	pen jing chi
+蓬莱阁	peng lai ge
+蓬莱水城	peng lai shui cheng
+彭水保家老营顶	peng shui bao jia lao ying ding
+彭水电站库区风景区	peng shui dian zhan ku qu feng jing qu
+彭水郁山飞盐泉	peng shui yu shan fei yan quan
+琵琶泉	pi pa quan
+偏脸城	pian lian cheng
+平板夹	ping ban jia
+平湖秋月	ping hu qiu yue
+平湖市府二招	ping hu shi fu er zhao
+平津战役纪念馆	ping jin zhan yi ji nian guan
+平乐古镇	ping le gu zhen
+平罗玉皇阁	ping luo yu huang ge
+平山狩猎场	ping shan shou lie chang
+平山温泉	ping shan wen quan
+萍香沜	ping xiang pan
+平型夫	ping xing fu
+平型关战役遗址	ping xing guan zhan yi yi zhi
+平遥城墙	ping yao cheng qiang
+平遥古城	ping yao gu cheng
+平远楼	ping yuan lou
+婆留井	po liu jing
+鄱阳湖	po yang hu
+普渡寺	pu du si
+普会寺	pu hui si
+普济桥	pu ji qiao
+普济寺	pu ji si
+普净寺	pu jing si
+普利寺塔	pu li si ta
+菩萨泉	pu sa quan
+普氏野马场	pu shi ye ma chang
+葡萄沟	pu tao gou
+葡萄民俗园	pu tao min su yuan
+菩提岛	pu ti dao
+菩提精舍	pu ti jing she
+普彤寺塔	pu tong si ta
+普通团	pu tong tuan
+普陀山	pu tuo shan
+普陀宗乘之庙	pu tuo zong cheng zhi miao
+普照寺	pu zhao si
+七宝老街	qi bao lao jie
+七宝塔	qi bao ta
+汽车旅馆	qi che lv guan
+起点城市	qi dian cheng shi
+祈风石刻群	qi feng shi ke qun
+七级浮屠塔	qi ji fu tu ta
+麒麟山庄	qi lin shan zhuang
+七美岛	qi mei dao
+奇瓦瓦的奈卡矿	qi wa wa de nai ka kuang
+七王坟	qi wang fen
+齐王寨	qi wang zhai
+栖霞山	qi xia shan
+七仙岭	qi xian ling
+七星岭	qi xing ling
+七星岩	qi xing yan
+七星燕窝岭	qi xing yan wo ling
+栖岩寺塔	qi yan si ta
+齐云山	qi yun shan
+棋子湾	qi zi wan
+千岛湖	qian dao hu
+千岛湖三潭岛	qian dao hu san tan dao
+千岛湖石林	qian dao hu shi lin
+签发地	qian fa di
+签发日期	qian fa ri qi
+千佛山	qian fo shan
+黔江小南海	qian jiang xiao nan hai
+浅井泉	qian jing quan
+黔灵公园	qian ling gong yuan
+千龙洞	qian long dong
+乾隆花园	qian long hua yuan
+乾隆行宫	qian long xing gong
+千年古桑	qian nian gu sang
+千年曙光园	qian nian shu guang yuan
+千山	qian shan
+浅水湾	qian shui wan
+钱塘观潮	qian tang guan chao
+钱塘江大桥	qian tang jiang da qiao
+钱塘门	qian tang men
+钱王祠	qian wang ci
+钱王陵	qian wang ling
+千像寺	qian xiang si
+千丈岩瀑布	qian zhang yan pu bu
+强巴林寺	qiang ba lin si
+枪杆泉	qiang gan quan
+乔家大院	qiao jia da yuan
+桥楼殿	qiao lou dian
+乔托钟塔	qiao tuo zhong ta
+秦淮河	qin huai he
+勤民楼	qin min lou
+沁秋亭	qin qiu ting
+琴泉	qin quan
+琴溪香谷	qin xi xiang gu
+清波门	qing bo men
+庆成富	qing cheng fu
+青城山	qing cheng shan
+晴川阁	qing chuan ge
+庆春门	qing chun men
+清东陵	qing dong ling
+清公主府	qing gong zhu fu
+青海湖	qing hai hu
+清河坊	qing he fang
+清净寺	qing jing si
+清澜港	qing lan gang
+青莲寺	qing lian si
+清泠泉	qing ling quan
+青龙倒吸水	qing long dao xi shui
+青龙瀑布	qing long pu bu
+青龙塔	qing long ta
+青马大桥	qing ma da qiao
+清明上河园	qing ming shang he yuan
+清宁宫	qing ning gong
+青青生态度假村	qing qing sheng tai du jia cun
+青青世界	qing qing shi jie
+青山湾	qing shan wan
+青蛇	qing she
+清水岩	qing shui yan
+清泰门	qing tai men
+青铜峡塔	qing tong xia ta
+清西陵	qing xi ling
+青岩	qing yan
+清晏舫	qing yan fang
+青羊宫	qing yang gong
+清怡贤亲王墓	qing yi xian qin wang mu
+清音阁	qing yin ge
+清与路故城	qing yu lu gu cheng
+清源山	qing yuan shan
+青云洞	qing yun dong
+庆云寺	qing yun si
+清照亭	qing zhao ting
+清真北大寺	qing zhen bei da si
+清真大寺	qing zhen da si
+清真古寺	qing zhen gu si
+琼岛春阴	qiong dao chun yin
+琼华岛	qiong hua dao
+琼台书院	qiong tai shu yuan
+龟兹古城	qiu ci gu cheng
+秋风楼	qiu feng lou
+邱良功母节孝坊	qiu liang gong mu jie xiao fang
+求水山公园	qiu shui shan gong yuan
+秋水山庄	qiu shui shan zhuang
+虬溪泉	qiu xi quan
+屈斗宫	qu dou gong
+瞿塘峡	qu tang xia
+瞿塘峡风景名胜区	qu tang xia feng jing ming sheng qu
+曲院风荷	qu yuan feng he
+曲院新姿	qu yuan xin zi
+全国农业展览馆	quan guo nong ye zhan lan guan
+泉南堂	quan nan tang
+全陪	quan pei
+荃湾	quan wan
+犬戏楼	quan xi lou
+染池泉	ran chi quan
+然乌湖	ran wu hu
+冉庄地道战遗址	ran zhuang di dao zhan yi zhi
+饶阳店古塔	rao yang dian gu ta
+热带飞禽世界	re dai fei qin shi jie
+热带两院植物园	re dai liang yuan zhi wu yuan
+人达龄	ren da ling
+人境庐	ren jing lu
+人面石刻	ren mian shi ke
+人民大会堂	ren min da hui tang
+仁寿殿	ren shou dian
+仁寿山公园	ren shou shan gong yuan
+日光岩	ri guang yan
+日喀则	ri ka ze
+日内瓦湖滨	ri nei wa hu bin
+日涉园	ri she yuan
+日升昌票号	ri sheng chang piao hao
+日月泉	ri yue quan
+日月山	ri yue shan
+日月湾	ri yue wan
+日则沟	ri ze gou
+融合门	rong he men
+榕园	rong yuan
+汝泉	ru quan
+入崖口有作诗碑	ru ya kou you zuo shi bei
+阮墩环碧	ruan dun huan bi
+瑞光塔	rui guang ta
+瑞晶石花洞	rui jing shi hua dong
+瑞像岩	rui xiang yan
+瑞云峰	rui yun feng
+箬横乡村跑马场	ruo heng xiang cun pao ma chang
+萨尔浒山	sa er hu shan
+塞哥维亚城堡	sai ge wei ya cheng bao
+赛里木湖	sai li mu hu
+三百山	san bai shan
+三道壕西汉村落遗址	san dao hao xi han cun luo yi zhi
+三横四直图碑	san heng si zhi tu bei
+三江并流	san jiang bing liu
+散客	san ke
+散客拼团	san ke pin tuan
+三灵坟	san ling fen
+三楼装饰	san lou zhuang shi
+三清阁	san qing ge
+三清山	san qing shan
+三山庵	san shan an
+三山会馆	san shan hui guan
+三室墓	san shi mu
+散水泉	san shui quan
+三台阁	san tai ge
+三台山	san tai shan
+三潭印月	san tan yin yue
+三潭映月	san tan ying yue
+三峡大坝	san xia da ba
+三星堆	san xing dui
+三亚湾	san ya wan
+三一八烈士墓	san yi ba lie shi mu
+三原城隍庙	san yuan cheng huang miao
+三藏塔	san zang ta
+桑托里尼	sang tuo li ni
+扫叶楼	sao ye lou
+色拉寺	se la si
+啬园	se yuan
+森林氧吧	sen lin yang ba
+沙格灵慈宫	sha ge ling ci gong
+沙湖	sha hu
+沙漠植物园	sha mo zhi wu yuan
+沙坡头	sha po tou
+沙田马场	sha tian ma chang
+筛月亭	shai yue ting
+山丹军马场	shan dan jun ma chang
+山顶洞人遗址	shan ding dong ren yi zhi
+山东省青岛教师之家	shan dong sheng qing dao jiao shi zhi jia
+珊瑚礁自然保护区	shan hu jiao zi ran bao hu qu
+善化寺	shan hua si
+善化寺大雄宝殿	shan hua si da xiong bao dian
+善化寺普贤阁	shan hua si pu xian ge
+善化寺三圣殿	shan hua si san sheng dian
+善化寺山门	shan hua si shan men
+鄯善沙山公园	shan shan sha shan gong yuan
+山神峪千佛洞	shan shen yu qian fo dong
+山西省博物馆	shan xi sheng bo wu guan
+山西雪恩集团	shan xi xue en ji tuan
+扇子崖	shan zi ya
+上帝庙	shang di miao
+上海城隍庙	shang hai cheng huang miao
+上海城市规划展示馆	shang hai cheng shi gui hua zhan shi guan
+上海大观园	shang hai da guan yuan
+上海大剧院	shang hai da ju yuan
+上海动物园	shang hai dong wu yuan
+上海光启公园	shang hai guang qi gong yuan
+上海海洋水族馆	shang hai hai yang shui zu guan
+上海科技馆	shang hai ke ji guan
+上海鲁迅故属	shang hai lu xun gu shu
+上海鲁迅纪念馆	shang hai lu xun ji nian guan
+上海人民公园	shang hai ren min gong yuan
+上海世纪公园	shang hai shi ji gong yuan
+上海宋庆龄故居纪念馆	shang hai song qing ling gu ju ji nian guan
+上海孙中山故居纪念馆	shang hai sun zhong shan gu ju ji nian guan
+上海体育场	shang hai ti yu chang
+上海体育馆	shang hai ti yu guan
+上海外滩	shang hai wai tan
+上海野生动物园	shang hai ye sheng dong wu yuan
+上海植物园	shang hai zhi wu yuan
+上海朱家角	shang hai zhu jia jiao
+上海自然博物馆	shang hai zi ran bo wu guan
+尚湖	shang hu
+上京会宁府遗址	shang jing hui ning fu yi zhi
+上堂门	shang tang men
+上西村	shang xi cun
+上行车	shang xing che
+尚志碑林	shang zhi bei lin
+烧锅营子燕长城址	shao guo ying zi yan chang cheng zhi
+烧味场	shao wei chang
+佘山国家森林公园	she shan guo jia sen lin gong yuan
+畲族风情	she zu feng qing
+沈从文故居	shen cong wen gu ju
+沈飞航空博览园	shen fei hang kong bo lan yuan
+深沪湾	shen hu wan
+深沪湾海底古森林	shen hu wan hai di gu sen lin
+神乐署	shen le shu
+神龙川	shen long chuan
+神龙岛	shen long dao
+神秘大峡谷	shen mi da xia gu
+神木园	shen mu yuan
+神农祭坛	shen nong ji tan
+神农架	shen nong jia
+神山	shen shan
+沈阳东湖度假村	shen yang dong hu du jia cun
+沈阳故宫	shen yang gu gong
+沈阳故宫博物院	shen yang gu gong bo wu yuan
+沈阳老龙口酒博物馆	shen yang lao long kou jiu bo wu guan
+沈阳棋盘山风景区	shen yang qi pan shan feng jing qu
+沈阳三农博览园	shen yang san nong bo lan yuan
+沈阳森林公园	shen yang sen lin gong yuan
+沈阳森林野生动物园	shen yang sen lin ye sheng dong wu yuan
+沈阳植物园	shen yang zhi wu yuan
+深圳海洋世界	shen zhen hai yang shi jie
+深圳锦绣中华	shen zhen jin xiu zhong hua
+深圳野生动物园	shen zhen ye sheng dong wu yuan
+神州半岛	shen zhou ban dao
+圣彼得大教堂	sheng bi de da jiao tang
+圣姑庙	sheng gu miao
+圣湖	sheng hu
+绳金塔	sheng jin ta
+圣马可广场	sheng ma ke guang chang
+圣马可教堂	sheng ma ke jiao tang
+圣玛丽亚感恩教堂	sheng ma li ya gan en jiao tang
+圣米歇尔山	sheng mi xie er shan
+圣乔凡尼礼拜堂	sheng qiao fan ni li bai tang
+圣寿寺	sheng shou si
+圣寿寺舍利塔	sheng shou si she li ta
+圣水泉	sheng shui quan
+嵊泗列岛	sheng si lie dao
+圣索菲亚大教堂	sheng suo fei ya da jiao tang
+圣塔院寺塔	sheng ta yuan si ta
+圣堂山	sheng tang shan
+圣天寺	sheng tian si
+圣约翰大教堂	sheng yue han da jiao tang
+十八盘	shi ba pan
+石宝寨	shi bao zhai
+试茶泉	shi cha quan
+时池	shi chi
+石灯塔	shi deng ta
+十渡	shi du
+十方普觉寺	shi fang pu jue si
+世纪大桥	shi ji da qiao
+释迦如来舍利塔	shi jia ru lai she li ta
+世界公园	shi jie gong yuan
+石金刚	shi jin gang
+石景山冰川擦痕	shi jing shan bing chuan ca hen
+史可法祠墓	shi ke fa ci mu
+石空寺石窟	shi kong si shi ku
+石窟寺	shi ku si
+施琅墓	shi lang mu
+十里画廊	shi li hua lang
+十里郎当	shi li lang dang
+十里亭	shi li ting
+石林秋色	shi lin qiu se
+石碌	shi lu
+石马寺	shi ma si
+石梅湾	shi mei wan
+石门洞	shi men dong
+石门一线	shi men yi xian
+施耐庵墓	shi nai an mu
+石牛山	shi niu shan
+石牌坊	shi pai fang
+石棚山	shi peng shan
+石棚山石棚	shi peng shan shi peng
+食品街	shi pin jie
+十七孔桥	shi qi kong qiao
+十三陵	shi san ling
+狮身人面像	shi shen ren mian xiang
+实胜寺	shi sheng si
+石狮海洋世界	shi shi hai yang shi jie
+石笋	shi sun
+石头诚	shi tou cheng
+石头城	shi tou cheng
+石湾泉	shi wan quan
+石像生	shi xiang sheng
+室相寺旭华之阁	shi xiang si xu hua zhi ge
+石岩湖温泉度假村	shi yan hu wen quan du jia cun
+石柱黄水森林公园	shi zhu huang shui sen lin gong yuan
+狮子林	shi zi lin
+狮子窝琉璃塔	shi zi wo liu li ta
+十字峡谷	shi zi xia gu
+首都体育馆	shou du ti yu guan
+寿皇殿	shou huang dian
+瘦西湖	shou xi hu
+束河	shu he
+蜀南竹海	shu nan zhu hai
+漱玉泉	shu yu quan
+书院泉	shu yuan quan
+树正沟	shu zheng gou
+菽庄花园	shu zhuang hua yuan
+双标	shuang biao
+双层卧铺车	shuang ceng wo pu che
+双飞	shuang fei
+双峰插云	shuang feng cha yun
+双龙池	shuang long chi
+双门硐	shuang men dong
+双女泉	shuang nv quan
+双汽	shuang qi
+双清别墅	shuang qing bie shu
+双人房间	shuang ren fang jian
+双塔交影	shuang ta jiao ying
+双塔岭双塔	shuang ta ling shuang ta
+双桃泉	shuang tao quan
+双投桥	shuang tou qiao
+双溪竹海	shuang xi zhu hai
+双忠泉	shuang zhong quan
+水坝广场	shui ba guang chang
+水洞沟	shui dong gou
+水东楼	shui dong lou
+水费各工程队	shui fei ge gong cheng dui
+水观音亭	shui guan yin ting
+水绘园	shui hui yuan
+水立方	shui li fang
+水帘泉	shui lian quan
+水神庙	shui shen miao
+水云硐	shui yun dong
+舜泉井	shun quan jing
+斯大林公园	si da lin gong yuan
+斯德哥尔摩	si de ge er mo
+死海	si hai
+四烈士纪念碑	si lie shi ji nian bei
+四林塔	si lin ta
+四楼音响控制室	si lou yin xiang kong zhi shi
+司马光墓及祖茔	si ma guang mu ji zu ying
+司马迁墓	si ma qian mu
+四面山	si mian shan
+四明公所旧址	si ming gong suo jiu zhi
+斯诺墓	si nuo mu
+司帕蒂娜街	si pa di na jie
+斯旺西	si wang xi
+四知书屋	si zhi shu wu
+宋城	song cheng
+宋城景区	song cheng jing qu
+松鹤斋	song he zhai
+松花湖	song hua hu
+松花江	song hua jiang
+松花江公路大桥	song hua jiang gong lu da qiao
+松江方塔	song jiang fang ta
+松江明刻照壁	song jiang ming ke zhao bi
+松江唐经幢	song jiang tang jing chuang
+宋教仁墓	song jiao ren mu
+宋璟碑	song jing bei
+松筠庵	song jun an
+松郡九峰	song jun jiu feng
+松娜峡湾	song na xia wan
+宋庆龄故屠	song qing ling gu tu
+宋庆龄墓	song qing ling mu
+松山灯塔	song shan deng ta
+宋氏祖居	song shi zu ju
+松涛水库	song tao shui ku
+松赞林寺	song zan lin si
+崧泽古文化遗址	song ze gu wen hua yi zhi
+苏巴什古城	su ba shi gu cheng
+苏丹公园	su dan gong yuan
+苏堤	su di
+苏堤春晓	su di chun xiao
+苏东坡纪念馆	su dong po ji nian guan
+苏夫人姑庙	su fu ren gu miao
+苏公塔	su gong ta
+苏军烈士纪念塔	su jun lie shi ji nian ta
+苏小小墓	su xiao xiao mu
+宿燕寺	su yan si
+苏峪口森林公园	su yu kou sen lin gong yuan
+宿云檐	su yun yan
+穗庐	sui lu
+绥远城将军衙署旧址	sui yuan cheng jiang jun ya shu jiu zhi
+孙传芳旧居	sun chuan fang jiu ju
+孙中山行馆	sun zhong shan xing guan
+索道	suo dao
+塔尔寺	ta er si
+塔斯马尼亚	ta si ma ni ya
+塔西提岛	ta xi ti dao
+塔营子古城址	ta ying zi gu cheng zhi
+塔子城遗址	ta zi cheng yi zhi
+台北故宫	tai bei gu gong
+太符观	tai fu guan
+太行第一峰	tai hang di yi feng
+太湖乐园	tai hu le yuan
+太湖仙岛	tai hu xian dao
+太湖源	tai hu yuan
+泰姬陵	tai ji ling
+太鲁阁	tai lu ge
+太姥山	tai mu shan
+太平山顶	tai ping shan ding
+太平双溪	tai ping shuang xi
+太平天国戴王府	tai ping tian guo dai wang fu
+太平天国辅王府	tai ping tian guo fu wang fu
+太平天国护王府	tai ping tian guo hu wang fu
+太平天国历史博物馆	tai ping tian guo li shi bo wu guan
+太平天国烈士墓	tai ping tian guo lie shi mu
+太平天国天王府遗址	tai ping tian guo tian wang fu yi zhi
+太平无国忠王府	tai ping wu guo zhong wang fu
+太平洋海底世界博览馆	tai ping yang hai di shi jie bo lan guan
+太平寨	tai ping zhai
+太清宫	tai qing gong
+太山寺	tai shan si
+太岁殿	tai sui dian
+太王陵	tai wang ling
+太阳岛	tai yang dao
+太阳岛风景区	tai yang dao feng jing qu
+太阳岛公园	tai yang dao gong yuan
+太子湾	tai zi wan
+太子湾公园	tai zi wan gong yuan
+太子野趣	tai zi ye qu
+檀抱泉	tan bao quan
+谭公庙	tan gong miao
+探海石	tan hai shi
+弹琴峡	tan qin xia
+叹息桥	tan xi qiao
+潭柘寺	tan zhe si
+唐单于都护府城遗址	tang chan yu du hu fu cheng yi zhi
+唐代桑树	tang dai sang shu
+汤恩伯旧居	tang en bo jiu ju
+唐花坞	tang hua wu
+唐陵	tang ling
+汤山温泉	tang shan wen quan
+唐塔	tang ta
+汤王庙	tang wang miao
+唐一岑墓	tang yi cen mu
+唐寅墓	tang yin mu
+唐云艺术馆	tang yun yi shu guan
+堂子街太平天国壁画	tang zi jie tai ping tian guo bi hua
+陶庵留碧	tao an liu bi
+陶瓷博物馆	tao ci bo wu guan
+韬奋故居	tao fen gu ju
+桃花源	tao hua yuan
+陶然亭公园	tao ran ting gong yuan
+桃温万户府故城	tao wen wan hu fu gu cheng
+特基拉小镇	te ji la xiao zhen
+特营办	te ying ban
+腾蛟泉	teng jiao quan
+滕王阁	teng wang ge
+天安门广场	tian an men guang chang
+天保城	tian bao cheng
+天成寺舍利塔	tian cheng si she li ta
+天池	tian chi
+天顶大厦	tian ding da sha
+天鹅湖	tian e hu
+天河潭	tian he tan
+天后宫	tian hou gong
+天街坊	tian jie fang
+天津广播电视塔	tian jin guang bo dian shi ta
+天津河西公园	tian jin he xi gong yuan
+天津科技馆	tian jin ke ji guan
+天津乐园	tian jin le yuan
+天津历史博物馆	tian jin li shi bo wu guan
+天津市艺术博物馆	tian jin shi yi shu bo wu guan
+天津水上公园	tian jin shui shang gong yuan
+天津艺术博物馆	tian jin yi shu bo wu guan
+天津中山公园	tian jin zhong shan gong yuan
+天津中心公园	tian jin zhong xin gong yuan
+天津自然博物馆	tian jin zi ran bo wu guan
+天镜泉	tian jing quan
+天坑	tian keng
+天龙山石窟	tian long shan shi ku
+天马山摩崖石刻	tian ma shan mo ya shi ke
+天目石谷	tian mu shi gu
+天目溪漂流	tian mu xi piao liu
+天南第一泉	tian nan di yi quan
+天宁岛	tian ning dao
+天宁寺木塔	tian ning si mu ta
+天宁寺双塔	tian ning si shuang ta
+天山天池	tian shan tian chi
+天生桥	tian sheng qiao
+天台庵	tian tai an
+天台山	tian tai shan
+天坛	tian tan
+天坛大佛	tian tan da fo
+天坛公园	tian tan gong yuan
+天堂岛	tian tang dao
+天堂寨	tian tang zhai
+天梯山	tian ti shan
+天童寺	tian tong si
+天外村	tian wai cun
+天下第一江山石刻	tian xia di yi jiang shan shi ke
+天涯海角	tian ya hai jiao
+天涯热带海洋世界	tian ya re dai hai yang shi jie
+天一阁	tian yi ge
+天游峰	tian you feng
+田原鱼疗温泉	tian yuan yu liao wen quan
+天钟山	tian zhong shan
+天主教堂	tian zhu jiao tang
+天柱山	tian zhu shan
+铁背山山城	tie bei shan shan cheng
+铁力士雪山	tie li shi xue shan
+铁铃关	tie ling guan
+铁门关	tie men guan
+铁人井	tie ren jing
+铁刹山	tie sha shan
+铁影壁	tie ying bi
+亭湾骑射	ting wan qi she
+同德殿	tong de dian
+铜鼓岭	tong gu ling
+通湖旅游区	tong hu lv you qu
+通淮关岳庙	tong huai guan yue miao
+桐君山	tong jun shan
+同里	tong li
+桐庐垂云通天河	tong lu chui yun tong tian he
+桐庐大奇山国家森林公园	tong lu da qi shan guo jia sen lin gong yuan
+桐庐红灯笼乡村家园	tong lu hong deng long xiang cun jia yuan
+桐庐女儿村景区	tong lu nv er cun jing qu
+桐庐天目溪漂流	tong lu tian mu xi piao liu
+桐庐严子陵钓台	tong lu yan zi ling diao tai
+桐庐瑶琳仙境	tong lu yao lin xian jing
+铜锣湾	tong luo wan
+同盟山	tong meng shan
+通天飞瀑	tong tian fei pu
+铜亭	tong ting
+同心清真寺	tong xin qing zhen si
+童子寺燃灯塔	tong zi si ran deng ta
+透雕石牌搂	tou diao shi pai lou
+吐鲁番博物馆	tu lu fan bo wu guan
+涂门街	tu men jie
+突泉	tu quan
+图瓦人家访	tu wa ren jia fang
+吐峪沟	tu yu gou
+吐峪沟麻扎村	tu yu gou ma zha cun
+吐峪沟千佛洞	tu yu gou qian fo dong
+团城演武厅	tuan cheng yan wu ting
+团队	tuan dui
+湍口温泉	tuan kou wen quan
+团泉	tuan quan
+团体行李	tuan ti xing li
+退翁亭	tui weng ting
+托林寺	tuo lin si
+陀罗尼经幢	tuo luo ni jing chuang
+鸵鸟岛	tuo niao dao
+外宾团	wai bin tuan
+万部华严经塔	wan bu hua yan jing ta
+丸都山城	wan dou shan cheng
+万佛宫	wan fo gong
+万佛寺	wan fo si
+万佛堂石窟	wan fo tang shi ku
+万固寺	wan gu si
+万国宫	wan guo gong
+万绿湖	wan lv hu
+万绿园	wan lv yuan
+万年寺	wan nian si
+万泉河	wan quan he
+宛山塔	wan shan ta
+万盛黑山谷生态旅游区	wan sheng hei shan gu sheng tai lv you qu
+万盛米行	wan sheng mi hang
+万盛石林	wan sheng shi lin
+万盛石林风景区	wan sheng shi lin feng jing qu
+万石岩	wan shi yan
+万寿富	wan shou fu
+万寿山昆明湖石碑	wan shou shan kun ming hu shi bei
+万树国	wan shu guo
+万松老人塔	wan song lao ren ta
+万松书院	wan song shu yuan
+万松寺	wan song si
+万仙山	wan xian shan
+完颜希尹家族墓地	wan yan xi yin jia zu mu di
+万忠墓	wan zhong mu
+王潮墓	wang chao mu
+望丛祠	wang cong ci
+王德墓	wang de mu
+望都壁画墓	wang du bi hua mu
+望儿山	wang er shan
+往返票	wang fan piao
+望海楼教堂	wang hai lou jiao tang
+望湖楼	wang hu lou
+王家大院	wang jia da yuan
+王建墓	wang jian mu
+望江楼公园	wang jiang lou gong yuan
+望江门	wang jiang men
+王杰墓	wang jie mu
+望京石	wang jing shi
+王澜堂	wang lan tang
+王母池	wang mu chi
+望水泉	wang shui quan
+王溪山色	wang xi shan se
+王庄	wang zhuang
+维多利亚公园	wei duo li ya gong yuan
+维尔兰雕塑公园	wei er lan diao su gong yuan
+伪皇宫	wei huang gong
+威洁清洁公司	wei jie qing jie gong si
+未来世界游乐公园	wei lai shi jie you le gong yuan
+魏庐	wei lu
+伪满洲国皇宫	wei man zhou guo huang gong
+威尼斯港	wei ni si gang
+威尼斯总督宫	wei ni si zong du gong
+维琪奥桥	wei qi ao qiao
+维琪奥王宫	wei qi ao wang gong
+微山湖	wei shan hu
+魏太和造像	wei tai he zao xiang
+韦驮像	wei tuo xiang
+维吾尔古村	wei wu er gu cun
+卫星楼	wei xing lou
+涠洲岛	wei zhou dao
+文笔峰	wen bi feng
+文峰公园	wen feng gong yuan
+温岭动物园	wen ling dong wu yuan
+文庙	wen miao
+文殊殿	wen shu dian
+文殊院	wen shu yuan
+文溯阁	wen su ge
+文台宝塔	wen tai bao ta
+文天样祠	wen tian yang ci
+文通塔	wen tong ta
+温馨岛	wen xin dao
+文星阁	wen xing ge
+文游台	wen you tai
+卧佛寺	wo fo si
+蜗皇宫	wo huang gong
+卧龙桥	wo long qiao
+卧龙山	wo long shan
+沃伦丹与马肯	wo lun dan yu ma ken
+卧牛泉	wo niu quan
+沃斯特维克	wo si te wei ke
+倭子坟	wo zi fen
+五彩滩	wu cai tan
+五当召	wu dang zhao
+五道峡	wu dao xia
+乌尔禾魔鬼城	wu er he mo gui cheng
+乌菲兹美术馆	wu fei zi mei shu guan
+五峰园	wu feng yuan
+五佛顾	wu fo gu
+五公祠	wu gong ci
+乌骨城	wu gu cheng
+乌龟石	wu gui shi
+乌龟潭	wu gui tan
+武汉长江大桥	wu han chang jiang da qiao
+武汉动物园	wu han dong wu yuan
+武汉国民政府旧址	wu han guo min zheng fu jiu zhi
+武汉海底世界	wu han hai di shi jie
+武汉植物园	wu han zhi wu yuan
+武侯祠	wu hou ci
+无后宫	wu hou gong
+无花果王	wu hua guo wang
+五回头城遗址	wu hui tou cheng yi zhi
+无纪宫碑	wu ji gong bei
+五盔坟五号墓	wu kui fen wu hao mu
+乌拉古城	wu la gu cheng
+乌拉街满族镇	wu la jie man zu zhen
+五老峰	wu lao feng
+五里桥	wu li qiao
+无量殿	wu liang dian
+武林广场	wu lin guang chang
+武林路	wu lin lu
+武林门	wu lin men
+五龙背温泉	wu long bei wen quan
+五龙岛	wu long dao
+武隆芙蓉洞	wu long fu rong dong
+五龙宫	wu long gong
+五龙潭	wu long tan
+武隆仙女山	wu long xian nv shan
+乌伦湖	wu lun hu
+无宁寺	wu ning si
+五女山山城	wu nv shan shan cheng
+五人墓	wu ren mu
+伍仁桥	wu ren qiao
+吴山广场	wu shan guang chang
+吴山天风	wu shan tian feng
+五圣祠	wu sheng ci
+无盛号石桥	wu sheng hao shi qiao
+五十家子塔	wu shi jia zi ta
+武松墓	wu song mu
+乌素图召	wu su tu zhao
+五塔岩	wu ta yan
+五台山	wu tai shan
+无锡市老年休养院	wu xi shi lao nian xiu yang yuan
+巫峡	wu xia
+舞阳河	wu yang he
+无影潭	wu ying tan
+舞踊墓	wu yong mu
+无忧泉	wu you quan
+乌镇	wu zhen
+五指峰	wu zhi feng
+五指山	wu zhi shan
+蜈支洲岛	wu zhi zhou dao
+吴忠黄河大峡谷	wu zhong huang he da xia gu
+无柱山	wu zhu shan
+无尊阁	wu zun ge
+西安碑林	xi an bei lin
+西柏坡中共中央旧址	xi bai po zhong gong zhong yang jiu zhi
+洗钵泉	xi bo quan
+西餐办公室	xi can ban gong shi
+西餐收银	xi can shou yin
+西厨	xi chu
+西厨士多房	xi chu shi duo fang
+西岛	xi dao
+西迪布赛义德	xi di bu sai yi de
+西堤六桥	xi di liu qiao
+锡格纳尔山	xi ge na er shan
+西贡	xi gong
+西海岸	xi hai an
+西侯度遗址	xi hou du yi zhi
+西湖宝石流霞	xi hu bao shi liu xia
+西湖博物馆	xi hu bo wu guan
+西湖断桥残雪	xi hu duan qiao can xue
+西湖公园	xi hu gong yuan
+西湖虎跑梦泉	xi hu hu pao meng quan
+西湖花港观鱼	xi hu hua gang guan yu
+西湖黄龙吐翠	xi hu huang long tu cui
+西湖九溪烟树	xi hu jiu xi yan shu
+西湖雷峰夕照	xi hu lei feng xi zhao
+西湖六和塔	xi hu liu he ta
+西湖柳浪闻莺	xi hu liu lang wen ying
+西湖龙井山园	xi hu long jing shan yuan
+西湖龙井问茶	xi hu long jing wen cha
+西湖满陇桂雨	xi hu man long gui yu
+西湖南屏晚钟	xi hu nan ping wan zhong
+西湖平湖秋月	xi hu ping hu qiu yue
+西湖曲院风荷	xi hu qu yuan feng he
+西湖阮墩环碧	xi hu ruan dun huan bi
+西湖三潭印月	xi hu san tan yin yue
+西湖时代广场	xi hu shi dai guang chang
+西湖双峰插云	xi hu shuang feng cha yun
+西湖苏堤春晓	xi hu su di chun xiao
+西湖吴山天风	xi hu wu shan tian feng
+西湖新景	xi hu xin jing
+西湖新天地	xi hu xin tian di
+西湖玉皇飞云	xi hu yu huang fei yun
+西湖云栖竹径	xi hu yun qi zhu jing
+西黄寺	xi huang si
+西吉党家岔震湖	xi ji dang jia cha zhen hu
+西吉火石寨	xi ji huo shi zhai
+吸江楼	xi jiang lou
+锡晋斋	xi jin zhai
+西丽湖度假村	xi li hu du jia cun
+席力图召	xi li tu zhao
+锡林浩特景区	xi lin hao te jing qu
+西泠桥	xi ling qiao
+西陵峡	xi ling xia
+西岭雪山	xi ling xue shan
+西泠印社	xi ling yin she
+西麻湾	xi ma wan
+西蜜脂泉	xi mi zhi quan
+析木城全塔	xi mu cheng quan ta
+析木城石棚	xi mu cheng shi peng
+悉尼当代艺术馆	xi ni dang dai yi shu guan
+悉尼歌剧院	xi ni ge ju yuan
+西炮台	xi pao tai
+西沙群岛	xi sha qun dao
+西山观松	xi shan guan song
+洗身洞	xi shen dong
+西什库教堂	xi shi ku jiao tang
+西双版纳	xi shuang ban na
+西天目山	xi tian mu shan
+溪亭泉	xi ting quan
+溪头	xi tou
+西溪国家湿地公园	xi xi guo jia shi di gong yuan
+西溪湿地	xi xi shi di
+西夏王陵	xi xia wang ling
+西庸城堡	xi yong cheng bao
+西屿	xi yu
+西域博物馆	xi yu bo wu guan
+西嶂排青	xi zhang pai qing
+锡杖泉	xi zhang quan
+西资岩石佛	xi zi yan shi fo
+下定林寺塔	xia ding lin si ta
+厦门鹤云酒店	xia men he yun jiu dian
+峡湾小城金沙维克	xia wan xiao cheng jin sha wei ke
+下行车	xia xing che
+夏允彝夏完淳父子墓	xia yun yi xia wan chun fu zi mu
+仙安石林	xian an shi lin
+献殿	xian dian
+仙叠岩	xian die yan
+仙公山	xian gong shan
+仙沟彩弹	xian gou cai dan
+咸亨酒店	xian heng jiu dian
+仙湖植物园	xian hu zhi wu yuan
+鲜花摆放	xian hua bai fang
+衔接航班	xian jie hang ban
+仙景台	xian jing tai
+贤良祠	xian liang ci
+仙乃日	xian nai ri
+贤清泉	xian qing quan
+羡山	xian shan
+祆神楼	xian shen lou
+仙水岩	xian shui yan
+仙堂寺	xian tang si
+显通寺	xian tong si
+仙翁庙	xian weng miao
+仙枕石	xian zhen shi
+象鼻山	xiang bi shan
+乡村旅游	xiang cun lv you
+香坊公园	xiang fang gong yuan
+香妃墓	xiang fei mu
+襄汾造像碑	xiang fen zao xiang bei
+香港太空馆	xiang gang tai kong guan
+香港夜景	xiang gang ye jing
+香界寺	xiang jie si
+湘龙庆典礼仪	xiang long qing dian li yi
+香炉山	xiang lu shan
+响琴榭	xiang qin xie
+香泉	xiang quan
+响泉	xiang quan
+响沙湾	xiang sha wan
+香山公园	xiang shan gong yuan
+香水湾	xiang shui wan
+响水玉瀑	xiang shui yu pu
+响堂铺伏击战纪念碑	xiang tang pu fu ji zhan ji nian bei
+响堂寺石富	xiang tang si shi fu
+响堂寺石庙	xiang tang si shi miao
+香溪洞风景区	xiang xi dong feng jing qu
+湘西凤凰	xiang xi feng huang
+香溪源	xiang xi yuan
+湘乡市一招待所	xiang xiang shi yi zhao dai suo
+香岩寺	xiang yan si
+萧憺石刻	xiao dan shi ke
+小东海	xiao dong hai
+孝感泉	xiao gan quan
+小金山	xiao jin shan
+晓露泉	xiao lu quan
+小梅沙海滨	xiao mei sha hai bin
+小庙街	xiao miao jie
+小南川	xiao nan chuan
+小盘谷	xiao pan gu
+小燃气工程	xiao ran qi gong cheng
+萧山地藏寺	xiao shan di zang si
+萧山极乐寺	xiao shan ji le si
+小汤山温泉	xiao tang shan wen quan
+小五台	xiao wu tai
+逍遥津	xiao yao jin
+小昭寺	xiao zhao si
+蝎殿	xie dian
+协和广场	xie he guang chang
+写秋轩	xie qiu xuan
+谐趣园	xie qu yuan
+偕行人数	xie xing ren shu
+斜阳岛	xie yang dao
+鞋子博物馆	xie zi bo wu guan
+新安江龙舟漂流	xin an jiang long zhou piao liu
+新安江铜官峡	xin an jiang tong guan xia
+新洞人遗址	xin dong ren yi zhi
+辛亥革命武昌起义纪念馆	xin hai ge ming wu chang qi yi ji nian guan
+新疆民街	xin jiang min jie
+新教徒墓地	xin jiao tu mu di
+新乐新石器时代遗址	xin le xin shi qi shi dai yi zhi
+新乐遗址	xin le yi zhi
+新南威尔士美术馆	xin nan wei er shi mei shu guan
+新泰市联社招待所	xin tai shi lian she zhao dai suo
+新天鹅堡	xin tian e bao
+新泻友谊园	xin xie you yi yuan
+新阳光日化	xin yang guang ri hua
+信义坊	xin yi fang
+新洲	xin zhou
+兴城温泉	xing cheng wen quan
+星岛湖	xing dao hu
+星海公园	xing hai gong yuan
+行李搬运车	xing li ban yun che
+行李标签	xing li biao qian
+行李领取处	xing li ling qu chu
+行李牌	xing li pai
+行李托管证	xing li tuo guan zheng
+行李暂存箱	xing li zan cun xiang
+兴隆热带植物园	xing long re dai zhi wu yuan
+兴隆寺	xing long si
+兴隆温泉	xing long wen quan
+兴圣教寺塔	xing sheng jiao si ta
+兴源寺	xing yuan si
+熊城滑雪场	xiong cheng hua xue chang
+熊成基墓	xiong cheng ji mu
+秀道者塔	xiu dao zhe ta
+秀姑峦溪	xiu gu luan xi
+秀英炮台	xiu ying pao tai
+徐达墓	xu da mu
+徐光启故屠	xu guang qi gu tu
+徐光启墓	xu guang qi mu
+徐家汇天主堂	xu jia hui tian zhu tang
+须弥福寿之庙	xu mi fu shou zhi miao
+须弥山石窟	xu mi shan shi ku
+徐霞客墓	xu xia ke mu
+许仙	xu xian
+悬壁长城	xuan bi chang cheng
+宣化辽墓	xuan hua liao mu
+悬空石	xuan kong shi
+悬空寺	xuan kong si
+悬泉	xuan quan
+悬泉飞瀑	xuan quan fei pu
+玄武湖	xuan wu hu
+悬阳洞	xuan yang dong
+玄中寺	xuan zhong si
+悬珠泉	xuan zhu quan
+学步桥	xue bu qiao
+雪窦山	xue dou shan
+雪峰寺	xue feng si
+薛仁贵寒窑	xue ren gui han yao
+巡航速度	xun hang su du
+浔阳楼	xun yang lou
+雅安地区招待所	ya an di qu zhao dai suo
+亚布力滑雪场	ya bu li hua xue chang
+亚布力滑雪度假区	ya bu li hua xue du jia qu
+亚德古拉城堡	ya de gu la cheng bao
+亚丁	ya ding
+亚沟摩崖石刻像	ya gou mo ya shi ke xiang
+衙口施氏大宗祠	ya kou shi shi da zong ci
+亚龙湾	ya long wan
+亚龙湾国家旅游度假区	ya long wan guo jia lv you du jia qu
+亚龙湾中心广场	ya long wan zhong xin guang chang
+鸭绿江大桥	ya lu jiang da qiao
+雅鲁藏布大峡谷	ya lu zang bu da xia gu
+呀诺达	ya nuo da
+呀诺达雨林	ya nuo da yu lin
+衙前基督教堂	ya qian ji du jiao tang
+崖州古城	ya zhou gu cheng
+烟波致爽	yan bo zhi shuang
+淹城	yan cheng
+砚池	yan chi
+雁荡山	yan dang shan
+炎帝陵	yan di ling
+燕墩	yan dun
+延福寺	yan fu si
+衍福寺双塔	yan fu si shuang ta
+眼镜湖	yan jing hu
+延陵季子墓碑	yan ling ji zi mu bei
+燕南寄庐	yan nan ji lu
+延平郡王祠	yan ping jun wang ci
+延庆寺大佛殿	yan qing si da fo dian
+燕塞湖	yan sai hu
+岩山寺	yan shan si
+燕下都遗址	yan xia dou yi zhi
+烟霞三洞	yan xia san dong
+胭脂泉	yan zhi quan
+胭脂峡	yan zhi xia
+燕州城	yan zhou cheng
+燕子矶	yan zi ji
+严子陵钓台	yan zi ling diao tai
+燕子垭	yan zi ya
+杨阿苗故居	yang a miao gu ju
+杨根思烈士陵园	yang gen si lie shi ling yuan
+杨公堤	yang gong di
+阳光丝印	yang guang si yin
+杨翚碑	yang hui bei
+杨家祠堂	yang jia ci tang
+杨椒山祠	yang jiao shan ci
+央迈勇	yang mai yong
+阳明山	yang ming shan
+杨乃武与小白菜冤案资料陈列馆	yang nai wu yu xiao bai cai yuan an zi liao chen lie guan
+扬仁风	yang ren feng
+阳山孝陵碑材	yang shan xiao ling bei cai
+阳朔	yang shuo
+仰天湖	yang tian hu
+羊头山石窟	yang tou shan shi ku
+扬州唐城遗址	yang zhou tang cheng yi zhi
+羊卓雍湖	yang zhuo yong hu
+杨子荣烈士陵园	yang zi rong lie shi ling yuan
+姚存天祚岩题名石刻	yao cun tian zuo yan ti ming shi ke
+尧陵	yao ling
+尧庙	yao miao
+邺城遗址	ye cheng yi zhi
+野荷谷	ye he gu
+野柳	ye liu
+耶律楚材墓	ye lv chu cai mu
+椰梦长廊	ye meng chang lang
+野三坡	ye san po
+椰子大观园	ye zi da guan yuan
+椰子岛	ye zi dao
+义慈惠石柱	yi ci hui shi zhu
+猗玕亭	yi gan ting
+颐和园	yi he yuan
+漪澜堂	yi lan tang
+伊犁河	yi li he
+伊犁河大桥	yi li he da qiao
+伊犁惠远古城	yi li hui yuan gu cheng
+伊犁将军府	yi li jiang jun fu
+伊犁州博物馆	yi li zhou bo wu guan
+翼伦堂	yi lun tang
+一面坡国家森林公园	yi mian po guo jia sen lin gong yuan
+艺圃	yi pu
+易事贴	yi shi tie
+伊斯兰教圣墓	yi si lan jiao sheng mu
+意险	yi xian
+一线天	yi xian tian
+宜芸馆	yi yun guan
+银厂沟	yin chang gou
+银湖旅游中心	yin hu lv you zhong xin
+印加古城遗址	yin jia gu cheng yi zhi
+银山宝塔	yin shan bao ta
+茵斯布鲁克	yin si bu lu ke
+殷太师比干庙	yin tai shi bi gan miao
+隐秀桥	yin xiu qiao
+殷墟	yin xu
+音乐喷池	yin yue pen chi
+音乐寺	yin yue si
+迎宾处	ying bin chu
+营城子壁画墓	ying cheng zi bi hua mu
+莺歌海盐场	ying ge hai yan chang
+鹦哥岭	ying ge ling
+鹰角亭	ying jiao ting
+英西峰林走廊	ying xi feng lin zou lang
+应县木塔	ying xian mu ta
+永安莽喀诗碑	yong an mang ka shi bei
+永安湃围场殪虎诗碑	yong an pai wei chang yi hu shi bei
+永安石桥	yong an shi qiao
+永安市招待所	yong an shi zhao dai suo
+永安寺	yong an si
+永筹寺塔	yong chou si ta
+永川茶山竹海	yong chuan cha shan zhu hai
+永定土楼	yong ding tu lou
+雍和宫	yong he gong
+涌金楼	yong jin lou
+涌金门	yong jin men
+永宁城隍庙	yong ning cheng huang miao
+涌泉	yong quan
+涌腾泉	yong teng quan
+永通桥	yong tong qiao
+永兴岛	yong xing dao
+永佑寺舍利塔	yong you si she li ta
+游船	you chuan
+幽谷神潭	you gu shen tan
+幽居寺塔	you ju si ta
+佑顺寺	you shun si
+游仙寺	you xian si
+玉岑诗社	yu cen shi she
+雨禅寺大殿	yu chan si da dian
+鱼池泉	yu chi quan
+俞大猷墓	yu da you mu
+玉带滩	yu dai tan
+玉佛寺	yu fo si
+玉佛苑	yu fo yuan
+禹工城址	yu gong cheng zhi
+愚公泉	yu gong quan
+玉河泉	yu he quan
+浴鹄湾	yu hu wan
+雨花台风景名胜区	yu hua tai feng jing ming sheng qu
+玉环泉	yu huan quan
+玉皇顶	yu huang ding
+玉皇飞云	yu huang fei yun
+玉皇阁	yu huang ge
+玉皇观	yu huang guan
+玉皇山庄	yu huang shan zhuang
+玉垒山公园	yu lei shan gong yuan
+郁林观石刻	yu lin guan shi ke
+榆林窑	yu lin yao
+鱼鳞洲	yu lin zhou
+玉龙雪山	yu long xue shan
+御码头	yu ma tou
+玉门关	yu men guan
+禹门口	yu men kou
+于木兰作诗碑	yu mu lan zuo shi bei
+雨涅水石刻造像	yu nie shui shi ke zao xiang
+于谦祠	yu qian ci
+于谦墓	yu qian mu
+玉泉	yu quan
+玉泉狩猎场	yu quan shou lie chang
+豫让桥	yu rang qiao
+玉山	yu shan
+雨山积雪	yu shan ji xue
+禹王台	yu wang tai
+喻英军	yu ying jun
+豫园	yu yuan
+鱼沼飞梁	yu zhao fei liang
+渝中区珊瑚公园	yu zhong qu shan hu gong yuan
+元好问墓	yuan hao wen mu
+圆觉寺砖塔	yuan jue si zhuan ta
+圆明园遗址	yuan ming yuan yi zhi
+原起寺	yuan qi si
+圜丘坛	yuan qiu tan
+元上城遗址	yuan shang cheng yi zhi
+元上都城遗址	yuan shang du cheng yi zhi
+鼋头渚	yuan tou zhu
+鸳鸯溪	yuan yang xi
+圆照寺	yuan zhao si
+越城遗迹	yue cheng yi ji
+月观亭	yue guan ting
+悦海公园	yue hai gong yuan
+跃华印刷	yue hua yin shua
+阅吉楼	yue ji lou
+粤军阵亡烈士墓	yue jun zhen wang lie shi mu
+约克堡	yue ke bao
+岳麓书院	yue lu shu yuan
+岳庙	yue miao
+岳王庙	yue wang miao
+岳王墓庙	yue wang mu miao
+悦心殿	yue xin dian
+越秀山	yue xiu shan
+月牙泉	yue ya quan
+岳亿公文包	yue yi gong wen bao
+熨斗泉	yun dou quan
+云冈第五第大窟	yun gang di wu di da ku
+云冈东部窟群	yun gang dong bu ku qun
+云冈露天大佛	yun gang lu tian da fo
+云冈石窟	yun gang shi ku
+云冈昙曜五窟	yun gang tan yao wu ku
+云冈五华洞	yun gang wu hua dong
+云冈西部窟群	yun gang xi bu ku qun
+晕机	yun ji
+云接寺塔	yun jie si ta
+云居寺	yun ju si
+云居寺塔	yun ju si ta
+云林寺	yun lin si
+云岭石造像	yun ling shi zao xiang
+云龙山	yun long shan
+云龙山石佛	yun long shan shi fo
+云楼泉	yun lou quan
+云栖景区	yun qi jing qu
+云栖竹径	yun qi zhu jing
+云栖竹景	yun qi zhu jing
+云杉坪	yun shan ping
+云山胜地	yun shan sheng di
+陨石山自然保护区	yun shi shan zi ran bao hu qu
+云水洞	yun shui dong
+云台山	yun tai shan
+云岩寺二山门	yun yan si er shan men
+云岩寺塔	yun yan si ta
+云月湖	yun yue hu
+皂河龙王庙	zao he long wang miao
+藻咏厅	zao yong ting
+则查洼	ze cha wa
+则天庙	ze tian miao
+憎冠蜂	zeng guan feng
+曾母暗沙	zeng mu an sha
+扎龙自然保护区	zha long zi ran bao hu qu
+扎什伦布寺	zha shi lun bu si
+渣滓洞	zha zi dong
+斋宫	zhai gong
+湛露泉	zhan lu quan
+瞻鲁台	zhan lu tai
+栈桥	zhan qiao
+站台票	zhan tai piao
+詹天佑铜像	zhan tian you tong xiang
+张关水溶洞风景区	zhang guan shui rong dong feng jing qu
+丈和殿	zhang he dian
+张家界	zhang jia jie
+丈人峰	zhang ren feng
+张氏帅府	zhang shi shuai fu
+张学良宅	zhang xue liang zhai
+赵杲观	zhao gao guan
+昭关石塔	zhao guan shi ta
+赵邯郸故城	zhao han dan gu cheng
+昭觉寺	zhao jue si
+昭君岛	zhao jun dao
+兆麟公园	zhao lin gong yuan
+昭陵	zhao ling
+昭庙	zhao miao
+昭明禅寺	zhao ming chan si
+昭苏草原	zhao su cao yuan
+赵无极旧居	zhao wu ji jiu ju
+招隐寺	zhao yin si
+赵州桥	zhao zhou qiao
+赵州陀罗尼经幢	zhao zhou tuo luo ni jing chuang
+哲蚌寺	zhe bang si
+浙江省博物馆	zhe jiang sheng bo wu guan
+柘林瀑	zhe lin pu
+浙西大峡谷	zhe xi da xia gu
+浙西大峡谷狮象湾	zhe xi da xia gu shi xiang wan
+浙西大峡谷嬉水滩	zhe xi da xia gu xi shui tan
+浙西天滩风景区	zhe xi tian tan feng jing qu
+镇北堡西部影视城	zhen bei bao xi bu ying shi cheng
+珍妃井	zhen fei jing
+镇岗塔	zhen gang ta
+镇国寺塔	zhen guo si ta
+镇海楼	zhen hai lou
+镇海寺	zhen hai si
+镇淮楼	zhen huai lou
+贞节贾母碑	zhen jie jia mu bei
+真觉寺	zhen jue si
+阵庆歼灭战纪念碑	zhen qing jian mie zhan ji nian bei
+镇朔楼	zhen shuo lou
+真武庙	zhen wu miao
+珍珠城	zhen zhu cheng
+珍珠泉	zhen zhu quan
+郑板桥故居	zheng ban qiao gu ju
+正北楼	zheng bei lou
+郑成功纪念馆	zheng cheng gong ji nian guan
+郑成功史迹	zheng cheng gong shi ji
+证果寺	zheng guo si
+郑文英墓	zheng wen ying mu
+知春亭	zhi chun ting
+直达快车	zhi da kuai che
+智度寺塔	zhi du si ta
+直飞	zhi fei
+植钢筋	zhi gang jin
+智公泉	zhi gong quan
+智慧海	zhi hui hai
+之江国家旅游度假区	zhi jiang guo jia lv you du jia qu
+织金洞	zhi jin dong
+植物园	zhi wu yuan
+知鱼泉	zhi yu quan
+祗园寺	zhi yuan si
+支云塔	zhi yun ta
+织造署旧址	zhi zao shu jiu zhi
+中餐厅荷花轩	zhong can ting he hua xuan
+中共一大会址	zhong gong yi da hui zhi
+中国茶叶博物馆	zhong guo cha ye bo wu guan
+中国革命博物馆	zhong guo ge ming bo wu guan
+中国古代造纸印刷文化村	zhong guo gu dai zao zhi yin shua wen hua cun
+中国科学技术馆	zhong guo ke xue ji shu guan
+中国历史博物馆	zhong guo li shi bo wu guan
+中国美术馆	zhong guo mei shu guan
+中国民俗文化村	zhong guo min su wen hua cun
+中国丝绸博物馆	zhong guo si chou bo wu guan
+中国猿人遗址	zhong guo yuan ren yi zhi
+中国紫檀博物馆	zhong guo zi tan bo wu guan
+中和殿	zhong he dian
+中华回乡风情园	zhong hua hui xiang feng qing yuan
+中华门	zhong hua men
+中华民族园	zhong hua min zu yuan
+中会寺	zhong hui si
+中泠泉	zhong ling quan
+钟楼	zhong lou
+中山公园	zhong shan gong yuan
+中山国都城遗址	zhong shan guo du cheng yi zhi
+中山纪念林	zhong shan ji nian lin
+中山陵	zhong shan ling
+钟山陆游题名石刻	zhong shan lu you ti ming shi ke
+中苏友谊纪念塔	zhong su you yi ji nian ta
+中天门	zhong tian men
+中卫高庙	zhong wei gao miao
+中卫寺口	zhong wei si kou
+中央大街步行街	zhong yang da jie bu xing jie
+中央电视塔	zhong yang dian shi ta
+中央广播电视塔	zhong yang guang bo dian shi ta
+中央农民运动讲习所	zhong yang nong min yun dong jiang xi suo
+中英街	zhong ying jie
+中岳庙	zhong yue miao
+钟仔房	zhong zai fang
+中转处	zhong zhuan chu
+周处庙	zhou chu miao
+周恩来邓颖超纪念馆	zhou en lai deng ying chao ji nian guan
+周恩来故居	zhou en lai gu ju
+周恩来同志少年读书旧址纪念馆	zhou en lai tong zhi shao nian du shu jiu zhi ji nian guan
+周恩来在津活动旧址	zhou en lai zai jin huo dong jiu zhi
+周公祠	zhou gong ci
+周口店鱼化石产地	zhou kou dian yu hua shi chan di
+周庄	zhou zhuang
+朱家里	zhu jia li
+煮糠泉	zhu kang quan
+朱美拉大清真寺	zhu mei la da qing zhen si
+珠穆朗玛峰	zhu mu lang ma feng
+朱砂泉	zhu sha quan
+朱氏牌楼	zhu shi pai lou
+竹湾海滩	zhu wan hai tan
+转轮藏	zhuan lun cang
+撞道口	zhuang dao kou
+状元街	zhuang yuan jie
+准二	zhun er
+准三	zhun san
+准四	zhun si
+准五	zhun wu
+卓刀泉	zhuo dao quan
+卓古墓群	zhuo gu mu qun
+卓锡泉	zhuo xi quan
+濯缨泉	zhuo ying quan
+拙政园	zhuo zheng yuan
+紫大阁	zi da ge
+自凤冢	zi feng zhong
+兹湖	zi hu
+紫金山天文台	zi jin shan tian wen tai
+子久草堂	zi jiu cao tang
+紫龙山寨	zi long shan zhai
+紫帽山	zi mao shan
+紫气东来城关	zi qi dong lai cheng guan
+自求恩模范病室旧址	zi qiu en mo fan bing shi jiu zhi
+紫全山天文台	zi quan shan tian wen tai
+资圣寺	zi sheng si
+资寿寺	zi shou si
+自塔	zi ta
+紫霞湖	zi xia hu
+自由女神像	zi you nv shen xiang
+自云观	zi yun guan
+紫竹院	zi zhu yuan
+邹容墓	zou rong mu
+祖玛金字塔	zu ma jin zi ta
+祖氏石坊	zu shi shi fang
+祖师塔	zu shi ta
+祖越寺	zu yue si
+醉白池	zui bai chi
+尊胜陀罗尼经幢	zun sheng tuo luo ni jing chuang
+左权墓	zuo quan mu
