@@ -145,11 +145,11 @@ super + {Left,Down,Up,Right}
 ## 7. custom functions
 ##=============================================================================
 
-# rotate (only in the parent of the focused)
+# rotate (only inside the parent of current focused)
 super + r
     bspc node @parent -R 90
 
-# another rotate
+# another rotate method (with a bug, as an example in bilibili article)
 # super + r
 #     bspc node -f @parent; \
 #     bspc node -R 90; \
@@ -159,15 +159,13 @@ super + r
 super + shift + r
     bspc node @/ -R 90
 
-# hide window
-#   copied from https://wiki.gentoo.org/wiki/Bspwm
-super + v
-    bspc node -g hidden
+# hide window, copied from https://wiki.gentoo.org/wiki/Bspwm
+# super + v
+#     bspc node -g hidden
 
-# unhide window
-#   copied from https://wiki.gentoo.org/wiki/Bspwm
-super + shift + v
-    bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+# unhide window, copied from https://wiki.gentoo.org/wiki/Bspwm
+# super + shift + v
+#     bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
 # switch between tiled and floating window (a help to a bilibili audience)
 # super + a
@@ -182,6 +180,11 @@ super + shift + v
 #   https://my-take-on.tech/2020/07/03/some-tricks-for-sxhkd-and-bspwm/#rotating-windows-tree
 # super + shift + {d,a}
 #     bspc node @/ -C {forward,backward}
+
+# scratchpad
+# See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
+super + u
+    scratchpad.sh dropdown
 
 ##=============================================================================
 ## 8. my own settings out of bspwm
@@ -201,11 +204,6 @@ XF86MonBrightness{Down,Up}
 # screenshoot
 super + Print
     scrot
-
-# scratchpad
-# See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
-super + u
-    scratchpad.sh dropdown
 
 # launch applications
 ctrl + alt + {r,f,p,s,g,z}

@@ -1,5 +1,5 @@
 #!/bin/bash
 for i in `find -name \*.txt`
 do
-    vim -s toutf8.vi $i
+    vim -s to_utf8.vi $i
 done

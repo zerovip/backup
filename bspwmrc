@@ -11,7 +11,8 @@ ${HOME}/.config/polybar/launch.sh
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 # 边框宽度
-bspc config border_width         3
+bdwdt=3
+bspc config border_width         $bdwdt
 # 窗口间距
 bspc config window_gap           8
 # 正在使用的窗口边框颜色
@@ -37,5 +38,10 @@ bspc rule -a Zathura state=tiled split_ratio=0.6
 # scratchpad
 # See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
 #   例子中最后的 -e "zsh -i" 有问题，不带引号就行
-bspc rule -a dropdown sticky=on state=floating hidden=on
+Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
+Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2)
+bspc rule -a dropdown sticky=on state=floating hidden=on locked=on \
+    rectangle=`expr $Xaxis \* 4 / 5`x`expr $Yaxis \* 4 / 5`+`expr \
+            $Xaxis / 10 - $bdwdt`+`expr $Yaxis / 5 - $bdwdt \* 2 - 1`
 alacritty --class Alacritty,dropdown -e zsh -i &
+
