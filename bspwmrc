@@ -41,7 +41,8 @@ bspc rule -a Zathura state=tiled split_ratio=0.6
 Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2)
 bspc rule -a dropdown sticky=on state=floating hidden=on locked=on \
-    rectangle=`expr $Xaxis \* 4 / 5`x`expr $Yaxis \* 4 / 5`+`expr \
-            $Xaxis / 10 - $bdwdt`+`expr $Yaxis / 5 - $bdwdt \* 2 - 1`
-alacritty --class Alacritty,dropdown -e zsh -i &
+    rectangle=`expr $Xaxis \* 4 / 5`x`expr $Yaxis \* 3 / 5`+`expr \
+            $Xaxis / 10 - $bdwdt`+`expr $Yaxis \* 2 / 5 - $bdwdt \* 2 - 1`
+alacritty --class Alacritty,dropdown \
+    --config-file ${HOME}/.config/alacritty/alacritty_scratch.yml -e zsh -i &
 

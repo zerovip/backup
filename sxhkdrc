@@ -1,9 +1,9 @@
 ###########################################
 ##                                       ##
 ## File:     sxhkdrc                     ##
-## Version:  2.0                         ##
+## Version:  2.1                         ##
 ## Author:   Zero                        ##
-## Date:     2020-08-31                  ##
+## Date:     2020-09-08                  ##
 ##                                       ##
 ###########################################
 ##                                       ##
@@ -168,12 +168,12 @@ super + shift + r
 #     bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
 # switch between tiled and floating window (a help to a bilibili audience)
-# super + a
-#     if [ "$(bspc query -N -n focused.floating)" ]; then \
-#         bspc node -f last.tiled.local; \
-#     else \
-#         bspc node -f last.floating.local; \
-#     fi
+super + a
+    if [ "$(bspc query -N -n focused.floating)" ]; then \
+        bspc node -f last.tiled.local; \
+    else \
+        bspc node -f last.floating.local; \
+    fi
 
 # Rotate tree
 #   copied from 
