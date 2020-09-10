@@ -103,17 +103,13 @@ alias la='ll -a'
 alias lh='ll -h'
 alias vi='vim'
 alias grep="grep --color=auto"
-#alias -s py=vi    # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
-#alias -s js=vi    #暂时用不到
-#alias -s c=vi
-#alias -s java=vi
-#alias -s txt=vi
-#alias -s gz='tar -xzvf'
-#alias -s tgz='tar -xzvf'
-#alias -s zip='unzip'
-#alias -s bz2='tar -xjvf'
 
 alias mount='mount -o gid=ehizil,uid=ehizil,fmask=113,dmask=002' # mount 后能以用户身份写入
+
+if [ $(xprop -id $WINDOWID WM_CLASS | cut -d \" -f 4) = scratchpad ]
+then
+    alias vim='vim -c "colorscheme dracula"'
+fi
 
 #alias cp='acp -g'
 #alias mv='amv -g'    #提前安装advcp，用来显示移动和复制的进度条
@@ -130,12 +126,6 @@ function mvr() {
 # alias mv='mvr'
 # move 好像会导致在同一个文件夹下重命名成为复制？不应该啊
 # 于是干脆连复制的命令也不更改了，使用 cpr 作为带 bar 的复制好了
-
-# alias foxit='/home/ehizil/opt/foxitsoftware/foxitreader/FoxitReader.sh &'
-# 福昕阅读器
-
-alias n='nnn -e' # 命令行式的文件管理器，-e 使得直接打开文件
-# nnn 文件浏览器，类似的还有 vifm
 
 function sudo-command-line() {
 [[ -z $BUFFER ]] && zle up-history

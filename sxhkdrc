@@ -184,7 +184,7 @@ super + a
 # scratchpad
 # See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
 super + u
-    scratchpad.sh scratchpad
+    ${HOME}/.config/bspwm/scratchpad.sh scratchpad
 
 ##=============================================================================
 ## 8. my own settings out of bspwm

@@ -60,6 +60,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
 Plug 'tmsvg/pear-tree'

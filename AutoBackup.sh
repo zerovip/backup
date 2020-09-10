@@ -47,7 +47,7 @@ cp -r ~/.bin/ ~/backup/backup/
 # cp -r ~/.local/share/kservices5/ ~/backup/backup/
 
 # bspwm 一个平铺窗口管理器的配置备份
-cp ~/.config/bspwm/bspwmrc ~/backup/backup/
+cp -r ~/.config/bspwm/ ~/backup/backup/
 
 # bspwm 需要的监听键盘输入的 sxhkd 的配置备份
 cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
