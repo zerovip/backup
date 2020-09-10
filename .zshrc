@@ -106,6 +106,7 @@ alias grep="grep --color=auto"
 
 alias mount='mount -o gid=ehizil,uid=ehizil,fmask=113,dmask=002' # mount 后能以用户身份写入
 
+# 确保在 scratchpad 中的 vim 也能用上 dracula 主题
 if [ $(xprop -id $WINDOWID WM_CLASS | cut -d \" -f 4) = scratchpad ]
 then
     alias vim='vim -c "colorscheme dracula"'
