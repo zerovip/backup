@@ -29,7 +29,8 @@ super + Return
 
 # program launcher
 super + space
-	dmenu_run -b -fn 'Fantasque Sans Mono-16'
+    dmenu_run -b -fn 'Fantasque Sans Mono-16' -p "dmenu:" \
+        -nb "#222" -nf "#dfdfdf" -sb "#444" -sf "#ffb52a"
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -204,6 +205,8 @@ XF86MonBrightness{Down,Up}
 # screenshoot
 super + Print
     scrot
+Print
+    flameshot gui
 
 # launch applications
 ctrl + alt + {r,f,p,s,g,z}

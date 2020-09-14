@@ -10,18 +10,12 @@ ${HOME}/.config/polybar/launch.sh
 # network-manager 的托盘
 nm-applet &
 
-# 边框宽度
 bdwdt=3
 bspc config border_width         $bdwdt
-# 窗口间距
 bspc config window_gap           8
-# 正在使用的窗口边框颜色
-bspc config focused_border_color \#7FFF00
-# 正常的窗口边框颜色
-bspc config normal_border_color \#FFFACD
-
+bspc config focused_border_color    \#7FFF00
+bspc config normal_border_color     \#FFFACD
 bspc config split_ratio          0.5
-bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
