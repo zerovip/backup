@@ -43,18 +43,25 @@ file_path: $13
 draft: ${14:true}
 #------------------------------------------------------------------------------
 # 一些有用的 snippets：
-#   黑块bbk：<span class='black_block' onclick="ChangeClassBlackBlock(this)">text</span>
-#   背景色bjs：<span class='notation_color'>text</span>
-#   图片img：![示例图片](/images/example.jpeg)
-#   加密头jmt
-#   加密尾jmw
+#   黑块    bbk：<span class='black_block' onclick="ChangeClassBlackBlock(this)">text</span>
+#   背景色  bjj：<span class='notation_color'>text</span>
+#   背景段  bjd：<div class='notation_color'>text</div>
+#   图片    img：![示例图片](/images/example.jpeg)
+#   加密头  jmt
+#   加密尾  jmw
 #------------------------------------------------------------------------------
 ---
 $0
 endsnippet
 
-snippet bjs "背景色" iA
+snippet bjj "背景句" iA
 <span class='notation_color'>$0</span>
+endsnippet
+
+snippet bjd "背景段" iA
+<div class='notation_color'>
+
+$0</div>
 endsnippet
 
 snippet bbk "black_block 防剧透黑块" iA

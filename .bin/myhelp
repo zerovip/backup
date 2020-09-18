@@ -24,6 +24,7 @@ help_list = '''
     天文博物馆：        stellarium
     查词典：            goldendict
     屏幕键盘：          screenkey
+    Hugo 测试：         hugo server -wDF
     剪辑：              kdenlive
     播放器：            smplayer
     阅读 pdf：          zathura
