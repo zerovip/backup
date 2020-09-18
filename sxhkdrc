@@ -1,9 +1,9 @@
 ###########################################
 ##                                       ##
 ## File:     sxhkdrc                     ##
-## Version:  2.1                         ##
+## Version:  2.2                         ##
 ## Author:   Zero                        ##
-## Date:     2020-09-08                  ##
+## Date:     2020-09-18                  ##
 ##                                       ##
 ###########################################
 ##                                       ##
@@ -31,6 +31,7 @@ super + Return
 super + space
     dmenu_run -b -fn 'Fantasque Sans Mono-16' -p "dmenu:" \
         -nb "#222" -nf "#dfdfdf" -sb "#444" -sf "#ffb52a"
+# the colors are consistent with in polybar
 
 # make sxhkd reload its configuration files:
 super + Escape
