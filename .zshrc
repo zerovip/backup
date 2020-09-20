@@ -71,9 +71,9 @@ fi
 #---------------------------------------#
 HISTFILE=~/.histfile
 #历史记录文件
-HISTSIZE=3000
+HISTSIZE=30000
 #历史记录条目数量
-SAVEHIST=3000
+SAVEHIST=30000
 #注销后保存的历史记录条目数量
 setopt INC_APPEND_HISTORY
 #以附加的方式写入历史记录
