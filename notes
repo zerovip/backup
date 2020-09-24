@@ -30,6 +30,7 @@
     54.简单学习 xlib programming，看看 dmenu、flameshot 这种为什么能不呼出一个窗口
     55.bspwm 里 presel_feedback 、status_prefix 配合 polybar 的设置问题
     56.要是换新电脑的话，编译内核时的几个警告给他处理了，无非就是一些驱动的问题
+    57.bilibili 观众推荐：nix OS，OS 我应该不会去用，但 nix 作为包管理器可以试一下
 
 2.系统日志
     一以贯之地坚持区分所有用户与个人用户，一切更改尽量在个人文件夹下进行！
