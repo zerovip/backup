@@ -90,6 +90,19 @@ colorscheme gruvbox
 set background=dark
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 0.5. dracula
+" another theme
+" 被动工具
+" For the theme project, see https://draculatheme.com/
+" For vim theme, see https://draculatheme.com/vim
+" Its github: https://github.com/dracula/vim/
+"----------------------------------------------------------
+" 完全不在设置中使用，只是在 .zshrc 中判断一下，把 vim 用 alias
+"   给它设置一个别名，alias vim='vim -c \"colorscheme dracula\"'
+"   让在特定情况下（即在 scratchpad 里）vim 打开后执行这一个指令，
+"   保持 scratchpad 里 vim 的主题与 alacritty 主题一致
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 1. lightline
 " for the bottom status line
 " Similar tools:
