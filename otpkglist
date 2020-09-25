@@ -5,4 +5,17 @@ gstreamer0.10-base
 gstreamer0.10-base-plugins
 nerd-fonts-fantasque-sans-mono
 polybar
+python2-apsw
+python2-css-parser
+python2-html2text
+python2-html5-parser
+python2-markdown
+python2-mechanize
+python2-netifaces
+python2-pychm
+python2-pyqt5
+python2-pyqtwebengine
+python2-regex
+python2-sip-pyqt5
+python2-unrardll
 siji-git
