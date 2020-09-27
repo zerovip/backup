@@ -29,11 +29,16 @@ bspc rule -a Zathura state=tiled split_ratio=0.6
 # 尝试一下 external_rules
 # bspc config external_rules_command "${HOME}/.config/bspwm/try_e_r"
 
-# scratchpad
-# See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
 Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2)
+
+# scratchpad
+# See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
 bspc rule -a scratchpad sticky=on state=floating locked=on \
     rectangle=`expr $Xaxis \* 4 / 5`x`expr $Yaxis \* 3 / 5`+`expr \
             $Xaxis / 10 - $bdwdt`+`expr $Yaxis \* 2 / 5 - $bdwdt \* 2 - 1`
 
+# Picture in Picture of firefox
+bspc rule -a firefox:Toolkit sticky=on state=floating \
+    rectangle=`expr $Xaxis / 3`x`expr $Yaxis / 3`+`expr \
+    $Xaxis \* 2 / 3 - $bdwdt \* 2`+`expr $Yaxis \* 2 / 3 - $bdwdt \* 2`
