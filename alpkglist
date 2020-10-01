@@ -9,7 +9,6 @@ binutils
 bison
 bspwm
 calibre
-chromium
 dhcpcd
 dmenu
 efibootmgr
@@ -61,6 +60,7 @@ p7zip
 pacman-contrib
 pandoc
 patch
+pcmanfm
 photoflare
 pkgconf
 pkgfile
@@ -81,6 +81,7 @@ stellarium
 sudo
 sxhkd
 sxiv
+task
 texinfo
 texlive-bibtexextra
 texlive-core

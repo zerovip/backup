@@ -39,6 +39,6 @@ bspc rule -a scratchpad sticky=on state=floating locked=on \
             $Xaxis / 10 - $bdwdt`+`expr $Yaxis \* 2 / 5 - $bdwdt \* 2 - 1`
 
 # Picture in Picture of firefox
-bspc rule -a firefox:Toolkit sticky=on state=floating \
+bspc rule -a firefox:Toolkit sticky=on state=floating follow=off \
     rectangle=`expr $Xaxis / 3`x`expr $Yaxis / 3`+`expr \
     $Xaxis \* 2 / 3 - $bdwdt \* 2`+`expr $Yaxis \* 2 / 3 - $bdwdt \* 2`
