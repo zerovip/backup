@@ -3,6 +3,7 @@ foxitreader
 gstreamer0.10
 gstreamer0.10-base
 gstreamer0.10-base-plugins
+lean-community
 nerd-fonts-fantasque-sans-mono
 polybar
 python2-apsw

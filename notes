@@ -31,6 +31,11 @@
     55.bspwm 里 presel_feedback 、status_prefix 配合 polybar 的设置问题
     56.要是换新电脑的话，编译内核时的几个警告给他处理了，无非就是一些驱动的问题
     57.bilibili 观众推荐：nix OS，OS 我应该不会去用，但 nix 作为包管理器可以试一下
+    58.学习 lean，学习 lean-community 3 以便快速熟悉 lean，等 lean 4 出来以后
+        就大有可为了. 可以做的事情有：
+        1. 学习打包 AUR
+        2. 写一个 vim 的 lean 模式
+        3. 写文档、出视频教程等
 
 2.系统日志
     一以贯之地坚持区分所有用户与个人用户，一切更改尽量在个人文件夹下进行！
