@@ -33,6 +33,7 @@ lightdm
 lightdm-gtk-greeter
 linux
 linux-firmware
+luit
 m4
 make
 man-db
@@ -105,7 +106,6 @@ xorg-fonts-encodings
 xorg-fonts-misc
 xorg-font-util
 xorg-iceauth
-xorg-luit
 xorg-mkfontscale
 xorg-server
 xorg-server-common
