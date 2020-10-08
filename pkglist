@@ -4,6 +4,7 @@ alsa-utils
 autoconf
 automake
 base
+bbswitch
 binutils
 bison
 bspwm

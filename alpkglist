@@ -5,6 +5,7 @@ autoconf
 autojump
 automake
 base
+bbswitch
 binutils
 bison
 bspwm
@@ -55,6 +56,8 @@ numlockx
 nvidia
 openscad
 openssh
+optimus-manager
+optimus-manager-qt
 os-prober
 otf-fantasque-sans-mono
 p7zip

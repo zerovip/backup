@@ -4,5 +4,7 @@ gstreamer0.10
 gstreamer0.10-base
 gstreamer0.10-base-plugins
 nerd-fonts-fantasque-sans-mono
+optimus-manager
+optimus-manager-qt
 polybar
 siji-git

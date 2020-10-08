@@ -18,12 +18,17 @@
     polybar 需要的一个字体
 8. xtitle[已卸载]
     bspwm 的作者为了 external_rule 写的一个工具
-9. imewlconverter-cli[已卸载]
+9. [已卸载]imewlconverter-cli
     一个输入法词库转换程序
-10. baidunetdisk[已卸载]
+10. [已卸载]baidunetdisk
     百度网盘
-11. lean-community
+11. [已卸载]lean-community
     lean 团队正在开发 lean 4，于是 3 由社区接管，数学证明
+    暂时先卸载了，有时间再用
+12. optimus-manager-qt
+    可以切换双显卡的方案，参考：https://www.bwsl.wang/arch/67.html
+13. optimus-manager
+    optimus-manager-qt 的依赖
 
 otherPKGs（文件夹）:
     这个文件夹下是从官网下载的软件，不是从 AUR 上下载的.
@@ -32,3 +37,6 @@ otherPKGs（文件夹）:
 1. downloadhelper
     是 firefox 插件的合作应用
     对应的文件夹是解压目录，也是安装目录，不能删
+2. bspwm
+    从 github 上 clone 下来的，希望有时间的时候自己编译一个 debug 模式看看
+    以及 gdb 调试等，见 https://github.com/baskerville/bspwm/issues/1198
