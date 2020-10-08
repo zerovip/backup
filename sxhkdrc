@@ -178,7 +178,7 @@ super + shift + r
 #     bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
 # switch between tiled and floating window (a help to a bilibili audience)
-super + a
+super + z
     if [ "$(bspc query -N -n focused.floating)" ]; then \
         bspc node -f last.tiled.local; \
     else \
