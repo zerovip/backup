@@ -1,9 +1,9 @@
 ###########################################
 ##                                       ##
 ## File:     sxhkdrc                     ##
-## Version:  2.3                         ##
+## Version:  2.4                         ##
 ## Author:   Zero                        ##
-## Date:     2020-10-07                  ##
+## Date:     2020-10-11                  ##
 ##                                       ##
 ###########################################
 ##                                       ##
@@ -104,16 +104,8 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-# super + {_,shift + }{1-9,0}
-# 	bspc {desktop -f,node -d} '^{1-9,10}'
-
-# focus the given desktop
-super + {1-9,0}
-	bspc desktop -f '^{1-9,10}'
-
-# send to the given desktop
-super + shift + {1-9,0}
-	bspc node -d '^{1-9,10}' --follow
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
 
 ##=============================================================================
 ## 5. preselect
@@ -155,6 +147,14 @@ super + {Left,Down,Up,Right}
 ## 7. custom functions
 ##=============================================================================
 
+# send to the given desktop and then focus
+super + alt + {1-9,0}
+	bspc node -d '^{1-9,10}' --follow
+
+# rotate the whole desktop
+super + shift + r
+    bspc node @/ -R 90
+
 # rotate (only inside the parent of current focused)
 super + r
     bspc node @parent -R 90
@@ -164,10 +164,6 @@ super + r
 #     bspc node -f @parent; \
 #     bspc node -R 90; \
 #     bspc node -f @second
-
-# rotate the whole desktop
-super + shift + r
-    bspc node @/ -R 90
 
 # hide window, copied from https://wiki.gentoo.org/wiki/Bspwm
 # super + v
