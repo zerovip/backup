@@ -116,7 +116,23 @@ else
     echo "配置文件没有变化，无需备份！"
 fi
 
-# 数学区文件同步到 GitHub
+# 豆瓣和 mastodon 同步到 GitHub 私人仓库
+cd ~/backup/archive
+echo ""
+echo "========================================================================="
+echo ""
+echo "下面是豆瓣、Mastodon 文件的备份"
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+    git add .
+    date=`date +%Y%m%d`
+    git commit -m "Auto Backuping on "$date
+    git push
+    echo "豆瓣、Mastodon 备份文件有一些变化，已经备份成功！"
+else
+    echo "豆瓣、Mastodon 备份文件没有变化，无需备份！"
+fi
+
+# 数学区文件同步到 GitHub 私人仓库
 cd ~/math-works
 echo ""
 echo "========================================================================="
