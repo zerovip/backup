@@ -71,7 +71,7 @@ Plug 'tpope/vim-commentary'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
 Plug 'ajh17/VimCompletesMe'
-" Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-easy-align'
 
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -371,13 +371,13 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 " 11. vim-easy-align
 " for alignment
 " See, https://github.com/junegunn/vim-easy-align
-" 
+" 主动工具，以后要好好学习 
 "----------------------------------------------------------
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-" xmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
 
-" " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-" nmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " " Markdown 制表
 " " map <leader>tt vipga<CR><CR>*|
