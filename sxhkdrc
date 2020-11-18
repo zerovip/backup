@@ -215,4 +215,4 @@ Print
 
 # launch applications
 ctrl + alt + {r,f,p,s,g,z}
-    {foxitreader,firefox,photoflare,smplayer,goldendict,zathura}
+    {foxitreader,firefox,pcmanfm,smplayer,goldendict,zathura}
