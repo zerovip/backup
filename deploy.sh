@@ -9,8 +9,17 @@ echo -e "【 \033[0;32mDeploying updates to GitHub...\033[0m 】"
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 # 进行加密
 echo -e "【 下面是加密内容 】"
-source ~/codes/hugo_encryptor/hugo-encryptor/bin/activate
-python hugo-encryptor.py
+source ~/codes/hugo-encryptor_venv/bin/activate
+#----------------------------------------------
+# cd ~/codes/hugo_encryptor
+# vim requirements.txt # 把 pip 安装的包的版本号掉，以免不兼容
+# pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+# 这里 pip 不是系统变量，而是进了 venv 环境以后才有的命令
+#----------------------------------------------
+python ~/codes/hugo_encryptor/hugo-encryptor.py
+# 这里全都改成使用绝对路径了
+# 这样一来，从 github 上 clone 下来 hugo-encryptor 的库之后，
+#   什么都不用做，这个脚本就是 ok 的.
 deactivate
 echo -e "【 加密内容结束 】"
 
