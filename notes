@@ -719,4 +719,14 @@
                         以后的风险也小一些
                     以及看到这些东西，我有一大堆疑惑：我需不需要安装 chromium 浏览器？按我的理解，应该. . . 不用的吧
     2020.11.11    在环球科学公众号里看到了 julia 的推荐，决定试一试
+    2020.12.03    开机时显示“failed to start light display manager”
+                    在网上查了一下，看到另一个人是由于系统启动比 dm 启动更快导致的（https://bbs.archlinux.org/viewtopic.php?id=256682 ），
+                        就把这个判断加上了，反正也是无害的操作. ——重启，不行. 但这次不提示错误了，一直闪光标.
+                    想到昨天升级了 xorg-server，降级了与之相关的一些包：
+                        xorg-server, xorg-server-common, xorg-server-devel, xorg-server-xephyr,
+                        xorg-server-xnest, xorg-server-xwayland. ——重启，不行.
+                    用 systemctl --state=failed 看 systemd 的日志，还发现了 optimus-manager 的错误！卸载，重启，搞定！
+                    去看了 optimus-manager 最新的 issue（https://github.com/Askannz/optimus-manager/issues/349 ），
+                        不少人都遇到了这个问题，根源是 python 升级到 3.9 了……
+                  这时发现 cd 的时候 autojump 也出现了问题，一鼓作气把几个 AUR 的软件包都重新 rebuild 了.
 
