@@ -9,7 +9,7 @@ echo -e "【 \033[0;32mDeploying updates to GitHub...\033[0m 】"
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 # 进行加密
 echo -e "【 下面是加密内容 】"
-source ~/codes/hugo-encryptor_venv/bin/activate
+source ~/codes/hugo_encryptor_venv/bin/activate
 #----------------------------------------------
 # cd ~/codes/hugo_encryptor
 # vim requirements.txt # 把 pip 安装的包的版本号掉，以免不兼容
