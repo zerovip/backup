@@ -729,4 +729,11 @@
                     去看了 optimus-manager 最新的 issue（https://github.com/Askannz/optimus-manager/issues/349 ），
                         不少人都遇到了这个问题，根源是 python 升级到 3.9 了……
                   这时发现 cd 的时候 autojump 也出现了问题，一鼓作气把几个 AUR 的软件包都重新 rebuild 了.
+    2020.12.03    hugo 的加密也出现点问题.
+                    GitHub 撤回上一个提交：git rebase -i HEAD~2
+                                           删去第二行
+                                           git push origin +master --force
+                    但如果对方知道 sha1 值的话还是可以看得到.
+
+
 
