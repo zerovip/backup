@@ -392,6 +392,7 @@ nmap ga <Plug>(EasyAlign)
 " now use alacritty
 set ttymouse=sgr
 set mouse=a
+set nocompatible
 
 " to solve a known issue of vim
 " See, https://github.com/mg979/vim-visual-multi/issues/120

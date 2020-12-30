@@ -80,6 +80,7 @@ python
 rime-double-pinyin
 rime-emoji
 rsync
+rustup
 screenkey
 scrot
 siji-git
@@ -162,6 +163,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xterm
 zathura
 zathura-pdf-mupdf
 zip
