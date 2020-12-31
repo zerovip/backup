@@ -22,6 +22,7 @@ flex
 gcc
 gimp
 git
+github-cli
 goldendict
 grub
 gtk2fontsel
@@ -70,6 +71,7 @@ python
 rime-double-pinyin
 rime-emoji
 rsync
+rustup
 screenkey
 scrot
 simplescreenrecorder

@@ -24,6 +24,7 @@ foxitreader
 gcc
 gimp
 git
+github-cli
 goldendict
 grub
 gstreamer0.10
@@ -80,6 +81,7 @@ python
 rime-double-pinyin
 rime-emoji
 rsync
+rustup
 screenkey
 scrot
 siji-git
