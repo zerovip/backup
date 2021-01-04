@@ -39,7 +39,6 @@ imagemagick
 intel-ucode
 julia
 kdenlive
-kristall
 libtool
 lightdm
 lightdm-gtk-greeter
@@ -78,6 +77,7 @@ pkgstats
 polybar
 proxychains-ng
 python
+qv2ray
 rime-double-pinyin
 rime-emoji
 rsync
@@ -106,7 +106,6 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
-trojan
 unrar
 unzip
 vi
