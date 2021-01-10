@@ -379,8 +379,11 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" " Markdown 制表
-" " map <leader>tt vipga<CR><CR>*|
+" 录制几个宏，方便在 markdown 表格里对齐
+let @c = "vipga*|"  " 中间对齐
+let @l = "vipga*|"      " 左对齐
+let @r = "vipga*|"    " 右对齐
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
