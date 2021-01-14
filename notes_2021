@@ -1,1 +1,14 @@
 2021 年 todo list 与日志记录
+
+2021.01.13  出门忘记带鼠标，这时才注意到我的触摸板没法点击的问题一直以来都没有解决.
+                于是迅速用手机找到触摸板的 wiki：https://wiki.archlinux.org/index.php/Touchpad_Synaptics
+                用键盘通过配置文件连上热点，安装 xf86-input-synaptics，然后修改 /etc/X11/xorg.conf.d/70-synaptics.conf
+                再重新登录，成功用上了触摸板.
+2021.01.14  今天发现 wiki 上有写 xf86-input-synaptics 不再活跃更新了，昨天慌乱之中没有注意到
+                于是又重新搞了 libinput 的配置，参考：https://wiki.archlinux.org/index.php/Libinput
+                所有可选的配置都在 `man 4 libinput`.
+            发现：1. 没办法同时边缘滚动和二指滚动了，如果同时设置了 Option "ScrollMethod" "edge"
+                    和 Option "ScrollMethod" "twofinger"，则会按照前一行执行，后一行不起作用.
+                  2. 小键盘不受 Option "DisableWhileTyping" "on" 的影响，即小键盘打字时，
+                    触摸板依然可以起作用. 这真的好奇怪，小键盘难道是 modifier keys ？不应该哇.
+

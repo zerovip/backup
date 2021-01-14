@@ -42,6 +42,10 @@ cp ~/.xprofile ~/backup/backup/
 # 所有自己写的程序存放处
 cp -r ~/.bin/ ~/backup/backup/
 
+# 触摸板的配置
+# cp /etc/X11/xorg.conf.d/70-synaptics.conf ~/backup/backup/
+cp /etc/X11/xorg.conf.d/30-touchpad.conf ~/backup/backup/
+
 # 应用在 plasma 的右击菜单中的自定义选项
 # 暂时还没有，先不用备份
 # cp -r ~/.local/share/kservices5/ ~/backup/backup/
