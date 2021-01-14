@@ -112,6 +112,7 @@ vi
 which
 wpa_supplicant
 xdotool
+xf86-input-synaptics
 xf86-video-intel
 xf86-video-vesa
 xorg-bdftopcf

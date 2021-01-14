@@ -98,7 +98,7 @@ bindkey "^[[B" history-beginning-search-forward
 #alias clc='clear'
 alias sudo='sudo '  #神奇的命令，使得 sudo 操作的命令也被展开
 alias ls='ls -F --color=auto'
-alias ll='ls -l'
+alias ll='ls -lv'
 alias la='ll -a'
 alias lh='ll -h'
 alias vi='vim'
