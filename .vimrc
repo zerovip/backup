@@ -83,10 +83,11 @@ call plug#end()
 " and, https://github.com/morhetz/gruvbox/wiki/Usage
 "----------------------------------------------------------
 colorscheme gruvbox
-" 使用下面的一行，等其他所有插件都加载完了再加载这个 gruvbox，
-"   会引起报错，因为在上面 lightline 里面指定了 gruvbox 主题，
-"   只能用上面的一条，直接指定主题. 关于 autocmd 还需要学习
-"autocmd vimenter * colorscheme gruvbox
+" 使用下面的一行，也就是 gruvbox 官方 wiki 里的语句，
+"   等其他所有插件都加载完了再加载这个 gruvbox，
+"   会导致 lightline 里自己定义的 buffer 颜色失效
+"   所以只能用上面的一条，直接指定主题. 关于 autocmd 还需要学习
+" autocmd vimenter * ++nested colorscheme gruvbox
 
 set background=dark
 
