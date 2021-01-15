@@ -31,6 +31,7 @@
     optimus-manager-qt 的依赖
 14. [已卸载]blades-bin
     blades 是另一个静态博客生成器，rust 写的，比 hugo 快十倍
+    但是太简陋了，还是用 hugo 吧
 15. [已卸载]castor
     一个浏览器，用来浏览 gopher、gemini 协议的东西
     就是太简陋了，添加书签添加俩还删不掉，没法加标签页
