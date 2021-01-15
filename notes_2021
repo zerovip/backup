@@ -11,4 +11,11 @@
                     和 Option "ScrollMethod" "twofinger"，则会按照前一行执行，后一行不起作用.
                   2. 小键盘不受 Option "DisableWhileTyping" "on" 的影响，即小键盘打字时，
                     触摸板依然可以起作用. 这真的好奇怪，小键盘难道是 modifier keys ？不应该哇.
+2021.01.15  尝试了一下用 minpac + plugpac.vim 管理 vim 的插件.
+                minpac 使用了最新的 vim8 package 的技术，plugpac 是其 wrapper，
+                以提供近似 vim-plug 的体验. 然而实际效果上并没有觉得打开速度有显著提升，
+                vim-plug 和 minpac 都是在 50ms 左右，效果并不明显.
+                而且 gruvbox 的主题加载可能有问题，因为语法高亮都显示不出来.
+                要解决这个问题还需要好好学习 minpac，而学习它又需要花费时间，
+                所以最后又回到了 vim-plug.
 

@@ -58,7 +58,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins (Using vim-plug to manage.)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'itchyny/lightline.vim'
