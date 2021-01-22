@@ -1,0 +1,170 @@
+# 此文件为我的耻辱柱！
+#
+# 因不了解 git bisect 命令，所以在有二分查找的需求的时候，
+#   我都没有想着去搜索一下，查一下，上来就吭吭吭，想自己写一个.
+#   还是用我仅有的 git 知识（git log 和 git reset）
+#   自己写一个脚本.？？？？？？？？？？
+# 耻辱啊！耻辱！我太自恋了！我为什么不先去谷歌里搜索一下呢？去百度一下也好啊！
+# 这么正常的需求，怎么可能只有你用得到？别人就没人用得到？
+# 太自恋了太自恋了. 为我浪费的 2 小时默哀.
+# 当然了，最后还没有写完，因为我不知道要怎么查看当前的 git 版本号，
+#   所以去查了一下，结果一查就发现了 git bisect 命令.
+#   你怎么现在不会知道查了？你打开文件决定自己写的时候为什么不去查一查？
+#
+# 耻辱！耻辱！耻辱！耻辱！耻辱！
+# 2021 年 1 月 22 日.
+
+#!/usr/bin/env python
+
+import datetime
+import fileinput
+import pathlib
+import subprocess
+import sys
+
+def mygit_help():
+    print('''
+Introduction:
+    Sometimes we suddenly find that something goes wrong in our codes, but at
+        first they were fine. So which commit broke this? How to bisect all the
+        commits quickly to find out the bad one? This tool is written for doing
+        that!
+
+Commands:
+    mygit help
+                to print this message;
+    mygit log /path/to/log/file
+                to generate a git log;
+    mygit prev
+                to reset to the previous version;
+    mygit next
+                to reset to the previous version;
+    mygit bisect /path/to/log/file
+                to bisect the commits;
+    mygit markg /path/to/log/file
+                to mark the current version good.
+    mygit markb /path/to/log/file
+                to mark the current version bad.
+
+Log file:
+    - If not set, the default path is `~/git_log_by_mygit_20200101` (today).
+    - Every line in the log file is of format
+            `96c8a9f 2020-01-01T19:00:00 /0`
+        where `96c8a9f`              is the commit hash,
+              `2020-01-01T19:00:00`  is the commit time,
+            and the last letter stands for state,
+                /0  means not tested
+                /g  means good
+                /b  means bad
+
+Usage:
+    - Use `mygit log` to generate the whole log;
+    - Use `mygit bisect` to reset to the middle commit;
+    - Test whether this commit is good;
+    - If good, use `mygit markg`,
+      if bad, use `mygit markb`;
+    - Continue `mygit bisect`.
+            ''')
+
+def runcmd(command):
+    ret = subprocess.run(command, shell = True)
+    if ret.returncode == 0:
+        return 0
+    else:
+        return(ret)
+
+# To create a log file.
+def mygit_log(path):
+    ret = runcmd([
+        'git log --date=format:"%Y-%m-%dT%H:%M:%S" --pretty=format:"%h %cd /0" > '
+        + path
+        ])
+    if ret == 0:
+        # To change the first and last line, indicates that before was good
+        #   but now is bad.
+        with open(path) as f:
+            lines = f.readlines()
+        lines[0] = lines[0].replace('/0', '/b')
+        lines[-1] = lines[-1].replace('/0', '/g')
+        with open(path) as fout:
+            fout.write(line)
+        print('Done. Your log is now in ' + path)
+    else:
+        print(ret)
+
+# This is a python decorator, to check the log file's existence.
+def check_path(func):
+    def whether_path_exist(path):
+        log_file = pathlib.Path(path)
+        if log_file.is_file():
+            # If exist, do the function.
+            func(path)
+        else:
+            # If not exist, create it and then do the function.
+            print('Seems that you have not create a log file first.')
+            print('Don\'t worry, creating for you...')
+            print('...')
+            mygit_log(path)
+            func(path)
+    return whether_path_exist
+
+@check_path
+def mygit_bisect(path):
+    for line in fileinput.input(path, inplace=True):
+        if line[-1] == 'b':
+            alarm = 1   # used to check whether `b` and `g` are next to each other
+            suspect = line # In case this is the first commit that broke things
+            bisect_list = []
+            continue
+        elif line[-1] == '0':
+            alarm = 0 # `g` cannot be a neighbor of `b` if there is a `0`
+            suspect = 'no_more_suspect'
+            bisect_list.append(line[0:7])
+        elif line[-1] == 'g':
+            if alarm == 1:
+                print('Congratulations! You found the bad commit. That is:')
+                print('    ' + suspect)
+            break
+        else:
+            print('Seems one line is not ended with a valid character.')
+            break
+    # todo：再根据列表决定 reset 到哪里，一个列表取中间的操作
+
+def mygit_prev():
+    pass
+    # todo：git 回滚我已经知道了，HEAD^
+
+def mygit_next():
+    pass
+    # todo：查一下怎么往前滚，可能要看 log 吧，还有就是第一个版本要注意一下
+
+@check_path
+def mygit_mark(path, symbol):
+    pass
+    # todo：git 查看当前的版本号，然后进行标记，需要查一下 git 查看版本号
+
+argv_len = len(sys.argv) - 1
+if argv_len > 0:
+    defalut_path = '~/git_log_by_mygit_' + datetime.date.today().strftime('%Y%m%d')
+    if argv_len == 1:
+        path = defalut_path
+    else:
+        path = sys.argv[2]
+    # print(type(path))     # <class 'str'>
+    #---------------------------------------------
+    if sys.argv[1] == 'log':
+        mygit_log(path)
+    elif sys.argv[1] == 'prev':
+        mygit_prev()
+    elif sys.argv[1] == 'next':
+        mygit_next()
+    elif sys.argv[1] == 'bisect':
+        mygit_bisect(path)
+    elif sys.argv[1] == 'markg':
+        mygit_mark(path, 'g')
+    elif sys.argv[1] == 'markb':
+        mygit_mark(path, 'b')
+    else:
+        mygit_help()
+else:
+    print('Need a argv. Use `mygit help` to see the help message.')
