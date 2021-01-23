@@ -47,6 +47,10 @@ help_list = '''
             这不是对方的故意设置，猜测是插件自己搞的
         e. echo <base64 密文> | base64 -d
             
+    git bisect:
+        git bisect start <nearly-bad> <early-good>
+        git bisect good
+        git bisect bad
 
     可以使用 sudo pacman -Qdt 来查找孤包.
     可以使用 paccache -ruk0 来清除未安装的包缓存
