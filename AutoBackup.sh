@@ -21,6 +21,8 @@ cp /etc/fstab ~/backup/backup/
 # 输入法 ibus + rime 配置备份
 cp ~/.config/ibus/rime/default.custom.yaml ~/backup/backup/
 cp ~/.config/ibus/rime/zero.dict.yaml ~/backup/backup/
+# 关于候选词的水平方向，给哪个文件打 patch 就是哪个文件名 + .custom.yaml
+cp ~/.config/ibus/rime/ibus_rime.custom.yaml ~/backup/backup/
 # 搜狗的细胞词库，详细记录见 2020.09.07 的 notes
 cp ~/.config/ibus/rime/sougou_* ~/backup/backup/rime_dictionary/
 

@@ -18,4 +18,9 @@
                 而且 gruvbox 的主题加载可能有问题，因为语法高亮都显示不出来.
                 要解决这个问题还需要好好学习 minpac，而学习它又需要花费时间，
                 所以最后又回到了 vim-plug.
+2021.01.25  ibus-rime 升级到 1.5.0 之后拥有了 /usr/share/rime-data/ibus_rime.yaml 文件，
+                而这个默认的文件中写了候选词方向是竖直的，因此无论怎么改都是竖直，
+                即便直接创建 ~/.config/ibus/rime/ibus_rime.yaml 也会重启后消失.
+                正确的做法是创建 ~/.config/ibus/rime/ibus_rime.custom.yaml 文件，
+                在里面打 patch. 见 https://sh.alynx.one/posts/My-RIME/.
 

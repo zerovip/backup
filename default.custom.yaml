@@ -28,7 +28,8 @@ patch:
 #   - schema: luna_quanpin         # 全拼
 #   - schema: stroke               # "五筆畫"
 #   - schema: terra_pinyin         # 地球拼音
-  menu/page_size: 6                # 设置候选字数量，根据喜好调整
+  menu:
+    page_size: 7                   # 设置候选字数量，根据喜好调整
   punctuator:
     full_shape:
       __include: punctuation:/full_shape
@@ -36,4 +37,72 @@ patch:
     half_shape:
       __include: punctuation:/half_shape
       "." : ". "
-      
+  # 以下内容均参考自：https://sh.alynx.one/posts/My-RIME/
+  # Alynx 的原注释我在后面特殊标注
+      # 这里我删掉了一些目前已经成为默认设置的符号选项
+      "$":
+        - "￥"
+        - "$"
+        - "€"
+        - "～"
+        - "×"
+        - "÷"
+        - "°"
+        - "℃"
+        - "‰"
+        - "‱"
+        - "℉"
+        - "©"
+        - "®"
+      "%": "%"
+      "*": "*"
+      "/": "/"
+      "\\": "、"
+      "[": "【"
+      "]": "】"
+      "{": "「"
+      "}": "」"
+      "<": "《"
+      ">": "》"
+      "`": "`"
+      "|": "·"
+      "~": "~"
+  ascii_composer:
+    # 按 CapsLock 输出大写英文字母——Alynx
+    good_old_caps_lock: true
+    # `inline_ascii` 在输入框内插入英文——Alynx
+    # `commit_text` 候选文字上屏并切换至英文——Alynx
+    # `commit_code` 输入拼音上屏并切换至英文——Alynx
+    # `clear` 清除拼音并切换至英文——Alynx
+    # `noop` 屏蔽此按键——Alynx
+    switch_key:
+      # 如果你设置 `Caps_Lock` 为 `noop`，——Alynx
+      # 一个奇怪的问题是退格键不能用了，除非取消大写锁定.——Alynx
+      # 所以我直接设置文字上屏了.——Alynx
+      Caps_Lock: "commit_text"
+      Shift_L: "commit_text"
+      Shift_R: "commit_code"
+      Control_L: "noop"
+      Control_R: "noop"
+  switcher:
+    # 改掉原来的繁体字标题.——Alynx
+    caption: "【方案菜单】"
+    # 用半角斜线而不是奇丑无比的全角斜线做分隔符.——Alynx
+    option_list_separator: "/"
+    # 屏蔽 Ctrl-s 和 F4 开启菜单，只允许 Ctrl-`.
+    hotkeys:
+      # - "Control+s"
+      - "Control+grave"
+      # - "F4"
+  key_binder:
+    bindings:
+      # 好像不想要的东西必须写一遍再注释掉才能算作是“不要这种默认的设置”.
+      # 我觉得正常人不应该用逗号和句号翻页——Alynx
+        # 很好，我是正常人.
+      # - accept: "comma"
+      #   send: "Page_Up"
+      #   when: "paging"
+      # - accept: "period"
+      #   send: "Page_Down"
+      #   when: "has_menu"
+
