@@ -105,4 +105,10 @@ patch:
       # - accept: "period"
       #   send: "Page_Down"
       #   when: "has_menu"
+      - accept: "minus"
+        send: "Page_Up"
+        when: "has_menu"
+      - accept: "equal"
+        send: "Page_Down"
+        when: "has_menu"
 

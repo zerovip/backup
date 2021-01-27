@@ -23,4 +23,7 @@
                 即便直接创建 ~/.config/ibus/rime/ibus_rime.yaml 也会重启后消失.
                 正确的做法是创建 ~/.config/ibus/rime/ibus_rime.custom.yaml 文件，
                 在里面打 patch. 见 https://sh.alynx.one/posts/My-RIME/.
+2021.01.27  发现输入法现在记不得更换为了简体中文，每次打开都是繁体中文，
+                于是参考 https://github.com/rime/home/wiki/CustomizationGuide#一例定製簡化字輸出
+                给我的小鹤双拼打了 patch
 
