@@ -3,6 +3,26 @@
 help_list = '''
 ===============================================================
 帮助：          
+    加密：
+        a. 对方发来公钥，我导入
+        b. gpg --recipient <对方的公钥> --output <输出文件> --encrypt <待加密文件>
+        c. 把 <输出文件> 发送给对方
+    解密：
+        a. 对方发来加密文件，是使用我的公钥 A551B8F6A13D8A90 (long key ID) 加密的
+            或者对方直接使用 thunderbird + enigmail 加密的，则会得到：
+                encrypted.asc 作为加密文件，Untitled 作为一个注释文件
+        b. gpg --output <输出的解密文件> --decrypt <对方发来的加密文件>
+        c. 输入我自己的【私钥】密码就解密成功了
+        d. 打开 <输出的解密文件>，如果对方自己加密的就能看了，
+            如果是 thunderbird + enigmail 则可能里面还有一个 base64，
+            这不是对方的故意设置，猜测是插件自己搞的
+        e. echo <base64 密文> | base64 -d
+            
+    git bisect:
+        git bisect start <nearly-bad> <early-good>
+        git bisect good
+        git bisect bad
+
     打开图片：          sxiv image_name
     命令在哪个包里：    pkgfile -s xxxxxx
     压缩 zip：          zip -r -FS ../xxx.zip *
@@ -32,25 +52,9 @@ help_list = '''
     阅读 pdf：          foxitreader
     浏览器：            firefox
 
-    加密：
-        a. 对方发来公钥，我导入
-        b. gpg --recipient <对方的公钥> --output <输出文件> --encrypt <待加密文件>
-        c. 把 <输出文件> 发送给对方
-    解密：
-        a. 对方发来加密文件，是使用我的公钥 A551B8F6A13D8A90 (long key ID) 加密的
-            或者对方直接使用 thunderbird + enigmail 加密的，则会得到：
-                encrypted.asc 作为加密文件，Untitled 作为一个注释文件
-        b. gpg --output <输出的解密文件> --decrypt <对方发来的加密文件>
-        c. 输入我自己的【私钥】密码就解密成功了
-        d. 打开 <输出的解密文件>，如果对方自己加密的就能看了，
-            如果是 thunderbird + enigmail 则可能里面还有一个 base64，
-            这不是对方的故意设置，猜测是插件自己搞的
-        e. echo <base64 密文> | base64 -d
-            
-    git bisect:
-        git bisect start <nearly-bad> <early-good>
-        git bisect good
-        git bisect bad
+    合并音频和视频：
+        视频中没有音频：ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental output.mp4
+        视频中有声音但替换掉：ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 output.mp4
 
     可以使用 sudo pacman -Qdt 来查找孤包.
     可以使用 paccache -ruk0 来清除未安装的包缓存
