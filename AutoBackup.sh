@@ -26,6 +26,9 @@ cp ~/.config/ibus/rime/ibus_rime.custom.yaml ~/backup/backup/
 # 搜狗的细胞词库，详细记录见 2020.09.07 的 notes
 cp ~/.config/ibus/rime/sougou_* ~/backup/backup/rime_dictionary/
 
+# Aegisub 的 lua 脚本备份
+cp -r ~/.aegisub/automation/autoload/ ~/backup/backup/
+
 # GRUB 配置，主要就是两个配置，一个是主题，一个是默认记住上一次选择
 # 记住上一次选择，见，https://askubuntu.com/a/149572
 cp /etc/default/grub ~/backup/backup/
