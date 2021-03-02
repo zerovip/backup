@@ -45,7 +45,7 @@ draft: ${14:true}
 # 一些有用的 snippets：
 #   黑块    bbk：<span class='black_block' onclick="ChangeClassBlackBlock(this)">text</span>
 #   背景色  bjj：<span class='notation_color'>text</span>
-#   背景段  bjd：<div class='notation_color'>text</div>
+#   背景段  bjd：{.notation_color}
 #   图片    img：![示例图片](/images/example.jpeg)
 #   加密头  jmt
 #   加密尾  jmw
@@ -59,9 +59,9 @@ snippet bjj "背景句" iA
 endsnippet
 
 snippet bjd "背景段" iA
-<div class='notation_color'>
-
-$0</div>
+> $1
+{.notation_color}
+$0
 endsnippet
 
 snippet dwjx "嘟文精选" iA
