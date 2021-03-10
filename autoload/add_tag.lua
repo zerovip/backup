@@ -1,17 +1,17 @@
 --[[
 README:
-    To strip all `\N`s in every line.
+    To add a tag indicating that this sentence have not been checked.
 ]]
 
-script_name = '去掉换行 strip \\N'
-script_description = 'To strip all `\\N`s in every line.'
+script_name = '未检查标记 non-check tag'
+script_description = 'To add a tag indicating that this sentence have not been checked.'
 script_author = 'Zero'
 script_version = '0.1'
 
 function strip(sub, sel)
     for _, i in ipairs(sel) do
 		local line = sub[i]
-		line.text = string.gsub(line.text, '\\N', ' ')
+		line.text = '【未检查】' .. line.text .. '【未检查】'
 		sub[i] = line
 	end
     aegisub.set_undo_point(script_name)

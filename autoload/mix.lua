@@ -3,7 +3,7 @@ README:
     To change the order of lines after copy lines and translate lines.
 ]]
 
-script_name = 'mix_different_languages'
+script_name = '中英混排 mix_different_languages'
 script_description = 'To change the order of lines after copy lines and translate lines.'
 script_author = 'Zero'
 script_version = '0.1'

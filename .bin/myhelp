@@ -56,6 +56,12 @@ help_list = '''
         视频中没有音频：ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental output.mp4
         视频中有声音但替换掉：ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 output.mp4
 
+    Python Venv:
+        python3.x -m venv the-name-of-venv
+        source the/path/of/venv/bin/activate
+        pip install xxx -i https://pypi.tuna.tsinghua.edu.cn/simple
+        deactivate
+
     可以使用 sudo pacman -Qdt 来查找孤包.
     可以使用 paccache -ruk0 来清除未安装的包缓存
     可以使用 paccache -r 来清除三个版本之前的包缓存
