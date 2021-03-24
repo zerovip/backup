@@ -55,6 +55,12 @@ help_list = '''
     合并音频和视频：
         视频中没有音频：ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental output.mp4
         视频中有声音但替换掉：ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 output.mp4
+    剪裁视频：
+        ffmpeg -i input.mp4 -strict -2 -vf crop=1080:940:0:640 output.mp4
+    剪辑视频：
+        ffmpeg -i input.mp4 -ss 00:00:00 -t 00:00:5 -acodec aac -vcodec h264 -strict -2 output.mp4
+    提取声音：
+        ffmpeg -i input.mp4 -q:a 0 -map a output.mp3
 
     Python Venv:
         python3.x -m venv the-name-of-venv
