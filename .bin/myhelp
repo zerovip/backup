@@ -61,6 +61,8 @@ help_list = '''
         ffmpeg -i input.mp4 -ss 00:00:00 -t 00:00:5 -acodec aac -vcodec h264 -strict -2 output.mp4
     提取声音：
         ffmpeg -i input.mp4 -q:a 0 -map a output.mp3
+    硬压字幕：
+        ffmpeg -y -i input.mp4 -vf subtitles=xxx.ass output.mp4
 
     Python Venv:
         python3.x -m venv the-name-of-venv
