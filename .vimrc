@@ -621,6 +621,14 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" 自动把 json 文件格式化
+nnoremap <F4> :execute '%!python -m json.tool' <bar> w<CR>
+" 参考：https://vi.stackexchange.com/a/16908
+
+" 把 Unicode 码替换为正常字符串
+nnoremap <F12> :%s/\\u\(\x\{4\}\)/\=nr2char('0x'.submatch(1),1)/g<CR>
+" 参考：https://vi.stackexchange.com/a/2303
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Visual mode related

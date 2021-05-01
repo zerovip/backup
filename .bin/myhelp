@@ -63,6 +63,8 @@ help_list = '''
         ffmpeg -i input.mp4 -q:a 0 -map a output.mp3
     硬压字幕：
         ffmpeg -y -i input.mp4 -vf subtitles=xxx.ass output.mp4
+    压制视频：
+        ffmpeg -i "input.mp4" -c:v libx264 -b:v 5000k -r 24 -c:a aac -b:a 128k "output.mp4"
 
     Python Venv:
         python3.x -m venv the-name-of-venv
