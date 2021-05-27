@@ -50,6 +50,7 @@ make
 man-db
 man-pages
 mlocate
+mtr
 nerd-fonts-fantasque-sans-mono
 networkmanager
 network-manager-applet
@@ -105,6 +106,7 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
+tigervnc
 tree
 unrar
 unzip

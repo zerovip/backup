@@ -45,6 +45,7 @@ make
 man-db
 man-pages
 mlocate
+mtr
 networkmanager
 network-manager-applet
 nitrogen
@@ -95,6 +96,7 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
+tigervnc
 tree
 unrar
 unzip

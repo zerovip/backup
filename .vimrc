@@ -578,13 +578,14 @@ if has("gui_running")
 endif
 
 " Set utf8 as standard encoding and zh_CN as the standard language
+" now en_US, 2021.05.19
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,gbk2312,gbk,gb18030,ucs-bom,chinese,cp936
 set encoding=utf-8
-set langmenu=zh_CN
+set langmenu=en_US
 let $LANG = 'en_US.UTF-8'
-language messages zh_CN.utf-8
+language messages en_US.utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
