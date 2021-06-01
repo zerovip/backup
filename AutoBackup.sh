@@ -193,7 +193,7 @@ echo "下面是博客主题的备份"
 if [[ `git status --porcelain --untracked-files=no` ]]; then
     read -p "博客主题有哪些更改：" po_th_mesg
     git add .
-    git commit -m "$po_th_mesg"" Auto pushing blog on "$date
+    git commit -m "$po_th_mesg"
     git push
     echo "博客主题有些变化，已经备份成功！"
 else
