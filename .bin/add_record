@@ -1,0 +1,5 @@
+#! /bin/sh
+
+source ~/codes/others/douban_add_record_venv/bin/activate
+python add_record_execute.py
+deactivate
