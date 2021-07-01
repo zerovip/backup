@@ -49,7 +49,7 @@ def search_douban(t, key_word):
     # 原理见：https://mp.weixin.qq.com/s/-CkjMbhuooKm3U4GKIfEPg
     r = re.search('window.__DATA__ = "([^"]+)"', html).group(1)
     # 导入js
-    with open('main.js', 'r', encoding='gbk') as f:
+    with open('/home/ehizil/.bin/main.js', 'r', encoding='gbk') as f:
         decrypt_js = f.read()
     ctx = execjs.compile(decrypt_js)
     data = ctx.call('decrypt', r)
@@ -66,8 +66,8 @@ def manualy_book():
     press = input("请输入出版社：")
     link = input("请输入豆瓣链接，没有请留空：")
     isbn = input("请输入 ISBN：")
-    mark_date = input("请输入标记日期，今天请输入 t：")
-    if mark_date == "t":
+    mark_date = input("请输入标记日期，今天请回车：")
+    if mark_date == "":
         mark_date = str(datetime.date.today())
     my_score_n = input("请输入评分，1-5 之间的整数：")
     my_score = "★" * int(my_score_n)
@@ -95,8 +95,8 @@ def manualy_film():
     director = input("请输入导演（名·姓）：")
     link = input("请输入豆瓣链接，没有请留空：")
     imdb_id = input("请输入 imdb 编号，以 tt 开头：")
-    mark_date = input("请输入标记日期，今天请输入 t：")
-    if mark_date == "t":
+    mark_date = input("请输入标记日期，今天请回车：")
+    if mark_date == "":
         mark_date = str(datetime.date.today())
     my_score_n = input("请输入评分，1-5 之间的整数：")
     my_score = "★" * int(my_score_n)
@@ -151,8 +151,8 @@ def get_message_book(link):
     link_input = input("获取到的链接是：" + link + "，回车确认，输入更改：")
     if link_input != "":
         link = link_input
-    mark_date = input("请输入标记日期，今天请输入 t：")
-    if mark_date == "t":
+    mark_date = input("请输入标记日期，今天请回车：")
+    if mark_date == "":
         mark_date = str(datetime.date.today())
     my_score_n = input("请输入评分，1-5 之间的整数：")
     my_score = "★" * int(my_score_n)
@@ -217,8 +217,8 @@ def get_message_film(link):
     imdb_id_input = input("获取到的 IMDB 编号是：" + imdb_id + "，回车确认，输入更改：")
     if imdb_id_input != "":
         imdb_id = imdb_id_input
-    mark_date = input("请输入标记日期，今天请输入 t：")
-    if mark_date == "t":
+    mark_date = input("请输入标记日期，今天请回车：")
+    if mark_date == "":
         mark_date = str(datetime.date.today())
     my_score_n = input("请输入评分，1-5 之间的整数：")
     my_score = "★" * int(my_score_n)
