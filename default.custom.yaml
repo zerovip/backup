@@ -36,7 +36,7 @@ patch:
       "." : "。"
     half_shape:
       __include: punctuation:/half_shape
-      "." : ". "
+      "." : "。"
   # 以下内容均参考自：https://sh.alynx.one/posts/My-RIME/
   # Alynx 的原注释我在后面特殊标注
       # 这里我删掉了一些目前已经成为默认设置的符号选项
