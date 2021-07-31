@@ -2,7 +2,6 @@
 
 # zsh 配置备份
 cp ~/.zshrc ~/backup/backup/
-cp ~/.zshrc-exper ~/backup/backup/
 
 # vim 配置备份
 cp ~/.vimrc ~/backup/backup/
