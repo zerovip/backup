@@ -26,4 +26,15 @@
 2021.01.27  发现输入法现在记不得更换为了简体中文，每次打开都是繁体中文，
                 于是参考 https://github.com/rime/home/wiki/CustomizationGuide#一例定製簡化字輸出
                 给我的小鹤双拼打了 patch
+2021.08.01  输入法方案与词库的问题永远都是一个问题，等换了新电脑重新再搞一搞吧！
+                可以考虑下四叶草的词库：https://www.fkxxyz.com，这是双拼的方案
+                    多看看这里面的 issue：
+                    https://github.com/fkxxyz/rime-cloverpinyin/issues 有哪些功能是我可以考虑的
+                参考一下人家是怎么做到能打出 emoji 的：
+                    https://github.com/fkxxyz/rime-symbols
+                同时思考一下我自己构思的基于小鹤音形的四码上屏输入方案，
+                看看能不能搞一个出来
+                希腊字母的字典：https://gist.github.com/AlephAlpha/5406458cb98838efe1fc
+                rime_latex：https://github.com/rimebrew/rime_latex
+                这些都是值得参考的东西
 
