@@ -66,7 +66,7 @@ Plug 'luochen1990/rainbow'
 Plug 'tmsvg/pear-tree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'lervag/vimtex', {'for': 'tex'}
-Plug 'SirVer/ultisnips', {'for': ['tex', 'markdown']}
+Plug 'SirVer/ultisnips', {'for': ['tex', 'markdown', 'javascript']}
 Plug 'tpope/vim-commentary'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
