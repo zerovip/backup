@@ -6,6 +6,7 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 ${HOME}/.config/polybar/launch.sh   # polybar 的启动
 nm-applet &                         # network-manager 的托盘
 optimus-manager-qt &                # optimus-manager 的设置图标
+copyq &                             # copyq: 剪切板应用
 
 bdwdt=3
 bspc config border_width            $bdwdt
