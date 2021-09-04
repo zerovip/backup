@@ -35,6 +35,7 @@ ibus
 ibus-rime
 imagemagick
 intel-ucode
+jdk11-openjdk
 julia
 kdenlive
 libtool

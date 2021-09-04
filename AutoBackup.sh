@@ -120,6 +120,10 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
     git commit -m "Auto Backuping on "$date
     git push
     echo "配置文件有一些变化，已经备份成功！"
+elif check_git | grep -q 'Need to push'; then
+    git push origin master
+    cd ..
+    echo "之前的提交没有推上，现在搞定！"
 else
     echo "配置文件没有变化，无需备份！"
 fi
@@ -136,6 +140,10 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
     git commit -m "Auto Backuping on "$date
     git push
     echo "豆瓣、Mastodon 备份文件有一些变化，已经备份成功！"
+elif check_git | grep -q 'Need to push'; then
+    git push origin master
+    cd ..
+    echo "之前的提交没有推上，现在搞定！"
 else
     echo "豆瓣、Mastodon 备份文件没有变化，无需备份！"
 fi
@@ -152,6 +160,10 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
     git commit -m "$ma_mesg"" Auto Backuping on "$date
     git push
     echo "数学工作有一些变化，已经备份成功"
+elif check_git | grep -q 'Need to push'; then
+    git push origin master
+    cd ..
+    echo "之前的提交没有推上，现在搞定！"
 else
     echo "数学工作没有变化，无需备份！"
 fi
@@ -178,6 +190,10 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
     git commit -m "$po_mesg"" Auto pushing blog on "$date
     git push
     echo "博客原始文件有些变化，已经备份成功！"
+elif check_git | grep -q 'Need to push'; then
+    git push origin master
+    cd ..
+    echo "之前的提交没有推上，现在搞定！"
 else
     echo "博客原始文件没有变化，无需备份！"
 fi
@@ -195,6 +211,10 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
     git commit -m "$po_th_mesg"
     git push
     echo "博客主题有些变化，已经备份成功！"
+elif check_git | grep -q 'Need to push'; then
+    git push origin master
+    cd ..
+    echo "之前的提交没有推上，现在搞定！"
 else
     echo "博客主题没有变化，无需备份！"
 fi

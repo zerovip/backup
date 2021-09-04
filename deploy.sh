@@ -41,6 +41,12 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
 
     # Come Back up to the Project Root
     cd ..
+elif check_git | grep -q 'Need to push'; then
+    # Push source and build repos.
+    git push origin master
+
+    # Come Back up to the Project Root
+    cd ..
 else
     echo "没有变化，无需部署！"
     cd ..
