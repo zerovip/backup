@@ -78,6 +78,7 @@ def manualy_book():
             'public_year': public_year,
             'press': press,
             'link': link,
+            'isbn': isbn,
             'mark_date': mark_date,
             'my_score': my_score,
             'my_comment': my_comment
@@ -136,6 +137,7 @@ def get_message_book(link):
     public_year = re.findall(r'出版年: (.*?)\n', info2)[0][0:4]
     press = re.findall(r'出版社: (.*?)\n', info2)[0]
     link = link
+    isbn = re.findall(r'ISBN: (.*?)\n', info2)[0]
     title_input = input("获取到的书名是：" + title + "，回车确认，输入更改：")
     if title_input != "":
         title = title_input
@@ -151,6 +153,9 @@ def get_message_book(link):
     link_input = input("获取到的链接是：" + link + "，回车确认，输入更改：")
     if link_input != "":
         link = link_input
+    isbn_input = input("获取到的 ISBN 是：" + isbn + "，回车确认，输入更改：")
+    if isbn_input != "":
+        isbn = isbn_input
     mark_date = input("请输入标记日期，今天请回车：")
     if mark_date == "":
         mark_date = str(datetime.date.today())
@@ -163,6 +168,7 @@ def get_message_book(link):
             'public_year': public_year,
             'press': press,
             'link': link,
+            'isbn': isbn,
             'mark_date': mark_date,
             'my_score': my_score,
             'my_comment': my_comment
