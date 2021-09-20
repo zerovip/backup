@@ -70,7 +70,7 @@ Plug 'SirVer/ultisnips', {'for': ['tex', 'markdown', 'javascript']}
 Plug 'tpope/vim-commentary'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
-Plug 'ajh17/VimCompletesMe'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/vim-easy-align'
 
 call plug#end()
@@ -344,29 +344,22 @@ let g:bufferline_echo=0
 let g:bufferline_separator='|'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 10. Vim Complete Me
+" 10. coc.nvim
 " for autocompletion.
-" See, https://github.com/ajh17/VimCompletesMe
+" See, https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim
 " 基本上是一个被动工具
 "----------------------------------------------------------
-" 与 vimtex 配合，见 :help vimtex-complete-vcm
-augroup VimCompletesMeTex
-    autocmd!
-    autocmd FileType tex
-        \ let b:vcm_omni_pattern = g:vimtex#re#neocomplete
-augroup END
-
-" 下面的两个设置是 vim 的内置设置，不是这个插件的专有
-"   但为了放便就写到这里了
-"   参考：https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
-"
-" 默认不选中第一个，并匹配最长的
-set completeopt=longest,menuone
-"
-" 使用回车键可以选中，ctrl + j / k 上下选择
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
+" 装了如下插件：
+" coc-css/
+" coc-explorer/
+:nnoremap <space><space> :CocCommand explorer<CR>
+" coc-html/
+" coc-java/
+" coc-json/
+" coc-pyright/
+" coc-tsserver/
+" coc-vimtex/
+"   与 vimtex 配合，见 :help vimtex-complete-coc.nvim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 11. vim-easy-align
