@@ -72,6 +72,9 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/vim-easy-align'
+Plug 'skywind3000/asyncrun.vim', {'on': ['AsyncRun', 'AsyncStop'] }
+Plug 'skywind3000/asynctasks.vim', {'on': ['AsyncTask', 'AsyncTaskMacro', 'AsyncTaskList', 'AsyncTaskEdit'] }
+Plug 'vim-scripts/BufOnly.vim'
 
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -350,16 +353,30 @@ let g:bufferline_separator='|'
 " 基本上是一个被动工具
 "----------------------------------------------------------
 " 装了如下插件：
-" coc-css/
-" coc-explorer/
+" coc-css
+" coc-explorer
 :nnoremap <space><space> :CocCommand explorer<CR>
-" coc-html/
-" coc-java/
-" coc-json/
-" coc-pyright/
-" coc-tsserver/
-" coc-vimtex/
+" coc-html
+" coc-java
+" coc-json
+" coc-pyright
+" coc-tsserver
+" coc-vimtex
 "   与 vimtex 配合，见 :help vimtex-complete-coc.nvim
+
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 11. vim-easy-align
@@ -379,7 +396,31 @@ let @l = "vipga*|"      " 左对齐
 let @r = "vipga*|"    " 右对齐
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 12. asynctasks.vim（依赖 asyncrun.vim）
+" to handle building/running/testing/deploying tasks
+" See, https://github.com/skywind3000/asynctasks.vim
+" 主动工具，但应该比较简单，主要是做自动运行、编译代码这种工作
+"----------------------------------------------------------
+let g:asyncrun_open = 6
+let g:asynctasks_rtp_config = "tasks.ini"
+" 全局的设置在 ~/.vim/tasks.ini
 
+nnoremap <silent><F5> :AsyncTask file-run<CR>
+inoremap <silent><F5> <C-o>:AsyncTask file-run<CR>
+nnoremap <silent><F9> :AsyncTask file-build<CR>
+inoremap <silent><F9> <C-o>:AsyncTask file-build<CR>
+
+" <F9>编译，<F5>运行
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 13. BufOnly
+" Delete all the buffers except the current/named buffer 
+" See, https://github.com/vim-scripts/BufOnly.vim
+" 主动工具
+"----------------------------------------------------------
+map <leader>bo :BufOnly<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
