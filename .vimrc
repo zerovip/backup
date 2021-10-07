@@ -352,17 +352,25 @@ let g:bufferline_separator='|'
 " See, https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim
 " 基本上是一个被动工具
 "----------------------------------------------------------
-" 装了如下插件：
-" coc-css
-" coc-explorer
-:nnoremap <space><space> :CocCommand explorer<CR>
-" coc-html
-" coc-java
-" coc-json
-" coc-pyright
-" coc-tsserver
-" coc-vimtex
-"   与 vimtex 配合，见 :help vimtex-complete-coc.nvim
+" 这个全局变量可以启动 vim 时自动安装里面的插件
+let g:coc_global_extensions = [
+    \ 'coc-css',
+    \ 'coc-explorer',
+    \ 'coc-html',
+    \ 'coc-java',
+    \ 'coc-json',
+    \ 'coc-pyright',
+    \ 'coc-tsserver',
+    \ 'coc-vimtex',
+    \ ]
+
+" 下面是整体的一些设置
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
 
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
@@ -377,6 +385,37 @@ inoremap <silent><expr> <Tab>
 
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Use <C-o> to trigger completion.
+inoremap <silent><expr> <C-o> coc#refresh()
+
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+" 这个好像没用啊？
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+" 目前会出一个错误
+" nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+" 下面是个别插件需要的配置
+" coc-explorer
+:nnoremap <space><space> :CocCommand explorer<CR>
+
+" coc-vimtex
+"   与 vimtex 配合，见 :help vimtex-complete-coc.nvim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 11. vim-easy-align
