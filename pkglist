@@ -1,7 +1,6 @@
 aegisub
 alacritty
 alsa-utils
-anki
 autoconf
 automake
 base
@@ -56,6 +55,7 @@ nitrogen
 nodejs
 noto-fonts-cjk
 noto-fonts-emoji
+npm
 ntfs-3g
 numlockx
 nvidia
@@ -158,7 +158,6 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-yarn
 zathura
 zathura-pdf-mupdf
 zim

@@ -70,7 +70,12 @@ Plug 'SirVer/ultisnips', {'for': ['tex', 'markdown', 'javascript']}
 Plug 'tpope/vim-commentary'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-bufferline'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'thomasfaingnaert/vim-lsp-snippets'
+Plug 'thomasfaingnaert/vim-lsp-ultisnips'
 Plug 'junegunn/vim-easy-align'
 Plug 'skywind3000/asyncrun.vim', {'on': ['AsyncRun', 'AsyncStop'] }
 Plug 'skywind3000/asynctasks.vim', {'on': ['AsyncTask', 'AsyncTaskMacro', 'AsyncTaskList', 'AsyncTaskEdit'] }
@@ -347,75 +352,20 @@ let g:bufferline_echo=0
 let g:bufferline_separator='|'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 10. coc.nvim
-" for autocompletion.
-" See, https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim
-" 基本上是一个被动工具
+" 10. vim-lsp, vim-lsp-settings, asyncomplete.vim, asyncomplete-lsp.vim
+" vim-lsp: language server protocal support,
+" vim-lsp-settings: auto configurations for Language Server for vim-lsp
+" asyncomplete.vim: async completion
+" asyncomplete-lsp.vim: cooperate with vim-lsp
+" See, https://github.com/prabirshrestha/vim-lsp
+"       https://github.com/mattn/vim-lsp-settings
+"       https://github.com/prabirshrestha/asyncomplete.vim
+"       https://github.com/prabirshrestha/asyncomplete-lsp.vim
+" 基本上是一个被动工具，但需要前期配置很多，每一个语言也需要安装服务器
 "----------------------------------------------------------
-" 这个全局变量可以启动 vim 时自动安装里面的插件
-let g:coc_global_extensions = [
-    \ 'coc-css',
-    \ 'coc-explorer',
-    \ 'coc-html',
-    \ 'coc-java',
-    \ 'coc-json',
-    \ 'coc-pyright',
-    \ 'coc-tsserver',
-    \ 'coc-vimtex',
-    \ ]
-
-" 下面是整体的一些设置
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=300
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
-" use <tab> for trigger completion and navigate to the next complete item
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-inoremap <silent><expr> <Tab>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<Tab>" :
-      \ coc#refresh()
-
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" Tab completion
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" Use <C-o> to trigger completion.
-inoremap <silent><expr> <C-o> coc#refresh()
-
-" Make <CR> auto-select the first completion item and notify coc.nvim to
-" format on enter, <cr> could be remapped by other vim plugin
-" 这个好像没用啊？
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-" Use `[g` and `]g` to navigate diagnostics
-" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
-" Use K to show documentation in preview window.
-" 目前会出一个错误
-" nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-" 下面是个别插件需要的配置
-" coc-explorer
-:nnoremap <space><space> :CocCommand explorer<CR>
-
-" coc-vimtex
-"   与 vimtex 配合，见 :help vimtex-complete-coc.nvim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 11. vim-easy-align
