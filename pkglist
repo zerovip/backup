@@ -35,7 +35,6 @@ ibus-rime
 imagemagick
 intel-ucode
 jdk11-openjdk
-julia
 kdenlive
 libtool
 lightdm
@@ -63,7 +62,6 @@ openscad
 openssh
 os-prober
 otf-fantasque-sans-mono
-p7zip
 pacman-contrib
 pandoc
 patch
@@ -102,8 +100,7 @@ texlive-pstricks
 texlive-publishers
 texlive-science
 tree
-unrar
-unzip
+unarchiver
 vi
 which
 wpa_supplicant
