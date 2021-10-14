@@ -46,9 +46,9 @@ draft: ${14:true}
 no_toc: ${15:false}
 #------------------------------------------------------------------------------
 # 一些有用的 snippets：
-#   黑块    bbk：<span class='black_block' onclick="ChangeClassBlackBlock(this)">text</span>
-#   背景色  bjj：<span class='notation_color'>text</span>
-#   背景段  bjd：<div class='notation_color'>text</div>
+#   黑块    bbk：{{% bbk %}}text{{% /bbk %}}
+#   背景色  bjj：{{% notice "sentence" %}}text{{% /notice %}}
+#   背景段  bjd：{{% notice "paragraph" %}}text{{% /notice %}}
 #   图片    img：![示例图片](example.jpeg)
 #   如果图片需要在暗色主题下反色，请命名成 example.i.{png|jpg|jpeg|gif|…}
 #   加密头  jmt
@@ -59,13 +59,14 @@ $0
 endsnippet
 
 snippet bjj "背景句" iA
-<span class='notation_color'>$0</span>
+{{% notice "sentence" %}}$0{{% /notice %}}
 endsnippet
 
 snippet bjd "背景段" iA
-<div class='notation_color'>
+{{% notice "paragraph" %}}
 
-$0</div>
+$0
+{{% /notice %}}
 endsnippet
 
 snippet dwjx "嘟文精选" iA
@@ -92,7 +93,7 @@ snippet flag "dwflag" iA
 endsnippet
 
 snippet bbk "black_block 防剧透黑块" iA
-<span class='black_block' onclick="ChangeClassBlackBlock(this)">$0</span>
+{{% bbk %}}$0{{% /bbk %}}
 endsnippet
 
 snippet img "图片" iA
