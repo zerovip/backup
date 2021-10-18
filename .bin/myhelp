@@ -25,11 +25,8 @@ help_list = '''
 
     打开图片：          sxiv image_name
     命令在哪个包里：    pkgfile -s xxxxxx
-    压缩 zip：          zip -r -FS ../xxx.zip *
-    解压 zip：          7z x xxx.zip
-                        unzip xxx.zip
-    解压 rar：          unrar e xxx.rar
-    解压 tar.gz:        tar -zxvf xxx.tar.gz
+    解压文件：          unar filename
+    查看压缩包里的文件：lsar filename
     编辑位图：          photoflare
                         gimp 待学习
     声音格式转换：      soundkonverter
