@@ -37,4 +37,12 @@
                 希腊字母的字典：https://gist.github.com/AlephAlpha/5406458cb98838efe1fc
                 rime_latex：https://github.com/rimebrew/rime_latex
                 这些都是值得参考的东西
+2021.10.24  我的 hugo 博客的 rss 出现了没有域名的问题，
+                只好在 config.yaml 中定义一个 baseURL 为 github.io 那个，
+                然后再在 index.xml 中写一个 | absurl ???????
+                这样产生了一个问题：所有的 Permalink 都会渲染成带 baseURL 的那个，
+                得用 RelPermalink 让它成为相对模式.
+                幸好我那个主题写得简单，改起来好改. 这个问题真不是平时 hugo server 中能遇得到的，
+                因为 hugo server 时 Permalink 和 RelPermalink 都是 localhost，
+                所以没啥参考价值，必须得 hugo 生成之后去 public 文件夹里看一看才行.
 

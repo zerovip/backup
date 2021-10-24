@@ -189,8 +189,13 @@ def get_message_film(link):
     info1 = soup.h1.get_text()
     print(info1)
     title_ori = re.search(r'(.*?) (.*)', info1)
-    title = title_ori.group(1)
-    ori_name = title_ori.group(2)
+    if title_ori != None:
+        title = title_ori.group(1)
+        ori_name = title_ori.group(2)
+    else:
+        title_t = re.findall(r'(.*?)\n', info1)
+        title = [i for i in title_t if i != ""][0]
+        ori_name = title
     public_year = re.findall(r'[(]([0-9]{4})[)]', info1)[0]
     info2 = soup.find("div", {"id": "info"}).get_text()
     print(info2)
