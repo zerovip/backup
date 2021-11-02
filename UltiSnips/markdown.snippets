@@ -112,3 +112,187 @@ snippet jmw "hugo-encrypt 加密环境尾" iA
 {{% /hugo-encryptor %}}
 endsnippet
 
+# 数学常用
+snippet mmii "行内数学公式 (math inline)" wA
+$${1:${VISUAL}}$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ', ':', ';', '，']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet ddmm "行间数学公式 (display math)" wA
+$$${1:${VISUAL}}$$
+$0
+endsnippet
+
+# 数学括号
+snippet \( "小括号" iA
+\left( ${1:${VISUAL}}\right)$0
+endsnippet
+
+snippet \[ "中括号" iA
+\left[ ${1:${VISUAL}}\right]$0
+endsnippet
+
+snippet \{ "大括号" iA
+\left\\{ ${1:${VISUAL}}\right\\}$0
+endsnippet
+
+snippet \< "尖括号" iA
+\left\langle ${1:${VISUAL}}\right\rangle$0
+endsnippet
+
+snippet \| "竖线括号" iA
+\left| ${1:${VISUAL}}\right|$0
+endsnippet
+
+snippet \\\ "反斜杠 \backslash" iA
+\backslash 
+endsnippet
+
+snippet => "蕴含 implies" Ai
+\implies 
+endsnippet
+
+snippet =< "蕴含于 implied by" Ai
+\impliedby 
+endsnippet
+
+snippet iff "当且仅当" Ai
+\iff 
+endsnippet
+
+snippet <= "小于等于" iA
+\le 
+endsnippet
+
+snippet >= "大于等于" iA
+\ge 
+endsnippet
+
+snippet != "不等号" iA
+\neq 
+endsnippet
+
+snippet EE "存在" iA
+\exists 
+endsnippet
+
+snippet AA "任意" iA
+\forall 
+endsnippet
+
+snippet RR "实数" iA
+\mathbb{R}
+endsnippet
+
+snippet CC "复数" iA
+\mathbb{C}
+endsnippet
+
+snippet ZZ "整数" iA
+\mathbb{Z}
+endsnippet
+
+snippet QQ "有理数" iA
+\mathbb{Q}
+endsnippet
+
+snippet NN "自然数" iA
+\mathbb{N}
+endsnippet
+
+snippet mbb "空心字 \mathbb" iA
+\mathbb{${1:${VISUAL}}}$0
+endsnippet
+
+snippet mcal "花体字 \mathbb" iA
+\mathcal{${1:${VISUAL}}}$0
+endsnippet
+
+snippet '([A-Za-z])(\d)' "字母后一个数字自动下标" wrA
+`!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
+endsnippet
+
+snippet '([A-Za-z])_(\d\d)' "字母后两个数字自动下标" wrA
+`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+endsnippet
+
+snippet invs "inverse" iA
+^{-1}
+endsnippet
+
+snippet sr "平方 ^2 (square)" iA
+^2
+endsnippet
+
+snippet cb "立方 ^3 (cube)" iA
+^3
+endsnippet
+
+snippet sb "上标 superscript (Shang Biao)" iA
+^{$1}$0
+endsnippet
+
+snippet xb "下标 subscript (Xia Biao)" iA
+_{$1}$0
+endsnippet
+
+snippet dh "下标中断行 (Duan Hang)" iA
+\substack{$1\\\\$2}
+endsnippet
+
+snippet // "分数" iA
+\frac{$1}{$2}$0
+endsnippet
+
+# 还需要学一下重新写
+# 自动分数在分子是数的时候很常用，比如分之1时输入 "1/" 就可以了
+#
+#snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "数字分子自动分数" wrA
+#\\frac{`!p snip.rv = match.group(1)`}{$1}$0
+#endsnippet
+
+# 根据选择输入分数
+
+snippet /v "选择自动分数" iA
+\frac{${VISUAL}}{$1}$0
+endsnippet
+
+priority 10
+
+snippet "bar" "自动 bar" riA
+\overline{$1}$0
+endsnippet
+
+priority 100
+
+snippet "([a-zA-Z])bar" "后缀自动 bar" riA
+\overline{`!p snip.rv=match.group(1)`}
+endsnippet
+
+priority 10
+
+snippet "hat" "自动 hat" riA
+\hat{$1}$0
+endsnippet
+
+priority 100
+
+snippet "([a-zA-Z])hat" "后缀自动 hat" riA
+\hat{`!p snip.rv=match.group(1)`}
+endsnippet
+
+priority 10
+
+snippet "vec" "自动 vector" riA
+\vec{$1}$0
+endsnippet
+
+priority 100
+
+snippet "([a-zA-Z])vec" "后缀自动 vec" riA
+\vec{`!p snip.rv=match.group(1)`}
+endsnippet
