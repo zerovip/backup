@@ -45,4 +45,24 @@
                 幸好我那个主题写得简单，改起来好改. 这个问题真不是平时 hugo server 中能遇得到的，
                 因为 hugo server 时 Permalink 和 RelPermalink 都是 localhost，
                 所以没啥参考价值，必须得 hugo 生成之后去 public 文件夹里看一看才行.
+2021.12.24  python 升级到 3.10 以后问题挺多：
+                1. AUR 的包都重新构建，这个好说；
+                2. 所有的 python venv 都没法用了……需要找到一个好办法来搞这件事.
+                    我本以为直接再重新搞一个 venv 覆盖在原来的文件夹上就可以了，
+                    但这样的话好像里面的包还是不太行。
+                    结果我的 public 没搞好啊！
+2021.12.24  git 如果已经 push 了，怎么回退呢！
+                git push -f origin last_known_good_commit:branch_name
+                如：
+                    git push -f origin a1b2c3d4e5:master
+                然后再 reset 就行了. reset 的几个参数的含义：
+                    首先：
+                      - working tree：当前工作目录
+                      - index：暂存区，一个变化先是 unstaged 的，git add 以后就变成了 staged 了
+                                这个 git add 就是把变化存到了 index
+                      - HEAD：当前分支、当前版本的游标
+                    接下来：
+                      --soft：仅移动 HEAD，index 和 working tree 不动
+                      --mixed：移动 HEAD 且修改 index，使得 index 变为空（？）
+                      --hard：working tree 也会被改
 
