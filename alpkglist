@@ -27,6 +27,7 @@ foxitreader
 gcc
 gimp
 git
+git-delta
 gnumeric
 goldendict
 grub
@@ -111,6 +112,7 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
+trayer
 tree
 unarchiver
 vi

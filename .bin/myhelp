@@ -62,6 +62,8 @@ help_list = '''
         ffmpeg -y -i input.mp4 -vf subtitles=xxx.ass output.mp4
     压制视频：
         ffmpeg -i "input.mp4" -c:v libx264 -b:v 5000k -r 24 -c:a aac -b:a 128k "output.mp4"
+    提取内嵌字幕：（<n>替换成数字，0表示第0轨道的字幕，1表示第1轨道的字幕）
+        ffmpeg -i input.mkv -map 0:s:<n> output.ass
 
     Python Venv:
         python3.x -m venv the-name-of-venv
