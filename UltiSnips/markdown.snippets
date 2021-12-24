@@ -51,8 +51,7 @@ no_toc: ${15:false}
 #   背景段  bjd：{{% notice "paragraph" %}}text{{% /notice %}}
 #   图片    img：![示例图片](example.jpeg)
 #   如果图片需要在暗色主题下反色，请命名成 example.i.{png|jpg|jpeg|gif|…}
-#   加密头  jmt
-#   加密尾  jmw
+#   加密环境  jmhj
 #------------------------------------------------------------------------------
 ---
 $0
@@ -100,16 +99,11 @@ snippet img "图片" iA
 ![${1:示例图片}](${2:example.jpeg})
 endsnippet
 
-snippet jmt "hugo-encrypt 加密环境头" iA
-${1:这里是 summary 信息}
-<!--more-->
-{{% hugo-encryptor "${2:PASSWORD}" %}}
+snippet jmhj "hugo-encrypt 加密环境" iA
+{{% hugo-encrypt "${1:PASSWORD}" %}}
 
 $0
-endsnippet
-
-snippet jmw "hugo-encrypt 加密环境尾" iA
-{{% /hugo-encryptor %}}
+{{% /hugo-encrypt %}}
 endsnippet
 
 # 数学常用

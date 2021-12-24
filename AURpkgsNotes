@@ -42,7 +42,7 @@
 17. [已卸载]qv2ray
     本来是想用它配合 trojan 插件实现桌面的上网功能，
     但插件对版本要求较多，看上去比较艰难
-18. scrcpy
+18. [已卸载]scrcpy
     是能搞安卓投屏的，因为我手机漏夜了所以可以用一下
 
 otherPKGs（文件夹）:
@@ -55,3 +55,6 @@ otherPKGs（文件夹）:
 2. bspwm
     从 github 上 clone 下来的，希望有时间的时候自己编译一个 debug 模式看看
     以及 gdb 调试等，见 https://github.com/baskerville/bspwm/issues/1198
+3. hugo-encrypt
+    从 github 上 clone 下来的，https://github.com/Izumiko/hugo-encrypt
+    能编译成二进制，这就挺好！

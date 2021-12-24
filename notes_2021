@@ -50,7 +50,7 @@
                 2. 所有的 python venv 都没法用了……需要找到一个好办法来搞这件事.
                     我本以为直接再重新搞一个 venv 覆盖在原来的文件夹上就可以了，
                     但这样的话好像里面的包还是不太行。
-                    结果我的 public 没搞好啊！
+                    结果我的 public 没搞好啊！加密的部分没搞好啊！
 2021.12.24  git 如果已经 push 了，怎么回退呢！
                 git push -f origin last_known_good_commit:branch_name
                 如：
@@ -65,4 +65,5 @@
                       --soft：仅移动 HEAD，index 和 working tree 不动
                       --mixed：移动 HEAD 且修改 index，使得 index 变为空（？）
                       --hard：working tree 也会被改
-
+2021.12.24  我的这个 hugo 博客目前就是有这种问题，升级 python 之后有些问题需要处理
+                这非常不好！要想办法解决！！！
