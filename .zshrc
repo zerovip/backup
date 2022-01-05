@@ -95,6 +95,9 @@ bindkey "^[[B" history-beginning-search-forward
 #---------------------------------------#
 # 3.习惯                                #
 #---------------------------------------#
+setopt interactivecomments
+ZSH_HIGHLIGHT_STYLES[comment]='none'
+
 #alias clc='clear'
 alias sudo='sudo '  #神奇的命令，使得 sudo 操作的命令也被展开
 alias ls='ls -F --color=auto'

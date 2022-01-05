@@ -421,6 +421,10 @@ set ttymouse=sgr
 set mouse=a
 set nocompatible
 
+" prevent vim from clearing the clipboard on exit
+" See, https://superuser.com/a/983814
+autocmd VimLeave * call system("xclip -o | xclip -selection c")
+
 " to solve a known issue of vim
 " See, https://github.com/mg979/vim-visual-multi/issues/120
 set term=xterm-256color

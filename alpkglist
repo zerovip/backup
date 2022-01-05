@@ -66,6 +66,7 @@ npm
 ntfs-3g
 numlockx
 nvidia
+obsidian-appimage
 openjdk11-doc
 openscad
 openssh
@@ -82,8 +83,11 @@ pkgconf
 pkgfile
 pkgstats
 polybar
+postgresql
 proxychains-ng
 python
+python2
+redis
 rime-double-pinyin
 rime-emoji
 rsync
@@ -118,6 +122,7 @@ unarchiver
 vi
 which
 wpa_supplicant
+xclip
 xdotool
 xf86-video-intel
 xf86-video-vesa
@@ -172,5 +177,6 @@ xorg-xwud
 zathura
 zathura-pdf-mupdf
 zim
+zip
 zsh
 zsh-syntax-highlighting
