@@ -62,7 +62,6 @@ nitrogen
 nodejs
 noto-fonts-cjk
 noto-fonts-emoji
-npm
 ntfs-3g
 numlockx
 nvidia
@@ -91,6 +90,7 @@ redis
 rime-double-pinyin
 rime-emoji
 rsync
+ruby
 screenkey
 scrot
 siji-git
@@ -174,6 +174,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+yarn
 zathura
 zathura-pdf-mupdf
 zim
