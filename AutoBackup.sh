@@ -9,7 +9,7 @@ cp ~/.vimrc ~/backup/backup/
 cp ~/.vim/after/syntax/markdown.vim ~/backup/backup/
 
 # 笔记备份
-cp ~/notes_2021 ~/backup/backup/
+cp ~/notes_2022 ~/backup/backup/
 
 # 本自动同步程序备份
 cp ~/backup/AutoBackup.sh ~/backup/backup/

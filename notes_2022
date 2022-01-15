@@ -1,0 +1,25 @@
+2022.01.15    安装 steam 记录：
+    按照 wiki 操作，先打开 multilib；然后安装 lib32-mesa lib32-nvidia-utils；
+    ttf-liberation 我这里已经安装过了；然后安装 wqy-zenhei；然后安装 steam；
+    安好之后打开的时候有机率出现：
+        Error: Steam needs to be online to update.
+        Please confirm your network connection and try again.
+    经过测试，这是因为中国的 dns 防火墙造成的，可以切换切换网络，刷新下 IP，
+    只要网页能打开 http://media.steampowered.com/ 以及
+        https://store.steampowered.com/，一般再打开 steam 就没什么错误了.
+2022.01.15    关于翻墙还是需要重新搞一下：（也是参照 wiki）
+    安装 shadowsocks-libev，这个官方库里就有，然后配置一份
+        /etc/shadowsocks/configxyz.json
+    开启守护进程：
+        systemctl start shadowsocks-libev@configxyz.service
+    然后在使用其他程序时设置代理：
+        firefox: 安装了 FoxyProxy，按照配置填进：
+            ip：127.0.0.1
+            port：1080
+            模式：socks v5
+            然后就能用了，可以很方便地在浏览器里打开关闭
+        steam：可参考依云的博客：（仅 steam 代理）
+                https://blog.lilydjwg.me/2019/3/3/net_cls.214197.html
+            Chih 的博客：（全局代理）
+                https://blog.chih.me/global-proxy-within-ipset-and-iptables.html
+            还需要好好学习一下这部分的知识

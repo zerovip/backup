@@ -37,6 +37,8 @@ imagemagick
 intel-ucode
 jdk11-openjdk
 kdenlive
+lib32-mesa
+lib32-nvidia-utils
 libtool
 lightdm
 lightdm-gtk-greeter
@@ -79,12 +81,13 @@ redis
 rime-double-pinyin
 rime-emoji
 rsync
-ruby
 screenkey
 scrot
+shadowsocks-libev
 simplescreenrecorder
 smplayer
 soundkonverter
+steam
 stellarium
 sudo
 sxhkd
@@ -110,6 +113,7 @@ unarchiver
 vi
 which
 wpa_supplicant
+wqy-zenhei
 xclip
 xdotool
 xf86-video-intel
