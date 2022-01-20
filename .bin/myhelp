@@ -72,6 +72,9 @@ help_list = '''
         deactivate
 
     fdisk --list 查看磁盘整体情况
+    du -h ./     查看当然目录所有文件大小
+    du -hd1      不递归地查看（hd2 递归一次）
+    df -h ./     查看当然挂载点磁盘总大小
 
     可以使用 sudo pacman -Qdt 来查找孤包.
     可以使用 paccache -ruk0 来清除未安装的包缓存

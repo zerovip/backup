@@ -20,7 +20,56 @@
             然后就能用了，可以很方便地在浏览器里打开关闭
         steam：可参考依云的博客：（仅 steam 代理）
                 https://blog.lilydjwg.me/2019/3/3/net_cls.214197.html
+            来源：https://bbs.archlinuxcn.org/viewtopic.php?id=10314
             Chih 的博客：（全局代理）
                 https://blog.chih.me/global-proxy-within-ipset-and-iptables.html
             还需要好好学习一下这部分的知识
 2022.01.15    那个 hugo 加密工具的 cipher-text 是啥？还总是会变的吗？需要研究一下.
+2022.01.19    discord 使用代理，参考：
+    https://gist.github.com/mzpqnxow/ca4b4ae0accf2d3b275537332ccbe86e
+    命令为：http_proxy=socks5://127.0.0.1:1080 https_proxy=socks5://127.0.0.1:1080 /opt/Discord/Discord --proxy-server="socks5://127.0.0.1:1080"
+2022.01.20    discord 的语音输入问题，参考了：
+    https://bbs.archlinux.org/viewtopic.php?id=236445
+    只需安装 pulseaudio 和 pulseaudio-alsa，然后重启之后就可以了
+2022.01.20    好像梯在早晨的时候会有那么一小时连不上，ping 不通，ssh 不上，
+    不知道是什么情况. 以防万一还是换一台，重新部署，一来换个操作系统，
+    二来所有的环境、软件也算是做个更新，三来是换个 ip 地址，四来是使用上更新
+    更好的技术路线.
+2022.01.20    先试一下在 Linux 上安装 Geph 客户端看看，
+    参考：https://wiki.archlinux.org/title/Geph
+    需要安装 rust 现编译，这还挺好，我挺欣赏 rust 的
+    安装完成后，systemctl start geph4-client.service 开始运行
+    需要注意：
+        这个监听端口和 ss 不同，具体参见：/etc/default/geph4-client
+        HTTP 代理：9910 端口
+        SOCKS5 代理：9909 端口
+        使用的节点也在那个配置文件里，就是那个 OPTIONS.
+        （看那个配置文件的话，好像是有一个默认的用户名和密码的）
+        （甚至猜测，没有的话会自动注册一个？——猜错了，试了一下，不行）
+2022.01.20    steam 走代理打开又查了一个方法，见：
+    https://superuser.com/a/973307 （尝试了，好像不行）
+        一个值得关注的 steam 开启时的各种 lunch option：
+            https://developer.valvesoftware.com/wiki/Command_Line_Options
+    steam 如何使用代理：https://gaming.stackexchange.com/q/8780
+    steam 所需端口：https://help.steampowered.com/zh-cn/faqs/view/2EA8-4D75-DA21-31EB
+    这个问题还需要再看看，也许如之前查到的中文帖子所说，直接上全局或整个应用就是比较好的方案了？
+    再研究一下。
+2022.01.21    discord 聊天记录导出：
+    先安装 discord-chat-exporter-cli，就用 AUR 里那个就没问题.
+    安装好以后，就有了 dotnet 命令和 discord-chat-exporter-cli 命令，
+        后者好像没啥用，就是个帮助文档，主要是要用前者.
+        1. 但是也不能随随便便用，前者必须要在有 DiscordChatExporter.Cli.dll 的文件夹里使用，
+            locate 一下之后发现是在 /opt/discord-chat-exporter-cli/ 里面，
+        2. 翻墙的话走代理，用 proxychains 就完全可以，
+            proxychains dotnet DiscordChatExporter.Cli.dll export -t "mfa.Ifrn" -c 53555
+            就完全没问题，当然别忘了提前配置好 proxychains：/etc/roxychains.conf
+            只有一个 SOCKS5 就行好像是，可以用 git 测试一下 proxychains 确实没毛病，
+            显示 ...OK 之类的就可以了
+        3. 然后就出现了 System.IO.IOException: Permission denied 的错误，
+            有这个 issue：https://github.com/Tyrrrz/DiscordChatExporter/issues/401
+            怀疑是 AUR 打包者的问题.
+            不过好在在 AUR clone 下来的源码的地方也有那个 DiscordChatExporter.Cli.dll，
+        4. 所以最终的解法就是，
+            cd AURpkgs/discord-chat-exporter-cli/pkg/discord-chat-exporter-cli/opt/discord-chat-exporter-cli
+            再执行那个 proxychains dotnet 命令
+        5. 然后会出来一个 Direct Messages 的 HTML，Done！

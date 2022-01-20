@@ -14,6 +14,7 @@ chromium
 convmv
 copyq
 dhcpcd
+discord
 dmenu
 efibootmgr
 fakeroot
@@ -75,6 +76,8 @@ pkgfile
 pkgstats
 postgresql
 proxychains-ng
+pulseaudio
+pulseaudio-alsa
 python
 python2
 redis

@@ -16,6 +16,8 @@ chromium
 convmv
 copyq
 dhcpcd
+discord
+discord-chat-exporter-cli
 dmenu
 efibootmgr
 fakeroot
@@ -25,6 +27,7 @@ flameshot
 flex
 foxitreader
 gcc
+geph4-client
 gimp
 git
 git-delta
@@ -86,6 +89,8 @@ pkgstats
 polybar
 postgresql
 proxychains-ng
+pulseaudio
+pulseaudio-alsa
 python
 python2
 rbenv
