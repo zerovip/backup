@@ -73,3 +73,14 @@
             cd AURpkgs/discord-chat-exporter-cli/pkg/discord-chat-exporter-cli/opt/discord-chat-exporter-cli
             再执行那个 proxychains dotnet 命令
         5. 然后会出来一个 Direct Messages 的 HTML，Done！
+2022.01.29    试着按照依云那篇搞一下单应用翻墙，
+    已经学了一遍 iptables 和 cgroups 相关的知识了，
+    实践过程中，遇到的问题是没法写进 classid，也就是
+        echo 0x100001 >  /sys/fs/cgroup/net_cls/0/net_cls.classid 出问题，
+        说 zsh 没有权限，连 sudo 都没有权限，我觉得好奇怪……
+        也需要换成 bash 试一下？
+    暂时还是先算了，搞一下全局翻墙吧，这个应该简单
+2022.01.29    搞全局翻墙，参考 https://blog.chih.me/global-proxy-within-ipset-and-iptables.html
+    按照这个 start iptables.service 的时候出错了，直接吓死.
+    最后把规则删了，改成原来那个才可以，估计是语法错误，比如 china 那里有点问题.
+    

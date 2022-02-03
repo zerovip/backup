@@ -82,6 +82,22 @@ help_list = '''
     可以使用 sudo pkgfile -u 来更新 pkgfile 的数据
     可以使用 sudo updatedb 来更新 locate 使用的索引数据
     可以使用 sudo journalctl --vacuum-time=2d 来清理日志文件
+
+    翻墙走 ss：
+        配置：/etc/shadowsocks/config.json
+        端口：1080
+        打开：systemctl start shadowsocks-libev@config.service
+        火狐：FoxyProxy - myh 绿色
+        Discord：http_proxy=socks5://127.0.0.1:1080 https_proxy=socks5://127.0.0.1:1080 /opt/Discord/Discord --proxy-server="socks5://127.0.0.1:1080"
+        ProxyChain 配置：/etc/proxychains.conf（改最后一行端口）
+
+    翻墙走 geph：
+        配置：/etc/default/geph4-client（用户名、密码）
+        端口：SOCKS5 9909 / HTTP 9910
+        打开：systemctl start geph4-client.service
+        火狐：FoxyProxy - geph 蓝色
+        Discord：http_proxy=socks5://127.0.0.1:9909 https_proxy=socks5://127.0.0.1:9909 /opt/discord/Discord --proxy-server="socks5://127.0.0.1:9909"
+        ProxyChain 配置：/etc/proxychains.conf（改最后一行端口）
 ===============================================================
 '''
 
