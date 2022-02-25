@@ -53,6 +53,7 @@ def search_douban(t, key_word):
         decrypt_js = f.read()
     ctx = execjs.compile(decrypt_js)
     data = ctx.call('decrypt', r)
+    print(data)
     return data['payload']['items'][0]['url']
 
 def ask_bof():

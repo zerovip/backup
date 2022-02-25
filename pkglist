@@ -27,7 +27,6 @@ gimp
 git
 git-delta
 gnumeric
-goldendict
 grub
 gtk2fontsel
 gvim
@@ -97,6 +96,7 @@ sudo
 sxhkd
 sxiv
 task
+telegram-desktop
 texinfo
 texlive-bibtexextra
 texlive-core
