@@ -13,6 +13,8 @@ calibre
 chromium
 convmv
 copyq
+cups
+cups-pdf
 dhcpcd
 discord
 dmenu
@@ -34,6 +36,7 @@ hugo
 ibus
 ibus-rime
 imagemagick
+inkscape
 intel-ucode
 ipset
 jdk11-openjdk
