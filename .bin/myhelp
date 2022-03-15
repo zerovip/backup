@@ -98,6 +98,12 @@ help_list = '''
         火狐：FoxyProxy - geph 蓝色
         Discord：http_proxy=socks5://127.0.0.1:9909 https_proxy=socks5://127.0.0.1:9909 /opt/discord/Discord --proxy-server="socks5://127.0.0.1:9909"
         ProxyChain 配置：/etc/proxychains.conf（改最后一行端口）
+
+    我自己的命令：
+        myhelp      我的帮助
+        backup      备份一切
+        add_record  添加书影记录
+        blog_arr    整理博客文章的文件夹组织形式
 ===============================================================
 '''
 

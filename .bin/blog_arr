@@ -1,0 +1,3 @@
+#! /bin/sh
+
+python ~/.bin/blog_arr_execute.py
