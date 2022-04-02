@@ -38,7 +38,6 @@ ibus-rime
 imagemagick
 inkscape
 intel-ucode
-ipset
 jdk11-openjdk
 kdenlive
 lib32-mesa
@@ -118,7 +117,6 @@ trayer
 tree
 unarchiver
 vi
-wget
 which
 wpa_supplicant
 wqy-zenhei
