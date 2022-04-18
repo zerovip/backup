@@ -104,6 +104,7 @@ help_list = '''
         backup      备份一切
         add_record  添加书影记录
         blog_arr    整理博客文章的文件夹组织形式
+        catch_back xxx.md 把季度嘟文精华展里面的嵌入改写成 shortcodes，生成 xxx_new.md
 ===============================================================
 '''
 
