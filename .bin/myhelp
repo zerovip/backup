@@ -105,6 +105,28 @@ help_list = '''
         add_record  添加书影记录
         blog_arr    整理博客文章的文件夹组织形式
         catch_back xxx.md 把季度嘟文精华展里面的嵌入改写成 shortcodes，生成 xxx_new.md
+
+    标点符号（重装系统时定义到输入法里）：
+        角度：°    U+00B0    Degree Sign
+        角分：′    U+2032    Prime
+        角秒：″    U+2033    Double Prime
+        直单：'    U+0027    Apostrophe
+        直双："    U+0022    Quotation Mark
+        左单：‘    U+2018    Left Single Quotation Mark
+        右单：’    U+2019    Right Single Quotation Mark
+        左双：“    U+201C    Left Double Quotation Mark
+        右双：”    U+201D    Right Double Quotation Mark
+        连字：-    U+2010    Hyphen-Minus
+        短接：–    U+2013    En Dash    数字、年份之间的“至”
+        长接：—    U+2014    Em Dash    插入语、补充说明
+        破折：⸺    U+2E3A    Two-Em Dash    中文排版特意使用
+        破折：——   U+2014*2  2 Em Dashes    中文通常使用
+        省略：…    U+2026    Horizontal Ellipsis
+        间隔：·    U+00B7    Middle Dot
+        圆点：•    U+2022    Bullet
+        黑圆：●    U+25CF    Black Circle
+        宽点：・   U+30FB    Katakana Middle Dot    日语的宽点，占一个汉字宽
+        来源：https://sspai.com/post/45516
 ===============================================================
 '''
 
