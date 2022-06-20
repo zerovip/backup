@@ -40,6 +40,7 @@ gstreamer0.10-base
 gstreamer0.10-base-plugins
 gtk2fontsel
 gvim
+hamradio-menus
 httrack
 hugo
 ibus
@@ -49,6 +50,7 @@ inkscape
 intel-ucode
 jdk11-openjdk
 kdenlive
+kochmorse
 lib32-mesa
 lib32-nvidia-utils
 libtool
