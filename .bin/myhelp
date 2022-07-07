@@ -23,6 +23,9 @@ help_list = '''
         git bisect good
         git bisect bad
 
+    GitHub 搜索自己评论的issue：is:issue commenter:$username
+    GitHub 搜索自己发起的issue：is:issue author:$username
+
     打开图片：          sxiv image_name
     命令在哪个包里：    pkgfile -s xxxxxx
     解压文件：          unar filename
