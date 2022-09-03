@@ -83,6 +83,7 @@ pulseaudio
 pulseaudio-alsa
 python
 python2
+qbittorrent
 redis
 rime-double-pinyin
 rime-emoji
