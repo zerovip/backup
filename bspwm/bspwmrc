@@ -25,11 +25,17 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Zathura state=tiled split_ratio=0.6
 Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2)
+
 # scratchpad
 # See, https://wiki.archlinux.org/index.php/Bspwm#Using_class_name
-bspc rule -a scratchpad sticky=on state=floating locked=on \
+# ------
+# All the changes here is because alacritty swaped the class’ general and instance
+#   See, https://github.com/alacritty/alacritty/pull/6282
+#   more comments are in ~/.config/bspwm/scratchpad.sh
+bspc rule -a Alacritty:scratchpad sticky=on state=floating locked=on \
     rectangle=`expr $Xaxis \* 4 / 5`x`expr $Yaxis \* 3 / 5`+`expr \
         $Xaxis / 5 - $bdwdt \* 2`+`expr $bdwdt + 1`
+
 # Picture in Picture of firefox
 bspc rule -a firefox:Toolkit sticky=on state=floating follow=off \
     rectangle=`expr $Xaxis / 3`x`expr $Yaxis / 3`+`expr \

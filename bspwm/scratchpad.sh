@@ -8,7 +8,15 @@ then
 	exit 1
 fi
 
-pids=$(xdotool search --class ${1})
+# The usage of xdotool, see, https://man.archlinux.org/man/xdotool.1.en
+# `search --class`: supposed to be the `general class`
+# `search --classname`: supposed to be the `particular instance class`
+# See, https://unix.stackexchange.com/a/494170
+#       and, https://www.x.org/docs/ICCCM/icccm.pdf
+#
+# All the changes here is because alacritty swaped the class’ general and instance
+#   See, https://github.com/alacritty/alacritty/pull/6282
+pids=$(xdotool search --classname ${1})
 if [ -z ${pids} ]
 then
     alacritty --class Alacritty,scratchpad \
