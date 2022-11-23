@@ -11,6 +11,9 @@ hugo --gc --minify # if using a theme, replace with `hugo -t <YOURTHEME>`
 echo -e "【 下面是加密内容 】"
 ./hugo-encrypt -sitePath ./public
 echo -e "【 加密内容结束 】"
+echo -e "【 下面是 Pagefind 建立索引 】"
+./pagefind_extended
+echo -e "【 Pagefind 建立索引结束 】"
 
 # Go To Public folder
 cd public
