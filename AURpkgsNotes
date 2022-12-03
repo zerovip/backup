@@ -80,3 +80,15 @@ otherPKGs（文件夹）:
 3. hugo-encrypt
     从 github 上 clone 下来的，https://github.com/Izumiko/hugo-encrypt
     能编译成二进制，这就挺好！
+
+
+
+# VPN_OPTIONS="--dns-listen 127.0.0.1:15353 --exit-server 7.mtl.ca.ngexits.geph.io"
+# VPN_OPTIONS="--dns-listen 127.0.0.1:15353 --exit-server 6.mtl.ca.ngexits.geph.io"
+# VPN_OPTIONS="--dns-listen 127.0.0.1:15353 --exit-server us-hio-01.exits.geph.io"
+# VPN_OPTIONS="--dns-listen 127.0.0.1:15353 --exit-server 3.par.fr.ngexits.geph.io"
+VPN_OPTIONS="--dns-listen 127.0.0.1:15353 --exit-server us-hio-04.exits.geph.io"
+# VPN_OPTIONS="--dns-listen 127.0.0.1:15353 --exit-server 2.par.fr.ngexits.geph.io"
+# VPN_OPTIONS="--dns-listen 127.0.0.1:15353 --exit-server ch-zrh-01.exits.geph.io"
+# VPN_OPTIONS="--dns-listen 127.0.0.1:15353 --exit-server ca-mtl-02.exits.geph.io"
+
