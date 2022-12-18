@@ -132,6 +132,11 @@ help_list = '''
         黑圆：●    U+25CF    Black Circle
         宽点：・   U+30FB    Katakana Middle Dot    日语的宽点，占一个汉字宽
         来源：https://sspai.com/post/45516
+
+    地图工具：
+        高德地图：https://amap.com/
+        地图画圆：https://lbs.amap.com/demo/javascript-api/example/overlayers/circle-draw-and-edit
+        获取经纬：https://lbs.amap.com/demo/javascript-api/example/map/click-to-get-lnglat
 ===============================================================
 '''
 
