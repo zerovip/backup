@@ -109,7 +109,9 @@ help_list = '''
         backup      备份一切
         add_record  添加书影记录
         blog_arr    整理博客文章的文件夹组织形式
-        catch_back xxx.md 把季度嘟文精华展里面的嵌入改写成 shortcodes，生成 xxx_new.md
+        catch_back xxx.md A1b2C3d4E5f6G7h8I9j
+                    把季度嘟文精华展里面的嵌入改写成 shortcodes，生成 xxx_new.md
+                    后面的是 token
 
     标点符号（重装系统时定义到输入法里）：
         角度：°    U+00B0    Degree Sign

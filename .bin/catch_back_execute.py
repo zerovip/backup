@@ -4,8 +4,11 @@ import sys
 import json
 import requests
 
-if len(sys.argv) == 2:
+if len(sys.argv) == 3:
     ori_file = sys.argv[1]
+    token = 'Bearer ' + sys.argv[2]
+
+headers = {'Authorization': token}
 
 file_name_list = ori_file.split('.')
 new_file = file_name_list[0] + '_new.' + file_name_list[1]
@@ -32,7 +35,7 @@ for line in of:
     if (len(line) > 15) and (line[0:12] == '<iframe src='):
         sid = line.split(' ')[1].split('/')[4]
         api = 'https://1234.as/api/v1/statuses/' + sid
-        ss = requests.get(api)
+        ss = requests.get(api, headers = headers)
         ssj = ss.json()
         mlenth = len(ssj['media_attachments'])
         new_lines = toot1.format(
