@@ -38,7 +38,6 @@ ibus-rime
 imagemagick
 inkscape
 intel-ucode
-jdk11-openjdk
 kdenlive
 lib32-mesa
 lib32-nvidia-utils
@@ -63,7 +62,6 @@ noto-fonts-emoji
 ntfs-3g
 numlockx
 nvidia
-openjdk11-doc
 openscad
 openssh
 os-prober
@@ -114,6 +112,7 @@ texlive-publishers
 texlive-science
 trayer
 tree
+ttf-fantasque-nerd
 unarchiver
 vi
 which

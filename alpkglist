@@ -46,7 +46,6 @@ ibus-rime
 imagemagick
 inkscape
 intel-ucode
-jdk11-openjdk
 kdenlive
 kochmorse
 lib32-mesa
@@ -63,7 +62,6 @@ man-db
 man-pages
 mlocate
 mtr
-nerd-fonts-fantasque-sans-mono
 networkmanager
 network-manager-applet
 nitrogen
@@ -74,7 +72,6 @@ ntfs-3g
 numlockx
 nvidia
 obsidian-appimage
-openjdk11-doc
 openscad
 openssh
 optimus-manager
@@ -132,6 +129,7 @@ texlive-publishers
 texlive-science
 trayer
 tree
+ttf-fantasque-nerd
 unarchiver
 vi
 wemeet-bin
