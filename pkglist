@@ -4,6 +4,7 @@ alsa-utils
 autoconf
 automake
 base
+base-devel
 bbswitch
 binutils
 bison
@@ -67,7 +68,7 @@ openssh
 os-prober
 otf-fantasque-sans-mono
 pacman-contrib
-pandoc
+pandoc-cli
 patch
 pcmanfm
 photoflare

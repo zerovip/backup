@@ -5,6 +5,7 @@ autoconf
 autojump
 automake
 base
+base-devel
 bbswitch
 binutils
 bison
@@ -79,7 +80,7 @@ optimus-manager-qt
 os-prober
 otf-fantasque-sans-mono
 pacman-contrib
-pandoc
+pandoc-cli
 patch
 pcmanfm
 photoflare
