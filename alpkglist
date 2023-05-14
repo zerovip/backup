@@ -13,6 +13,7 @@ blender
 bspwm
 calibre
 chromium
+cmake
 convmv
 copyq
 cups
@@ -37,6 +38,7 @@ grub
 gstreamer0.10
 gstreamer0.10-base
 gstreamer0.10-base-plugins
+gtest
 gtk2fontsel
 gvim
 hamradio-menus
@@ -103,6 +105,7 @@ rsync
 ruby-build
 screenkey
 scrot
+sddm
 shadowsocks-libev
 siji-git
 simplescreenrecorder
@@ -115,22 +118,9 @@ sxiv
 task
 telegram-desktop
 texinfo
-texlive-bibtexextra
-texlive-core
-texlive-fontsextra
-texlive-formatsextra
-texlive-games
-texlive-humanities
-texlive-langchinese
-texlive-latexextra
-texlive-music
-texlive-pictures
-texlive-pstricks
-texlive-publishers
-texlive-science
 trayer
 tree
-ttf-fantasque-nerd
+ttf-fantasque-sans-mono
 unarchiver
 vi
 wemeet-bin

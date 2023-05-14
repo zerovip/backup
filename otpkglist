@@ -7,6 +7,8 @@ gstreamer0.10-base
 gstreamer0.10-base-plugins
 hamradio-menus
 kochmorse
+libbloom
+libcorkipset
 obsidian-appimage
 openssl-1.0
 optimus-manager
@@ -15,6 +17,8 @@ python2
 qt5-webkit
 rbenv
 ruby-build
+shadowsocks-libev
 siji-git
+simplescreenrecorder
 stellarium
 wemeet-bin

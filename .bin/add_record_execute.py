@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import requests
-import urllib
+import urllib3
 import execjs  # 这个库是PyExecJS
 import re
 import datetime
@@ -70,6 +70,9 @@ def manualy_book():
     mark_date = input("请输入标记日期，今天请回车：")
     if mark_date == "":
         mark_date = str(datetime.date.today())
+    else:
+        date_list = mark_date.replace('/','-').split('-')
+        mark_date = str(datetime.date(int(date_list[0]), int(date_list[1]), int(date_list[2])))
     my_score_n = input("请输入评分，1-5 之间的整数：")
     my_score = "★" * int(my_score_n)
     my_comment = input("请输入点评：")
@@ -100,6 +103,9 @@ def manualy_film():
     mark_date = input("请输入标记日期，今天请回车：")
     if mark_date == "":
         mark_date = str(datetime.date.today())
+    else:
+        date_list = mark_date.replace('/','-').split('-')
+        mark_date = str(datetime.date(int(date_list[0]), int(date_list[1]), int(date_list[2])))
     my_score_n = input("请输入评分，1-5 之间的整数：")
     my_score = "★" * int(my_score_n)
     my_comment = input("请输入点评：")
