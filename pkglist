@@ -8,9 +8,7 @@ base-devel
 bbswitch
 binutils
 bison
-blender
 bspwm
-calibre
 chromium
 cmake
 convmv
@@ -26,7 +24,6 @@ firefox-i18n-zh-cn
 flameshot
 flex
 gcc
-gimp
 git
 git-delta
 gnumeric
@@ -39,11 +36,8 @@ hugo
 ibus
 ibus-rime
 imagemagick
-inkscape
 intel-ucode
 kdenlive
-lib32-mesa
-lib32-nvidia-utils
 libtool
 lightdm
 lightdm-gtk-greeter
@@ -83,6 +77,7 @@ proxychains-ng
 pulseaudio
 pulseaudio-alsa
 python
+python-requests
 qbittorrent
 redis
 rime-double-pinyin

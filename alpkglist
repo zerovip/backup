@@ -9,9 +9,7 @@ base-devel
 bbswitch
 binutils
 bison
-blender
 bspwm
-calibre
 chromium
 cmake
 convmv
@@ -29,7 +27,6 @@ flex
 foxitreader
 gcc
 geph4-client
-gimp
 git
 git-delta
 gnumeric
@@ -47,7 +44,6 @@ hugo
 ibus
 ibus-rime
 imagemagick
-inkscape
 intel-ucode
 kdenlive
 kochmorse
@@ -96,6 +92,7 @@ pulseaudio
 pulseaudio-alsa
 python
 python2
+python-requests
 qbittorrent
 rbenv
 redis
