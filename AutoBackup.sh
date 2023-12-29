@@ -61,9 +61,9 @@ cp -r ~/.config/bspwm/ ~/backup/backup/
 cp ~/.config/sxhkd/sxhkdrc ~/backup/backup/
 
 # alacritty 一个新终端模拟器的配置文件，替代 xterm
-cp ~/.config/alacritty/alacritty.yml ~/backup/backup/
+cp ~/.config/alacritty/alacritty.toml ~/backup/backup/
 # for scratchpad, used in ~/.config/bspwm/bspwmrc
-cp ~/.config/alacritty/alacritty_scratch.yml ~/backup/backup/
+cp ~/.config/alacritty/alacritty_scratch.toml ~/backup/backup/
 
 # ctags 软件的额外配置文件（以便识别 latex 中的 \ref 和 \label）备份
 # 暂时还没有，先不备份

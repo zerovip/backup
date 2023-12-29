@@ -20,7 +20,7 @@ pids=$(xdotool search --classname ${1})
 if [ -z ${pids} ]
 then
     alacritty --class Alacritty,scratchpad \
-        --config-file ${HOME}/.config/alacritty/alacritty_scratch.yml
+        --config-file ${HOME}/.config/alacritty/alacritty_scratch.toml
 else
     for pid in ${pids}
     do
