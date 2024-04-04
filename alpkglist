@@ -27,6 +27,7 @@ flex
 foxitreader
 gcc
 geph4-client
+geph4-client-debug
 git
 git-delta
 gnumeric

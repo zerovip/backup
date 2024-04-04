@@ -263,7 +263,7 @@ zstyle ':completion:*:-tilde-:*' group-order 'named-directories' 'path-directori
 # c 开头的直接计算器
 # 因为没有安装 bc，觉得平时使用也不多，就不用了.
 
-backup (){~/backup/AutoBackup.sh}
+# mybackup (){~/backup/AutoBackup.sh}
 # 自动备份函数
 
 #

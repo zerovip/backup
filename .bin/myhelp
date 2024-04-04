@@ -59,6 +59,8 @@ help_list = '''
         ffmpeg -i input.mp4 -strict -2 -vf crop=1080:940:0:640 output.mp4
     剪辑视频：
         ffmpeg -i input.mp4 -ss 00:00:00 -t 00:00:5 -acodec aac -vcodec h264 -strict -2 output.mp4
+    切割音频：
+        ffmpeg -i input.mp3 -vn -acodec copy -ss 00:03:21.36 -to 00:05:30.56 output.mp3
     提取声音：
         ffmpeg -i input.mp4 -q:a 0 -map a output.mp3
     硬压字幕：
@@ -84,6 +86,7 @@ help_list = '''
     可以使用 sudo pacman -Qdt 来查找孤包.
     可以使用 paccache -ruk0 来清除未安装的包缓存
     可以使用 paccache -r 来清除三个版本之前的包缓存
+    若 ::安装 aaa 破坏依赖 'bbb'（ccc 需要）::，可以 pacman -Rdd ccc 后再 -Syu
     可以使用 sudo pkgfile -u 来更新 pkgfile 的数据
     可以使用 sudo updatedb 来更新 locate 使用的索引数据
     可以使用 sudo journalctl --vacuum-time=2d 来清理日志文件
@@ -106,7 +109,8 @@ help_list = '''
 
     我自己的命令：
         myhelp      我的帮助
-        backup      备份一切
+        proxychains ~/backup/AutoBackup.sh
+                    备份一切
         add_record  添加书影记录
         blog_arr    整理博客文章的文件夹组织形式
         catch_back xxx.md A1b2C3d4E5f6G7h8I9j
