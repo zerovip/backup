@@ -1,4 +1,3 @@
-autojump
 foxitreader
 geph4-client
 geph4-client-debug
@@ -56,8 +55,6 @@ libcorkipset
 llvm15-libs
 obsidian-appimage
 openssl-1.0
-optimus-manager
-optimus-manager-qt
 python2
 qt5-webkit
 rbenv

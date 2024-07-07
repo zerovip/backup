@@ -2,7 +2,6 @@ aegisub
 alacritty
 alsa-utils
 autoconf
-autojump
 automake
 base
 base-devel
@@ -74,8 +73,6 @@ nvidia
 obsidian-appimage
 openscad
 openssh
-optimus-manager
-optimus-manager-qt
 os-prober
 otf-fantasque-sans-mono
 pacman-contrib

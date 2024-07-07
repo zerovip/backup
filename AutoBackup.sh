@@ -45,6 +45,8 @@ cp ~/.xprofile ~/backup/backup/
 
 # 所有自己写的程序存放处
 cp -r ~/.bin/ ~/backup/backup/
+# 不要放 noedb_token
+rm -f ~/backup/backup/.bin/neodb_token
 
 # 触摸板的配置
 # cp /etc/X11/xorg.conf.d/70-synaptics.conf ~/backup/backup/
