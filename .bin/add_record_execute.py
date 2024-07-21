@@ -1,16 +1,35 @@
 #!/usr/bin/env python
 import requests
-import urllib3
-import execjs  # 这个库是PyExecJS
-import re
 import datetime
-from bs4 import BeautifulSoup
 import json
 import operator
 
 def ask_bof():
     bof = input("你想要添加什么记录？(b)ook / (f)ilm  请输入：")
     return bof[0].lower()
+
+def replace_bbk(string):
+    new_st = string.replace(">!", "{{% bbk %}}").replace("!<", "{{% /bbk %}}")
+    return new_st
+
+def edit_data(fields, data):
+    while 1:
+        for i in range(len(fields)):
+            print("    ", str(i + 1), ". ", fields[i][0], ": [", data[fields[i][1]], "]")
+        oper = input("是否保存？输入 s 保存，输入数字更改：")
+        if oper == "s":
+            return data
+        if int(oper) >= 1 and int(oper) <= len(fields):
+            index = int(oper) - 1
+            new_data = input("要修改 " + str(index + 1) + ". " + fields[index][0] + ": [" + data[fields[index][1]] + "]，改为：（不修改直接回车）")
+            if new_data == "":
+                print("未修改，请再检查！")
+                continue
+            else:
+                data[fields[index][1]] = new_data
+                print("已修改，请再检查！")
+                continue
+        print("输入有误，请重新输入！")
 
 def manualy_book():
     title = input("请输入书名：")
@@ -40,6 +59,51 @@ def manualy_book():
             'my_comment': my_comment
             }
     return book_dict
+
+def edit_book_data(data):
+    fields = [
+        ["书名", "title"],
+        ["作者", "author"],
+        ["出版年份", "public_year"],
+        ["出版社", "press"],
+        ["豆瓣", "link"],
+        ["ISBN", "isbn"],
+        ["时间", "mark_date"],
+        ["打分", "my_score"],
+        ["评价", "my_comment"],]
+    return edit_data(fields, data)
+
+def search_book_neodb(uuid, token):
+    headers = {'Authorization': 'Bearer ' + token}
+    data = {}
+
+    item_url = 'https://neodb.social/api/book/' + uuid
+    item_req = requests.get(item_url, headers = headers)
+    item_j = item_req.json()
+    # print(item_j)
+    data["title"] = item_j.get("title", "null")
+    data["author"] = " ".join(item_j.get("author", ["null"]))
+    data["public_year"] = str(item_j.get("pub_year", "null"))
+    data["press"] = str(item_j.get("pub_house", "null"))
+    data["link"] = "null"
+    ext_links = item_j.get("external_resources", [])
+    for i in range(len(ext_links)):
+        link = ext_links[i]["url"]
+        if "douban" in link:
+            data["link"] = link
+    data["isbn"] = item_j.get("isbn", "null")
+
+    mark_url = 'https://neodb.social/api/me/shelf/item/' + uuid
+    mark_req = requests.get(mark_url, headers = headers)
+    mark_j = mark_req.json()
+    #print(mark_j)
+    data["mark_date"] = mark_j.get("created_time", "null")
+    data["my_score"] = "★" * (mark_j.get("rating_grade", 2) // 2)
+    data["my_comment"] = replace_bbk(mark_j.get("comment_text", "null"))
+    #print(data)
+
+    return data
+
 
 def manualy_film():
     title = input("请输入电影名：")
@@ -76,67 +140,6 @@ def manualy_film():
             }
     return film_dict
 
-def get_message_book(link):
-    header = {
-            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0',
-            'Referer': 'https://book.douban.com/',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'accept-language': 'zh-CN,en-US;q=0.5',
-            'connection': 'keep-alive',
-            'Host': 'book.douban.com',
-            }
-    html = requests.Session().get(link, headers = header).content.decode('utf-8')
-    soup = BeautifulSoup(html, features="html.parser")
-    info1 = soup.h1.get_text()
-    print(info1)
-    title = re.sub(r'\s|\t|\n', '', info1)
-    info2 = soup.find("div", {"id": "info"}).get_text()
-    print(info2)
-    author = re.sub(r'\s|\t|\n', '', re.search(r'^((.|\n)*)\n' ,re.search(r'作者:((.|\n)*?):', info2).group(1)).group(1))
-    public_year = re.findall(r'出版年: (.*?)\n', info2)[0][0:4]
-    press = re.findall(r'出版社: (.*?)\n', info2)[0]
-    link = link
-    isbn = re.findall(r'ISBN: (.*?)\n', info2)[0]
-    title_input = input("获取到的书名是：" + title + "，回车确认，输入更改：")
-    if title_input != "":
-        title = title_input
-    author_input = input("获取到的作者是：" + author + "，回车确认，输入更改：")
-    if author_input != "":
-        author = author_input
-    public_year_input = input("获取到的出版时间是：" + public_year + "，回车确认，输入更改：")
-    if public_year_input != "":
-        public_year = public_year_input
-    press_input = input("获取到的出版社是：" + press + "，回车确认，输入更改：")
-    if press_input != "":
-        press = press_input
-    link_input = input("获取到的链接是：" + link + "，回车确认，输入更改：")
-    if link_input != "":
-        link = link_input
-    isbn_input = input("获取到的 ISBN 是：" + isbn + "，回车确认，输入更改：")
-    if isbn_input != "":
-        isbn = isbn_input
-    mark_date = input("请输入标记日期，今天请回车：")
-    if mark_date == "":
-        mark_date = str(datetime.date.today())
-    else:
-        date_list = mark_date.replace('/','-').split('-')
-        mark_date = str(datetime.date(int(date_list[0]), int(date_list[1]), int(date_list[2])))
-    my_score_n = input("请输入评分，1-5 之间的整数：")
-    my_score = "★" * int(my_score_n)
-    my_comment = input("请输入点评：")
-    book_dict = {
-            'title': title,
-            'author': author,
-            'public_year': public_year,
-            'press': press,
-            'link': link,
-            'isbn': isbn,
-            'mark_date': mark_date,
-            'my_score': my_score,
-            'my_comment': my_comment
-            }
-    return book_dict
-
 def edit_film_data(data):
     fields = [
         ["标题", "title"],
@@ -150,23 +153,7 @@ def edit_film_data(data):
         ["时间", "mark_date"],
         ["打分", "my_score"],
         ["评价", "my_comment"],]
-    while 1:
-        for i in range(len(fields)):
-            print("    ", str(i + 1), ". ", fields[i][0], ": [", data[fields[i][1]], "]")
-        oper = input("是否保存？输入 s 保存，输入数字更改：")
-        if oper == "s":
-            return data
-        if int(oper) >= 1 and int(oper) <= len(fields):
-            index = int(oper) - 1
-            new_data = input("要修改 " + str(index + 1) + ". " + fields[index][0] + ": [" + data[fields[index][1]] + "]，改为：（不修改直接回车）")
-            if new_data == "":
-                print("未修改，请再检查！")
-                continue
-            else:
-                data[fields[index][1]] = new_data
-                print("已修改，请再检查！")
-                continue
-        print("输入有误，请重新输入！")
+    return edit_data(fields, data)
 
 def search_film_neodb(uuid, token):
     headers = {'Authorization': 'Bearer ' + token}
@@ -196,7 +183,7 @@ def search_film_neodb(uuid, token):
     #print(mark_j)
     data["mark_date"] = mark_j.get("created_time", "null")
     data["my_score"] = "★" * (mark_j.get("rating_grade", 2) // 2)
-    data["my_comment"] = mark_j.get("comment_text", "null")
+    data["my_comment"] = replace_bbk(mark_j.get("comment_text", "null"))
     #print(data)
 
     return data
@@ -225,12 +212,12 @@ def process():
     token = get_token()
     bof = ask_bof()
     if bof == "b":
-        key_word = input("请输入 ISBN 号自动查找，或输入 n 手动录入：")
+        key_word = input("请输入 UUID，或输入 n 手动录入：")
         if key_word == "n":
             data_dict = manualy_book()
         else:
-            book_json = search_neodb(key_word, token)
-            data_dict = get_message_book(book_json)
+            book_data = search_book_neodb(key_word, token)
+            data_dict = edit_book_data(book_data)
     elif bof == "f":
         key_word = input("请输入 UUID，或输入 n 手动录入：")
         if key_word == "n":
@@ -242,7 +229,11 @@ def process():
         print("error，请重新输入.")
         return 1
     write_in(bof, data_dict)
-    return 0
+    go_next = input("是否继续增加记录：（[y]/n）")
+    if go_next != "" and go_next[0].lower() == "n":
+        return 0
+    else:
+        return 1
 
 while 1:
     keep = process()
