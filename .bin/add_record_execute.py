@@ -5,7 +5,7 @@ import json
 import operator
 
 def ask_bof():
-    bof = input("你想要添加什么记录？(b)ook / (f)ilm  请输入：")
+    bof = input("你想要添加什么记录？(b)ook / (f)ilm / (s)eries  请输入：")
     return bof[0].lower()
 
 def replace_bbk(string):
@@ -188,10 +188,55 @@ def search_film_neodb(uuid, token):
 
     return data
 
+def search_tv_neodb(uuid, token):
+    headers = {'Authorization': 'Bearer ' + token}
+    data = {}
+
+    item_url = 'https://neodb.social/api/tv/season/' + uuid
+    item_req = requests.get(item_url, headers = headers)
+    item_j = item_req.json()
+    # print(item_j)
+    data["title"] = item_j.get("title", "null")
+    season_number = item_j.get("season_number", 0)
+    if season_number == None or season_number <= 1:
+        data["ori_name"] = item_j.get("orig_title", "null")
+    else:
+        data["ori_name"] = item_j.get("orig_title", "null") + " " + str(season_number)
+    data["public_year"] = str(item_j.get("year", "null"))
+    data["produce_country"] = " ".join(item_j.get("area", ["null"]))
+    data["film_type"] = " ".join(item_j.get("genre", ["null"]))
+    data["director"] = " ".join(item_j.get("director", ["null"]))
+    data["link"] = "null"
+    ext_links = item_j.get("external_resources", [])
+    for i in range(len(ext_links)):
+        link = ext_links[i]["url"]
+        if "douban" in link:
+            data["link"] = link
+
+    parent_uuid = item_j.get("parent_uuid", "null")
+    if parent_uuid == "null" or parent_uuid == None:
+        data["imdb_id"] = "null"
+    else:
+        tv_url = 'https://neodb.social/api/tv/' + parent_uuid
+        tv_req = requests.get(tv_url, headers = headers)
+        tv_j = tv_req.json()
+        data["imdb_id"] = tv_j.get("imdb", "null")
+
+    mark_url = 'https://neodb.social/api/me/shelf/item/' + uuid
+    mark_req = requests.get(mark_url, headers = headers)
+    mark_j = mark_req.json()
+    #print(mark_j)
+    data["mark_date"] = mark_j.get("created_time", "null")
+    data["my_score"] = "★" * (mark_j.get("rating_grade", 2) // 2)
+    data["my_comment"] = replace_bbk(mark_j.get("comment_text", "null"))
+    #print(data)
+
+    return data
+
 def write_in(bof, data_dict):
     if bof == "b":
         add = "/home/ehizil/codes/blog/data/zh/book.json"
-    elif bof == "f":
+    elif bof == "f" or bof == "s":
         add = "/home/ehizil/codes/blog/data/zh/film.json"
     with open(add, 'r') as old_file:
         old_data = json.load(old_file)
@@ -224,6 +269,13 @@ def process():
             data_dict = manualy_film()
         else:
             film_data = search_film_neodb(key_word, token)
+            data_dict = edit_film_data(film_data)
+    elif bof == "s":
+        key_word = input("请输入 UUID，或输入 n 手动录入：")
+        if key_word == "n":
+            data_dict = manualy_film()
+        else:
+            film_data = search_tv_neodb(key_word, token)
             data_dict = edit_film_data(film_data)
     else:
         print("error，请重新输入.")

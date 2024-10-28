@@ -11,6 +11,9 @@ haskell-x509-store
 haskell-x509-system
 haskell-x509-validation
 intel-oneapi-compiler-shared-opencl-cpu
+kdelibs4support
+kemoticons
+kfilemetadata5
 kochmorse
 lib32-brotli
 lib32-bzip2
@@ -52,7 +55,10 @@ lib32-zstd
 libbloom
 libcork
 libcorkipset
+libkcddb5
+libvisual
 llvm15-libs
+mlocate
 obsidian-appimage
 openssl-1.0
 python2
@@ -64,4 +70,5 @@ siji-git
 simplescreenrecorder
 soundkonverter
 stellarium
+tracker3
 wemeet-bin

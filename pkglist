@@ -48,7 +48,6 @@ m4
 make
 man-db
 man-pages
-mlocate
 mtr
 networkmanager
 network-manager-applet
