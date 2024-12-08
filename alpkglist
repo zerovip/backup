@@ -59,7 +59,6 @@ m4
 make
 man-db
 man-pages
-mlocate
 mtr
 networkmanager
 network-manager-applet
@@ -83,6 +82,7 @@ photoflare
 pkgconf
 pkgfile
 pkgstats
+plocate
 polybar
 postgresql
 proxychains-ng

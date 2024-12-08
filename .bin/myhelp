@@ -90,6 +90,7 @@ help_list = '''
     可以使用 sudo pkgfile -u 来更新 pkgfile 的数据
     可以使用 sudo updatedb 来更新 locate 使用的索引数据
     可以使用 sudo journalctl --vacuum-time=2d 来清理日志文件
+    如果出现了“未知信任”（unknown trust）：sudo pacman -Sy archlinux-keyring
 
     翻墙走 ss：
         配置：/etc/shadowsocks/config.json

@@ -58,7 +58,6 @@ libcorkipset
 libkcddb5
 libvisual
 llvm15-libs
-mlocate
 obsidian-appimage
 openssl-1.0
 python2
@@ -70,5 +69,4 @@ siji-git
 simplescreenrecorder
 soundkonverter
 stellarium
-tracker3
 wemeet-bin

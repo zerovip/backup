@@ -70,6 +70,7 @@ photoflare
 pkgconf
 pkgfile
 pkgstats
+plocate
 polybar
 postgresql
 proxychains-ng
