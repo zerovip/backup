@@ -108,6 +108,13 @@ help_list = '''
         Discord：http_proxy=socks5://127.0.0.1:9909 https_proxy=socks5://127.0.0.1:9909 /opt/discord/Discord --proxy-server="socks5://127.0.0.1:9909"
         ProxyChain 配置：/etc/proxychains.conf（改最后一行端口）
 
+    翻墙走 clash：
+        配置：~/.clash/config.yaml
+        端口：混合端口 7890
+        打开：clash
+        火狐：FoxyProxy - clash 紫色
+        ProxyChain 配置：/etc/proxychains.conf（改最后一行端口）
+
     我自己的命令：
         myhelp      我的帮助
         proxychains ~/backup/AutoBackup.sh
