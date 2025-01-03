@@ -25,6 +25,7 @@ firefox-i18n-zh-cn
 flameshot
 flex
 gcc
+gimp
 git
 git-delta
 gnumeric
@@ -80,10 +81,12 @@ pulseaudio-alsa
 python
 python-requests
 qbittorrent
+rbenv
 redis
 rime-double-pinyin
 rime-emoji
 rsync
+ruby-build
 screenkey
 scrot
 smplayer

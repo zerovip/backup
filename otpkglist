@@ -61,8 +61,6 @@ obsidian-appimage
 openssl-1.0
 python2
 qt5-webkit
-rbenv
-ruby-build
 shadowsocks-libev
 siji-git
 simplescreenrecorder
