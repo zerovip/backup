@@ -1,12 +1,12 @@
 foxitreader
 geph4-client
 geph4-client-debug
-goldendict
 gstreamer0.10
 gstreamer0.10-base
 gstreamer0.10-base-plugins
 hamradio-menus
 haskell-connection
+haskell-data-array-byte
 haskell-x509-store
 haskell-x509-system
 haskell-x509-validation
@@ -60,7 +60,7 @@ libvisual
 obsidian-appimage
 openssl-1.0
 python2
-qt5-webkit
+redis
 shadowsocks-libev
 siji-git
 simplescreenrecorder

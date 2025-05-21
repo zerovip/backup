@@ -41,6 +41,7 @@ imagemagick
 intel-ucode
 kdenlive
 libtool
+libxml2-legacy
 lightdm
 lightdm-gtk-greeter
 linux
@@ -82,7 +83,6 @@ python
 python-requests
 qbittorrent
 rbenv
-redis
 rime-double-pinyin
 rime-emoji
 rsync
