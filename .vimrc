@@ -65,7 +65,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
 Plug 'tmsvg/pear-tree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'lervag/vimtex', {'for': 'tex'}
+" Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'SirVer/ultisnips', {'for': ['tex', 'markdown', 'javascript']}
 Plug 'tpope/vim-commentary'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -269,25 +269,25 @@ imap <C-j> <Plug>(PearTreeJump)
 " 基本是被动工具
 "----------------------------------------------------------
 " 确保总能正确识别latex文件
-let g:tex_flavor='latex'
+" let g:tex_flavor='latex'
 
 " 确保有 clientsever 功能以便提供 feedback
-if empty(v:servername) && exists('*remote_startserver')
-    call remote_startserver('VIM')
-endif
+" if empty(v:servername) && exists('*remote_startserver')
+    " call remote_startserver('VIM')
+" endif
 
 " 指定预览使用 zathura
-let g:vimtex_view_method='zathura'
+" let g:vimtex_view_method='zathura'
 
 " quickfix 就是报错信息
-let g:vimtex_quickfix_mode=0
+" let g:vimtex_quickfix_mode=0
 
 " 指定编译器，不过这里 latexmk 也就是默认的
-let g:vimtex_compiler_method='latexmk'
+" let g:vimtex_compiler_method='latexmk'
 " 关于编译引擎，要写在文件里 %! TEX program = program
 
 " 不要自动缩进
-let g:vimtex_indent_enabled=0
+" let g:vimtex_indent_enabled=0
 
 " 自动补全相关：
 "   自动补全引用. 只要已经编译过了，\ref{<C-x><C-o>} 即可唤出
@@ -303,7 +303,7 @@ let g:vimtex_indent_enabled=0
 let g:UltiSnipsUsePythonVersion=3
 
 " 模板片段【搜寻处】，默认就是下面这只有一个元素的列表，用的时候是在这里找
-let g:UltiSnipsSnippetDirectories=[$HOME.'/codes/UltiSnips', $HOME.'/codes/current_course']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<C-l>"
@@ -380,9 +380,9 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " 录制几个宏，方便在 markdown 表格里对齐
-let @c = "vipga*|"  " 中间对齐
+let @c = "vipga*|"  " 中间对齐
 let @l = "vipga*|"      " 左对齐
-let @r = "vipga*|"    " 右对齐
+let @r = "vipga*|"    " 右对齐
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 12. asynctasks.vim（依赖 asyncrun.vim）
@@ -863,4 +863,3 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
-
