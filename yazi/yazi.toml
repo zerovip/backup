@@ -1,0 +1,13 @@
+[opener]
+play = [
+	{ run = 'haruna "$1"', orphan = true, for = "linux" }
+]
+view = [
+	{ run = 'ephoto "$1"', desc = "View", for = "linux" }
+]
+
+[open]
+rules = [
+	# Image
+	{ mime = "image/*", use = [ "view" ] },
+]

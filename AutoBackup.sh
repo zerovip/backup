@@ -13,6 +13,12 @@ cp -r ~/.vim/UltiSnips/ ~/Backups/backup/
 # fstab 开机挂载硬盘备份
 cp /etc/fstab ~/Backups/backup/
 
+# iwd 网络配置
+cp -r /etc/iwd/ ~/Backups/backup/
+
+# yazi 配置
+cp -r ~/.config/yazi/ ~/Backups/backup/
+
 # 输入法 fcitx5 配置备份
 cp -r ~/.config/fcitx5/ ~/Backups/backup/
 
@@ -38,6 +44,9 @@ cp ~/.config/fontconfig/fonts.conf ~/Backups/backup/
 
 # waybar 配置备份
 cp -r ~/.config/waybar/ ~/Backups/backup/
+
+# VNote 主题备份
+cp -r ~/.local/share/VNote/VNote/themes/vscode-dark-zero/ ~/Backups/backup/
 
 # 博客脚本备份
 cp ~/Blogs/deploy.sh ~/Backups/backup/

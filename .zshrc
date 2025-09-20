@@ -97,6 +97,15 @@ function sudo-command-line() {
 zle -N sudo-command-line
 bindkey "\e\e" sudo-command-line
 
+# yazi 文件预览器 wrapper，见 https://yazi-rs.github.io/docs/quick-start/
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 
 #---------------------------------------#
 # 4.颜色/主题                           #

@@ -2,12 +2,15 @@
 aic94xx-firmware
 alacritty
 amd-ucode
+anki-bin
+anki-bin-debug
 ast-firmware
 base
 base-devel
 bluetui
 clash
 efibootmgr
+ephoto
 fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
@@ -42,7 +45,6 @@ niri
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-oculante
 okular
 ollama
 openssh
