@@ -342,6 +342,7 @@ window-rule {
     match app-id=r#"vnote$"# title="VNote$"
     match app-id=r#"org.kde.okular$"# title="Okular$"
     match app-id=r#"libreoffice"# title="LibreOffice"
+    match app-id=r#"zed.Zed"#
     open-maximized true
 }
 
