@@ -235,9 +235,9 @@ def search_tv_neodb(uuid, token):
 
 def write_in(bof, data_dict):
     if bof == "b":
-        add = "/home/ehizil/codes/blog/data/zh/book.json"
+        add = "/home/orez/Blogs/blog/data/zh/book.json"
     elif bof == "f" or bof == "s":
-        add = "/home/ehizil/codes/blog/data/zh/film.json"
+        add = "/home/orez/Blogs/blog/data/zh/film.json"
     with open(add, 'r') as old_file:
         old_data = json.load(old_file)
     old_data.append(data_dict)
@@ -246,7 +246,7 @@ def write_in(bof, data_dict):
         json.dump(old_data, new_file, ensure_ascii=False, indent=2)
 
 def get_token():
-    fo = open("/home/ehizil/.bin/neodb_token", "r")
+    fo = open("/home/orez/.bin/neodb_token", "r")
     line = fo.read()
     # print(line)
     fo.close()

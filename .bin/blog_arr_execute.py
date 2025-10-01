@@ -74,8 +74,8 @@ no_index: false
 
 """
 
-url_file = '/home/ehizil/codes/blog/url'
-# url_e_file = '~/codes/blog/url_for_encryptor'
+url_file = '/home/orez/Blogs/blog/url'
+# url_e_file = '~/Blogs/blog/url_for_encryptor'
 
 def ask_purpose():
     p = input("你想要做什么？（a：添加文章；e：修改文章）  ")
@@ -83,7 +83,7 @@ def ask_purpose():
 
 def add_post():
     section = input("请输入分区（1 数学笔记；2 数学科普；3 日志；4 写作；5 备忘）：")
-    base = "/home/ehizil/codes/blog"
+    base = "/home/orez/Blogs/blog"
     if section == "1":
         path = base + "/content/math/notes"
         section_name = "notes"
