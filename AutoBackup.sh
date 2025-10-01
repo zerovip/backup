@@ -107,48 +107,48 @@ fi
 #   然后把这个 public 里面的文件都删掉，再 deploy
 #   即，再生成，再上传，这样才能把 public 文件夹作为
 #   子模组，并且直接推到 GitHub Pages.
-# echo ""
-# echo "========================================================================="
-# echo ""
-# echo "下面是博客的自动部署脚本"
-# ~/codes/deploy.sh "auto pushing..."
-# cd ~/codes/blog
-# echo ""
-# echo "========================================================================="
-# echo ""
-# echo "下面是博客原始文件夹的备份(private)"
-# if [[ `git status --porcelain --untracked-files=no` ]]; then
-#     read -p "博客有哪些变化：" po_mesg
-#     git add .
-#     git commit -m "$po_mesg"" Auto pushing blog on "$date
-#     git push
-#     echo "博客原始文件有些变化，已经备份成功！"
-# elif check_git | grep -q 'Need to push'; then
-#     git push origin master
-#     cd ..
-#     echo "之前的提交没有推上，现在搞定！"
-# else
-#     echo "博客原始文件没有变化，无需备份！"
-# fi
-# rm -rf ~/codes/blog/public/*
+echo ""
+echo "========================================================================="
+echo ""
+echo "下面是博客的自动部署脚本"
+~/Blogs/deploy.sh "auto pushing..."
+cd ~/Blogs/blog
+echo ""
+echo "========================================================================="
+echo ""
+echo "下面是博客原始文件夹的备份(private)"
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+    read -p "博客有哪些变化：" po_mesg
+    git add .
+    git commit -m "$po_mesg"" Auto pushing blog on "$date
+    git push
+    echo "博客原始文件有些变化，已经备份成功！"
+elif check_git | grep -q 'Need to push'; then
+    git push origin master
+    cd ..
+    echo "之前的提交没有推上，现在搞定！"
+else
+    echo "博客原始文件没有变化，无需备份！"
+fi
+rm -rf ~/Blogs/blog/public/*
 
 # 博客主题 push
-# cd ~/codes/blog/themes/zero
-# echo ""
-# echo "========================================================================="
-# echo ""
-# echo "下面是博客主题的备份"
-# if [[ `git status --porcelain --untracked-files=no` ]]; then
-#     read -p "博客主题有哪些更改：" po_th_mesg
-#     git add .
-#     git commit -m "$po_th_mesg"
-#     git push
-#     echo "博客主题有些变化，已经备份成功！"
-# elif check_git | grep -q 'Need to push'; then
-#     git push origin master
-#     cd ..
-#     echo "之前的提交没有推上，现在搞定！"
-# else
-#     echo "博客主题没有变化，无需备份！"
-# fi
+cd ~/Blogs/blog/themes/zero
+echo ""
+echo "========================================================================="
+echo ""
+echo "下面是博客主题的备份"
+if [[ `git status --porcelain --untracked-files=no` ]]; then
+    read -p "博客主题有哪些更改：" po_th_mesg
+    git add .
+    git commit -m "$po_th_mesg"
+    git push
+    echo "博客主题有些变化，已经备份成功！"
+elif check_git | grep -q 'Need to push'; then
+    git push origin master
+    cd ..
+    echo "之前的提交没有推上，现在搞定！"
+else
+    echo "博客主题没有变化，无需备份！"
+fi
 

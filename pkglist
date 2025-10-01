@@ -22,6 +22,7 @@ greetd-tuigreet
 grim
 gvim
 haruna
+hugo
 impala
 iwd
 jre-openjdk
@@ -44,6 +45,7 @@ okular
 ollama
 openssh
 pacman-contrib
+pandoc-cli
 pkgfile
 pkgstats
 proxychains-ng

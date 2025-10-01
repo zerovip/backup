@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/codes/blog
+cd ~/Blogs/blog
 
 echo -e "【 博客的部署脚本开始启动啦！ 】"
 echo -e "【 \033[0;32mDeploying updates to GitHub...\033[0m 】"
