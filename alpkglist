@@ -8,6 +8,7 @@ ast-firmware
 base
 base-devel
 bluetui
+chromium
 clash
 efibootmgr
 ephoto
@@ -26,6 +27,7 @@ greetd-tuigreet
 grim
 gvim
 haruna
+httrack
 hugo
 impala
 iwd
@@ -51,8 +53,10 @@ ollama
 openssh
 pacman-contrib
 pandoc-cli
+pipewire-alsa
 pkgfile
 pkgstats
+pragha
 proxychains-ng
 qt5-base
 reflector
