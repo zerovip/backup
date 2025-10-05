@@ -344,6 +344,7 @@ window-rule {
     match app-id=r#"chromium$"# title="Chromium$"
     match app-id=r#"libreoffice"# title="LibreOffice"
     match app-id=r#"zed.Zed"#
+    match app-id=r#"anki"#
     open-maximized true
 }
 
