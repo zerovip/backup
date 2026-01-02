@@ -11,8 +11,8 @@ bluetui
 chromium
 clash
 clash-verge-rev-bin
+digikam
 efibootmgr
-ephoto
 fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
@@ -34,6 +34,7 @@ impala
 iwd
 jre-openjdk
 jujutsu
+kolourpaint
 libreoffice-still
 libreoffice-still-zh-cn
 libxml2-legacy
@@ -41,6 +42,7 @@ linux
 linux-firmware
 linux-firmware-qlogic
 localsend-bin
+loupe
 mako
 man-db
 man-pages
@@ -52,6 +54,7 @@ noto-fonts-emoji
 okular
 ollama
 openssh
+optiimage
 pacman-contrib
 pandoc-cli
 pipewire-alsa
@@ -68,6 +71,7 @@ swaylock
 texinfo
 ttf-fantasque-nerd
 ttf-nerd-fonts-symbols
+ueberzugpp
 unarchiver
 upd72020x-fw
 vim-plug
