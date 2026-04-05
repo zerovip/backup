@@ -5,7 +5,6 @@ base
 base-devel
 bluetui
 chromium
-clash
 digikam
 efibootmgr
 fcitx5
@@ -64,7 +63,6 @@ swaylock
 texinfo
 ttf-fantasque-nerd
 ttf-nerd-fonts-symbols
-ueberzugpp
 unarchiver
 vulkan-icd-loader
 vulkan-radeon
