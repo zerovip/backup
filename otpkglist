@@ -1,3 +1,4 @@
+accounts-qml-module
 aic94xx-firmware
 anki-bin
 anki-bin-debug
@@ -6,6 +7,8 @@ clash
 clash-verge-rev-bin
 gnu-netcat
 localsend-bin
+stockfish
+stockfish-debug
 upd72020x-fw
 vim-plug
 vnote
