@@ -7,3 +7,5 @@ export socks_proxy=127.0.0.1:7897
 if [ -d "$HOME/.bin" ] ; then
     PATH="$HOME/.bin:$PATH"
 fi
+
+export PATH="$HOME/.elan/bin:$PATH"

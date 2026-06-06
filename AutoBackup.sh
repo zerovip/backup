@@ -46,7 +46,7 @@ cp ~/.config/fontconfig/fonts.conf ~/Backups/backup/
 cp -r ~/.config/waybar/ ~/Backups/backup/
 
 # VNote 主题备份
-cp -r ~/.local/share/VNote/VNote/themes/vscode-dark-zero/ ~/Backups/backup/
+cp -r ~/.config/VNote/VNote/themes/vscode-dark-zero/ ~/Backups/backup/
 
 # 博客脚本备份
 cp ~/Blogs/deploy.sh ~/Backups/backup/

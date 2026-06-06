@@ -6,6 +6,7 @@ base-devel
 bluetui
 chromium
 digikam
+dpkg
 efibootmgr
 fcitx5
 fcitx5-chinese-addons
@@ -57,11 +58,13 @@ pkgfile
 pkgstats
 pragha
 qt5-base
+qt5-wayland
 reflector
 sudo
 swaybg
 swayidle
 swaylock
+telegram-desktop
 texinfo
 ttf-fantasque-nerd
 ttf-nerd-fonts-symbols

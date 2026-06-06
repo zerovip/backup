@@ -4,7 +4,7 @@ Name=Default
 # Layout
 Default Layout=us
 # Default Input Method
-DefaultIM=shuangpin
+DefaultIM=keyboard-fr-afnor
 
 [Groups/0/Items/0]
 # Name

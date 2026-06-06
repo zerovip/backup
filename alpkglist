@@ -12,7 +12,10 @@ chromium
 clash
 clash-verge-rev-bin
 digikam
+dpkg
 efibootmgr
+elan-lean
+elan-lean-debug
 fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
@@ -64,6 +67,7 @@ pkgfile
 pkgstats
 pragha
 qt5-base
+qt5-wayland
 reflector
 stockfish
 stockfish-debug
@@ -71,12 +75,14 @@ sudo
 swaybg
 swayidle
 swaylock
+telegram-desktop
 texinfo
 ttf-fantasque-nerd
 ttf-nerd-fonts-symbols
 unarchiver
 upd72020x-fw
 vim-plug
+visual-studio-code-bin
 vnote
 vnote-debug
 vulkan-icd-loader

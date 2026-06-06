@@ -5,12 +5,15 @@ anki-bin-debug
 ast-firmware
 clash
 clash-verge-rev-bin
+elan-lean
+elan-lean-debug
 gnu-netcat
 localsend-bin
 stockfish
 stockfish-debug
 upd72020x-fw
 vim-plug
+visual-studio-code-bin
 vnote
 vnote-debug
 wd719x-firmware
