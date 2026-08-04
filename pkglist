@@ -1,4 +1,5 @@
 7zip
+aegisub
 alacritty
 amd-ucode
 anki
@@ -79,6 +80,7 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 yazi
+yt-dlp
 zed
 zip
 zsh
