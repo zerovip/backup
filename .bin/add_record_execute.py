@@ -257,7 +257,7 @@ COUNTRY_CODE_TO_CN = {
 }
 
 def code_to_chinese(code):
-    return COUNTRY_CODE_TO_CN.get(code.upper(), "未知国家")
+    return COUNTRY_CODE_TO_CN.get(code.upper(), code)
 
 def ask_bof():
     bof = input("你想要添加什么记录？(b)ook / (f)ilm / (s)eries  请输入：")
@@ -297,21 +297,21 @@ def manualy_book():
     if mark_date == "":
         mark_date = str(datetime.date.today())
     else:
-        date_list = mark_date.replace('/','-').split('-')
+        date_list = mark_date.replace("/","-").split("-")
         mark_date = str(datetime.date(int(date_list[0]), int(date_list[1]), int(date_list[2])))
     my_score_n = input("请输入评分，1-5 之间的整数：")
     my_score = "★" * int(my_score_n)
     my_comment = input("请输入点评：")
     book_dict = {
-            'title': title,
-            'author': author,
-            'public_year': public_year,
-            'press': press,
-            'link': link,
-            'isbn': isbn,
-            'mark_date': mark_date,
-            'my_score': my_score,
-            'my_comment': my_comment
+            "title": title,
+            "author": author,
+            "public_year": public_year,
+            "press": press,
+            "link": link,
+            "isbn": isbn,
+            "mark_date": mark_date,
+            "my_score": my_score,
+            "my_comment": my_comment
             }
     return book_dict
 
@@ -329,10 +329,10 @@ def edit_book_data(data):
     return edit_data(fields, data)
 
 def search_book_neodb(uuid, token):
-    headers = {'Authorization': 'Bearer ' + token}
+    headers = {"Authorization": "Bearer " + token}
     data = {}
 
-    item_url = 'https://neodb.social/api/book/' + uuid
+    item_url = "https://neodb.social/api/book/" + uuid
     item_req = requests.get(item_url, headers = headers)
     item_j = item_req.json()
     # print(item_j)
@@ -348,7 +348,7 @@ def search_book_neodb(uuid, token):
             data["link"] = link
     data["isbn"] = item_j.get("isbn", "null")
 
-    mark_url = 'https://neodb.social/api/me/shelf/item/' + uuid
+    mark_url = "https://neodb.social/api/me/shelf/item/" + uuid
     mark_req = requests.get(mark_url, headers = headers)
     mark_j = mark_req.json()
     #print(mark_j)
@@ -375,23 +375,23 @@ def manualy_film():
     if mark_date == "":
         mark_date = str(datetime.date.today())
     else:
-        date_list = mark_date.replace('/','-').split('-')
+        date_list = mark_date.replace("/","-").split("-")
         mark_date = str(datetime.date(int(date_list[0]), int(date_list[1]), int(date_list[2])))
     my_score_n = input("请输入评分，1-5 之间的整数：")
     my_score = "★" * int(my_score_n)
     my_comment = input("请输入点评：")
     film_dict = {
-            'title': title,
-            'ori_name': ori_name,
-            'public_year': public_year,
-            'produce_country': produce_country,
-            'film_type': film_type,
-            'director': director,
-            'link': link,
-            'imdb_id': imdb_id,
-            'mark_date': mark_date,
-            'my_score': my_score,
-            'my_comment': my_comment
+            "title": title,
+            "ori_name": ori_name,
+            "public_year": public_year,
+            "produce_country": produce_country,
+            "film_type": film_type,
+            "director": director,
+            "link": link,
+            "imdb_id": imdb_id,
+            "mark_date": mark_date,
+            "my_score": my_score,
+            "my_comment": my_comment
             }
     return film_dict
 
@@ -410,14 +410,73 @@ def edit_film_data(data):
         ["评价", "my_comment"],]
     return edit_data(fields, data)
 
+
+def get_director_info(token, url):
+    name_url = "https://neodb.social" + url
+    headers = {"Authorization": "Bearer " + token}
+    name_req = requests.get(name_url, headers = headers)
+    name_j = name_req.json()
+    return name_j
+
+def get_chinese_name(director_info):
+    if not director_info or "localized_name" not in director_info:
+        return None
+    for name_info in director_info["localized_name"]:
+        if name_info.get("lang") == "zh-cn":
+            return name_info.get("text")
+    return None
+
+def get_localized_director_name(token, item_j):
+    if "director" not in item_j or not item_j["director"]:
+        return "null"
+    person_url_map = {}
+    for credit in item_j.get("credits", []):
+        if credit.get("role") == "director" and credit.get("person_url"):
+            person_url_map[credit.get("name")] = credit.get("person_url")
+    chinese_names = []
+    for director_name in item_j["director"]:
+        person_url = person_url_map.get(director_name)
+        if person_url:
+            director_info = get_director_info(token, person_url)
+            chinese_name = get_chinese_name(director_info)
+            if chinese_name:
+                chinese_names.append(chinese_name)
+            else:
+                chinese_names.append(director_name)
+        else:
+            chinese_names.append(director_name)
+    return " ".join(chinese_names) if chinese_names else "null"
+
+def translate_genre_list(genre_list, genre_file="/home/orez/.bin/genre.json"):
+    with open(genre_file, "r", encoding="utf-8") as f:
+        genre_map = json.load(f)
+    translated = []
+    for genre in genre_list:
+        genre_lower = genre.lower().strip()
+        if genre_lower in genre_map:
+            translated.append(genre_map[genre_lower])
+        else:
+            print(f"\n未找到类型 '{genre}' 的翻译")
+            user_input = input(f"请输入 '{genre}' 的中文翻译（直接回车跳过）：").strip()
+            if user_input:
+                genre_map[genre_lower] = user_input
+                with open(genre_file, "w", encoding="utf-8") as f:
+                    json.dump(genre_map, f, ensure_ascii=False, indent=2)
+                translated.append(user_input)
+                print(f"已保存映射: {genre} -> {user_input}")
+            else:
+                translated.append(genre)
+                print(f"已跳过 '{genre}'")
+    return translated
+
 def search_film_neodb(uuid, token):
-    headers = {'Authorization': 'Bearer ' + token}
+    headers = {"Authorization": "Bearer " + token}
     data = {}
 
-    item_url = 'https://neodb.social/api/movie/' + uuid
+    item_url = "https://neodb.social/api/movie/" + uuid
     item_req = requests.get(item_url, headers = headers)
     item_j = item_req.json()
-    # print(item_j)
+    # print(json.dumps(item_j, ensure_ascii=False))
     data["title"] = item_j.get("title", "null")
     local_title_list = item_j.get("localized_title", [])
     for local_title_pair in local_title_list:
@@ -427,8 +486,8 @@ def search_film_neodb(uuid, token):
     data["ori_name"] = item_j.get("orig_title", "null")
     data["public_year"] = str(item_j.get("year", "null"))
     data["produce_country"] = " ".join([code_to_chinese(c) for c in item_j.get("area", ["null"])])
-    data["film_type"] = " ".join(item_j.get("genre", ["null"]))
-    data["director"] = " ".join(item_j.get("director", ["null"]))
+    data["film_type"] = " ".join(translate_genre_list(item_j.get("genre", ["null"])))
+    data["director"] = get_localized_director_name(token, item_j)
     data["link"] = "null"
     ext_links = item_j.get("external_resources", [])
     for i in range(len(ext_links)):
@@ -437,7 +496,7 @@ def search_film_neodb(uuid, token):
             data["link"] = link
     data["imdb_id"] = item_j.get("imdb", "null")
 
-    mark_url = 'https://neodb.social/api/me/shelf/item/' + uuid
+    mark_url = "https://neodb.social/api/me/shelf/item/" + uuid
     mark_req = requests.get(mark_url, headers = headers)
     mark_j = mark_req.json()
     #print(mark_j)
@@ -449,10 +508,10 @@ def search_film_neodb(uuid, token):
     return data
 
 def search_tv_neodb(uuid, token):
-    headers = {'Authorization': 'Bearer ' + token}
+    headers = {"Authorization": "Bearer " + token}
     data = {}
 
-    item_url = 'https://neodb.social/api/tv/season/' + uuid
+    item_url = "https://neodb.social/api/tv/season/" + uuid
     item_req = requests.get(item_url, headers = headers)
     item_j = item_req.json()
     # print(item_j)
@@ -477,12 +536,12 @@ def search_tv_neodb(uuid, token):
     if parent_uuid == "null" or parent_uuid == None:
         data["imdb_id"] = "null"
     else:
-        tv_url = 'https://neodb.social/api/tv/' + parent_uuid
+        tv_url = "https://neodb.social/api/tv/" + parent_uuid
         tv_req = requests.get(tv_url, headers = headers)
         tv_j = tv_req.json()
         data["imdb_id"] = tv_j.get("imdb", "null")
 
-    mark_url = 'https://neodb.social/api/me/shelf/item/' + uuid
+    mark_url = "https://neodb.social/api/me/shelf/item/" + uuid
     mark_req = requests.get(mark_url, headers = headers)
     mark_j = mark_req.json()
     #print(mark_j)
@@ -498,11 +557,11 @@ def write_in(bof, data_dict):
         add = "/home/orez/Blogs/blog/data/zh/book.json"
     elif bof == "f" or bof == "s":
         add = "/home/orez/Blogs/blog/data/zh/film.json"
-    with open(add, 'r') as old_file:
+    with open(add, "r") as old_file:
         old_data = json.load(old_file)
     old_data.append(data_dict)
-    old_data.sort(key = operator.itemgetter('mark_date'), reverse = True)
-    with open (add, 'w') as new_file:
+    old_data.sort(key = operator.itemgetter("mark_date"), reverse = True)
+    with open (add, "w") as new_file:
         json.dump(old_data, new_file, ensure_ascii=False, indent=2)
 
 def get_token():
