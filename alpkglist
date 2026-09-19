@@ -69,6 +69,7 @@ pragha
 qt5-base
 qt5-wayland
 reflector
+sqlitebrowser
 stockfish
 stockfish-debug
 sudo
