@@ -7,6 +7,7 @@ base
 base-devel
 bluetui
 chromium
+cmake
 digikam
 dpkg
 efibootmgr

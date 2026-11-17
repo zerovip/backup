@@ -1,0 +1,214 @@
+#!/usr/bin/env bash
+# pacaur_upgrade.sh —— 自动更新 ~/AURPkgs 下的 AUR 包
+#
+# 用法:
+#   ./pacaur_upgrade.sh                          # 仅在上游有更新时才编译安装
+#   ./pacaur_upgrade.sh --force                  # 无论有无更新,都强制重新编译安装
+#   ./pacaur_upgrade.sh --ignore aaa bbb ccc     # 忽略这几个包
+#   ./pacaur_upgrade.sh --only aaa bbb ccc       # 只处理这几个包
+#   可组合: ./pacaur_upgrade.sh --force --only aaa bbb
+#
+# 已卸载(但目录还在)的包会被自动跳过,并在最后提示可删除的目录。
+
+set -u
+
+AUR_DIR="${HOME}/AURPkgs"
+FORCE=0
+ONLY=()
+IGNORE=()
+
+usage() {
+    cat <<EOF
+用法: $0 [--force] [--ignore 包名...] [--only 包名...]
+
+  -f, --force            无论有无更新,都强制重新编译安装
+  --ignore PKG...        忽略指定的包(可跟多个包名,直到下一个以 - 开头的参数)
+  --only PKG...          只处理指定的包
+  -h, --help             显示本帮助
+EOF
+}
+
+# 解析参数
+while (( $# )); do
+    case "$1" in
+        -f|--force)
+            FORCE=1
+            shift
+            ;;
+        --ignore|--only)
+            opt="$1"
+            shift
+            names=()
+            while (( $# )) && [[ "$1" != -* ]]; do
+                names+=("$1")
+                shift
+            done
+            if (( ${#names[@]} == 0 )); then
+                echo "$opt 后面需要至少一个包名" >&2
+                exit 1
+            fi
+            if [[ "$opt" == "--ignore" ]]; then
+                IGNORE+=("${names[@]}")
+            else
+                ONLY+=("${names[@]}")
+            fi
+            ;;
+        -h|--help)
+            usage
+            exit 0
+            ;;
+        *)
+            echo "未知参数: $1" >&2
+            usage >&2
+            exit 1
+            ;;
+    esac
+done
+
+if (( EUID == 0 )); then
+    echo "请不要用 root 运行(makepkg 不允许)" >&2
+    exit 1
+fi
+
+if [[ ! -d "$AUR_DIR" ]]; then
+    echo "目录不存在: $AUR_DIR" >&2
+    exit 1
+fi
+
+updated=()
+skipped=()
+failed=()
+not_installed=()
+
+# 判断 $1 是否在后面的列表中
+in_list() {
+    local needle="$1" item
+    shift
+    for item in "$@"; do
+        [[ "$item" == "$needle" ]] && return 0
+    done
+    return 1
+}
+
+# 提示已卸载但目录仍保留的包
+print_not_installed() {
+    (( ${#not_installed[@]} > 0 )) || return 0
+    echo
+    echo "以下包已不在系统中安装,已跳过。目录可以删除:"
+    local p
+    for p in "${not_installed[@]}"; do
+        echo "    $AUR_DIR/$p"
+    done
+    echo "一键删除:"
+    printf '    rm -rf'
+    for p in "${not_installed[@]}"; do
+        printf ' %q' "$AUR_DIR/$p"
+    done
+    echo
+}
+
+# 确定要处理的包列表
+candidates=()
+if (( ${#ONLY[@]} > 0 )); then
+    candidates=("${ONLY[@]}")
+else
+    for d in "$AUR_DIR"/*/; do
+        [[ -d "$d" ]] || continue
+        candidates+=("$(basename "$d")")
+    done
+fi
+
+pkgs=()
+for p in "${candidates[@]}"; do
+    if (( ${#IGNORE[@]} > 0 )) && in_list "$p" "${IGNORE[@]}"; then
+        echo "==> [$p] 已被 --ignore 忽略"
+        continue
+    fi
+    # 目录存在但包未安装 -> 跳过,留到最后提示
+    if [[ -d "$AUR_DIR/$p" ]] && ! pacman -Qq "$p" &>/dev/null; then
+        echo "==> [$p] 未安装,跳过"
+        not_installed+=("$p")
+        continue
+    fi
+    pkgs+=("$p")
+done
+
+if (( ${#pkgs[@]} == 0 )); then
+    echo "没有需要处理的包"
+    print_not_installed
+    exit 0
+fi
+
+# 开头输入一次 sudo 密码,并在后台保持 sudo 凭据不过期
+sudo -v || exit 1
+( while true; do sudo -n true; sleep 50; kill -0 "$$" 2>/dev/null || exit; done ) &
+KEEPALIVE_PID=$!
+trap 'kill "$KEEPALIVE_PID" 2>/dev/null' EXIT
+
+# 丢弃本地改动,并与上游强制对齐(调用前需已 git fetch)
+sync_repo() {
+    git reset --hard '@{u}'
+}
+
+build_install() {
+    local flags="-sir"
+    (( FORCE )) && flags="-sirf"
+    makepkg "$flags" --noconfirm
+}
+
+for pkg in "${pkgs[@]}"; do
+    dir="$AUR_DIR/$pkg"
+
+    if [[ ! -d "$dir" ]]; then
+        echo "==> [$pkg] 目录不存在: $dir"
+        failed+=("$pkg")
+        continue
+    fi
+
+    if [[ ! -d "$dir/.git" ]]; then
+        echo "==> [$pkg] 不是 git 仓库,跳过"
+        skipped+=("$pkg")
+        continue
+    fi
+
+    cd "$dir" || { failed+=("$pkg"); continue; }
+
+    echo "==> [$pkg] 检查更新..."
+    if ! git fetch; then
+        echo "    git fetch 失败"
+        failed+=("$pkg")
+        continue
+    fi
+
+    has_update=0
+    if [[ "$(git rev-parse HEAD)" != "$(git rev-parse '@{u}' 2>/dev/null)" ]]; then
+        has_update=1
+    fi
+
+    if (( ! FORCE && ! has_update )); then
+        echo "    已是最新"
+        skipped+=("$pkg")
+        continue
+    fi
+
+    if (( FORCE )); then
+        echo "    强制重新编译安装"
+    else
+        echo "    发现更新,开始构建"
+    fi
+
+    if sync_repo && build_install; then
+        updated+=("$pkg")
+    else
+        failed+=("$pkg")
+    fi
+done
+
+echo
+echo "================ 汇总 ================"
+echo "已更新/安装: ${updated[*]:-无}"
+echo "无需更新/跳过: ${skipped[*]:-无}"
+echo "失败: ${failed[*]:-无}"
+print_not_installed
+
+(( ${#failed[@]} == 0 ))

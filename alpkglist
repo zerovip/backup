@@ -11,6 +11,7 @@ bluetui
 chromium
 clash
 clash-verge-rev-bin
+cmake
 digikam
 dpkg
 efibootmgr
@@ -84,8 +85,6 @@ unarchiver
 upd72020x-fw
 vim-plug
 visual-studio-code-bin
-vnote
-vnote-debug
 vulkan-icd-loader
 vulkan-radeon
 vulkan-tools
